@@ -23,7 +23,7 @@
         <v-divider color="white" class="mb-3 pa-0"></v-divider>
         <!-- maybe move back under contact -->
         <v-layout row wrap align-content-space-around>
-          <v-flex v-for="social in socials" :key="social">
+          <v-flex v-for="(social, i) in socials" :key="i">
             <v-tooltip top>
               <template v-slot:activator="{ on }">
                 <v-btn icon large :href="social.url" target="_blank">

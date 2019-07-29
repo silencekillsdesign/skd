@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid pa-0>
+  <div>
     <pageHeader pageTitle="Services" pageSubtitle="You Dream It. We Do It." />
     <pageIntro
       introText="We offer a wide range of multimedia services for businesses of all sizes, in many industries. Expand your brand's reach and create lifetime relationships with loyal customers."
@@ -31,22 +31,17 @@
         </v-flex>
       </v-layout>
     </v-container>
-    <v-container>
-      <faqs />
-    </v-container>
-  </v-container>
+  </div>
 </template>
 
 <script>
 import pageHeader from '~/components/global/pageHeader.vue'
 import pageIntro from '~/components/global/pageIntro.vue'
-import faqs from '~/components/global/faqs.vue'
 
 export default {
   components: {
     pageHeader,
-    pageIntro,
-    faqs
+    pageIntro
   },
   data: () => ({
     services: [

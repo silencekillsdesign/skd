@@ -1,7 +1,7 @@
 <template>
   <v-layout ma-4 fill-height>
     <v-flex>
-      <form netlify action="" method="post" name="contact-form">
+      <form netlify action="" method="post" name="contact-form" @submit="onSubmit" @reset="onReset">
         <h2 class="contact-form-header text-uppercase mb-4 blue--text accent-3">Drop us a Line</h2>
         <v-text-field
           v-model="name"
@@ -26,13 +26,14 @@
           class="md6"
         ></v-text-field>
         <v-text-field
+        v-model="phone"
           type="tel"
           name="cf_phone"
           label="Phone"
           class="md6"
         ></v-text-field>
         <v-select
-          :items="[
+          :projects="[
             'Website',
             'App',
             'SEO',
@@ -43,9 +44,11 @@
           ]"
           label="Project Type"
           name="cf_project"
+          v-model="project"
           :menu-props="{ maxHeight: 900, overflowY: true }"
         />
         <v-textarea
+          v-model="message"
           name="cf_message"
           label="Message"
           value
@@ -54,7 +57,7 @@
         ></v-textarea>
 
         <!-- <v-btn class="mx-0 my-4" type="submit" @click="submit">Send It</v-btn> -->
-        <v-btn type="submit" @click="submit" class="my-4" outlined large color="green accent-4">
+        <v-btn @click="submit.preventDefault();" type="submit" class="my-4" outlined large color="green accent-4">
           <v-icon class="mr-2">mdi-near-me</v-icon> Send It
         </v-btn>
       </form>
@@ -77,6 +80,7 @@ export default {
     name: '',
     email: '',
     phone: '',
+    projects: '',
     message: '',
     dictionary: {
       attributes: {

@@ -16,7 +16,7 @@
           </v-container>
         </v-img>
         <v-card-actions
-          class="indigo accent-3 align-center justify-center"
+          class="indigo accent-3 align-center justify-center" link
           @click="$vuetify.goTo('#main', options)"
         >
           <v-icon large>mdi-arrow-down-circle</v-icon>

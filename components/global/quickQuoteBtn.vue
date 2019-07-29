@@ -59,7 +59,7 @@
           <v-card-actions>
             <v-btn dark color="red darken-1" flat @click="quickQuote = false">Close</v-btn>
             <v-spacer />
-            <v-btn dark color="blue darken-1" type="submit" flat @click="submit">Send It</v-btn>
+            <v-btn dark color="blue darken-1" flat>Send It</v-btn>
           </v-card-actions>
         </v-card>
       </form>
