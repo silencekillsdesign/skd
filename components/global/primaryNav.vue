@@ -26,7 +26,7 @@
       <!-- TODO: Link to hompeage -->
       <v-app-bar-title class="app-bar-brand" >
         <h3>
-          <b>CJ</b> Williams
+         Silence<b>Kills</b>Design
         </h3>
       </v-app-bar-title>
       <v-spacer></v-spacer>
