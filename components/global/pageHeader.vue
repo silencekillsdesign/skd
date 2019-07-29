@@ -10,9 +10,6 @@
     :aspect-ratio="5/1"
     :src="require('~/assets/img/backgrounds/warpspeed.svg')"
     class="page-header"
-    data-aos="fade-down"
-    data-aos-easing="ease-in-out-back"
-    data-aos-duration="1000"
   >
     <v-container class="fill-height bottom-gradient">
       <transition appear name="bounce">
@@ -47,7 +44,7 @@ export default {
 <style>
 .page-header {
   font-family: "Overpass" !important;
-  background-color: transparent;
+  background-color: #06103A;
   /* background-image: url(~@/assets/img/backgrounds/wavy-bg.svg); */
   /* background-size: 25%;
   background-repeat: repeat; */

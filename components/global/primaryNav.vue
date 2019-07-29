@@ -20,21 +20,21 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar color="blue accent-3" flat dark hide-on-scroll>
-      <!-- <v-app-bar-title v-text="title"/> -->
+    <v-toolbar color="blue accent-3" flat dark hide-on-scroll>
+      <!-- <v-toolbar-title v-text="title"/> -->
       <!-- TODO: Link to hompeage -->
-      <v-app-bar-title class="app-bar-brand" >
+      <v-toolbar-title class="toolbar-brand" >
         <h3>
           <skdType/>
         </h3>
-      </v-app-bar-title>
+      </v-toolbar-title>
       <v-spacer></v-spacer>
-      <!-- <v-app-bar-side-icon @click="drawer = !drawer" class="hidden-md-and-up"/> -->
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="hidden-md-and-up"></v-app-bar-nav-icon>
-      <v-app-bar-items class="hidden-md-and-down" v-for="(item, i) in items" :key="i">
+      <!-- <v-toolbar-side-icon @click="drawer = !drawer" class="hidden-md-and-up"/> -->
+      <v-toolbar-nav-icon @click.stop="drawer = !drawer" class="hidden-md-and-up"></v-toolbar-nav-icon>
+      <v-toolbar-items class="hidden-md-and-down" v-for="(item, i) in items" :key="i">
         <v-btn depressed text :to="item.to" router>{{ item.title }}</v-btn> <!-- remove nuxt, exact -->
-      </v-app-bar-items>
-    </v-app-bar>
+      </v-toolbar-items>
+    </v-toolbar>
   </div>
 </template>
 

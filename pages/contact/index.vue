@@ -6,10 +6,10 @@
         <pageIntro introText="We are located in Bozeman, MT, and can often be found working from one of Bozeman's local coffee shops. We're happy to meet via web conferance, or in person in the Bozeman area." />
       </transition>
       <v-layout fill-height align-space-between id="main">
-        <v-flex xs12 md4 fill-height>
+        <v-flex xs12 md4 fill-height  data-aos="fade-right" data-aos-duration="800" >
           <contactCard/>
         </v-flex>
-        <v-flex xs12 md7 offset-md1>
+        <v-flex xs12 md7 offset-md1  data-aos="fade-left" data-aos-duration="1200" >
           <contactForm/>
         </v-flex>
       </v-layout>

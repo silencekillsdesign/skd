@@ -6,22 +6,24 @@
         <nuxt />
       </v-container>
     </v-content>
-
-    <v-footer
-      :fixed="fixed"
-      app
-    >
-      <span>&copy; 2019</span>
-    </v-footer>
+    <quickQuoteCTA data-aos="fade-up" data-aos-duration="800" />
+    <pagePrefooter />
+    <pageFooter />
   </v-app>
 </template>
 
 <script>
 import primaryNav from '~/components/global/primaryNav.vue'
+import pageFooter from '~/components/global/pageFooter.vue'
+import pagePrefooter from '~/components/global/pagePrefooter.vue'
+import quickQuoteCTA from '~/components/global/quickQuoteCTA.vue'
 
 export default {
   components: {
-    primaryNav
+    primaryNav,
+    pageFooter,
+    pagePrefooter,
+    quickQuoteCTA
   },
   data() {
     return {

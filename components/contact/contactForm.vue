@@ -54,8 +54,8 @@
         ></v-textarea>
 
         <!-- <v-btn class="mx-0 my-4" type="submit" @click="submit">Send It</v-btn> -->
-        <v-btn type="submit" @click="submit" class="my-4" outlined large color="teal">
-          <v-icon>mdi-near-me</v-icon> Send It
+        <v-btn type="submit" @click="submit" class="my-4" outlined large color="green accent-4">
+          <v-icon class="mr-2">mdi-near-me</v-icon> Send It
         </v-btn>
       </form>
     </v-flex>
