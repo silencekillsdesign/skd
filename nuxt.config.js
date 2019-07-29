@@ -26,8 +26,11 @@ module.exports = {
       },
       {
         rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Overpass:300,400,400i,900,900i'
+        href: 'https://fonts.googleapis.com/css?family=Overpass:300,400,400i,900,900i'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css'
       }
     ]
   },

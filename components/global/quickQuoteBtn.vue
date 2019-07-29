@@ -11,7 +11,7 @@
             <span class="headline">Need Some Numbers?</span>
           </v-card-title>
           <v-card-text>
-            <v-form>
+            <v-form tag="form">
               <v-container fluid grid-list-md>
                 <v-layout wrap>
                   <v-flex xs12 sm6>
