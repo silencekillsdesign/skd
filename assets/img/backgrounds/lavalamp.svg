@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: rgb(41, 121, 255); display: block; position: relative; shape-rendering: auto;" width="768" height="768" preserveAspectRatio="xMidYMid" viewBox="0 0 768 768"><g transform="scale(3)"><defs>
+  <filter id="pat-0.8577959893527721" x="-100%" y="-100%" width="300%" height="300%" color-interpolation-filters="sRGB">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="13.6"></feGaussianBlur>
+    <feComponentTransfer result="cutoff">
+      <feFuncA type="linear" slope="60" intercept="-40"></feFuncA>
+    </feComponentTransfer>
+  </filter>
+</defs><g style="isolation:isolate" filter="url(#pat-0.8577959893527721)"><g transform="translate(0 -82.9833)">
+  <circle cx="-61.873931996219824" cy="145.85100814955823" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="194.12606800378018" cy="145.85100814955823" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="450.1260680037802" cy="145.85100814955823" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="-61.873931996219824" cy="401.8510081495582" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="194.12606800378018" cy="401.8510081495582" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="450.1260680037802" cy="401.8510081495582" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="-61.873931996219824" cy="657.8510081495582" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="194.12606800378018" cy="657.8510081495582" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="450.1260680037802" cy="657.8510081495582" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="-252.13475503461197" cy="173.5732225563043" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="3.865244965388042" cy="173.5732225563043" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="259.86524496538806" cy="173.5732225563043" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="-252.13475503461197" cy="429.5732225563043" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="3.865244965388042" cy="429.5732225563043" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="259.86524496538806" cy="429.5732225563043" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="-252.13475503461197" cy="685.5732225563042" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="3.865244965388042" cy="685.5732225563042" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="259.86524496538806" cy="685.5732225563042" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="-179.80049410927836" cy="-32.03545657194289" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="76.19950589072164" cy="-32.03545657194289" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="332.19950589072164" cy="-32.03545657194289" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="-179.80049410927836" cy="223.9645434280571" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="76.19950589072164" cy="223.9645434280571" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="332.19950589072164" cy="223.9645434280571" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="-179.80049410927836" cy="479.96454342805714" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="76.19950589072164" cy="479.96454342805714" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="332.19950589072164" cy="479.96454342805714" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="-179.80049410927836" cy="735.9645434280571" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="76.19950589072164" cy="735.9645434280571" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="332.19950589072164" cy="735.9645434280571" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="-147.7329360628744" cy="12.829501891467283" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="108.26706393712563" cy="12.829501891467283" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="364.2670639371256" cy="12.829501891467283" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="-147.7329360628744" cy="268.82950189146726" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="108.26706393712563" cy="268.82950189146726" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="364.2670639371256" cy="268.82950189146726" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="-147.7329360628744" cy="524.8295018914673" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="108.26706393712563" cy="524.8295018914673" r="35.800000000000004" fill="#ff00ff"></circle> <circle cx="364.2670639371256" cy="524.8295018914673" r="35.800000000000004" fill="#ff00ff"></circle> 
+  <animateTransform attributeName="transform" type="translate" dur="20s" repeatCount="indefinite" keyTimes="0;1" values="0 0;0 -256"></animateTransform>
+</g><g transform="translate(0 -165.967)">
+  <circle cx="-50.17894459622872" cy="48.002386355405775" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="205.82105540377128" cy="48.002386355405775" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="461.8210554037713" cy="48.002386355405775" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="-50.17894459622872" cy="304.00238635540575" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="205.82105540377128" cy="304.00238635540575" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="461.8210554037713" cy="304.00238635540575" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="-50.17894459622872" cy="560.0023863554057" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="205.82105540377128" cy="560.0023863554057" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="461.8210554037713" cy="560.0023863554057" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="-225.75110538053838" cy="218.4557261275327" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="30.248894619461634" cy="218.4557261275327" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="286.2488946194616" cy="218.4557261275327" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="-225.75110538053838" cy="474.45572612753267" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="30.248894619461634" cy="474.45572612753267" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="286.2488946194616" cy="474.45572612753267" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="-225.75110538053838" cy="730.4557261275327" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="30.248894619461634" cy="730.4557261275327" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="286.2488946194616" cy="730.4557261275327" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="-58.8585749112203" cy="190.49916076397292" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="197.1414250887797" cy="190.49916076397292" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="453.14142508877967" cy="190.49916076397292" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="-58.8585749112203" cy="446.4991607639729" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="197.1414250887797" cy="446.4991607639729" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="453.14142508877967" cy="446.4991607639729" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="-58.8585749112203" cy="702.4991607639729" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="197.1414250887797" cy="702.4991607639729" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="453.14142508877967" cy="702.4991607639729" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="-35.720449540228145" cy="112.04242759911759" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="220.27955045977185" cy="112.04242759911759" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="476.2795504597718" cy="112.04242759911759" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="-35.720449540228145" cy="368.04242759911756" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="220.27955045977185" cy="368.04242759911756" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="476.2795504597718" cy="368.04242759911756" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="-35.720449540228145" cy="624.0424275991176" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="220.27955045977185" cy="624.0424275991176" r="35.800000000000004" fill="#00ffff"></circle> <circle cx="476.2795504597718" cy="624.0424275991176" r="35.800000000000004" fill="#00ffff"></circle> 
+  <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" keyTimes="0;1" values="0 0;0 -256"></animateTransform>
+</g><g transform="translate(0 -248.95)">
+  <circle cx="-166.67891567492788" cy="90.96839079934826" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="89.32108432507212" cy="90.96839079934826" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="345.3210843250721" cy="90.96839079934826" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="-166.67891567492788" cy="346.96839079934824" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="89.32108432507212" cy="346.96839079934824" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="345.3210843250721" cy="346.96839079934824" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="-166.67891567492788" cy="602.9683907993483" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="89.32108432507212" cy="602.9683907993483" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="345.3210843250721" cy="602.9683907993483" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="-7.224831533982979" cy="-21.66551156229204" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="248.77516846601702" cy="-21.66551156229204" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="504.775168466017" cy="-21.66551156229204" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="-7.224831533982979" cy="234.33448843770796" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="248.77516846601702" cy="234.33448843770796" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="504.775168466017" cy="234.33448843770796" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="-7.224831533982979" cy="490.33448843770793" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="248.77516846601702" cy="490.33448843770793" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="504.775168466017" cy="490.33448843770793" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="-7.224831533982979" cy="746.3344884377079" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="248.77516846601702" cy="746.3344884377079" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="504.775168466017" cy="746.3344884377079" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="-127.27201677545821" cy="88.69780569689209" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="128.7279832245418" cy="88.69780569689209" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="384.7279832245418" cy="88.69780569689209" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="-127.27201677545821" cy="344.6978056968921" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="128.7279832245418" cy="344.6978056968921" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="384.7279832245418" cy="344.6978056968921" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="-127.27201677545821" cy="600.6978056968921" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="128.7279832245418" cy="600.6978056968921" r="35.800000000000004" fill="#2979ff"></circle> <circle cx="384.7279832245418" cy="600.6978056968921" r="35.800000000000004" fill="#2979ff"></circle> 
+  <animateTransform attributeName="transform" type="translate" dur="6.666666666666666s" repeatCount="indefinite" keyTimes="0;1" values="0 0;0 -256"></animateTransform>
+</g></g></g><style type="text/css">.lded {
+  max-width: 100%
+}
+.lded .viewer {
+  width:  1140px;
+  max-width: 90%;
+  margin: 0 auto;
+  height: 322px;
+}
+.lded .panel, .lded .ctrl {
+  max-width: 1024px;
+  margin: auto
+}
+.lded .panel {
+  margin: -35px auto 0;
+}
+.gallery {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.gallery .item {
+  flex: 1 1 256px;
+  border-radius: 3px;
+  width: 256px;
+  height: 128px;
+  margin: 0 10px 20px;
+  display: inline-block;
+  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+  background-size: 128px;
+}
+.gallery .item .move {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+  transition: visibility 0.3s ease-in-out, opacity 03.s ease-in-out;
+  width: 100%;
+  height: 100%;
+  background-size: 128px;
+}
+.gallery .item:hover .move {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+.gallery.icon {
+  justify-content: center;
+}
+.gallery.icon .item {
+  flex:0 0 64px;
+  border-radius: 3px;
+  width: 64px;
+  height: 64px;
+  box-shadow: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:0 5px 10px;
+  background: #fff;
+}
+.lded.pro .download .label { display: none }
+</style></svg>

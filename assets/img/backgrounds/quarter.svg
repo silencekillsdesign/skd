@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: rgb(255, 255, 255); display: block; z-index: 1; position: relative; shape-rendering: auto;" width="1600" height="709" preserveAspectRatio="xMidYMid" viewBox="0 0 1600 709">
+<g transform=""><defs>
+  <linearGradient id="ldbk-photon-nq4q5u6dq7r-lg" x1="0" x2="370" y1="0" y2="0" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#ff00ff" offset="0"></stop>
+    <stop stop-color="#00ffff" offset="1"></stop>
+  </linearGradient>
+  <mask id="ldbk-photon-nq4q5u6dq7r-mask">
+  <g><path d="M-300 -0.5 L407.97826495312074 -0.5 A15 15 0 0 1 407.97826495312074 30.5 L-300 30.5" fill="#fff" transform="translate(44.4288 0)">
+  <animateTransform attributeName="transform" type="translate" dur="3.3333333333333335s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;53.238872957087615;30" begin="0s"></animateTransform>
+</path><path d="M354.84364034628373 -0.5 L377.97826495312074 -0.5 A15 15 0 0 1 377.97826495312074 30.5 L354.84364034628373 30.5 A15 15 0 0 1 354.84364034628373 -0.5" fill="#fff" transform="translate(222.031 0)">
+  <animateTransform attributeName="transform" type="translate" dur="3.3333333333333335s" repeatCount="indefinite" keyTimes="0;1" values="0;790.9356393591955" begin="0s"></animateTransform>
+  <animate attributeName="opacity" dur="3.3333333333333335s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="0s"></animate>
+</path><path d="M-300 29.5 L333.73671245955865 29.5 A15 15 0 0 0 333.73671245955865 60.5 L-300 60.5" fill="#fff" transform="translate(-20.1776 0)">
+  <animateTransform attributeName="transform" type="translate" dur="5s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;-89.84800892891728;30" begin="-1.25s"></animateTransform>
+</path><path d="M-60.69212492353904 29.5 L-29.999999999999996 29.5 A15 15 0 0 1 -29.999999999999996 60.5 L-60.69212492353904 60.5 A15 15 0 0 1 -60.69212492353904 29.5" fill="#000" transform="translate(522.623 0)">
+  <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" keyTimes="0;1" values="0;590.3750770024287" begin="-1.25s"></animateTransform>
+  <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="-1.25s"></animate>
+</path><path d="M-300 59.5 L386.9219391441903 59.5 A15 15 0 0 1 386.9219391441903 90.5 L-300 90.5" fill="#fff" transform="translate(30.3096 0)">
+  <animateTransform attributeName="transform" type="translate" dur="3.3333333333333335s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;89.13050845533346;30" begin="-2.5s"></animateTransform>
+</path><path d="M330.08055050719645 59.5 L356.92193914419033 59.5 A15 15 0 0 1 356.92193914419033 90.5 L330.08055050719645 90.5 A15 15 0 0 1 330.08055050719645 59.5" fill="#fff" transform="translate(5.12374 0)">
+  <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" keyTimes="0;1" values="0;500.37517078584193" begin="-2.5s"></animateTransform>
+  <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="-2.5s"></animate>
+</path><path d="M-300 89.5 L370.02356242250426 89.5 A15 15 0 0 0 370.02356242250426 120.5 L-300 120.5" fill="#fff" transform="translate(-44.7 0)">
+  <animateTransform attributeName="transform" type="translate" dur="5s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;-98.50004775291696;30" begin="-3.75s"></animateTransform>
+</path><path d="M-56.5869488324803 89.5 L-29.999999999999996 89.5 A15 15 0 0 1 -29.999999999999996 120.5 L-56.5869488324803 120.5 A15 15 0 0 1 -56.5869488324803 89.5" fill="#000" transform="translate(84.9222 0)">
+  <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" keyTimes="0;1" values="0;627.9379049440909" begin="-3.75s"></animateTransform>
+  <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="-3.75s"></animate>
+</path><path d="M-300 119.5 L393.7008909583617 119.5 A15 15 0 0 1 393.7008909583617 150.5 L-300 150.5" fill="#fff" transform="translate(65.4605 0)">
+  <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;95.56019641610828;30" begin="-5s"></animateTransform>
+</path><path d="M332.3965515406291 119.5 L363.7008909583617 119.5 A15 15 0 0 1 363.7008909583617 150.5 L332.3965515406291 150.5 A15 15 0 0 1 332.3965515406291 119.5" fill="#fff" transform="translate(150.797 0)">
+  <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" keyTimes="0;1" values="0;579.4554460284446" begin="-5s"></animateTransform>
+  <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="-5s"></animate>
+</path><path d="M-300 149.5 L357.2175538956163 149.5 A15 15 0 0 0 357.2175538956163 180.5 L-300 180.5" fill="#fff" transform="translate(9.68596 0)">
+  <animateTransform attributeName="transform" type="translate" dur="3.3333333333333335s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;-87.71804799969254;30" begin="-6.25s"></animateTransform>
+</path><path d="M-44.4716536424837 149.5 L-30 149.5 A15 15 0 0 1 -30 180.5 L-44.4716536424837 180.5 A15 15 0 0 1 -44.4716536424837 149.5" fill="#000" transform="translate(307.612 0)">
+  <animateTransform attributeName="transform" type="translate" dur="5s" repeatCount="indefinite" keyTimes="0;1" values="0;399.24751280719954" begin="-6.25s"></animateTransform>
+  <animate attributeName="opacity" dur="5s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="-6.25s"></animate>
+</path><path d="M-300 179.5 L385.11661328948367 179.5 A15 15 0 0 1 385.11661328948367 210.5 L-300 210.5" fill="#fff" transform="translate(61.6283 0)">
+  <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;61.64620647710772;30" begin="-7.5s"></animateTransform>
+</path><path d="M323.6798505210249 179.5 L355.11661328948367 179.5 A15 15 0 0 1 355.11661328948367 210.5 L323.6798505210249 210.5 A15 15 0 0 1 323.6798505210249 179.5" fill="#fff" transform="translate(377.089 0)">
+  <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" keyTimes="0;1" values="0;739.0428511477891" begin="-7.5s"></animateTransform>
+  <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="-7.5s"></animate>
+</path><path d="M-300 209.5 L364.0239345659509 209.5 A15 15 0 0 0 364.0239345659509 240.5 L-300 240.5" fill="#fff" transform="translate(-43.0498 0)">
+  <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;-53.62478336987685;30" begin="-8.75s"></animateTransform>
+</path><path d="M-67.40972706865008 209.5 L-30.000000000000007 209.5 A15 15 0 0 1 -30.000000000000007 240.5 L-67.40972706865008 240.5 A15 15 0 0 1 -67.40972706865008 209.5" fill="#000" transform="translate(237.842 0)">
+  <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" keyTimes="0;1" values="0;374.4136669434606" begin="-8.75s"></animateTransform>
+  <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="-8.75s"></animate>
+</path><path d="M-300 239.5 L402.4068224571317 239.5 A15 15 0 0 1 402.4068224571317 270.5 L-300 270.5" fill="#fff" transform="translate(64.4233 0)">
+  <animateTransform attributeName="transform" type="translate" dur="3.3333333333333335s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;85.44198699488166;30" begin="-10s"></animateTransform>
+</path><path d="M344.3473340930449 239.5 L372.4068224571317 239.5 A15 15 0 0 1 372.4068224571317 270.5 L344.3473340930449 270.5 A15 15 0 0 1 344.3473340930449 239.5" fill="#fff" transform="translate(159.695 0)">
+  <animateTransform attributeName="transform" type="translate" dur="3.3333333333333335s" repeatCount="indefinite" keyTimes="0;1" values="0;568.8770517743012" begin="-10s"></animateTransform>
+  <animate attributeName="opacity" dur="3.3333333333333335s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="-10s"></animate>
+</path><path d="M-300 269.5 L332.7891607676328 269.5 A15 15 0 0 0 332.7891607676328 300.5 L-300 300.5" fill="#fff" transform="translate(-9.22256 0)">
+  <animateTransform attributeName="transform" type="translate" dur="5s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;-63.68213878420593;30" begin="-11.25s"></animateTransform>
+</path><path d="M-44.68475726874614 269.5 L-30 269.5 A15 15 0 0 1 -30 300.5 L-44.68475726874614 300.5 A15 15 0 0 1 -44.68475726874614 269.5" fill="#000" transform="translate(211.292 0)">
+  <animateTransform attributeName="transform" type="translate" dur="3.3333333333333335s" repeatCount="indefinite" keyTimes="0;1" values="0;322.2296552149443" begin="-11.25s"></animateTransform>
+  <animate attributeName="opacity" dur="3.3333333333333335s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="-11.25s"></animate>
+</path><path d="M-300 299.5 L398.24057773406173 299.5 A15 15 0 0 1 398.24057773406173 330.5 L-300 330.5" fill="#fff" transform="translate(30.0393 0)">
+  <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;99.42087228864042;30" begin="-12.5s"></animateTransform>
+</path><path d="M343.6004704966735 299.5 L368.24057773406173 299.5 A15 15 0 0 1 368.24057773406173 330.5 L343.6004704966735 330.5 A15 15 0 0 1 343.6004704966735 299.5" fill="#fff" transform="translate(7.09635 0)">
+  <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" keyTimes="0;1" values="0;693.0164231952122" begin="-12.5s"></animateTransform>
+  <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="-12.5s"></animate>
+</path><path d="M-300 329.5 L311.0326311009905 329.5 A15 15 0 0 0 311.0326311009905 360.5 L-300 360.5" fill="#fff" transform="translate(-61.8654 0)">
+  <animateTransform attributeName="transform" type="translate" dur="3.3333333333333335s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;-67.38512599692424;30" begin="-13.75s"></animateTransform>
+</path><path d="M-60.63755126777677 329.5 L-29.999999999999996 329.5 A15 15 0 0 1 -29.999999999999996 360.5 L-60.63755126777677 360.5 A15 15 0 0 1 -60.63755126777677 329.5" fill="#000" transform="translate(187.708 0)">
+  <animateTransform attributeName="transform" type="translate" dur="3.3333333333333335s" repeatCount="indefinite" keyTimes="0;1" values="0;462.655436390218" begin="-13.75s"></animateTransform>
+  <animate attributeName="opacity" dur="3.3333333333333335s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="-13.75s"></animate>
+</path><path d="M-300 359.5 L349.1566742322931 359.5 A15 15 0 0 1 349.1566742322931 390.5 L-300 390.5" fill="#fff" transform="translate(96.8797 0)">
+  <animateTransform attributeName="transform" type="translate" dur="5s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;97.03346199401862;30" begin="-15s"></animateTransform>
+</path><path d="M282.63614923715545 359.5 L319.1566742322931 359.5 A15 15 0 0 1 319.1566742322931 390.5 L282.63614923715545 390.5 A15 15 0 0 1 282.63614923715545 359.5" fill="#fff" transform="translate(194.88 0)">
+  <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" keyTimes="0;1" values="0;748.849511732456" begin="-15s"></animateTransform>
+  <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="-15s"></animate>
+</path><path d="M-300 389.5 L347.8858416168447 389.5 A15 15 0 0 0 347.8858416168447 420.5 L-300 420.5" fill="#fff" transform="translate(15.9061 0)">
+  <animateTransform attributeName="transform" type="translate" dur="3.3333333333333335s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;-51.67302481190295;30" begin="-16.25s"></animateTransform>
+</path><path d="M-59.7350890452089 389.5 L-30 389.5 A15 15 0 0 1 -30 420.5 L-59.7350890452089 420.5 A15 15 0 0 1 -59.7350890452089 389.5" fill="#000" transform="translate(206.004 0)">
+  <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" keyTimes="0;1" values="0;534.7422409124754" begin="-16.25s"></animateTransform>
+  <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="-16.25s"></animate>
+</path><path d="M-300 419.5 L390.5610048647178 419.5 A15 15 0 0 1 390.5610048647178 450.5 L-300 450.5" fill="#fff" transform="translate(84.583 0)">
+  <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;84.61395189504583;30" begin="-17.5s"></animateTransform>
+</path><path d="M341.4901609172905 419.5 L360.5610048647178 419.5 A15 15 0 0 1 360.5610048647178 450.5 L341.4901609172905 450.5 A15 15 0 0 1 341.4901609172905 419.5" fill="#fff" transform="translate(11.9247 0)">
+  <animateTransform attributeName="transform" type="translate" dur="5s" repeatCount="indefinite" keyTimes="0;1" values="0;582.2729348141587" begin="-17.5s"></animateTransform>
+  <animate attributeName="opacity" dur="5s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="-17.5s"></animate>
+</path><path d="M-300 449.5 L307.1141206016813 449.5 A15 15 0 0 0 307.1141206016813 480.5 L-300 480.5" fill="#fff" transform="translate(22.6547 0)">
+  <animateTransform attributeName="transform" type="translate" dur="3.3333333333333335s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;-99.59394904749276;30" begin="-18.75s"></animateTransform>
+</path><path d="M-51.761386191321094 449.5 L-30 449.5 A15 15 0 0 1 -30 480.5 L-51.761386191321094 480.5 A15 15 0 0 1 -51.761386191321094 449.5" fill="#000" transform="translate(154.318 0)">
+  <animateTransform attributeName="transform" type="translate" dur="5s" repeatCount="indefinite" keyTimes="0;1" values="0;570.534484159875" begin="-18.75s"></animateTransform>
+  <animate attributeName="opacity" dur="5s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="-18.75s"></animate>
+</path><path d="M-300 479.5 L370.57130056254067 479.5 A15 15 0 0 1 370.57130056254067 510.5 L-300 510.5" fill="#fff" transform="translate(51.1235 0)">
+  <animateTransform attributeName="transform" type="translate" dur="3.3333333333333335s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;64.0214553408939;30" begin="-20s"></animateTransform>
+</path><path d="M323.5079924718031 479.5 L340.57130056254067 479.5 A15 15 0 0 1 340.57130056254067 510.5 L323.5079924718031 510.5 A15 15 0 0 1 323.5079924718031 479.5" fill="#fff" transform="translate(453.058 0)">
+  <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" keyTimes="0;1" values="0;595.9403758823257" begin="-20s"></animateTransform>
+  <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="-20s"></animate>
+</path><path d="M-300 509.5 L309.844999217444 509.5 A15 15 0 0 0 309.844999217444 540.5 L-300 540.5" fill="#fff" transform="translate(-41.5034 0)">
+  <animateTransform attributeName="transform" type="translate" dur="3.3333333333333335s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;-56.41573842034614;30" begin="-21.25s"></animateTransform>
+</path><path d="M-41.54512241812109 509.5 L-30 509.5 A15 15 0 0 1 -30 540.5 L-41.54512241812109 540.5 A15 15 0 0 1 -41.54512241812109 509.5" fill="#000" transform="translate(391.557 0)">
+  <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" keyTimes="0;1" values="0;442.3173352690093" begin="-21.25s"></animateTransform>
+  <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="-21.25s"></animate>
+</path><path d="M-300 539.5 L349.5928322996951 539.5 A15 15 0 0 1 349.5928322996951 570.5 L-300 570.5" fill="#fff" transform="translate(30.1304 0)">
+  <animateTransform attributeName="transform" type="translate" dur="5s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;86.84169147332824;30" begin="-22.5s"></animateTransform>
+</path><path d="M284.5885649684252 539.5 L319.59283229969515 539.5 A15 15 0 0 1 319.59283229969515 570.5 L284.5885649684252 570.5 A15 15 0 0 1 284.5885649684252 539.5" fill="#fff" transform="translate(5.63367 0)">
+  <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" keyTimes="0;1" values="0;550.1737177023464" begin="-22.5s"></animateTransform>
+  <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="-22.5s"></animate>
+</path><path d="M-300 569.5 L302.05102575422814 569.5 A15 15 0 0 0 302.05102575422814 600.5 L-300 600.5" fill="#fff" transform="translate(17.1039 0)">
+  <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;-71.97940738120008;30" begin="-23.75s"></animateTransform>
+</path><path d="M-47.093711651173116 569.5 L-30 569.5 A15 15 0 0 1 -30 600.5 L-47.093711651173116 600.5 A15 15 0 0 1 -47.093711651173116 569.5" fill="#000" transform="translate(59.5756 0)">
+  <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" keyTimes="0;1" values="0;440.5181009452722" begin="-23.75s"></animateTransform>
+  <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="-23.75s"></animate>
+</path><path d="M-300 599.5 L350.4947402303631 599.5 A15 15 0 0 1 350.4947402303631 630.5 L-300 630.5" fill="#fff" transform="translate(44.4731 0)">
+  <animateTransform attributeName="transform" type="translate" dur="3.3333333333333335s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;68.17635103872789;30" begin="-25s"></animateTransform>
+</path><path d="M302.69319916965736 599.5 L320.4947402303631 599.5 A15 15 0 0 1 320.4947402303631 630.5 L302.69319916965736 630.5 A15 15 0 0 1 302.69319916965736 599.5" fill="#fff" transform="translate(271.627 0)">
+  <animateTransform attributeName="transform" type="translate" dur="5s" repeatCount="indefinite" keyTimes="0;1" values="0;521.8790419908006" begin="-25s"></animateTransform>
+  <animate attributeName="opacity" dur="5s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="-25s"></animate>
+</path><path d="M-300 629.5 L331.7597488352747 629.5 A15 15 0 0 0 331.7597488352747 660.5 L-300 660.5" fill="#fff" transform="translate(-44.4487 0)">
+  <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;-51.58421439943162;30" begin="-26.25s"></animateTransform>
+</path><path d="M-65.17406619806894 629.5 L-30 629.5 A15 15 0 0 1 -30 660.5 L-65.17406619806894 660.5 A15 15 0 0 1 -65.17406619806894 629.5" fill="#000" transform="translate(293.757 0)">
+  <animateTransform attributeName="transform" type="translate" dur="5s" repeatCount="indefinite" keyTimes="0;1" values="0;381.26479757375444" begin="-26.25s"></animateTransform>
+  <animate attributeName="opacity" dur="5s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="-26.25s"></animate>
+</path><path d="M-300 659.5 L399.5693466949968 659.5 A15 15 0 0 1 399.5693466949968 690.5 L-300 690.5" fill="#fff" transform="translate(30.106 0)">
+  <animateTransform attributeName="transform" type="translate" dur="5s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;76.19938585896084;30" begin="-27.5s"></animateTransform>
+</path><path d="M347.16292867736956 659.5 L369.5693466949968 659.5 A15 15 0 0 1 369.5693466949968 690.5 L347.16292867736956 690.5 A15 15 0 0 1 347.16292867736956 659.5" fill="#fff" transform="translate(16.2387 0)">
+  <animateTransform attributeName="transform" type="translate" dur="5s" repeatCount="indefinite" keyTimes="0;1" values="0;792.9204201771643" begin="-27.5s"></animateTransform>
+  <animate attributeName="opacity" dur="5s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="-27.5s"></animate>
+</path><path d="M-300 689.5 L329.2066145382759 689.5 A15 15 0 0 0 329.2066145382759 720.5 L-300 720.5" fill="#fff" transform="translate(-47.3984 0)">
+  <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="30;-58.60295867777341;30" begin="-28.75s"></animateTransform>
+</path><path d="M-65.49371984491762 689.5 L-30 689.5 A15 15 0 0 1 -30 720.5 L-65.49371984491762 720.5 A15 15 0 0 1 -65.49371984491762 689.5" fill="#000" transform="translate(353.206 0)">
+  <animateTransform attributeName="transform" type="translate" dur="10s" repeatCount="indefinite" keyTimes="0;1" values="0;556.0206599770416" begin="-28.75s"></animateTransform>
+  <animate attributeName="opacity" dur="10s" repeatCount="indefinite" keyTimes="0;0.3;1" values="1;1;0" begin="-28.75s"></animate>
+</path>    </g>
+  </mask>
+</defs>
+<rect x="0" y="0" width="1600" height="709" fill="url(#ldbk-photon-nq4q5u6dq7r-lg)" mask="url(#ldbk-photon-nq4q5u6dq7r-mask)"></rect></g>
+<style type="text/css">.lded > .content, .lded > .content > .inner { height: 100%; }
+.lded > .content > .inner > .viewer { width: 100%; height: 100%; max-width: 100%; }
+.lded > .content > .inner > .panel {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  opacity: 0.3;
+}
+.lded > .content > .inner > .panel:hover { opacity: 1; }
+.lded > .content > .inner > .ctrl {
+  position: absolute;
+  bottom: 13px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.lded > .content > .inner > .ctrl:hover {
+  z-index: 10;
+}
+#editor > .inner > .title {
+  position: absolute;
+  bottom: 195px;
+  left: 0;
+  right: 0;
+  z-index: 11;
+}
+#editor > .inner > .title > a:first-child {
+  margin-left: 0!important;
+#editor .lded .viewer { border-radius: 0 }</style></svg>

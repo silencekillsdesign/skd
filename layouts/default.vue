@@ -2,7 +2,7 @@
   <v-app dark>
     <primaryNav />
     <v-content>
-      <v-container>
+      <v-container fluid pa-0>
         <nuxt />
       </v-container>
     </v-content>
