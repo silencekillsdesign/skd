@@ -124,11 +124,49 @@ export default {
   },
   data() {
     return {
+      technologies: [
+        {
+          id: 0,
+          technology: 'html5',
+          icon: 'mdi-language-html5',
+          url: 'link-to-w3-html5'
+        },
+        {
+          id: 1,
+          technology: 'css3',
+          icon: 'mdi-language-css3',
+          url: 'link-to-w3-html5'
+        },
+        {
+          id: 2,
+          technology: 'Sass',
+          icon: 'mdi-sass',
+          url: 'link-to-w3-html5'
+        },
+        {
+          id: 3,
+          technology: 'VueJS',
+          icon: 'mdi-vuejs',
+          url: 'link-to-w3-html5'
+        },
+        {
+          id: 4,
+          technology: 'Vuetify',
+          icon: 'mdi-vuetify',
+          url: 'link-to-w3-html5'
+        },
+        {
+          id: 5,
+          technology: 'WordPress',
+          icon: 'mdi-wordpress',
+          url: 'link-to-w3-html5'
+        }
+      ],
       i: 1,
       items: [
         {
           icon: 'mdi-store',
-          title: 'Local Business Websites',
+          title: 'Google AdWords',
           items: [
             {
               description:
@@ -138,7 +176,7 @@ export default {
         },
         {
           icon: 'mdi-account-group',
-          title: 'Non-Profit Groups',
+          title: 'Google Analytics',
           items: [
             {
               description:
@@ -148,7 +186,7 @@ export default {
         },
         {
           icon: 'mdi-calendar-month-outline',
-          title: 'Events & Weddings',
+          title: 'Google Search Console',
           items: [
             {
               description:
@@ -158,7 +196,7 @@ export default {
         },
         {
           icon: 'mdi-domain',
-          title: 'B2B and Sales Websites',
+          title: 'Schema.org Markup',
           items: [
             {
               description:

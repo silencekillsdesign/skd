@@ -3,7 +3,7 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 900 765" style="enable-background:new 0 0 900 765;" xml:space="preserve">
 <style type="text/css">
-	.st0{display:none;fill:#4A148C;}
+	.st0{fill:#F50057;}
 	.st1{fill:#3D5AFE;}
 	.st2{fill:#ACD5F4;}
 	.st3{fill:#86BBD8;}
@@ -570,7 +570,7 @@
 			<polygon class="st3" points="670,527.6 693,585.8 686.5,523.1 686,518.9 671.1,518.9 			"/>
 			<rect x="339.4" y="512.7" class="st21" width="363.2" height="11"/>
 			
-				<radialGradient id="SVGID_1_" cx="197.1472" cy="406.887" r="358.2626" gradientTransform="matrix(1 0 0 -0.9989 0 765.3207)" gradientUnits="userSpaceOnUse">
+				<radialGradient id="SVGID_1_" cx="197.1472" cy="104.9732" r="358.2626" gradientTransform="matrix(1 0 0 0.9989 0 254.0236)" gradientUnits="userSpaceOnUse">
 				<stop  offset="1.574020e-03" style="stop-color:#CDF7F1"/>
 				<stop  offset="1" style="stop-color:#5DCFCA"/>
 			</radialGradient>
