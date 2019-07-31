@@ -29,7 +29,7 @@ import faqs from '~/components/global/faqs.vue'
 import aboutSplit from '~/components/about/aboutSplit'
 import aboutSplitLeft from '~/components/about/aboutSplitLeft'
 import aboutTestimonials from '~/components/about/aboutTestimonials.vue'
-import aboutClients from '~/components/about/aboutClients'
+import aboutClients from '~/components/about/aboutClients.vue'
 
 export default {
   components: {

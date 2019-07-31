@@ -7,7 +7,7 @@
       </v-layout>
     </v-container>
 
-    <v-img :src="require('~/assets/img/backgrounds/wavebar.svg')" class="page-header">
+    <v-img :src="require('~/assets/img/backgrounds/wavebar.svg')">
       <v-container fluid grid-list-xl class="fill-height bottom-gradient">
         <v-layout row wrap pa-0 mt-2 justify-space-around align-center class="white--text">
 

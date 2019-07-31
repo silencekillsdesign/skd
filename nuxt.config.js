@@ -63,7 +63,7 @@ module.exports = {
   ],
   devModules: [
     // Simple usage
-    '@nuxtjs/vuetify'
+    // '@nuxtjs/vuetify'
   ],
   /*
    ** Axios module configuration
