@@ -50,7 +50,7 @@
           data-aos-easing="ease-in-out-back"
           data-aos-duration="800"
           data-aos-delay="100"
-        >Our Web Development Process</h2>
+        >Our SEO / SEM Process</h2>
       </v-layout>
     </v-container>
 

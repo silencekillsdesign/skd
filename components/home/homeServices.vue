@@ -30,11 +30,11 @@
             flat
             hover
             px-2
-            py-4
+            py-5
             class="service-card"
             :to="service.serviceURL"
           >
-            <v-icon size="72" class="ma-4 service-icon">{{ service.serviceIcon }}</v-icon>
+            <v-icon size="72" class="ma-5 pt-5 service-icon">{{ service.serviceIcon }}</v-icon>
             <v-card-title justify-center class="service-title">
               <v-flex>
                 <h4
@@ -55,6 +55,11 @@
               >{{ service.serviceButton }}</v-btn>
             </v-card-actions>
           </v-card>
+        </v-flex>
+      </v-layout>
+      <v-layout my-5 py-5 justify-center align-center>
+        <v-flex grow justify-center align-center class="text-center">
+          <v-btn x-large depressed outlined dark color="yellow accent-3" to="/services">View All Services</v-btn>
         </v-flex>
       </v-layout>
     </v-container>

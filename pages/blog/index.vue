@@ -8,7 +8,7 @@
     <v-container>
       <!-- <v-layout v-for="(article,i) in articles" :key="i" row flex align-center my-4> -->
       <!-- this loop will not work with svg images, unless they are loaded as components... might get messy -->
-      <v-layout row wrap align-center my-4>
+      <v-layout row wrap align-center my-4 tag="article">
         <!-- image -->
         <v-flex xs12 md5 class="">
           <img src="~/assets/img/blog/blog-1.svg" alt="avatar">
@@ -35,7 +35,7 @@
           <v-layout row wrap mb-4>
             <p
               class="body-1"
-            >Bacon ipsum dolor amet burgdoggen salami ham fatback drumstick cupim chicken. Andouille kielbasa chuck, beef ribs porchetta turducken tail corned beef sausage swine ribeye. Biltong pig salami picanha ham hock. Corned beef spare ribs venison short ribs tail fatback jowl.</p>
+            >We've got some great content in the works</p>
           </v-layout>
           <!-- buttons -->
           <v-layout row flex justify-left align-top mb-4>

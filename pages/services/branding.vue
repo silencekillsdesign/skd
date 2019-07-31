@@ -50,7 +50,7 @@
           data-aos-easing="ease-in-out-back"
           data-aos-duration="800"
           data-aos-delay="100"
-        >Our Web Development Process</h2>
+        >Our Branding Process</h2>
       </v-layout>
     </v-container>
 
@@ -60,9 +60,9 @@
           <v-img :aspect-ratio="1" :src="require('~/assets/img/services/wireframing.svg')"></v-img>
         </v-flex>
         <v-flex xs12 md8 pa-5>
-          <h3 class="mt-4 blue--text text--accent-3">UX Planning and Wireframing</h3>
+          <h3 class="mt-4 blue--text text--accent-3">Brand Audit</h3>
           <v-divider class="my-5" color="blue"></v-divider>
-          <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
+          <p>We will take an in depth look at al of your existing brand assets. Next we draft a plan to improve on the weak segments, and capitalize on your strengths. </p>
           <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View UX Services</v-btn>
         </v-flex>
       </v-layout>

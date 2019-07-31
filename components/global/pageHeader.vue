@@ -41,7 +41,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .page-header {
   font-family: "Overpass" !important;
   background-color: #06103A;

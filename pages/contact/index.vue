@@ -1,8 +1,8 @@
 <template>
   <v-container fluid pa-0>
     <pageHeader pageTitle="Contact Us" pageSubtitle="Call Us. Write Us."/>
+    <pageIntro introText="We are located in Bozeman, MT, and can often be found working from one of Bozeman's local coffee shops. We're happy to meet via web conferance, or in person in the Bozeman area." />
     <v-container>
-      <pageIntro introText="We are located in Bozeman, MT, and can often be found working from one of Bozeman's local coffee shops. We're happy to meet via web conferance, or in person in the Bozeman area." />
       
       <v-layout row wrap fill-height align-space-between id="main">
         <v-flex xs12 md4 fill-height>

@@ -1,0 +1,27 @@
+[
+  {
+    "social": "Twitter",
+    "icon": "mdi-twitter",
+    "url": "https://twitter.com/s1lencek1lls"
+  },
+  {
+    "social": "Facebook",
+    "icon": "mdi-facebook",
+    "url": "https://facebook.com/silencekillsdesign"
+  },
+  {
+    "social": "LinkedIn",
+    "icon": "mdi-linkedin",
+    "url": "https://www.linkedin.com/in/cjwilliamsworks/"
+  },
+  {
+    "social": "Instagram",
+    "icon": "mdi-instagram",
+    "url": "https://instagram.com/silencekillsdesign"
+  },
+  {
+    "social": "Snapchat",
+    "icon": "mdi-snapchat",
+    "url": "https://snapchat.com/s1lencek1lls"
+  }
+]

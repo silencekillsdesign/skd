@@ -1,20 +1,20 @@
 <template>
   <!-- background generated at https://www.svgbackgrounds.com -->
   <v-img
-    :aspect-ratio="3/1"
-    :src="require('~/assets/img/backgrounds/blog-blob.svg')"
+    :aspect-ratio="4/1"
+    :src="require('~/assets/img/backgrounds/preety.svg')"
     class="blog-header"
   >
-    <v-container fluid class="fill-height">
+    <v-container fluid fill-height>
       <transition appear group name="bounce">
-        <v-layout row wrap pa-4 mt-2 justify-center align-start class="white--text">
+        <v-layout fill-height row wrap pa-4 mt-2 justify-center align-start class="white--text">
           <v-flex md7 pl-5>
             <v-layout row wrap>
               <h1
                 class="blog-title white--text text-uppercase font-weight-bold"
                 :class="{
-          'mx-1 pt-2 px-1 display-2': $vuetify.breakpoint.smAndDown, 
-          'px-4 pt-4 pb-1 display-4': $vuetify.breakpoint.mdAndUp}"
+          'mx-1 pt-2 px-1 display-1': $vuetify.breakpoint.smAndDown, 
+          'px-4 pt-4 pb-1 display-3': $vuetify.breakpoint.mdAndUp}"
               >{{ blogTitle }}</h1>
             </v-layout>
 
@@ -29,16 +29,14 @@
                 <v-icon color="white" medium mr-2>mdi-tag</v-icon>Web Dev, Design
               </v-flex>
             </v-layout>
+            <v-layout>
+              <h4
+              class="mt-2 text-left headline hidden-sm-and-down"
+            >{{ blogSubtitle }}</h4>
+            </v-layout>
           </v-flex>
           <v-flex md4 offset-md1>
             <v-img contain :src="require('~/assets/img/blog/blog-1.svg')"></v-img>
-          </v-flex>
-        </v-layout>
-        <v-layout row wrap>
-          <v-flex xs12>
-            <h4
-              class="mt-2 text-xs-right headline text-uppercase hidden-sm-and-down"
-            >{{ blogSubtitle }}</h4>
           </v-flex>
         </v-layout>
       </transition>

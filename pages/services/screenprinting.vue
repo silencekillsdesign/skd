@@ -128,7 +128,7 @@ export default {
       items: [
         {
           icon: 'mdi-lead-pencil',
-          title: 'Logo Design',
+          title: 'Logo Wear',
           items: [
             {
               description:
@@ -138,7 +138,7 @@ export default {
         },
         {
           icon: 'mdi-file-multiple',
-          title: 'Marketing Materials',
+          title: 'Team Wear',
           items: [
             {
               description:
@@ -148,7 +148,7 @@ export default {
         },
         {
           icon: 'mdi-fountain-pen-tip',
-          title: 'Copy Writing',
+          title: 'Stickers',
           items: [
             {
               description:
@@ -158,7 +158,7 @@ export default {
         },
         {
           icon: 'mdi-account-card-details',
-          title: 'Stationery',
+          title: 'Signage',
           items: [
             {
               description:
@@ -168,7 +168,7 @@ export default {
         },
         {
           icon: 'mdi-movie-roll',
-          title: 'Audio / Visual',
+          title: 'Embroidery',
           items: [
             {
               description:
@@ -178,7 +178,7 @@ export default {
         },
         {
           icon: 'mdi-newspaper',
-          title: 'Brand Guides',
+          title: 'Headwear',
           items: [
             {
               description:
@@ -188,7 +188,7 @@ export default {
         },
         {
           icon: 'mdi-presentation-play',
-          title: 'Presentaion Templates',
+          title: 'Outerwear',
           items: [
             {
               description:

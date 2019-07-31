@@ -1,7 +1,7 @@
 <template>
   <v-layout row pa-4 fill-height>
     <v-flex>
-      <v-card class="mx-auto">
+      <v-card class="mx-auto indigo accent-4">
         <v-img
           class="pa-5"
           :aspect-ratio="3/1"
@@ -55,7 +55,7 @@
 
           <v-container grid-list justify-space-between mx-2 mt-3 mb-2>
             <v-layout row>
-              <v-flex v-for="social in socials" :key="social">
+              <v-flex v-for="(social, i) in socials" :key="i">
                 <v-tooltip top>
                   <template v-slot:activator="{ on }">
                     <v-btn icon large :href="social.url" target="_blank">

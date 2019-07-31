@@ -8,9 +8,10 @@
       <form name="quickQuote" netlify action="" method="post" data-netlify-recaptcha="true">
         <v-card>
           <v-card-title>
-            <span class="headline">Need Some Numbers?</span>
+            <span class="headline">This form doesn't Work Yet. Sorry.</span>
           </v-card-title>
           <v-card-text>
+            <p>Please use our main <a href="/contact">contact form</a> to get in touch while we are getting everything else wired up.</p>
             <v-form tag="form">
               <v-container fluid grid-list-md>
                 <v-layout wrap>
@@ -59,7 +60,7 @@
           <v-card-actions>
             <v-btn dark color="red darken-1" flat @click="quickQuote = false">Close</v-btn>
             <v-spacer />
-            <v-btn dark color="blue darken-1" flat>Send It</v-btn>
+            <v-btn depressed disabled>Send It</v-btn>
           </v-card-actions>
         </v-card>
       </form>

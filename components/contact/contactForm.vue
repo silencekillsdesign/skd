@@ -1,7 +1,7 @@
 <template>
   <v-layout ma-4 fill-height>
     <v-flex>
-      <form netlify action="" method="post" name="contact-form" @submit="onSubmit" @reset="onReset">
+      <form netlify action="" method="post" name="contact-form">
         <h2 class="contact-form-header text-uppercase mb-4 blue--text accent-3">Drop us a Line</h2>
         <v-text-field
           v-model="name"
@@ -44,7 +44,7 @@
           ]"
           label="Project Type"
           name="cf_project"
-          v-model="project"
+          v-model="projects"
           :menu-props="{ maxHeight: 900, overflowY: true }"
         />
         <v-textarea
@@ -57,7 +57,7 @@
         ></v-textarea>
 
         <!-- <v-btn class="mx-0 my-4" type="submit" @click="submit">Send It</v-btn> -->
-        <v-btn @click="submit.preventDefault();" type="submit" class="my-4" outlined large color="green accent-4">
+        <v-btn type="submit" class="my-4" outlined large color="green accent-4">
           <v-icon class="mr-2">mdi-near-me</v-icon> Send It
         </v-btn>
       </form>

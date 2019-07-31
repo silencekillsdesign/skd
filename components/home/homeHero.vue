@@ -39,8 +39,7 @@
                 dark
                 class="ml-0 mr-3"
                 color="deep-purple accent-2"
-                nuxt
-                to="services"
+                @click="$vuetify.goTo('#homeServices', options)"
               >View Services</v-btn>
             </v-flex>
             <quickQuoteBtn btnText="Quick Quote" btnColor="pink accent-3" />
