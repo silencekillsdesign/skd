@@ -1,6 +1,7 @@
 <template>
   <v-container fluid fill-height class="hero-home">
     <v-container fill-height>
+      <transition name="fade" appear mode="out-in">
       <v-layout align-center justify-space-between row wrap fill-height>
         <v-flex
           transition="slide-x-reverse-transition"
@@ -9,15 +10,9 @@
           xs12
           md6
           :class="{'pr-0': $vuetify.breakpoint.smAndDown, 'pr-5': $vuetify.breakpoint.mdAndUp}"
-          data-aos="fade-right"
-          data-aos-easing="ease-in-out-back"
-          data-aos-duration="700"
         >
           <v-layout align-start justify-center row fill-height hidden-md-and-up>
             <img
-              data-aos="fade-right"
-              data-aos-easing="ease-in-out-back"
-              data-aos-duration="600"
               height="100px"
               src="@/assets/branding/silencekillsdesign--icon--white.svg"
             />
@@ -56,15 +51,13 @@
           xs12
           md6
           class="pa-5 hidden-sm-and-down"
-          data-aos="fade-left"
-          data-aos-easing="ease-in-out-back"
-          data-aos-duration="1000"
         >
           <v-layout align-right justify-center row fill-height>
             <img height="470" src="@/assets/branding/silencekillsdesign--icon--white.svg" />
           </v-layout>
         </v-flex>
       </v-layout>
+      </transition>
     </v-container>
   </v-container>
 </template>
@@ -121,4 +114,5 @@ export default {
   background-color: transparent;
   background-image: url(~@/assets/img/backgrounds/waver.svg);
 }
+
 </style>

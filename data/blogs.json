@@ -1,0 +1,42 @@
+[
+  {
+    "postId": "0",
+    "postDate": "07/31/2019",
+    "postPublished": false,
+    "postSlug": "post-1-from-the-blog", 
+    "postAuthor": "CJ Williams",
+    "postTitle": "Post #1 from the Blog",
+    "postDescription": "Descriptive Text", 
+    "postImage": "....", 
+    "postContent": "....",
+    "postCategories": [
+      {"postCategory": "web"},
+      {"postCategory": "design"}
+    ],
+    "postTags": [
+      {"postTag": "web"},
+      {"postTag": "design"},
+      {"postTag": "marketing"}
+    ]
+  },
+  {
+    "postId": "1",
+    "postDate": "07/31/2019",
+    "postPublished": false,
+    "postSlug": "post-2-from-the-blog", 
+    "postAuthor": "CJ Williams",
+    "postTitle": "Post #2 from the Blog",
+    "postDescription": "Descriptive Text", 
+    "postImage": "....", 
+    "postContent": "....",
+    "postCategories": [
+      {"postCategory": "web"},
+      {"postCategory": "design"}
+    ],
+    "postTags": [
+      {"postTag": "web"},
+      {"postTag": "design"},
+      {"postTag": "marketing"}
+    ]
+  }
+]
