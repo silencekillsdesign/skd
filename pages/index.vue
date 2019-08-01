@@ -1,13 +1,20 @@
 <template>
+<transition name="fade">
   <v-layout column justify-center align-center>
     <homeHero />
-    <homeFeature /> <!-- TODO create custom images for each -->
+    <homeFeature />
+    <!-- TODO create custom images for each -->
     <homeServices />
     <!-- TODO add dynamic blogs section -->
-    <aboutClients />
+    <aboutClients transition="scroll-y-transition" appear />
     <faqs data-aos="fade-up" data-aos-easing="ease-in-out-back" data-aos-duration="1400" />
-    <aboutTestimonials  data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-duration="1000"  />
+    <aboutTestimonials
+      data-aos="fade-down"
+      data-aos-easing="ease-in-out-back"
+      data-aos-duration="1000"
+    />
   </v-layout>
+</transition>
 </template>
 
 <script>
@@ -29,10 +36,22 @@ export default {
     faqs,
     aboutClients,
     aboutTestimonials
+  },
+  head() {
+    return {
+      title: "home page",
+        meta: [
+          { name: "description", content: "SilenceKillsDesign - Web Development, Marketing, and Design in Bozeman, MT."},
+          { name: "robots", content: "index, follow"},
+          { name: 'twitter:title', content: 'SilenceKillsDesign - Web Development, Marketing, and Design.'},
+          { name: 'twitter:description', content: 'Better Brands. Less Bullshit.'},
+          { name: 'twitter:image', content: 'assets/branding/silencekillsdesign--logo--horizontal--color.svg'},
+          { name: 'twitter:card', content: 'SilenceKillsDesign Logo'}
+      ]
+  }
   }
 }
 </script>
 
 <style lang="scss">
-  
 </style>

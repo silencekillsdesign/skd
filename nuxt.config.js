@@ -47,7 +47,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ["~/assets/sass/main.scss", "aos/dist/aos.css"],
+  css: ["~/assets/sass/main.scss", "aos/dist/aos.css", "vue2-animate/dist/vue2-animate.css"],
   /*
    ** Plugins to load before mounting the App
    */

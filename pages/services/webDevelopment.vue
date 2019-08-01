@@ -11,6 +11,7 @@
       <v-layout align-center id="main">
         <v-flex md6 offset-md1 pr-5 data-aos="fade-right">
           <v-list transparent shaped v-model="i">
+            <v-subheader>The Things We Do:</v-subheader>
             <v-list-group
               v-for="item in items"
               :key="item.title"

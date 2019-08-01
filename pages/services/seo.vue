@@ -35,12 +35,12 @@
         </v-flex>
         <v-flex md5 data-aos="fade-left">
           <!-- <v-img flat :src="require('~/assets/img/webdev.svg')"> </v-img> -->
-          <img class="mr-0 pr-0" src="~/assets/img/webdev.svg" alt="avatar" />
+          <img class="mr-0 pr-0" src="~/assets/img/seo.svg" alt="avatar" />
         </v-flex>
       </v-layout>
     </v-container>
 
-    <stack class="my-5" />
+    <stackSEO class="my-5" />
 
     <v-container my-5>
       <v-layout row align-center justify-center mt-5 py-5>
@@ -57,34 +57,34 @@
     <v-container my-5>
       <v-layout align-center row wrap py-5 my-5>
         <v-flex xs12 md4 pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/wireframing.svg')"></v-img>
+          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/seo/seo1.svg')"></v-img>
         </v-flex>
         <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4 blue--text text--accent-3">UX Planning and Wireframing</h3>
+          <h3 class="mt-4 blue--text text--accent-3">Auidt and Analyisis</h3>
           <v-divider class="my-5" color="blue"></v-divider>
-          <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
+          <p>Before we get started with anything else, we will run a full SEO audit, and share our results with you. We will address any glaring issues and develop a strategy to make your SEO efforts a success.</p>
           <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View UX Services</v-btn>
         </v-flex>
       </v-layout>
 
       <v-layout align-center row wrap py-5 my-5>
         <v-flex xs12 md8 pa-5 data-aos="fade-right" data-aos-duration="1200">
-          <h3 class="mt-4">Development and Design</h3>
+          <h3 class="mt-4">Technical Setup</h3>
           <v-divider class="my-5"></v-divider>
-          <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
+          <p>In this phase we make sure that the internet knows who you are by setting up Google Search Console, Google My Business, Analytics,AdWords, and address any other marketing tools that need to be configured.</p>
           <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View Design Services</v-btn>
         </v-flex>
         <v-flex xs12 md4 pa-5 data-aos="fade-left" data-aos-duration="800">
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/webdev.svg')"></v-img>
+          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/seo/seo2.svg')"></v-img>
         </v-flex>
       </v-layout>
 
       <v-layout align-center row wrap py-5 my-5>
         <v-flex xs12 md4 pa-5  data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/webdev.svg')"></v-img>
+          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/seo/seo3.svg')"></v-img>
         </v-flex>
         <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4">SEO and Deployment</h3>
+          <h3 class="mt-4">Strategy Implementation</h3>
           <v-divider class="my-5"></v-divider>
           <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
           <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View SEO Services</v-btn>
@@ -93,13 +93,13 @@
 
       <v-layout align-center row wrap py-5 my-5>
         <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4">Hosting and Deployment</h3>
+          <h3 class="mt-4">Reporting and Optimization</h3>
           <v-divider class="my-5"></v-divider>
           <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
           <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View Hosting Services</v-btn>
         </v-flex>
         <v-flex xs12 md4 pa-5  data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/webdev.svg')"></v-img>
+          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/seo/seo4.svg')"></v-img>
         </v-flex>
       </v-layout>
 
@@ -114,13 +114,13 @@
 <script>
 import pageHeader from '~/components/global/pageHeader.vue'
 import pageIntro from '~/components/global/pageIntro.vue'
-import stack from '~/components/global/stack.vue'
+import stackSEO from '~/components/global/stackSEO.vue'
 
 export default {
   components: {
     pageHeader,
     pageIntro,
-    stack
+    stackSEO
   },
   data() {
     return {

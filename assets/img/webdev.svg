@@ -570,7 +570,7 @@
 			<polygon class="st3" points="670,527.6 693,585.8 686.5,523.1 686,518.9 671.1,518.9 			"/>
 			<rect x="339.4" y="512.7" class="st21" width="363.2" height="11"/>
 			
-				<radialGradient id="SVGID_1_" cx="197.1472" cy="104.9732" r="358.2626" gradientTransform="matrix(1 0 0 0.9989 0 254.0236)" gradientUnits="userSpaceOnUse">
+				<radialGradient id="SVGID_1_" cx="197.1472" cy="660.953" r="358.2626" gradientTransform="matrix(1 0 0 -0.9989 0 1019.1073)" gradientUnits="userSpaceOnUse">
 				<stop  offset="1.574020e-03" style="stop-color:#CDF7F1"/>
 				<stop  offset="1" style="stop-color:#5DCFCA"/>
 			</radialGradient>

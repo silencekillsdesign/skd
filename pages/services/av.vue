@@ -35,7 +35,7 @@
         </v-flex>
         <v-flex md5 data-aos="fade-left">
           <!-- <v-img flat :src="require('~/assets/img/webdev.svg')"> </v-img> -->
-          <img class="mr-0 pr-0" src="~/assets/img/webdev.svg" alt="avatar" />
+          <img class="mr-0 pr-0" src="~/assets/img/av.svg" alt="avatar" />
         </v-flex>
       </v-layout>
     </v-container>
@@ -188,7 +188,7 @@ export default {
         },
         {
           icon: 'mdi-filmstrip-off',
-          title: 'Editing & Cleanup',
+          title: 'Photography & Video Shoots',
           items: [
             {
               description:
