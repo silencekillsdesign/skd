@@ -5,10 +5,10 @@
     <v-container>
       
       <v-layout row wrap fill-height align-space-between id="main">
-        <v-flex xs12 md4 fill-height>
+        <v-flex xs12 md4 fill-height data-aos="fade-left" data-aos-easing="ease-in-out-back" data-aos-duration="600">
           <contactCard/>
         </v-flex>
-        <v-flex xs12 md7 offset-md1>
+        <v-flex xs12 md7 offset-md1 data-aos="fade-right" data-aos-easing="ease-in-out-back" data-aos-duration="600">
           <contactForm/>
         </v-flex>
       </v-layout>

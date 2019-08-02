@@ -46,13 +46,14 @@
               <p class="subheading text-center">{{ service.serviceDesc }}</p>
             </v-card-text>
 
-            <v-card-actions class="justify-center mb-5">
+            <v-card-action class="justify-center mb-5">
               <v-btn
+              class="mb-5"
                 dark
                 color="pink accent-3"
                 :to="service.serviceURL"
               >{{ service.serviceButton }}</v-btn>
-            </v-card-actions>
+            </v-card-action>
           </v-card>
         </v-flex>
       </v-layout>

@@ -8,33 +8,40 @@
       fixed
       app
       class="hidden-md-and-up blue accent-3"
-    >
-      <v-list>
-        <v-list-tile v-for="(item, i) in items" :key="i" :to="item.to" router exact>
-          <v-list-tile-action>
+    >      <v-list>
+        <v-list-item
+          v-for="item in items"
+          :key="item.title"
+          :to="item.to"
+          router
+          exact
+          link
+        >
+          <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title v-text="item.title"/>
-          </v-list-tile-content>
-        </v-list-tile>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar color="blue accent-3" flat dark hide-on-scroll>
-      <!-- <v-toolbar-title v-text="title"/> -->
+    <v-app-bar color="blue accent-3" flat dark hide-on-scroll>
+      <!-- <v-app-bar-title v-text="title"/> -->
       <!-- TODO: Link to hompeage -->
-      <v-toolbar-title class="toolbar-brand" >
+      <v-app-bar-title class="app-bar-brand" >
         <h3>
           <skdType/>
         </h3>
-      </v-toolbar-title>
+      </v-app-bar-title>
       <v-spacer></v-spacer>
-      <!-- <v-toolbar-side-icon @click="drawer = !drawer" class="hidden-md-and-up"/> -->
-      <v-toolbar-nav-icon @click.stop="drawer = !drawer" class="hidden-md-and-up"></v-toolbar-nav-icon>
-      <v-toolbar-items class="hidden-md-and-down" v-for="(item, i) in items" :key="i">
+      <!-- <v-app-bar-side-icon @click="drawer = !drawer" class="hidden-md-and-up"/> -->
+      <v-app-bar-nav-icon class="hidden-md-and-up" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-items class="hidden-md-and-down" v-for="(item, i) in items" :key="i">
         <v-btn depressed text :to="item.to" router>{{ item.title }}</v-btn> <!-- remove nuxt, exact -->
-      </v-toolbar-items>
-    </v-toolbar>
+      </v-app-bar-items>
+    </v-app-bar>
   </div>
 </template>
 
