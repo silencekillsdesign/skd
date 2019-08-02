@@ -1,7 +1,7 @@
 <template>
   <v-layout ma-4 fill-height>
     <v-flex>
-      <form netlify action="" method="post" name="contact-form">
+      <form method="POST" action="/thankyou" data-netlify="true" name="contact-form">
         <h2 class="contact-form-header text-uppercase mb-4 blue--text accent-3">Drop us a Line</h2>
         <v-text-field
           v-model="name"
@@ -32,8 +32,9 @@
           label="Phone"
           class="md6"
         ></v-text-field>
+        <!-- must use 'items' or v-model in script-->
         <v-select
-          :projects="[
+          :items="[
             'Website',
             'App',
             'SEO',
@@ -41,7 +42,7 @@
             'Marketing',
             'Design',
             'Other'
-          ]"
+          ]" 
           label="Project Type"
           name="project[]"
           v-model="projects"
@@ -80,7 +81,6 @@ export default {
     name: '',
     email: '',
     phone: '',
-    projects: '',
     message: '',
     dictionary: {
       attributes: {
