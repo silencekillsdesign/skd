@@ -91,7 +91,15 @@ export default {
         name: {
           required: () => 'Name can not be empty'
           // custom messages
-        }
+        },
+        email: {
+          required: () => 'Name can not be empty'
+          // custom messages
+        },
+        message: {
+          required: () => 'Name can not be empty'
+          // custom messages
+        },
       }
     }
   }),

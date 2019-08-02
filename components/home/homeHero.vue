@@ -99,7 +99,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 .title {
   line-height: 1.7 !important;
@@ -107,6 +107,9 @@ export default {
 .skdType {
   color: white !important;
   font-size: 2.25em !important;
+  b {
+    font-size: 2.25em !important;
+  }
 }
 .hero-home {
   height: 100vh;

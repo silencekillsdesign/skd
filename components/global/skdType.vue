@@ -1,5 +1,5 @@
 <template>
-  <span class="skdType">Silence<b>Kills</b>Design</span>
+  <span class="skdType">Silence<b class="font-weight-bold">Kills</b>Design</span>
 </template>
 
 <script>
@@ -7,10 +7,13 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .skdType {
   font-family: 'Play', sans-serif;
   font-weight: 400;
+  b {
+    font-size: 1em;
+  }
 }
 
 </style>

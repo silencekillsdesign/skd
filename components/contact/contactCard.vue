@@ -1,7 +1,7 @@
 <template>
   <v-layout row pa-4 fill-height>
     <v-flex>
-      <v-card class="mx-auto indigo accent-4">
+      <v-card class="mx-auto">
         <v-img
           class="pa-5"
           :aspect-ratio="3/1"

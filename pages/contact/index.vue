@@ -13,6 +13,9 @@
         </v-flex>
       </v-layout>
     </v-container>
+    <v-container>
+      <contactBasic />
+    </v-container>
   </v-container>
 </template>
 
@@ -21,12 +24,14 @@ import pageHeader from '~/components/global/pageHeader.vue'
 import pageIntro from '~/components/global/pageIntro.vue'
 import contactForm from '~/components/contact/contactForm.vue'
 import contactCard from '~/components/contact/contactCard.vue'
+import contactBasic from '~/components/contact/contactBasic.vue'
 export default {
   components: {
     pageHeader,
     pageIntro,
     contactForm,
-    contactCard
+    contactCard,
+    contactBasic
   }
 }
 </script>
