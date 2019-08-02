@@ -2,6 +2,7 @@
   <v-layout row wrap>
     <v-flex>
       <form method="POST" action="/thankyou" data-netlify="true" name="contact-form-noval" data-netlify-recaptcha="true">
+       <input type="hidden" name="form-name" value="contact-form-noval" /> <!-- this hidden field is for netifly -->
         <h2 class="contact-form-header text-uppercase mb-4 blue--text accent-3">Drop us a Line</h2>
         <v-text-field
           type="text"

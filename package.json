@@ -20,6 +20,7 @@
     "eslint": "^6.1.0",
     "express": "^4.16.4",
     "nuxt": "^2.8.1",
+    "prerender-spa-plugin": "^3.4.0",
     "prettier": "^1.18.2",
     "vee-validate": "^2.2.13",
     "vue": "^2.6.10",

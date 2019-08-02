@@ -1,5 +1,9 @@
 const colors = require("vuetify/es5/util/colors").default;
 
+// spa shit for netlify
+const path = require('path')
+const PrerenderSPAPlugin = require('prerender-spa-plugin')
+
 module.exports = {
   mode: "universal",
   /*
@@ -69,6 +73,25 @@ module.exports = {
     // Simple usage
     // '@nuxtjs/vuetify'
   ],
+  
+  // for netlify to capture form data
+  configureWebpack: () => {
+    if (process.env.NODE_ENV !== 'production') return;
+    return {
+      plugins: [
+        new PrerenderSPAPlugin(
+          // Absolute path to compiled SPA
+          path.resolve(__dirname, 'dist'),
+          // List of routes to prerender
+          ['/'],
+          {
+            // options
+          }
+        ),
+      ]
+    }
+  },
+  
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options

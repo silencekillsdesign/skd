@@ -1,0 +1,18 @@
+[
+  { "serviceId": "0",
+    "serviceTitle": "07/31/2019",
+    "serviceSubtitle": false,
+    "ServiceIntro": "post-1-from-the-blog", 
+    "serviceList": [
+      "serviceListItem": [
+        {"icon": "web"},
+        {"title": "design"},
+        {"detail": "design"}
+      ],
+    ],
+    "postTitle": "Post #1 from the Blog",
+    "postDescription": "Descriptive Text", 
+    "postImage": "....", 
+    "postContent": "...."
+  }
+]
