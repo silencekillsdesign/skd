@@ -1,7 +1,7 @@
 <template>
   <v-layout row wrap>
     <v-flex>
-      <form method="POST" action="/thankyou" data-netlify="true" name="contact-form-noval">
+      <form method="POST" action="/thankyou" data-netlify="true" name="contact-form-noval" data-netlify-recaptcha="true">
         <h2 class="contact-form-header text-uppercase mb-4 blue--text accent-3">Drop us a Line</h2>
         <v-text-field
           type="text"
@@ -46,6 +46,7 @@
           required
           hint="Please let us know what we can do to help build your brand."
         ></v-textarea>
+        <div data-netlify-recaptcha="true"></div>
 
         <!-- <v-btn class="mx-0 my-4" type="submit" @click="submit">Send It</v-btn> -->
         <v-btn type="submit" class="my-4" outlined large color="green accent-4">

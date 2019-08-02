@@ -9,12 +9,9 @@
           <contactCard/>
         </v-flex>
         <v-flex xs12 md7 offset-md1 data-aos="fade-right" data-aos-easing="ease-in-out-back" data-aos-duration="600">
-          <contactForm/>
+          <contactBasic/>
         </v-flex>
       </v-layout>
-    </v-container>
-    <v-container>
-      <contactBasic />
     </v-container>
   </v-container>
 </template>
