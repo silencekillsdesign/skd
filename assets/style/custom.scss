@@ -1,6 +1,6 @@
-// Your own variables file where you override the 
-//  default Vuetify variables. 
-@import 'variables';
- 
-// Then import vuetify-scss. 
-@import '~vuetify-scss';
+*{
+  font-size: 16px;
+}
+p {
+  font-size: 1em;
+}

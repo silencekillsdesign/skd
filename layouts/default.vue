@@ -55,6 +55,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import '~/assets/style/custom.scss';
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }

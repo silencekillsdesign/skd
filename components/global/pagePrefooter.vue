@@ -6,7 +6,7 @@
       <!-- better to do each widget inside of card? -->
 
       <!-- About Us -->
-      <v-flex xs12 sm6 px-5>
+      <v-flex xs12 sm6 md3 px-5>
         <v-layout row align-start justify-start class="white--text mb-4" pr-5>
           <v-flex>
             <h4 class="py-3 title">About Us</h4>
@@ -20,20 +20,6 @@
             >SilenceKillsDesign is a full-service digital agency specializing in multimedia marketing strategies. We offer services in brand management, web development, online marketing, and graphic design, along with many other services to help your local, small, or large business succeed.</p>
           </v-flex>
         </v-layout>
-        <v-divider color="white" class="mb-3 pa-0"></v-divider>
-        <!-- maybe move back under contact -->
-        <v-layout row wrap align-content-space-around>
-          <v-flex v-for="(social, i) in socials" :key="i">
-            <v-tooltip top>
-              <template v-slot:activator="{ on }">
-                <v-btn icon large :href="social.url" target="_blank">
-                  <v-icon color="white" dark v-on="on">{{ social.icon }}</v-icon>
-                </v-btn>
-              </template>
-              <span>{{ social.social }}</span>
-            </v-tooltip>
-          </v-flex>
-        </v-layout>
       </v-flex>
 
       <!-- photo stream -->
@@ -44,23 +30,69 @@
             <h4 class="py-3 title">Recent Projects</h4>
           </v-flex>
         </v-layout>
-        <v-container fluid grid-list-xs>
+        <v-container fluid grid-list-lg pa-0>
           <v-layout row wrap>
-            <v-flex v-for="i in 6" :key="i" xs4>
-              <v-link>
-                <img
-                  :src="`https://randomuser.me/api/portraits/men/${i + 20}.jpg`"
-                  class="image pa-0"
-                  alt="lorem"
-                  width="100%"
-                  height="100%"
-                />
-              </v-link>
+            <v-flex xs6>
+              <v-img
+                href="/portfolio"
+                flat
+                :aspect-ratio="9/6"
+                :src="require('~/assets/img/portfolio/logos/logo_riotgear.svg')"
+              ></v-img>
+            </v-flex>
+            <v-flex xs6>
+              <v-img
+                href="/portfolio"
+                flat
+                :aspect-ratio="9/6"
+                :src="require('~/assets/img/portfolio/logos/logo_schlubs.svg')"
+              ></v-img>
+            </v-flex>
+            <v-flex xs6>
+              <v-img
+                href="/portfolio"
+                flat
+                :aspect-ratio="9/6"
+                :src="require('~/assets/img/portfolio/web/web_clean-student.svg')"
+              ></v-img>
+            </v-flex>
+            <v-flex xs6>
+              <v-img
+                href="/portfolio"
+                flat
+                :aspect-ratio="9/6"
+                :src="require('~/assets/img/portfolio/logos/logo_donks.svg')"
+              ></v-img>
             </v-flex>
           </v-layout>
         </v-container>
       </v-flex>
 
+      <!-- Recent posts -->
+      <v-flex xs12 sm6 md3 px-5>
+        <v-layout row wrap align-start justify-start class="white--text">
+          <h4 class="py-3 title">Recent Projects</h4>
+        </v-layout>
+        <v-layout row wrap align-start justify-start class="white--text">
+          <v-flex>
+          <v-list two-line subheader color="transparent" dark>
+
+            <v-list-item v-for="post in posts" :key="post.title" >
+              <v-list-item-avatar>
+                <v-icon :class="[post.iconClass]" v-text="post.icon"></v-icon>
+              </v-list-item-avatar>
+
+              <v-list-item-content>
+                <v-list-item-title v-text="post.title"></v-list-item-title>
+                <v-list-item-subtitle v-text="post.subtitle"></v-list-item-subtitle>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list>
+          </v-flex>
+        </v-layout>
+      </v-flex>
+
+      <!-- TODO: CHange to list transparent -->
       <!-- contact info -->
       <v-flex xs12 sm6 md3 class="prefooter-contact" px-5>
         <v-layout row align-start justify-start mb-4 class="white--text">
@@ -73,8 +105,7 @@
             <v-icon dark>mdi-map-marker</v-icon>
           </v-flex>
           <v-flex>
-            <p class="subheading font-weight-light">221 Virginia Way</p>
-            <p class="subheading font-weight-light">Bozeman, MT 59718</p>
+            <p class="subheading font-weight-light">221 Virginia Way Bozeman, MT 59718</p>
           </v-flex>
         </v-layout>
         <v-layout row align-start justify-start mb-4 class="white--text">
@@ -95,6 +126,19 @@
         </v-layout>
 
         <v-divider dark class="mb-4" />
+
+        <v-layout row wrap align-content-space-around>
+          <v-flex v-for="(social, i) in socials" :key="i">
+            <v-tooltip top>
+              <template v-slot:activator="{ on }">
+                <v-btn icon large :href="social.url" target="_blank">
+                  <v-icon color="white" dark v-on="on">{{ social.icon }}</v-icon>
+                </v-btn>
+              </template>
+              <span>{{ social.social }}</span>
+            </v-tooltip>
+          </v-flex>
+        </v-layout>
       </v-flex>
     </v-layout>
   </v-footer>
@@ -113,17 +157,20 @@ export default {
     posts: [
       // { header: 'Today' },
       {
-        avatar: "https://cdn.vuetifyjs.com/images/lists/1.jpg",
+        icon: 'mdi-magnify',
+        iconClass: 'purple accent-2 white--text',
         title: "10 Local SEO Tips to Help You Run Your City in 2019",
         subtitle: "February 14, 2019"
       },
       {
-        avatar: "https://cdn.vuetifyjs.com/images/lists/2.jpg",
+        icon: 'mdi-monitor',
+        iconClass: 'pink acceent-3 white--text',
         title: "Should I Use A UI Component Library On My Next Website Project",
         subtitle: "February 29, 2019"
       },
       {
-        avatar: "https://cdn.vuetifyjs.com/images/lists/3.jpg",
+        icon: 'mdi-lead-pencil',
+        iconClass: 'blue accent-3 white--text',
         title: "15 Time-Saving Tips For Adobe Illustrator Workflow",
         subtitle: "March 17, 2019"
       }

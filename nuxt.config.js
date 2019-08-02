@@ -47,11 +47,14 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ["~/assets/sass/main.scss", "aos/dist/aos.css", "vue2-animate/dist/vue2-animate.css"],
+  css: ["aos/dist/aos.css", "vue2-animate/dist/vue2-animate.css"],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: "~plugins/aos", ssr: false }],
+  plugins: [
+    { src: "~plugins/aos", ssr: false },
+    // { src: "~plugins/vuew-animate", ssr: false }
+  ],
   /*
    ** Nuxt.js modules
    */
