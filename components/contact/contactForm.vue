@@ -43,7 +43,7 @@
             'Other'
           ]"
           label="Project Type"
-          name="cf_project"
+          name="project[]"
           v-model="projects"
           :menu-props="{ maxHeight: 900, overflowY: true }"
         />

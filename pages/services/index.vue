@@ -17,11 +17,6 @@
             hover
             :to="service.serviceURL"
           >
-            <!-- <v-img
-              class="pa-5"
-              :src="require('~/assets/img/services/webdev.svg')"
-              :aspect-ratio="1"
-            ></v-img>-->
             <v-icon size="72" class="ma-4 service-icon">{{ service.serviceIcon }}</v-icon>
             <v-card-text>
               <h2 class="mb-3">{{ service.serviceName }}</h2>
@@ -44,6 +39,7 @@ export default {
     pageIntro
   },
   data: () => ({
+    isHovering: false,
     services: [
       {
         serviceId: '1',
@@ -133,6 +129,9 @@ export default {
     background-image: url(~@/assets/img/backgrounds/skdmatrix.svg);
     background-size: cover;
     transition: all 0.8s ease;
+    animation: 'jello';
+    animation-duration: 1s;
+    animation-iteration-count: 1;
     .service-icon,
     h2 {
       color: #82b1ff;
@@ -141,5 +140,49 @@ export default {
       color: #fff;
     }
   }
+  .hovering {
+    color: red;
+  }
+}
+
+@keyframes jello {
+  from,
+  11.1%,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  22.2% {
+    transform: skewX(-7.5deg) skewY(-12.5deg);
+  }
+
+  33.3% {
+    transform: skewX(3.25deg) skewY(6.25deg);
+  }
+
+  44.4% {
+    transform: skewX(-1.125deg) skewY(-3.125deg);
+  }
+
+  55.5% {
+    transform: skewX(0.5625deg) skewY(1.5625deg);
+  }
+
+  66.6% {
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+
+  77.7% {
+    transform: skewX(0.390625deg) skewY(0.390625deg);
+  }
+
+  88.8% {
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+  }
+}
+
+.jello {
+  animation-name: jello;
+  transform-origin: center;
 }
 </style>

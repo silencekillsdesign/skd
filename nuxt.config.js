@@ -62,7 +62,8 @@ module.exports = {
     "@nuxtjs/vuetify",
     // Doc: https://axios.nuxtjs.org/usage
     "@nuxtjs/axios",
-    "@nuxtjs/pwa"
+    "@nuxtjs/pwa",
+    '@neneos/nuxt-animate.css'
   ],
   devModules: [
     // Simple usage

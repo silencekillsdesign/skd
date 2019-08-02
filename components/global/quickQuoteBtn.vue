@@ -4,7 +4,7 @@
     <v-btn large dark class="mx-0" :color="btnColor" @click.stop="quickQuote = true">{{ btnText }}</v-btn>
 
     <!-- TODO: convert form into reusable component -->
-    <v-dialog v-model="quickQuote" persistent max-width="600px">
+    <v-dialog v-model="quickQuote" persistent max-width="600px" eager="">
       <form name="quickQuote" netlify action="" method="post" data-netlify-recaptcha="true">
         <v-card>
           <v-card-title>

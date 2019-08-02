@@ -77,7 +77,7 @@
           <h3 class="mt-4 blue--text text--accent-3">Development and Design</h3>
           <v-divider class="my-5" color="blue"></v-divider>
           <p>We are proficient in design and development, making it easy for your mockups and ideas to come to life. With component based development, new features are easy to add on the fly.</p>
-          <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View UX Services</v-btn>
+          <v-btn class="ma-2" to="/services/design" outlined color="indigo">View Design Services</v-btn>
         </v-flex>
       </v-layout>
       
@@ -88,8 +88,8 @@
         <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
           <h3 class="mt-4 blue--text text--accent-3">Deployment and Server Setup</h3>
           <v-divider class="my-5" color="blue"></v-divider>
-          <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
-          <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View UX Services</v-btn>
+          <p>Once your website development is complete, it's time to go live! We  will handle the server setup, hosting, and deployment of your new site, wherever you want it hosted.</p>
+          <v-btn class="ma-2" to="/services/webdevelopment" outlined color="indigo">View Web Services</v-btn>
         </v-flex>
       </v-layout>
 
@@ -100,8 +100,8 @@
         <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
           <h3 class="mt-4 blue--text text--accent-3">SEO and Performance Optimization</h3>
           <v-divider class="my-5" color="blue"></v-divider>
-          <p>We are proficient in design and development, making it easy for your mockups and ideas to come to life. With component based development, new features are easy to add on the fly.</p>
-          <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View UX Services</v-btn>
+          <p>SEO is one of our main focuses throughout the development of your site. Once we are live, we'll tackle any remaining SEO setup, and begin implementing your unique SEO strategy.</p>
+          <v-btn class="ma-2" to="/services/seo" outlined color="indigo">View SEO Services</v-btn>
         </v-flex>
       </v-layout>
 
