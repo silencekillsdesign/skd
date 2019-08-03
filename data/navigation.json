@@ -2,33 +2,20 @@
   { "title" : "Home", "uri": "/", "submenu": null },
   { "title" : "About", "uri": "/about", "submenu": null },
   { "title" : "Services", "uri": "/services", "submenu": null },
-  { "title" : "Blogs", "uri": "/blogs", "submenu":
-    [
-      { "title": "Columns", "uri": "---" },
-      { "title": "Single Column", "uri": "/blogs/single-column" },
-      { "title": "Two Columns", "uri": "/blogs/two-columns" },
-      { "title": "Three Columns", "uri": "/blogs/three-columns" },
-      { "title": "Sidebar", "uri": "---" },
-      { "title": "Sidebar Left", "uri": "/blogs/sidebar-left" },
-      { "title": "Sidebar Right", "uri": "/blogs/sidebar-right" },
-      { "title": "Sidebar Double", "uri": "/blogs/sidebar-double" }
-    ]
-  },
   { "title" : "Portfolio", "uri": "/portfolio", "submenu":
     [
-      { "title": "Single Column", "uri": "/portfolio/single-column" },
-      { "title": "Two Columns", "uri": "/portfolio/two-columns" },
-      { "title": "Three Columns", "uri": "/portfolio" }
+      { "title": "Branding", "uri": "/portfolio/#branding" },
+      { "title": "Web", "uri": "/portfolio/#web" },
+      { "title": "Design", "uri": "/portfolio/#design" },
+      { "title": "A/V", "uri": "/portfolio/#av" }
     ]
   },
-  { "title" : "Pricing", "uri": "/pricing", "submenu": null },
-  { "title" : "Contact", "uri": "/contact", "submenu": null },
-  { "title" : "Extra", "uri": "#",
-    "submenu": [
-      { "title": "Sign in", "uri": "/signin" },
-      { "title": "Sign up", "uri": "/signup" },
-      { "title": "Recover password", "uri": "/recover-password" },
-      { "title": "Maintenance", "uri": "/maintenance" }
-    ]
-  }
+  { "title" : "Blogs", "uri": "/blogs", "submenu": [
+    { "title": "Sign in", "uri": "/signin" },
+    { "title": "Sign up", "uri": "/signup" },
+    { "title": "Recover password", "uri": "/recover-password" },
+    { "title": "Maintenance", "uri": "/maintenance" }
+  ]
+},  
+  { "title" : "Contact", "uri": "/contact", "submenu": null }
 ]

@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <transition appear name="bounce">
+    <transition appear name="animated zoomInDown">
       <v-layout my-5 column>
         <v-card flat dark class="page-intro-bg mt-4 blue">
           <v-img

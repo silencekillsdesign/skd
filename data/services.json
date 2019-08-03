@@ -2,17 +2,65 @@
   { "serviceId": "0",
     "serviceTitle": "07/31/2019",
     "serviceSubtitle": false,
-    "ServiceIntro": "post-1-from-the-blog", 
+    "serviceIntro": "post-1-from-the-blog",
+    "serviceImagePrimary": "path/to/img",
     "serviceList": [
-      "serviceListItem": [
-        {"icon": "web"},
-        {"title": "design"},
-        {"detail": "design"}
-      ],
+      {
+        "serviceListItem": "Local Business Websites",
+        "serviceListIcon": "mdi-monitor",
+        "serviceListDetail": "We build websites for local business that help customers easily find what they're looking for. A local business website doesn't need to be over the top, it needs to be useful. Our development process focuses on local SEO throughout the development process, so you can be easily found and easy to contact.",
+        "serviceListCategory": "webDevelopment"
+      },
+      {
+        "serviceListItem": "Local Business Websites",
+        "serviceListIcon": "mdi-monitor",
+        "serviceListDetail": "We build websites for local business that help customers easily find what they're looking for. A local business website doesn't need to be over the top, it needs to be useful. Our development process focuses on local SEO throughout the development process, so you can be easily found and easy to contact.",
+        "serviceListCategory": "webDevelopment"
+      },
+      {
+        "serviceListItem": "Local Business Websites",
+        "serviceListIcon": "mdi-monitor",
+        "serviceListDetail": "We build websites for local business that help customers easily find what they're looking for. A local business website doesn't need to be over the top, it needs to be useful. Our development process focuses on local SEO throughout the development process, so you can be easily found and easy to contact.",
+        "serviceListCategory": "webDevelopment"
+      }
     ],
-    "postTitle": "Post #1 from the Blog",
-    "postDescription": "Descriptive Text", 
-    "postImage": "....", 
-    "postContent": "...."
+    "serviceSteps": [
+      {
+        "serviceStep" : 0,
+        "serviceStepTitle" : "UX Planning, Persona Research, & Wireframing",
+        "serviceStepDetail": "We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.",
+        "serviceStepImage" : "~/assets/img/services/wireframing.svg",
+        "serviceStepImageOrder" : 0,
+        "serviceStepButton" : "View UX Services",
+        "serviceStepButtonTo" : "/services/ux"
+      },
+      {
+        "serviceStep" : 1,
+        "serviceStepTitle" : "UX Planning, Persona Research, & Wireframing",
+        "serviceStepDetail": "Our proficiency in design and development makes it easy for your mockups and ideas to come to life. With component based development, new features and design tweaks are easy to make on the fly.",
+        "serviceStepImage" : "path/to/img",
+        "serviceStepImageOrder" : 1,
+        "serviceStepButton" : "View UX Services",
+        "serviceStepButtonTo" : "/services/ux"
+      },
+      {
+        "serviceStep" : 2,
+        "serviceStepTitle" : "UX Planning, Persona Research, & Wireframing",
+        "serviceStepDetail": "Once your website development is complete, it's time to go live! We  will handle the server setup, hosting, and deployment of your new site, wherever you want it hosted.",
+        "serviceStepImage" : "path/to/img",
+        "serviceStepImageOrder" : 0,
+        "serviceStepButton" : "View UX Services",
+        "serviceStepButtonTo" : "/services/ux"
+      },
+      {
+        "serviceStep" : 3,
+        "serviceStepTitle" : "UX Planning, Persona Research, & Wireframing",
+        "serviceStepDetail": "SEO is one of our main focuses throughout the development of your site. It's Important. Once we are live, we'll tackle any remaining SEO setup, and begin implementing your unique SEO strategy.",
+        "serviceStepImage" : "path/to/img",
+        "serviceStepImageOrder" : 1,
+        "serviceStepButton" : "View UX Services",
+        "serviceStepButtonTo" : "/services/ux"
+      }
+    ]
   }
 ]

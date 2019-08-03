@@ -1,0 +1,28 @@
+[
+  { "portfolioId": "0",
+    "portfolioCategory": "branding",
+    "portfolioTitle": "CLEAN_Student Landing Page",
+    "posrtfolioSubtitle": "A Landing page for Runner EDQ's CLEAN_Student data validation suite. The goal of the site was to engage visitors to learn more about the CLEAN_Student with access to white papers and case studies, thus leading them to request a product demo.",
+    "portfolioLink" : "https://student.runneredq.com",
+    "portfolioClient" : "Runner EDQ",
+    "portfoloioImagePrimary": "~/assets/img/portfolio/web/web_clean-student.svg",
+    "portflioGallery" : [
+      {"portfolioGalleryImage" : "path/to/image", "portfolioGalleryImageTitle": ""},
+      {"portfolioGalleryImage" : "path/to/image", "portfolioGalleryImageTitle": ""},
+      {"portfolioGalleryImage" : "path/to/image", "portfolioGalleryImageTitle": ""}
+    ]
+  },
+  { "portfolioId": "1",
+    "portfolioCategory": "branding",
+    "portfolioTitle": "CLEAN_Alumni Landing Page",
+    "posrtfolioSubtitle": "A Landing page for Runner EDQ's CLEAN_Alumni data validation suite. The goal of the site was to engage visitors to learn more about the CLEAN_Alumni with access to white papers and case studies, thus leading them to request a product demo.",
+    "portfolioLink" : "https://alumni.runneredq.com",
+    "portfolioClient" : "Runner EDQ",
+    "portfoloioImagePrimary": "~/assets/img/portfolio/web/web_clean-alumni.svg",
+    "portflioGallery" : [
+      {"portfolioGalleryImage" : "path/to/image", "portfolioGalleryImageTitle": ""},
+      {"portfolioGalleryImage" : "path/to/image", "portfolioGalleryImageTitle": ""},
+      {"portfolioGalleryImage" : "path/to/image", "portfolioGalleryImageTitle": ""}
+    ]
+  },
+]

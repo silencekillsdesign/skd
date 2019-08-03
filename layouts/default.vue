@@ -6,6 +6,7 @@
       
       <v-container fluid pa-0>
         <nuxt />
+        <speedDial />
       </v-container>
       </transition>
     </v-content>
@@ -20,13 +21,15 @@ import primaryNav from '~/components/global/primaryNav.vue'
 import pageFooter from '~/components/global/pageFooter.vue'
 import pagePrefooter from '~/components/global/pagePrefooter.vue'
 import quickQuoteCTA from '~/components/global/quickQuoteCTA.vue'
+import speedDial from '~/components/global/speedDial.vue'
 
 export default {
   components: {
     primaryNav,
     pageFooter,
     pagePrefooter,
-    quickQuoteCTA
+    quickQuoteCTA,
+    speedDial
   },
   data() {
     return {
@@ -56,6 +59,7 @@ export default {
 
 <style lang="scss">
 @import '~/assets/style/custom.scss';
+@import '~/assets/sass/main.scss';
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }

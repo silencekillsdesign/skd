@@ -27,7 +27,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar color="blue accent-3" flat dark hide-on-scroll>
+    <v-app-bar app color="blue accent-3" flat dark hide-on-scroll>
       <!-- <v-app-bar-title v-text="title"/> -->
       <!-- TODO: Link to hompeage -->
       <v-app-bar-title class="app-bar-brand" >

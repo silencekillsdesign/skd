@@ -2,7 +2,7 @@
   <v-layout row wrap>
     <v-flex>
       <form method="POST" action="/thankyou" data-netlify="true" name="contact-form-noval" data-netlify-recaptcha="true">
-       <input type="hidden" name="form-name" value="contact-form-noval" /> <!-- this hidden field is for netifly -->
+       <input type="hidden" name="contact-form-noval" value="contact-form-noval" /> <!-- this hidden field is for netifly -->
         <h2 class="contact-form-header text-uppercase mb-4 blue--text accent-3">Drop us a Line</h2>
         <v-text-field
           type="text"
@@ -59,57 +59,8 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import VeeValidate from 'vee-validate'
-
-Vue.use(VeeValidate)
-
 export default {
-  $_veeValidate: {
-    validator: 'new'
-  },
 
-  data: () => ({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
-    dictionary: {
-      attributes: {
-        email: 'E-mail Address'
-        // custom attributes
-      },
-      custom: {
-        name: {
-          required: () => 'Name can not be empty'
-          // custom messages
-        },
-        email: {
-          required: () => 'Name can not be empty'
-          // custom messages
-        },
-        message: {
-          required: () => 'Name can not be empty'
-          // custom messages
-        },
-      }
-    }
-  }),
-
-  mounted() {
-    this.$validator.localize('en', this.dictionary)
-  },
-
-  methods: {
-    submit() {
-      this.$validator.validateAll()
-    },
-    clear() {
-      this.name = ''
-      this.email = ''
-      this.$validator.reset()
-    }
-  }
 }
 </script>
 
