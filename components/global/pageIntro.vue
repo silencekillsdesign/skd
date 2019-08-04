@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <transition appear name="animated zoomInDown">
+    <transition appear class="animated" name="zoomInDown">
       <v-layout my-5 column>
         <v-card flat dark class="page-intro-bg mt-4 blue">
           <v-img
@@ -44,21 +44,35 @@ export default {
   background-repeat: repeat;
 }
 
-.bounce-enter-active {
-  animation: bounce-in 1.5s;
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
 }
-.bounce-leave-active {
-  animation: bounce-in 1s reverse;
-}
-@keyframes bounce-in {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1.24);
-  }
-  100% {
-    transform: scale(1);
-  }
+
+.tada {
+  animation-name: tada;
 }
 </style>

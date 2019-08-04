@@ -2,15 +2,13 @@
   <v-app dark>
     <primaryNav />
     <v-content>
-      <transition name="fade" mode="out-in">
-      
       <v-container fluid pa-0>
         <nuxt />
         <speedDial />
+        <developmentSnackbar /> 
       </v-container>
-      </transition>
     </v-content>
-    <quickQuoteCTA data-aos="fade-up" data-aos-duration="800" />
+    <quickQuoteCTA  />
     <pagePrefooter />
     <pageFooter />
   </v-app>
@@ -22,6 +20,7 @@ import pageFooter from '~/components/global/pageFooter.vue'
 import pagePrefooter from '~/components/global/pagePrefooter.vue'
 import quickQuoteCTA from '~/components/global/quickQuoteCTA.vue'
 import speedDial from '~/components/global/speedDial.vue'
+import developmentSnackbar from '~/components/global/developmentSnackbar.vue'
 
 export default {
   components: {
@@ -29,7 +28,8 @@ export default {
     pageFooter,
     pagePrefooter,
     quickQuoteCTA,
-    speedDial
+    speedDial,
+    developmentSnackbar
   },
   data() {
     return {

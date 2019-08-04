@@ -7,7 +7,7 @@
     <homeServices />
     <!-- TODO add dynamic blogs section -->
     <aboutClients transition="scroll-y-transition" appear />
-    <faqs data-aos="fade-up" data-aos-easing="ease-in-out-back" data-aos-duration="1400" />
+    <faqs data-aos="zoom-in-down" data-aos-easing="ease-in-out-back" data-aos-duration="1400" />
     <aboutTestimonials
       data-aos="fade-down"
       data-aos-easing="ease-in-out-back"

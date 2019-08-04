@@ -27,7 +27,6 @@
             justify-center
             dark
             color="transparent"
-            flat
             hover
             px-2
             py-5
@@ -46,20 +45,27 @@
               <p class="subheading text-center">{{ service.serviceDesc }}</p>
             </v-card-text>
 
-            <v-card-action class="justify-center mb-5">
+            <v-card-actions class="justify-center mb-5">
               <v-btn
-              class="mb-5"
+                class="mb-5"
                 dark
                 color="pink accent-3"
                 :to="service.serviceURL"
               >{{ service.serviceButton }}</v-btn>
-            </v-card-action>
+            </v-card-actions>
           </v-card>
         </v-flex>
       </v-layout>
       <v-layout my-5 py-5 justify-center align-center>
         <v-flex grow justify-center align-center class="text-center">
-          <v-btn x-large depressed outlined dark color="yellow accent-3" to="/services">View All Services</v-btn>
+          <v-btn
+            x-large
+            depressed
+            outlined
+            dark
+            color="yellow accent-3"
+            to="/services"
+          >View All Services</v-btn>
         </v-flex>
       </v-layout>
     </v-container>
@@ -70,68 +76,68 @@
 export default {
   data() {
     return {
-      servicesTitle: 'Services',
+      servicesTitle: "Services",
       servicesIntro:
-        'Save time and resources dealing with multiple contacts creating your brand assets. We offer a single point-of-contact to manage all of your digital and tangible assets.',
+        "Save time and resources dealing with multiple contacts creating your brand assets. We offer a single point-of-contact to manage all of your digital and tangible assets.",
       services: [
         {
-          serviceId: '1',
-          serviceName: 'Web Development',
+          serviceId: "1",
+          serviceName: "Web Development",
           serviceDesc:
-            'Fast, well-designed websites that convert, delivered on time & within budget.',
-          serviceIcon: 'mdi-code-tags',
-          serviceButton: 'Learn More',
-          serviceURL: '/services/webdevelopment'
+            "Fast, well-designed websites that convert, delivered on time & within budget.",
+          serviceIcon: "mdi-code-tags",
+          serviceButton: "Learn More",
+          serviceURL: "/services/webdevelopment"
         },
         {
-          serviceId: '2',
-          serviceName: 'Branding',
+          serviceId: "2",
+          serviceName: "Branding",
           serviceDesc:
-            'We create consistent visual identification of your brand, service, or product.',
-          serviceIcon: 'mdi-fingerprint',
-          serviceButton: 'Learn More',
-          serviceURL: '/services/branding'
+            "We create consistent visual identification of your brand, service, or product.",
+          serviceIcon: "mdi-fingerprint",
+          serviceButton: "Learn More",
+          serviceURL: "/services/branding"
         },
         {
-          serviceId: '3',
-          serviceName: 'SEO / SEM',
+          serviceId: "3",
+          serviceName: "SEO / SEM",
           serviceDesc:
-            'Drive quality traffic to your site with expert digital marketing services.',
-          serviceIcon: 'mdi-chess-knight',
-          serviceButton: 'Learn More',
-          serviceURL: '/services/seo-sem'
+            "Drive quality traffic to your site with expert digital marketing services.",
+          serviceIcon: "mdi-chess-knight",
+          serviceButton: "Learn More",
+          serviceURL: "/services/seo-sem"
         },
         {
-          serviceId: '45',
-          serviceName: 'UI/UX Design',
+          serviceId: "45",
+          serviceName: "UI/UX Design",
           serviceDesc:
-            'Well-structured information architecture and logical user interfaces.',
-          serviceIcon: 'mdi-monitor-cellphone-star',
-          serviceButton: 'Learn More',
-          serviceURL: '/services/ux-ui'
+            "Well-structured information architecture and logical user interfaces.",
+          serviceIcon: "mdi-monitor-cellphone-star",
+          serviceButton: "Learn More",
+          serviceURL: "/services/ux-ui"
         },
         {
-          serviceId: '5',
-          serviceName: 'Graphic Design',
+          serviceId: "5",
+          serviceName: "Graphic Design",
           serviceDesc:
-            'Digital & print design services from award-winning designers.',
-          serviceIcon: 'mdi-palette',
-          serviceButton: 'Learn More',
-          serviceURL: '/services/design'
+            "Digital & print design services from award-winning designers.",
+          serviceIcon: "mdi-palette",
+          serviceButton: "Learn More",
+          serviceURL: "/services/design"
         },
         {
-          serviceId: '6',
-          serviceName: 'Audio / Visual',
+          serviceId: "6",
+          serviceName: "Audio / Visual",
           serviceDesc:
-            'Immerse your customers with a brand-centered audio / visual experience.',
-          serviceIcon: 'mdi-movie-roll',
-          serviceButton: 'Learn More',
-          serviceURL: '/services/av'
+            "Immerse your customers with a brand-centered audio / visual experience.",
+          serviceIcon: "mdi-movie-roll",
+          serviceButton: "Learn More",
+          serviceURL: "/services/av"
         }
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

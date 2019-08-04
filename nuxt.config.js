@@ -73,6 +73,15 @@ module.exports = {
     // Simple usage
     // '@nuxtjs/vuetify'
   ],
+
+  //to prerender thankyou page, hopefully fix netlify redirect miss.
+  generate: {
+    routes: function () {
+      return [
+        '/thankyou'
+      ]
+    }
+  },
   
   // for netlify to capture form data
   configureWebpack: () => {
