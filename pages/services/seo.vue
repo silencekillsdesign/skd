@@ -170,7 +170,7 @@ export default {
           items: [
             {
               description:
-                "We build websites for local business that help customers easily find what they're looking for. A local business website doesn't need to be over the top, it needs to be useful. Our development process focuses on local SEO throughout the development process, so you can be easily found and easy to contact."
+                "Pay-per-click (PPC) ads are paid online advertisements which appear next to searches on the web. We create powerful AdWords campaigns that expand reach for location-based and keyword-based targeting."
             }
           ]
         },
@@ -180,7 +180,7 @@ export default {
           items: [
             {
               description:
-                'Non-profit websites that offer gateways to your community outreach, donation gateways, and volounteer opportunities. Alongside a strong social media outreach, your non-profit website can save you hundreds of hours of volounteer time.'
+                'Google Analytics a free digital analytics tool, used to measure your site traffic and performance. It offers us the valuable insights to any revisions needed on the site tom improve conversions. We offer training and included monthly reports for all our SEO clients. '
             }
           ]
         },
@@ -190,7 +190,7 @@ export default {
           items: [
             {
               description:
-                "Market your upcoming event, conference, or wedding with a website that offers easy access to itinerary, registration, and directions. With built in SEO, and a location-based SEM campaign, we'll make sure your event is a success."
+                "Google Search Console is a free tool that helps businesses optimize their sites for search.  It also tells you about any issues with your site, things like crawl errors (i.e. Google can’t access a page on your site) and even if your site is mobile-friendly or not. "
             }
           ]
         },
@@ -200,7 +200,7 @@ export default {
           items: [
             {
               description:
-                'A good B2B web design is key to generating organic traffic that converts into qualified leads. The better your website’s user experience, the more positive, lasting impressions your brand will leave with visitors.  B2B companies rarely expect immediate purchases on their websites. B2B sales often consist of multiple interactions across connected devices. We develop B2B websites to inform, captivate, and persuade customers engaging with your brand.'
+                'Schema is a semantic vocabulary of tags (or microdata) that you can add to your site to improve the way search engines read and represent your page. This is often much more technical to implement, but can add tremendous value to your SERP (search engine ranking position).'
             }
           ]
         },

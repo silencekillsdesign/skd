@@ -11,7 +11,7 @@
       <v-layout row wrap align-center my-4 tag="article">
         <!-- image -->
         <v-flex xs12 md5 class="">
-          <img src="~/assets/img/blog/blog-1.svg" alt="avatar">
+          <img src="~/assets/img/blog/content-planning.svg" alt="avatar">
         </v-flex>
 
         <v-flex xs12 md6 offset-md1 fill-height>

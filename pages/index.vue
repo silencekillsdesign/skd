@@ -5,6 +5,7 @@
     <homeFeature />
     <!-- TODO create custom images for each -->
     <homeServices />
+    <!-- <homeServicesDynamic /> -->
     <!-- TODO add dynamic blogs section -->
     <aboutClients transition="scroll-y-transition" appear />
     <faqs data-aos="zoom-in-down" data-aos-easing="ease-in-out-back" data-aos-duration="1400" />
@@ -20,6 +21,7 @@
 <script>
 // page components
 import homeHero from '~/components/home/homeHero.vue'
+// import homeServicesDynamic from '~/components/home/homeServicesDynamic.vue'
 import homeServices from '~/components/home/homeServices.vue'
 import homeFeature from '~/components/home/homeFeature.vue'
 // other page components -- should probably be global
@@ -33,6 +35,7 @@ export default {
     homeHero,
     homeFeature,
     homeServices,
+    // homeServicesDynamic,
     faqs,
     aboutClients,
     aboutTestimonials

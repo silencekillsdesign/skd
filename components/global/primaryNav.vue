@@ -7,16 +7,10 @@
       clipped
       fixed
       app
-      class="hidden-md-and-up blue accent-3"
-    >      <v-list>
-        <v-list-item
-          v-for="item in items"
-          :key="item.title"
-          :to="item.to"
-          router
-          exact
-          link
-        >
+      class="hidden-md-and-up indigo accent-3"
+    >
+      <v-list>
+        <v-list-item v-for="item in items" :key="item.title" :to="item.to" router exact link>
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
@@ -30,82 +24,85 @@
     <v-app-bar app color="blue accent-3" flat dark hide-on-scroll>
       <!-- <v-app-bar-title v-text="title"/> -->
       <!-- TODO: Link to hompeage -->
-      <v-app-bar-title class="app-bar-brand" >
-        <h3>
-          <skdType/>
-        </h3>
+      <v-app-bar-title class="app-bar-brand">
+        <v-layout row wrap justify-center align-center>
+          <v-flex shrink>
+            <v-img
+              class="ma-0 pa-0"
+              contain
+              height="40px"
+              :src="require('~/assets/branding/silencekillsdesign--icon--white.svg')"
+            ></v-img>
+          </v-flex>
+          <v-flex grow>
+            <h1 class="pl-0 ml-0">
+              <skdType />
+            </h1>
+          </v-flex>
+        </v-layout>
       </v-app-bar-title>
       <v-spacer></v-spacer>
       <!-- <v-app-bar-side-icon @click="drawer = !drawer" class="hidden-md-and-up"/> -->
       <v-app-bar-nav-icon class="hidden-md-and-up" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-app-bar-items class="hidden-md-and-down" v-for="(item, i) in items" :key="i">
-        <v-btn depressed text :to="item.to" router>{{ item.title }}</v-btn> <!-- remove nuxt, exact -->
+      <v-app-bar-items class="show-md-and-up" v-for="(item, i) in items" :key="i">
+        <v-btn depressed text :to="item.to" router>{{ item.title }}</v-btn>
+        <!-- remove nuxt, exact -->
       </v-app-bar-items>
     </v-app-bar>
   </div>
 </template>
 
 <script>
-import skdType from '~/components/global/skdType.vue'
+import skdType from "~/components/global/skdType.vue";
+import skdIcon from "~/components/global/skdIcon.vue";
 
 export default {
   data() {
     return {
       // NAV SETTINGS
       drawer: false,
-      title: 'SilenceKillsDesign',
+      title: "SilenceKillsDesign",
       items: [
         {
-          icon: 'apps',
-          title: 'Home',
-          to: '/'
+          icon: "apps",
+          title: "Home",
+          to: "/"
         },
         {
-          icon: 'bubble_chart',
-          title: 'About',
-          to: '/about'
+          icon: "bubble_chart",
+          title: "About",
+          to: "/about"
         },
         {
-          icon: 'laptop',
-          title: 'Services',
-          to: '/services'
+          icon: "laptop",
+          title: "Services",
+          to: "/services"
         },
         {
-          icon: 'image',
-          title: 'Portfolio',
-          to: '/portfolio'
+          icon: "image",
+          title: "Portfolio",
+          to: "/portfolio"
         },
         {
-          icon: 'mdi-format-align-left',
-          title: 'Blog',
-          to: '/blog'
+          icon: "mdi-format-align-left",
+          title: "Blog",
+          to: "/blog"
         },
         {
-          icon: 'phone',
-          title: 'Contact',
-          to: '/contact'
+          icon: "phone",
+          title: "Contact",
+          to: "/contact"
         }
       ],
       // bottom nav MOVE
       bottomNav: 2
-    }
-  },
-  computed: {
-    color() {
-      switch (this.bottomNav) {
-        case 0:
-          return 'indigo'
-        case 1:
-          return 'teal'
-        case 2:
-          return 'blue'
-      }
-    }
+    };
   },
   components: {
-    skdType
+    skdType,
+    skdIcon
   }
-}
+};
 </script>
 
 <style scoped>

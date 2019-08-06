@@ -91,7 +91,11 @@ export default {
         {
           title: "Best Fishing",
           winner: "It's a secret"
-        }
+        },
+        {
+          title: "Best Gold Panning",
+          winner: "Psssh, secret"
+        },
       ]
     };
   }
