@@ -17,7 +17,7 @@
           <p>I am passionate about my goals. Most of all, I enjoy making people laugh and feel that 'youthful spirit, old soul' would summarize me well. I enjoy staying active, cartoons, old video games, and performing stand-up comedy.</p>
         </v-card-text>
         <v-card-actions>
-          <v-btn text>Shoot Me an Email</v-btn>
+          <v-btn text color="indigo" href="mailto:cj@silencekillsdesign.com">Shoot Me an Email</v-btn>
         </v-card-actions>
       </v-flex>
     </v-layout>
