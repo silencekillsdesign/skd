@@ -78,7 +78,10 @@ module.exports = {
   generate: {
     routes: function () {
       return [
-        '/thankyou'
+        '/thankyou',
+        '/',
+        '/about',
+
       ]
     }
   },

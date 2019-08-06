@@ -5,9 +5,6 @@
     dark
     ma-0
     class="indigo accent-3 quantam-bg"
-    data-aos="fade-up"
-    data-aos-easing="ease-in-out-back"
-    data-aos-duration="800"
   >
     <v-layout justify-center mb-4>
       <v-flex dark pt-5 xs6 class="text-center">
@@ -21,17 +18,18 @@
     <v-container>
       <v-layout align-space-between justify-space-between fill-height row wrap grid-list-md>
         <!-- TODO: create component for individual services, populate this with services fields (icon, title, short desc) in cms -->
-        <v-flex v-for="(service, id) in services" :key="id" xs12 md4 pa-3 class="text-center">
+        <v-flex v-for="(service, i) in services" :key="i" xs12 md4 pa-3 class="text-center">
           <v-card
+            lazy
             align-center
             justify-center
             dark
             color="transparent"
-            hover
             px-2
             py-5
             class="service-card"
             :to="service.serviceURL"
+
           >
             <v-icon size="72" class="ma-5 pt-5 service-icon">{{ service.serviceIcon }}</v-icon>
             <v-card-title justify-center class="service-title">

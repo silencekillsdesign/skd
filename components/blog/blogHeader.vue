@@ -36,7 +36,7 @@
             </v-layout>
           </v-flex>
           <v-flex md4 offset-md1>
-            <v-img contain :src="require('~/assets/img/blog/blog-1.svg')"></v-img>
+            <v-img contain :src="require('~/assets/img/blog/content-planning.svg')"></v-img>
           </v-flex>
         </v-layout>
       </transition>
