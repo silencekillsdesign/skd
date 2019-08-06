@@ -115,6 +115,7 @@ export default {
   height: 100vh;
   background-color: transparent;
   background-image: url(~@/assets/img/backgrounds/waver.svg);
+  background-size: cover !important;
 }
 
 </style>
