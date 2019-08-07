@@ -78,10 +78,10 @@ module.exports = {
   generate: {
     routes: function () {
       return [
-        '~/thankyou',
+        '/thankyou',
         '/',
-        '~/about',
-        '~/components/global/pageHeader',
+        '/about',
+        '/components/global/pageHeader',
       ]
     }
   },
