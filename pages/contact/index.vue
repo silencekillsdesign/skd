@@ -34,8 +34,8 @@
             <input type="hidden" name="form-name" value="contact-form-noval" />
             <!-- this hidden field is for netifly -->
             <h2 class="contact-form-header text-uppercase mb-4 blue--text accent-3">Drop us a Line</h2>
-            <v-text-field type="text" name="cf_name" label="Name" required class="md6"></v-text-field>
-            <v-text-field type="email" name="cf_email" label="E-mail" required class="md6"></v-text-field>
+            <v-text-field v-model="name" type="text" name="cf_name" label="Name" required class="md6"></v-text-field>
+            <v-text-field v-model="email"  type="email" name="cf_email" label="E-mail" required class="md6"></v-text-field>
             <v-text-field v-model="phone" type="tel" name="cf_phone" label="Phone" class="md6"></v-text-field>
             <!-- must use 'items' or v-model in script-->
             <v-select
@@ -49,12 +49,13 @@
             'Other'
           ]"
               label="Project Type"
-              name="project[]"
-              v-model="projects"
+              name="project"
+              v-model="project"
               :menu-props="{ maxHeight: 900, overflowY: true }"
             />
             <v-textarea
               name="cf_message"
+              v-model="message" 
               label="Message"
               required
               hint="Please let us know what we can do to help build your brand."
@@ -84,8 +85,15 @@ export default {
     contactCard,
     // contactForm,
     // contactBasic
-  }
-};
+  },
+  data: () => ({
+    name: '',
+    email: '',
+    phone: '',
+    project: '',
+    message: ''
+  })
+}
 </script>
 
 <style>
