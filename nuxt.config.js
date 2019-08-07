@@ -81,6 +81,8 @@ module.exports = {
         '/thankyou',
         '/',
         '/about',
+        'contact',
+        'thankYou'
       ]
     }
   },

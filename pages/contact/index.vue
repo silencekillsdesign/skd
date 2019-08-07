@@ -27,10 +27,9 @@
           <!-- <contactBasic/> -->
           <form
             method="POST"
-            action="/thankyou"
+            action="/thankYou"
             data-netlify="true"
             name="contact-form-noval"
-            data-netlify-recaptcha="true"
           >
             <input type="hidden" name="form-name" value="contact-form-noval" />
             <!-- this hidden field is for netifly -->
@@ -60,7 +59,6 @@
               required
               hint="Please let us know what we can do to help build your brand."
             ></v-textarea>
-            <div data-netlify-recaptcha="true"></div>
 
             <!-- <v-btn class="mx-0 my-4" type="submit" @click="submit">Send It</v-btn> -->
             <v-btn type="submit" class="my-4" outlined large color="green accent-4">
@@ -76,16 +74,16 @@
 <script>
 import pageHeader from "~/components/global/pageHeader.vue";
 import pageIntro from "~/components/global/pageIntro.vue";
-import contactForm from "~/components/contact/contactForm.vue";
 import contactCard from "~/components/contact/contactCard.vue";
-import contactBasic from "~/components/contact/contactBasic.vue";
+// import contactForm from "~/components/contact/contactForm.vue";
+// import contactBasic from "~/components/contact/contactBasic.vue";
 export default {
   components: {
     pageHeader,
     pageIntro,
-    contactForm,
     contactCard,
-    contactBasic
+    // contactForm,
+    // contactBasic
   }
 };
 </script>
