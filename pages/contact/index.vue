@@ -49,7 +49,7 @@
             'Other'
           ]"
               label="Project Type"
-              name="project"
+              name="[]"
               v-model="project"
               :menu-props="{ maxHeight: 900, overflowY: true }"
             />

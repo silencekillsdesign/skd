@@ -7,10 +7,12 @@
       clipped
       fixed
       app
+      disable-resize-watcher
       class="hidden-md-and-up indigo accent-3"
+      color="indigo"
     >
       <v-list>
-        <v-list-item v-for="item in items" :key="item.title" :to="item.to" router exact link>
+        <v-list-item v-for="item in items" :key="item.title" :to="item.to" router exact link active-class="yellow">
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
@@ -26,7 +28,7 @@
       <!-- TODO: Link to hompeage -->
       <v-app-bar-title class="app-bar-brand">
         <v-layout row wrap justify-center align-center>
-          <v-flex shrink>
+          <v-flex shrink class="hidden-sm-and-down">
             <v-img
               class="ma-0 pa-0"
               contain
@@ -44,7 +46,7 @@
       <v-spacer></v-spacer>
       <!-- <v-app-bar-side-icon @click="drawer = !drawer" class="hidden-md-and-up"/> -->
       <v-app-bar-nav-icon class="hidden-md-and-up" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-app-bar-items class="show-md-and-up" v-for="(item, i) in items" :key="i">
+      <v-app-bar-items class="hidden-sm-and-down" v-for="(item, i) in items" :key="i">
         <v-btn depressed text :to="item.to" router>{{ item.title }}</v-btn>
         <!-- remove nuxt, exact -->
       </v-app-bar-items>

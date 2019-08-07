@@ -15,7 +15,7 @@
         </v-card>
       </v-tab-item>
 
-      <v-tab-item :value="'print'">
+      <v-tab-item :value="'print'" id="print">
         <v-card flat>
           <portfolioPrint />
         </v-card>

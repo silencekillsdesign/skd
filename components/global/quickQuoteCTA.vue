@@ -2,13 +2,13 @@
   <v-container fluid pa-0 >
     <v-container fluid ma-0 pa-4 class="pink accent-3">
       <v-container grid-list-xl>
-        <v-layout align-center justify-space-between v-bind="binding">
+        <v-layout row wrap align-center justify-space-between v-bind="binding">
           <v-flex xs12 md8 dark>
             <h2
               class="white--text cta-text text-center text-md-left"
             >Ready to get started on your new project?</h2>
           </v-flex>
-          <v-flex xs12 md4>
+          <v-flex xs12 md4 justify-center>
             <quickQuoteBtn btnText="Request a Quote" btnColor="blue accent-3" />
           </v-flex>
         </v-layout>

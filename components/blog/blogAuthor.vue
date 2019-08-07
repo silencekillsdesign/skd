@@ -13,7 +13,7 @@
     <v-layout row wrap justify-start align-start px-4 py-0>
       <v-flex>
         <v-card-text class="author-bio">
-          <p>Hey, I'm CJ! I am an experienced marketing specialist, designer, and front-end developer from Bozeman, MT. I have managed marketing, web development, and branding for several medium and large companies.. I'm fluent in Adobe Creative Suite/Creative Cloud, Google Analytics, AdWords, and Search Console, as well as front-end programming languages.</p>
+          <p>Hey, I'm CJ! I am an experienced marketing specialist, designer, and front-end developer from Bozeman, MT. I have managed marketing, web development, and branding for several medium and large companies.. I'm fluent in Adobe Creative Suite/Creative Cloud, Google Analytics, AdWords, and Search Console, as well as front-end programming languages. CJ is the only person working at SilenceKillsDesign, but likes to say 'we' and 'us' to sound fancy.</p>
           <p>I am passionate about my goals. Most of all, I enjoy making people laugh and feel that 'youthful spirit, old soul' would summarize me well. I enjoy staying active, cartoons, old video games, and performing stand-up comedy.</p>
         </v-card-text>
         <v-card-actions>

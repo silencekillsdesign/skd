@@ -7,11 +7,11 @@
     class="indigo accent-3 quantam-bg"
   >
     <v-layout justify-center mb-4>
-      <v-flex dark pt-5 xs6 class="text-center">
+      <v-flex dark pt-5 xs12 md6 class="text-center">
         <h2
-          class="display-3 font-weight-bold text-uppercase yellow--text boxed-in mb-4"
+          class="font-weight-bold text-uppercase yellow--text mb-4"
+          :class="{'pr-0 display-1': $vuetify.breakpoint.smAndDown, 'pr-5 display-3': $vuetify.breakpoint.mdAndUp}"
         >{{ servicesTitle }}</h2>
-        <v-divider color="yellow" class="mt-4 mb-4"></v-divider>
         <p class="headline white--text">{{ servicesIntro }}</p>
       </v-flex>
     </v-layout>

@@ -7,59 +7,62 @@
       </v-layout>
     </v-container>
 
-    <v-img :src="require('~/assets/img/backgrounds/pixelfire.svg')">
+    <v-img 
+    :aspect-ratio="{'1/3': $vuetify.breakpoint.smAndDown, '5/1': $vuetify.breakpoint.mdAndUp}" 
+    :src="require('~/assets/img/backgrounds/pixelfire.svg')"
+    >
       <v-container fluid grid-list-xl class="fill-height bottom-gradient">
         <v-layout row wrap pa-0 mt-2 justify-space-around align-center class="white--text">
 
-          <v-flex xs6 md2 px-3 py-2 class="text-center" href="https://bozemancurlingclub.com" target="_blank" >
+          <v-flex xs4 md2 px-3 py-2 class="text-center" href="https://bozemancurlingclub.com" target="_blank" >
             <v-tooltip color="deep-purple" top>
               <template v-slot:activator="{ on }">
-                <v-img v-on="on" :src=" require('@/assets/img/clients/bozeman-curling-club--logo-silencekillsdesign.svg')"></v-img>
+                <v-img contain v-on="on" :src=" require('@/assets/img/clients/bozeman-curling-club--logo-silencekillsdesign.svg')"></v-img>
               </template>
               <span>Bozeman Curling Club</span>
             </v-tooltip>
           </v-flex>
 
-          <v-flex xs6 md2 px-3 py-2 class="text-center">
+          <v-flex xs4 md2 px-3 py-2 class="text-center">
             <v-tooltip color="deep-purple" top>
               <template v-slot:activator="{ on }">
-                <v-img v-on="on" :src=" require('@/assets/img/clients/mudpaint--logo-silencekillsdesign.svg')"></v-img>
+                <v-img contain v-on="on" :src=" require('@/assets/img/clients/mudpaint--logo-silencekillsdesign.svg')"></v-img>
               </template>
               <span>MudPaint</span>
             </v-tooltip>
           </v-flex>
 
-          <v-flex xs6 md2 px-3 py-2 class="text-center">
+          <v-flex xs4 md2 px-3 py-2 class="text-center">
             <v-tooltip color="deep-purple" top>
               <template v-slot:activator="{ on }">
-                <v-img v-on="on" :src=" require('@/assets/img/clients/xtant-medical--logo-silencekillsdesign.svg')"></v-img>
+                <v-img contain v-on="on" :src=" require('@/assets/img/clients/xtant-medical--logo-silencekillsdesign.svg')"></v-img>
               </template>
               <span>Xtant Medical</span>
             </v-tooltip>
           </v-flex>
 
-          <v-flex xs6 md2 px-3 py-2 class="text-center">
+          <v-flex xs4 md2 px-3 py-2 class="text-center">
             <v-tooltip color="deep-purple" top>
               <template v-slot:activator="{ on }">
-                <v-img v-on="on" :src=" require('@/assets/img/clients/riotgear--logo-silencekillsdesign.svg')"></v-img>
+                <v-img contain v-on="on" :src=" require('@/assets/img/clients/riotgear--logo-silencekillsdesign.svg')"></v-img>
               </template>
               <span>Riot Gear Clothing</span>
             </v-tooltip>
           </v-flex>
 
-          <v-flex xs6 md2 px-3 py-2 class="text-center">
+          <v-flex xs4 md2 px-3 py-2 class="text-center">
             <v-tooltip color="deep-purple" top>
               <template v-slot:activator="{ on }">
-                <v-img v-on="on" :src=" require('@/assets/img/clients/gallatin-insulation--logo-silencekillsdesign.svg')"></v-img>
+                <v-img contain v-on="on" :src=" require('@/assets/img/clients/gallatin-insulation--logo-silencekillsdesign.svg')"></v-img>
               </template>
               <span>Gallatin Insulation</span>
             </v-tooltip>
           </v-flex>
 
-          <v-flex xs6 md2 px-3 py-2 class="text-center">
+          <v-flex xs4 md2 px-3 py-2 class="text-center">
             <v-tooltip color="deep-purple" top>
               <template v-slot:activator="{ on }">
-                <v-img v-on="on" :src=" require('@/assets/img/clients/runneredq--logo-silencekillsdesign.svg')"></v-img>
+                <v-img contain v-on="on" :src=" require('@/assets/img/clients/runneredq--logo-silencekillsdesign.svg')"></v-img>
               </template>
               <span>Runner EDQ</span>
             </v-tooltip>
@@ -125,5 +128,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+.clients-mobile {
+  background-size: 300%;
+}
 </style>

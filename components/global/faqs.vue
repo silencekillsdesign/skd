@@ -11,7 +11,7 @@
     </v-container>
 
     <v-layout row wrap justify-center>
-      <v-flex md8 xs12 md mb-3>
+      <v-flex md8 xs12 md ma-3>
         <v-expansion-panels dark>
           <v-expansion-panel
             active-class="faq-open"

@@ -1,5 +1,5 @@
 <template>
-  <v-dialog v-model="bozeman" max-width="400">
+  <v-dialog v-model="bozeman" full-width>
     <v-card class="mx-auto" max-width="400">
       <v-img class="white--text" height="200px" :src="require('~/assets/img/bozeman.jpg')">
         <v-card-title class="align-end fill-height">Welcome to Bozeman</v-card-title>

@@ -51,12 +51,13 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ["aos/dist/aos.css", "vue2-animate/dist/vue2-animate.css"],
+  css: ["aos/dist/aos.css", "vue2-animate/dist/vue2-animate.css", "vue-image-lightbox/dist/vue-image-lightbox.min.css"],
   /*
    ** Plugins to load before mounting the App
    */
   plugins: [
     { src: "~plugins/aos", ssr: false },
+    { src: '~/plugins/vue-lightbox-pluign.js', ssr: false }
     // { src: "~plugins/vuew-animate", ssr: false }
   ],
   /*
