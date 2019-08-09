@@ -19,6 +19,20 @@ module.exports = {
         hid: "description",
         name: "description",
         content: process.env.npm_package_description || ""
+      },{
+        hid: `og:title`,
+        property: 'og:title',
+        content: `SilenceKillsDesign`
+      },
+      {
+        hid: `og:url`,
+        property: 'og:url',
+        content: 'https://silencekillsdesign.netlify.com'
+      },
+      {
+        hid: `og:image`,
+        property: 'og:image',
+        content: '~/static/silencekillsdesign--opengraph-img.png/'
       }
     ],
     link: [

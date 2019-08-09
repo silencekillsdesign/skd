@@ -10,7 +10,6 @@
     </v-container>
 
     <v-img
-      :aspect-ratio="aspectRatio"
       :src="require('~/assets/img/backgrounds/bubbleup.svg')"
     >
       <v-container fluid grid-list-xl class="fill-height bottom-gradient">
@@ -102,10 +101,6 @@
 
 <script>
 export default {
-  aspectRatio() {
-    //whatever logic you need here like and then return the value eg
-    return this.$vuetify.breakpoint.smAndDown ? "1/4" : "1/10";
-  },
   data() {
     return {
       clients: [

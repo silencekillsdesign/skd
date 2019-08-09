@@ -6,6 +6,7 @@
     <!-- TODO: convert form into reusable component -->
     <v-dialog v-model="quickQuote" persistent max-width="600px" eager="">
       <form name="quickQuote" netlify action="" method="post" data-netlify-recaptcha="true">
+        <input type="hidden" name="form-name" value="quickQuote" /> <!-- for netlify -->
         <v-card>
           <v-card-title>
             <span class="headline">This form doesn't Work Yet. Sorry.</span>
@@ -16,16 +17,16 @@
               <v-container fluid grid-list-md>
                 <v-layout wrap>
                   <v-flex xs12 sm6>
-                    <v-text-field name="qq_name" label="Name*" required />
+                    <v-text-field name="qq_name" v-model="qq_name" label="Name*" required />
                   </v-flex>
                   <v-flex xs12 sm6>
-                    <v-text-field name="qq_company" label="Company" />
+                    <v-text-field name="qq_company" v-model="qq_company" label="Company" />
                   </v-flex>
                   <v-flex xs12 sm6>
-                    <v-text-field name="qq_email" label="Email*" type="email" required />
+                    <v-text-field name="qq_email" v-model="qq_email" label="Email*" type="email" required />
                   </v-flex>
                   <v-flex xs12 sm6>
-                    <v-text-field name="qq_phone" label="Phone" type="phone" />
+                    <v-text-field name="qq_phone" v-model="qq_pjone" label="Phone" type="phone" />
                   </v-flex>
                   <v-flex xs12>
                     <v-select
@@ -40,15 +41,16 @@
                             ]"
                       label="Project Type"
                       name="qq_project"
+                       v-model="qq_project"
                       :menu-props="{ maxHeight: 900, overflowY: true }"
                     />
                   </v-flex>
                   <v-flex xs12>
                     <v-textarea
                       auto-grow
-                       name="qq_message"
+                      name="qq_message"
+                      v-model="qq_message"
                       label="Project Details"
-                      value
                       required
                       rows="3"
                     />
@@ -60,7 +62,7 @@
           <v-card-actions>
             <v-btn dark color="red darken-1" text @click="quickQuote = false">Close</v-btn>
             <v-spacer />
-            <v-btn depressed disabled>Send It</v-btn>
+            <v-btn depressed value="submit">Send It</v-btn>
           </v-card-actions>
         </v-card>
       </form>

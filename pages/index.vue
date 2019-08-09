@@ -42,16 +42,17 @@ export default {
   },
   head() {
     return {
-      title: "home page",
+      title: "SilenceKillsDesign - Development, Design, and Marketing",
         meta: [
-          { name: "description", content: "SilenceKillsDesign - Web Development, Marketing, and Design in Bozeman, MT."},
+          { name: "description", content: "SilenceKillsDesign - Web Development, Marketing, and Graphic Design in Bozeman, MT."},
           { name: "robots", content: "index, follow"},
           { name: 'twitter:title', content: 'SilenceKillsDesign - Web Development, Marketing, and Design.'},
           { name: 'twitter:description', content: 'Better Brands. Less Bullshit.'},
           { name: 'twitter:image', content: 'assets/branding/silencekillsdesign--logo--horizontal--color.svg'},
-          { name: 'twitter:card', content: 'SilenceKillsDesign Logo'}
+          { name: 'twitter:card', content: 'SilenceKillsDesign Logo'},
+
       ]
-  }
+    }
   }
 }
 </script>

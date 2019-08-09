@@ -17,14 +17,11 @@
               src="@/assets/branding/silencekillsdesign--icon--white.svg"
             />
           </v-layout>
+
           <v-layout row wrap>
-            <skdType class="skdType mb-2" />
-          </v-layout>
-          <v-layout row wrap>
-            <h3 class="display-1 white--text">Be Loud. Get Heard.</h3>
-          </v-layout>
-          <v-divider color="white" class="px-0 my-5 mx-0"></v-divider>
-          <v-layout row wrap>
+            <v-flex xs12><skdType class="skdType mb-2" /></v-flex>            
+            <v-flex xs12><h3 class="display-1 white--text">Be Loud. Get Heard.</h3></v-flex>
+            <v-flex xs12><v-divider color="white" class="px-0 my-5 mx-0"></v-divider></v-flex>
             <p
               class="title white--text"
             >You've built a great business, let us help build your brand.</p>
@@ -39,7 +36,7 @@
                 dark
                 class="ml-0 mr-3"
                 color="deep-purple accent-2"
-                @click="$vuetify.goTo('#homeServices', options)"
+                @click="$vuetify.goTo('#homeServices')"
               >View Services</v-btn>
             </v-flex>
             <quickQuoteBtn btnText="Quick Quote" btnColor="pink accent-3" />
@@ -88,12 +85,8 @@ export default {
     },
     options() {
       return {
-        duration: 2000
+        duration: 2200
       };
-    },
-    element() {
-      if (this.selected === "Button") return this.$refs.button;
-      else if (this.selected === "Radio group") return this.$refs.radio;
     }
   }
 };
