@@ -132,7 +132,7 @@ export default {
           items: [
             {
               description:
-                "We build websites for local business that help customers easily find what they're looking for. A local business website doesn't need to be over the top, it needs to be useful. Our development process focuses on local SEO throughout the development process, so you can be easily found and easy to contact."
+                "Our itereative design process is a balance between our branding expertise "
             }
           ]
         },

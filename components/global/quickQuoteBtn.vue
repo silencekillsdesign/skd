@@ -26,7 +26,7 @@
                     <v-text-field name="qq_email" v-model="qq_email" label="Email*" type="email" required />
                   </v-flex>
                   <v-flex xs12 sm6>
-                    <v-text-field name="qq_phone" v-model="qq_pjone" label="Phone" type="phone" />
+                    <v-text-field name="qq_phone" v-model="qq_phone" label="Phone" type="phone" />
                   </v-flex>
                   <v-flex xs12>
                     <v-select
@@ -79,6 +79,12 @@ export default {
   data() {
     return {
       quickQuote: false,
+      qq_name: '',
+      qq_email: '',
+      qq_company: '',
+      qq_phone: '',
+      qq_project: '',
+      qq_message: ''
     }
   }
 }
