@@ -8,16 +8,19 @@
       data-aos="fade-left"
       data-aos-duration="1200"
       data-aos-delay="200"
+      data-aos-once="true"
     />
     <aboutClients 
       data-aos="fade-down"
       data-aos-duration="1200"
-      data-aos-delay="200" 
+      data-aos-delay="200"
+      data-aos-once="true"
     />
     <faqs 
       data-aos="fade-down"
       data-aos-duration="1300"
       data-aos-delay="300"
+      data-aos-once="true"
     />
   </v-container>
 </template>

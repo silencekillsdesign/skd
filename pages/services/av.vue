@@ -67,45 +67,9 @@
         </v-flex>
       </v-layout>
 
-      <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md8 pa-5 data-aos="fade-right" data-aos-duration="1200">
-          <h3 class="mt-4">Development and Design</h3>
-          <v-divider class="my-5"></v-divider>
-          <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
-          <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View Design Services</v-btn>
-        </v-flex>
-        <v-flex xs12 md4 pa-5 data-aos="fade-left" data-aos-duration="800">
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/webdev.svg')"></v-img>
-        </v-flex>
-      </v-layout>
-
-      <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md4 pa-5  data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/webdev.svg')"></v-img>
-        </v-flex>
-        <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4">SEO and Deployment</h3>
-          <v-divider class="my-5"></v-divider>
-          <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
-          <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View SEO Services</v-btn>
-        </v-flex>
-      </v-layout>
-
-      <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4">Hosting and Deployment</h3>
-          <v-divider class="my-5"></v-divider>
-          <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
-          <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View Hosting Services</v-btn>
-        </v-flex>
-        <v-flex xs12 md4 pa-5  data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/webdev.svg')"></v-img>
-        </v-flex>
-      </v-layout>
-
     </v-container>
 
-    <v-container fluid pa-0>
+    <v-container fluid pa-0 v-for="(process, i) in processes" :key="i">
       <quoteCTA />
     </v-container>
   </div>
@@ -124,7 +88,16 @@ export default {
   },
   data() {
     return {
-      i: 1,
+      processes: [
+        {
+          processTitle: "",
+          processDesc: "",
+          processImg: "",
+          processImgOrder: "",
+          processBtnText: "",
+          processBtnLink: "s"
+        }
+      ],
       items: [
         {
           icon: 'mdi-video-vintage',

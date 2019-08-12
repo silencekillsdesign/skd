@@ -4,8 +4,8 @@
     <v-btn large dark class="mx-0" :color="btnColor" @click.stop="quickQuote = true">{{ btnText }}</v-btn>
 
     <!-- TODO: convert form into reusable component -->
-    <v-dialog v-model="quickQuote" persistent max-width="600px" eager="">
-      <form name="quickQuote" netlify action="" method="post" data-netlify-recaptcha="true">
+    <v-dialog v-model="quickQuote" persistent max-width="600px" eager>
+      <form name="quickQuote" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="quickQuote" /> <!-- for netlify -->
         <v-card>
           <v-card-title>
@@ -62,7 +62,7 @@
           <v-card-actions>
             <v-btn dark color="red darken-1" text @click="quickQuote = false">Close</v-btn>
             <v-spacer />
-            <v-btn depressed value="submit" @click="submit">Send It</v-btn>
+            <v-btn depressed value="submit">Send It</v-btn>
           </v-card-actions>
         </v-card>
       </form>
@@ -71,6 +71,7 @@
 </template>
 
 <script>
+import contactFormVue from '../contact/contactForm.vue';
 export default {
   props: {
     btnText: String,

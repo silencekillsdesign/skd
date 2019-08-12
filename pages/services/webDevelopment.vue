@@ -9,7 +9,7 @@
     <!-- TODO: loop from data create reusable services component (service title, icon, short description)-->
     <v-container fluid pa-0>
       <v-layout align-center id="main">
-        <v-flex md6 offset-md1 pr-5 data-aos="fade-right">
+        <v-flex md6 offset-md1 pr-5 data-aos="fade-right" >
           <v-list transparent shaped v-model="i">
             <v-subheader>The Things We Do:</v-subheader>
             <v-list-group

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <pageHeader pageTitle="UX / UI Design" pageSubtitle="Experience It. Feel It." />
+    <pageHeader id="header" pageTitle="UX / UI Design" pageSubtitle="Experience It. Feel It." />
 
     <pageIntro
       introText="A well-designed website can be your most powerful marketing segment, delivering your brand's message to your customers' fingertips. Our web design process caters to your existing customers, and new audiences alike."
@@ -9,7 +9,7 @@
     <!-- TODO: loop from data create reusable services component (service title, icon, short description)-->
     <v-container fluid pa-0>
       <v-layout align-center id="main">
-        <v-flex md6 offset-md1 pr-5 data-aos="fade-right">
+        <v-flex md6 offset-md1 pr-5 data-aos="fade-right" >
           <v-list transparent shaped v-model="i">
             <v-list-group
               v-for="item in items"
@@ -35,12 +35,10 @@
         </v-flex>
         <v-flex md5 data-aos="fade-left">
           <!-- <v-img flat :src="require('~/assets/img/webdev.svg')"> </v-img> -->
-          <img class="mr-0 pr-0" src="~/assets/img/webdev.svg" alt="avatar" />
+          <img class="mr-0 pr-0" src="~/assets/img/ux.svg" alt="avatar" />
         </v-flex>
       </v-layout>
     </v-container>
-
-    <stack class="my-5" />
 
     <v-container my-5>
       <v-layout row align-center justify-center mt-5 py-5>
@@ -50,56 +48,63 @@
           data-aos-easing="ease-in-out-back"
           data-aos-duration="800"
           data-aos-delay="100"
-        >Our Web Development Process</h2>
+        >Our UX / UI Design Process</h2>
       </v-layout>
     </v-container>
 
+    <!-- 1. image -->
+    <!-- 2. Title and content -->
+    <!-- 3. if is even, order-md1 order-sm0  -->
+    <!-- 4. if is odd order-md-0 order-sm0 -->
+    <!-- 5. iterate id# for clck for next (i++)-->
+    <!-- final step link to suplimental service -->
+
     <v-container my-5>
-      <v-layout align-center row wrap py-5 my-5>
+      <v-layout align-center row wrap py-5 my-5  id="step1">
         <v-flex xs12 md4 pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/wireframing.svg')"></v-img>
+          <v-img class="ma-5" :aspect-ratio="1" :src="require('~/assets/img/services/wireframing.svg')"></v-img>
         </v-flex>
         <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4 blue--text text--accent-3">UX Planning and Wireframing</h3>
+          <h3 class="mt-4 blue--text text--accent-3">Research and Planning</h3>
           <v-divider class="my-5" color="blue"></v-divider>
-          <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
-          <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View UX Services</v-btn>
+          <p>Before we design or build anyhting, we need to understand <b>why</b> users  use your site or app. Once we know the why, we dive into the <b>how</b> they will interact with the final product. Here we create deep user personas. We look at possible frustrations and rendundancies and strategize an approach to resolve those issues.</p>
+          <v-btn @click="$vuetify.goTo('#step2')" class="ma-2" to="/services/ux" outlined color="indigo">Next Steps</v-btn>
         </v-flex>
       </v-layout>
 
-      <v-layout align-center row wrap py-5 my-5>
+      <v-layout align-center row wrap py-5 my-5 id="step2">
         <v-flex xs12 md8 pa-5 data-aos="fade-right" data-aos-duration="1200">
-          <h3 class="mt-4">Development and Design</h3>
+          <h3 class="mt-4">Sketching and Wireframing</h3>
           <v-divider class="my-5"></v-divider>
-          <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
-          <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View Design Services</v-btn>
+          <p>There is no reason that great UI and UX can't simply come from a napkin sketch. Avoiding overthinking in the early stages ofter leads to a much more conscise design and overall better user experience.</p>
+          <v-btn  @click="$vuetify.goTo('#step3')" class="ma-2" to="/services/ux" outlined color="indigo">Next Steps</v-btn>
         </v-flex>
-        <v-flex xs12 md4 pa-5 data-aos="fade-left" data-aos-duration="800">
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/webdev.svg')"></v-img>
+        <v-flex class="order-md0" xs12 md4 pa-5 data-aos="fade-left" data-aos-duration="800">
+          <v-img class="ma-5" :aspect-ratio="1" :src="require('~/assets/img/services/webdev.svg')"></v-img>
         </v-flex>
       </v-layout>
 
-      <v-layout align-center row wrap py-5 my-5>
+      <v-layout align-center row wrap py-5 my-5 id="step3">
         <v-flex xs12 md4 pa-5  data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/webdev.svg')"></v-img>
+          <v-img class="ma-5" :aspect-ratio="1" :src="require('~/assets/img/services/webdev.svg')"></v-img>
         </v-flex>
         <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4">SEO and Deployment</h3>
+          <h3 class="mt-4">Intereaction Prototyping</h3>
           <v-divider class="my-5"></v-divider>
-          <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
-          <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View SEO Services</v-btn>
+          <p>At this stage, key usibilty features are ready for user testing, and internal decision making. We test the key demographics laid out in the </p>
+          <v-btn  @click="$vuetify.goTo('#step4')" class="ma-2" to="/services/ux" outlined color="indigo">Next Steps</v-btn>
         </v-flex>
       </v-layout>
 
-      <v-layout align-center row wrap py-5 my-5>
+      <v-layout align-center row wrap py-5 my-5 id="step4">
         <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4">Hosting and Deployment</h3>
+          <h3 class="mt-4">Testing and Decision</h3>
           <v-divider class="my-5"></v-divider>
           <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
-          <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View Hosting Services</v-btn>
+          <v-btn class="ma-2"  to="/services/webdevelopment" outlined color="indigo">View Web Dev Services</v-btn>
         </v-flex>
         <v-flex xs12 md4 pa-5  data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/webdev.svg')"></v-img>
+          <v-img class="ma-5" :aspect-ratio="1" :src="require('~/assets/img/services/webdev.svg')"></v-img>
         </v-flex>
       </v-layout>
 
@@ -114,13 +119,11 @@
 <script>
 import pageHeader from '~/components/global/pageHeader.vue'
 import pageIntro from '~/components/global/pageIntro.vue'
-import stack from '~/components/global/stack.vue'
 
 export default {
   components: {
     pageHeader,
-    pageIntro,
-    stack
+    pageIntro
   },
   data() {
     return {

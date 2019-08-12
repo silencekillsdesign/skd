@@ -23,12 +23,12 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar app color="blue accent-3" flat dark hide-on-scroll>
+    <v-app-bar app color="blue accent-3 primary-nav" flat dark hide-on-scroll>
       <!-- <v-app-bar-title v-text="title"/> -->
       <!-- TODO: Link to hompeage -->
       <v-app-bar-title class="app-bar-brand">
         <v-layout row wrap justify-center align-center>
-          <v-flex shrink class="hidden-sm-and-down">
+          <v-flex shrink>
             <v-img
               class="ma-0 pa-0"
               contain
@@ -36,7 +36,7 @@
               :src="require('~/assets/branding/silencekillsdesign--icon--white.svg')"
             ></v-img>
           </v-flex>
-          <v-flex grow>
+          <v-flex grow class="hidden-sm-and-down">
             <h1 class="pl-0 ml-0">
               <skdType />
             </h1>
@@ -110,5 +110,8 @@ export default {
 <style scoped>
 .skd-type {
   color: white !important;
+}
+.primary-nav {
+  max-width: 100vw;
 }
 </style>
