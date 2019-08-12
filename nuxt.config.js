@@ -74,7 +74,9 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    { src: "~plugins/aos", ssr: false },
+    { src: "~/plugins/aos", ssr: false },
+    { src: '~/plugins/Siema.js', ssr: false }
+    // { src: "~/plugins/VueOwlSlider", ssr: false },
     // { src: '~/plugins/vue-lightbox-pluign.js', ssr: false }
     // { src: "~plugins/vuew-animate", ssr: false }
   ],

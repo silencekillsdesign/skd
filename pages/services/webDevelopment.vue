@@ -59,7 +59,7 @@
       
       <v-layout align-center row wrap py-5 my-5>
         <v-flex xs12 md4 order-0 pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/wireframing.svg')"></v-img>
+          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/web/web1.svg')"></v-img>
         </v-flex>
         <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
           <h3 class="mt-4 blue--text text--accent-3">UX Planning and Wireframing</h3>
@@ -71,7 +71,7 @@
 
       <v-layout align-center row wrap py-5 my-5>
         <v-flex xs12 md4 order-xs0 order-md1  pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/wireframing.svg')"></v-img>
+          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/web/web2.svg')"></v-img>
         </v-flex>
         <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
           <h3 class="mt-4 blue--text text--accent-3">Development and Design</h3>
@@ -83,7 +83,7 @@
       
       <v-layout align-center row wrap py-5 my-5>
         <v-flex xs12 md4 order-0 pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/wireframing.svg')"></v-img>
+          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/web/web3.svg')"></v-img>
         </v-flex>
         <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
           <h3 class="mt-4 blue--text text--accent-3">Deployment and Server Setup</h3>
@@ -95,7 +95,7 @@
 
       <v-layout align-center row wrap py-5 my-5>
         <v-flex xs12 md4 order-xs0 order-md1  pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/wireframing.svg')"></v-img>
+          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/web/web4.svg')"></v-img>
         </v-flex>
         <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
           <h3 class="mt-4 blue--text text--accent-3">SEO and Performance Optimization</h3>

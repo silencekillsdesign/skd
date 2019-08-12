@@ -62,7 +62,7 @@
           <v-card-actions>
             <v-btn dark color="red darken-1" text @click="quickQuote = false">Close</v-btn>
             <v-spacer />
-            <v-btn depressed value="submit">Send It</v-btn>
+            <v-btn depressed disabled value="submit">Send It</v-btn>
           </v-card-actions>
         </v-card>
       </form>

@@ -56,10 +56,10 @@
 
     <v-container my-5>
       <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md4 pa-5>
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/wireframing.svg')"></v-img>
+        <v-flex xs12 md4 pa-5 data-aos="fade-right" data-aos-duration="800">
+          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/branding/branding1.svg')"></v-img>
         </v-flex>
-        <v-flex xs12 md8 pa-5>
+        <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="800">
           <h3 class="mt-4 blue--text text--accent-3">Brand Audit</h3>
           <v-divider class="my-5" color="blue"></v-divider>
           <p>We will take an in depth look at al of your existing brand assets. Next we draft a plan to improve on the weak segments, and capitalize on your strengths. </p>
@@ -68,38 +68,38 @@
       </v-layout>
 
       <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md8 pa-5>
-          <h3 class="mt-4">Development and Design</h3>
+        <v-flex xs12 md8 pa-5  data-aos="fade-right" data-aos-duration="800">
+          <h3 class="mt-4">Brand Strategy</h3>
           <v-divider class="my-5"></v-divider>
-          <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
+          <p>After we've determined strengths, weaknesses, and opportunities, we will begin implementing a strategy to best reach new customers and harness existing support. This is often mixed media and is very hands on. We will work directly with our clients to make sure every voice is heard, while providing expert feedback and response.</p>
           <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View Design Services</v-btn>
         </v-flex>
-        <v-flex xs12 md4 pa-5>
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/webdev.svg')"></v-img>
+        <v-flex xs12 md4 pa-5  data-aos="fade-left" data-aos-duration="800">
+          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/branding/branding2.svg')"></v-img>
         </v-flex>
       </v-layout>
 
       <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md4 pa-5>
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/webdev.svg')"></v-img>
+        <v-flex xs12 md4 pa-5  data-aos="fade-right" data-aos-duration="800">
+          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/branding/branding3.svg')"></v-img>
         </v-flex>
-        <v-flex xs12 md8 pa-5>
-          <h3 class="mt-4">SEO and Deployment</h3>
+        <v-flex xs12 md8 pa-5  data-aos="fade-left" data-aos-duration="800">
+          <h3 class="mt-4">Brand Growth</h3>
           <v-divider class="my-5"></v-divider>
-          <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
+          <p>There is always room to grow. Whether it is to another location, a non-profit sector, or just more products, we've still got a lot we can do. We'll work closely with you to determine what the next steps are and how we can get you there.</p>
           <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View SEO Services</v-btn>
         </v-flex>
       </v-layout>
 
       <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md8 pa-5>
-          <h3 class="mt-4">Hosting and Deployment</h3>
+        <v-flex xs12 md8 pa-5  data-aos="fade-right" data-aos-duration="800">
+          <h3 class="mt-4">Brand Asset Management</h3>
           <v-divider class="my-5"></v-divider>
-          <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
+          <p>Managing all of your brand's assets can be a nightmare. Let us help you organize a bit by creating brand guidlines, naming conventions, asset portals and more. Never send the wrong logo version to a vendor again.</p>
           <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View Hosting Services</v-btn>
         </v-flex>
-        <v-flex xs12 md4 pa-5>
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/webdev.svg')"></v-img>
+        <v-flex xs12 md4 pa-5  data-aos="fade-left" data-aos-duration="800">
+          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/branding/branding4.svg')"></v-img>
         </v-flex>
       </v-layout>
 

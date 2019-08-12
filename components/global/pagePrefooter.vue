@@ -71,7 +71,7 @@
       <!-- Recent posts -->
       <v-flex xs12 sm6 md3 px-5>
         <v-layout row wrap align-start justify-start class="white--text">
-          <h4 class="py-3 title">Recent Projects</h4>
+          <h4 class="py-3 title">Recent Posts</h4>
         </v-layout>
         <v-layout row wrap align-start justify-start class="white--text">
           <v-flex>

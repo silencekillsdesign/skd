@@ -2,7 +2,7 @@
 <v-container fluid ma-0 pa-0>
   <v-parallax class="testimonial-parallax" height="550" :src="require('~/assets/img/backgrounds/speech-bubble-background.jpg')" dark>
     <!-- <v-img :aspect-ratio="9/4" :src="require('~/assets/img/backgrounds/speech-bubble-background.svg')"> -->
-    <v-carousel cycle show-arrows-on-hover hide-delimiters class="testimonial-card">
+    <v-carousel continuous scycle show-arrows-on-hover hide-delimiters class="testimonial-card">
       <v-carousel-item v-for="(review,i) in reviews" :key="i" transition="fade-transition" group >
         <v-container fluid>
           <v-layout justify-center align-center row fill-height class="pa-0 xs-text-center">

@@ -69,9 +69,9 @@
 
       <v-layout align-center row wrap py-5 my-5>
         <v-flex xs12 md8 pa-5 data-aos="fade-right" data-aos-duration="1200">
-          <h3 class="mt-4">Technical Setup</h3>
+          <h3 class="mt-4 blue--text text--accent-3">Technical Setup</h3>
           <v-divider class="my-5"></v-divider>
-          <p>In this phase we make sure that the internet knows who you are by setting up Google Search Console, Google My Business, Analytics,AdWords, and address any other marketing tools that need to be configured.</p>
+          <p>In this phase we make sure that the internet knows who you are by setting up Google Search Console, Google My Business, Analytics,AdWords, and address any other marketing tools that need to be configured. If you have an existing site, we see where technical improvements can be made. If we're building your site, no need to worry, the SEO goodies are baked in</p>
           <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View Design Services</v-btn>
         </v-flex>
         <v-flex xs12 md4 pa-5 data-aos="fade-left" data-aos-duration="800">
@@ -84,18 +84,18 @@
           <v-img :aspect-ratio="1" :src="require('~/assets/img/services/seo/seo3.svg')"></v-img>
         </v-flex>
         <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4">Strategy Implementation</h3>
+          <h3 class="mt-4 blue--text text--accent-3">Strategy Implementation</h3>
           <v-divider class="my-5"></v-divider>
-          <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
+          <p>Once we have the pieces in place, we will begin implementing your campaign strategy. Rome wasn't built in a day, but our content and campaign strategies should begin producing results fairly quickly. </p>
           <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View SEO Services</v-btn>
         </v-flex>
       </v-layout>
 
       <v-layout align-center row wrap py-5 my-5>
         <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4">Reporting and Optimization</h3>
+          <h3 class="mt-4 blue--text text--accent-3">Reporting and Optimization</h3>
           <v-divider class="my-5"></v-divider>
-          <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
+          <p>Throughout your campaign strategy, we deliver regular reporting to show exactly where marketing dollars are going and what is converting customers. We determine where to ramp up and where to tone down to optimize your marketing budget. In this step we often make technical improvements to help page rank, as well</p>
           <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View Hosting Services</v-btn>
         </v-flex>
         <v-flex xs12 md4 pa-5  data-aos="fade-right" data-aos-duration="800">

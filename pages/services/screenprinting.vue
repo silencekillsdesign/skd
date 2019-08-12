@@ -3,7 +3,7 @@
     <pageHeader pageTitle="Screen Printing" pageSubtitle="Print It. Wear It." />
 
     <pageIntro
-      introText="A well-designed website can be your most powerful marketing segment, delivering your brand's message to your customers' fingertips. Our web design process caters to your existing customers, and new audiences alike."
+      introText="Take your brand or team with you wherever you go. We offer quality screenprinting and heat transfer printing on top brands. Quick turnarounds, low-quantity minimums, and affordable pricing."
     ></pageIntro>
 
     <!-- TODO: loop from data create reusable services component (service title, icon, short description)-->
