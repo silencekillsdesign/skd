@@ -26,6 +26,7 @@
         </v-flex>
       </v-layout>
     </v-container>
+    <recentWork />
   </div>
 </template>
 
@@ -33,13 +34,15 @@
 //import components
 import pageHeader from '~/components/global/pageHeader.vue'
 import pageIntro from '~/components/global/pageIntro.vue'
+import recentWork from '~/components/global/recentWork.vue'
 //data import
 // import sourceData from '@/data/data'
 
 export default {
   components: {
     pageHeader,
-    pageIntro
+    pageIntro,
+    recentWork
   },
   data: () => ({
     isHovering: false,

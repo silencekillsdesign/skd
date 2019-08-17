@@ -22,12 +22,14 @@
       data-aos-delay="300"
       data-aos-once="true"
     />
+    <recentWork />
   </v-container>
 </template>
 
 <script>
 import pageHeader from '~/components/global/pageHeader.vue'
 import faqs from '~/components/global/faqs.vue'
+import recentWork from '~/components/global/recentWork.vue'
 // import sparklineHeader from '~/components/global/sparklineHeader.vue'
 import aboutSplit from '~/components/about/aboutSplit'
 import aboutSplitLeft from '~/components/about/aboutSplitLeft'
@@ -41,7 +43,8 @@ export default {
     aboutSplitLeft,
     aboutTestimonials,
     aboutClients,
-    faqs
+    faqs,
+    recentWork
     // sparklineHeader
   }
 }

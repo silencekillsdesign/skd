@@ -42,8 +42,9 @@
 
     <stack class="my-5" />
 
-    <v-container my-5>
-      <v-layout row align-center justify-center mt-5 py-5>
+    <v-container class="my-5">
+      <v-row align="center" justify="center" class="mt-5 py-5">
+        <v-col>
         <h2
           class="text-center display-3 indigo--text"
           data-aos="fade-up"
@@ -51,59 +52,62 @@
           data-aos-duration="800"
           data-aos-delay="100"
         >Our Web Development Process</h2>
-      </v-layout>
+        </v-col>
+      </v-row>
     </v-container>
-
+<!-- TODO: make order dynamic -->
     <v-container my-5>
+      
       <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md4 pa-5>
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/wireframing.svg')"></v-img>
+        <v-flex xs12 md4 order-0 pa-5 data-aos="fade-right" data-aos-duration="800">
+          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/design/design1.svg')"></v-img>
         </v-flex>
-        <v-flex xs12 md8 pa-5>
-          <h3 class="mt-4 blue--text text--accent-3">UX Planning and Wireframing</h3>
+        <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
+          <h3 class="mt-4 blue--text text--accent-3">Drafting Process</h3>
           <v-divider class="my-5" color="blue"></v-divider>
-          <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
-          <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View UX Services</v-btn>
+          <p>Every design, from logo design to tradeshow booth design, starts with a round of drafts to dial in the stylistic approach and make sure we aren't missing anything. Once, we chat a bit more on the design direction, we will move forward to mockups and final draft revisions.</p>
+          <v-btn class="my-2" to="/services/ux" outlined color="indigo">View UX Services</v-btn>
         </v-flex>
       </v-layout>
 
       <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md8 pa-5>
-          <h3 class="mt-4">Development and Design</h3>
-          <v-divider class="my-5"></v-divider>
-          <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
-          <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View Design Services</v-btn>
+        <v-flex xs12 md4 order-xs0 order-md1  pa-5 data-aos="fade-right" data-aos-duration="800">
+          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/design/design2.svg')"></v-img>
         </v-flex>
-        <v-flex xs12 md4 pa-5>
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/webdev.svg')"></v-img>
+        <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
+          <h3 class="mt-4 blue--text text--accent-3">Routing and Finalization</h3>
+          <v-divider class="my-5" color="blue"></v-divider>
+          <p>We want to ensure everythign is right, so we will use your preferred routing process and make any revisions that need to be made before finalizing the design. We will send all applicable final design files, neatly packaged with our standard naming convention, or yours. You, the client, take over ownership of the design once all contract terms have been met and project has been paid for.</p>
+          <v-btn class="my-2" to="/services/design" outlined color="indigo">View Design Services</v-btn>
+        </v-flex>
+      </v-layout>
+      
+      <v-layout align-center row wrap py-5 my-5>
+        <v-flex xs12 md4 order-0 pa-5 data-aos="fade-right" data-aos-duration="800">
+          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/design/design3.svg')"></v-img>
+        </v-flex>
+        <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
+          <h3 class="mt-4 blue--text text--accent-3">File Delivery and Printing</h3>
+          <v-divider class="my-5" color="blue"></v-divider>
+          <p>When you are ready to print, we will work closely with your preferred printers, or use our network of printing resources. Whether it is a sign company needing a vector format to cut your new signage or a round of brochures, we work seamlessly with any print standards, and cut you out as the middleman.</p>
+          <v-btn class="my-2" to="/services/webdevelopment" outlined color="indigo">View Web Services</v-btn>
         </v-flex>
       </v-layout>
 
       <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md4 pa-5>
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/webdev.svg')"></v-img>
+        <v-flex xs12 md4 order-xs0 order-md1  pa-5 data-aos="fade-right" data-aos-duration="800">
+          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/design/design4.svg')"></v-img>
         </v-flex>
-        <v-flex xs12 md8 pa-5>
-          <h3 class="mt-4">SEO and Deployment</h3>
-          <v-divider class="my-5"></v-divider>
-          <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
-          <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View SEO Services</v-btn>
-        </v-flex>
-      </v-layout>
-
-      <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md8 pa-5>
-          <h3 class="mt-4">Hosting and Deployment</h3>
-          <v-divider class="my-5"></v-divider>
-          <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
-          <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View Hosting Services</v-btn>
-        </v-flex>
-        <v-flex xs12 md4 pa-5>
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/webdev.svg')"></v-img>
+        <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
+          <h3 class="mt-4 blue--text text--accent-3">Packaging and More</h3>
+          <v-divider class="my-5" color="blue"></v-divider>
+          <p>We can apply desgins to nearly anyhting these days. If you want to wrap your vehicle, or print a million beer cans, we'll get the files ready and wherever they need to go. We also offer printing and screen printing services if you need shirts. Just let us know what you are looking for and we will get a quote ready.</p>
+          <v-btn class="my-2" to="/services/seo" outlined color="indigo">View SEO Services</v-btn>
         </v-flex>
       </v-layout>
 
     </v-container>
+
 
     <v-container fluid pa-0>
       <quoteCTA />

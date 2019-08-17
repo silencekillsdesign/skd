@@ -1,6 +1,6 @@
 <template>
   <v-container fluid pa-0 mb-5>
-    <pageHeader pageTitle="Portfolio" pageSubtitle="We Did It. We Did It!" />
+    <pageHeader pageTitle="Portfolio" pageSubtitle="We Do Things." />
 
     <v-tabs fixed-tabs background-color="blue accent-3" dark slider-color="yellow">
       <v-tab href="#logos">Logos</v-tab>

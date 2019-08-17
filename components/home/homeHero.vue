@@ -1,6 +1,6 @@
 <template>
   <v-container fluid fill-height class="hero-home">
-    <v-container fill-height>
+    <v-container class="fill-height">
       <transition name="fade" appear mode="out-in">
       <v-layout align-center justify-space-between row wrap fill-height>
         <v-flex

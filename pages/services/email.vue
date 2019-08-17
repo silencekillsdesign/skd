@@ -1,6 +1,6 @@
 <template>
   <div>
-    <pageHeader pageTitle="Consulting" pageSubtitle="Helping You. Help Yourself." />
+    <pageHeader pageTitle="Email" pageSubtitle="Send mail. Grow lists." />
 
     <pageIntro
       introText="Great branding establishes your company with a memorable presence in the marketplace, apart from your competition. Our brand development process creates a unique story, strategy, and visual identity for your brand. We offer a full range of branding services for companies of all sizes."

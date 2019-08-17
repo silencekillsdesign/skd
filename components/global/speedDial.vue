@@ -22,7 +22,7 @@
     <v-btn fab dark small color="green" href="tel:4065791985">
       <v-icon>mdi-phone</v-icon>
     </v-btn>
-    <v-btn fab dark small color="red" href="mailto:cj@silencekillsdesign.com" target="_blank">
+    <v-btn fab dark small color="red" href="mailto:cj@silencekillsdesign.com">
       <v-icon>mdi-email</v-icon>
     </v-btn>
   </v-speed-dial>
