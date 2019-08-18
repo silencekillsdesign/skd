@@ -62,7 +62,7 @@
     <v-container my-5>
       <v-layout align-center row wrap py-5 my-5  id="step1">
         <v-flex xs12 md4 pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img class="ma-5" :aspect-ratio="1" :src="require('~/assets/img/services/ux/ux1.svg')"></v-img>
+          <v-img class="ma-5" :aspect-ratio="1" contain max-height="250px"  :src="require('~/assets/img/services/ux/ux1.svg')"></v-img>
         </v-flex>
         <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
           <h3 class="mt-4 blue--text text--accent-3">Research and Planning</h3>
@@ -80,13 +80,13 @@
           <v-btn  @click="$vuetify.goTo('#step3')" class="ma-2" to="/services/ux" outlined color="indigo">Next Steps</v-btn>
         </v-flex>
         <v-flex class="order-md0" xs12 md4 pa-5 data-aos="fade-left" data-aos-duration="800">
-          <v-img class="ma-5" :aspect-ratio="1" :src="require('~/assets/img/services/ux/ux2.svg')"></v-img>
+          <v-img class="ma-5" :aspect-ratio="1" contain max-height="250px"  :src="require('~/assets/img/services/ux/ux2.svg')"></v-img>
         </v-flex>
       </v-layout>
 
       <v-layout align-center row wrap py-5 my-5 id="step3">
         <v-flex xs12 md4 pa-5  data-aos="fade-right" data-aos-duration="800">
-          <v-img class="ma-5" :aspect-ratio="1" :src="require('~/assets/img/services/ux/ux3.svg')"></v-img>
+          <v-img class="ma-5" :aspect-ratio="1" contain max-height="250px"  :src="require('~/assets/img/services/ux/ux3.svg')"></v-img>
         </v-flex>
         <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
           <h3 class="mt-4">Intereaction Prototyping</h3>
@@ -104,7 +104,7 @@
           <v-btn class="ma-2"  to="/services/webdevelopment" outlined color="indigo">View Web Dev Services</v-btn>
         </v-flex>
         <v-flex xs12 md4 pa-5  data-aos="fade-right" data-aos-duration="800">
-          <v-img class="ma-5" :aspect-ratio="1" :src="require('~/assets/img/services/ux/ux4.svg')"></v-img>
+          <v-img class="ma-5" :aspect-ratio="1" contain max-height="250px"  :src="require('~/assets/img/services/ux/ux4.svg')"></v-img>
         </v-flex>
       </v-layout>
 

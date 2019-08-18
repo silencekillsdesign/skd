@@ -1,8 +1,10 @@
+@import '~vuetify/src/styles/styles.sass';
+
+// The variables you want to modify
+$font-size-root: 18px;
+
 *{
-  font-size: 16px;
-}
-p {
-  font-size: 1em;
+  font-size: 17px;
 }
 
 .primary-nav {

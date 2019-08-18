@@ -115,9 +115,9 @@ export default {
         serviceName: 'Email Marketing',
         serviceDesc:
           'Engaging campaigns with high open-rates and conversions.',
-        serviceIcon: 'mdi-account-switch',
+        serviceIcon: 'mdi-email',
         serviceButton: 'Learn More',
-        serviceURL: '/services/av'
+        serviceURL: '/services/email'
       }
     ]
   })

@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="pa-0">
     <v-row no-gutters>
-      <v-col sm="6" lg="4">
+      <v-col cols="6" lg="3">
         <v-hover v-slot:default="{ hover }">
           <v-card tile flat color="grey lighten-4">
             <v-img
@@ -29,7 +29,7 @@
         </v-hover>
       </v-col>
 
-      <v-col sm="6" lg="4">
+      <v-col cols="6" lg="3">
         <v-hover v-slot:default="{ hover }">
           <v-card tile flat class="mx-auto" color="grey lighten-4" max-width="600">
             <v-img
@@ -57,7 +57,7 @@
         </v-hover>
       </v-col>
 
-      <v-col sm="6" lg="4">
+      <v-col cols="6" lg="3">
         <v-hover v-slot:default="{ hover }">
           <v-card tile flat class="mx-auto" color="grey lighten-4" max-width="600">
             <v-img
@@ -85,7 +85,7 @@
         </v-hover>
       </v-col>
 
-      <v-col sm="6" lg="4">
+      <v-col cols="6" lg="3">
         <v-hover v-slot:default="{ hover }">
           <v-card tile flat class="mx-auto" color="grey lighten-4" max-width="600">
             <v-img

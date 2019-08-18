@@ -15,21 +15,6 @@
           </tbody>
         </v-simple-table>
       </v-card-text>
-
-      <!-- <v-card-actions>
-      <v-btn
-        text
-        color="orange"
-      >
-        Share
-      </v-btn>
-      <v-btn
-        text
-        color="orange"
-      >
-        Explore
-      </v-btn>
-      </v-card-actions>-->
     </v-card>
   </v-dialog>
 </template>
@@ -94,7 +79,7 @@ export default {
         },
         {
           title: "Best Gold Panning",
-          winner: "Psssh, secret"
+          winner: "Psssh, secret X2"
         },
       ]
     };

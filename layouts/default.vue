@@ -5,11 +5,11 @@
       <v-container fluid pa-0>
         <nuxt />
         <speedDial />
-        <developmentDialog /> 
-        <!-- <developmentSnackbar />  -->
+        <!-- <developmentDialog />  -->
+        <developmentSnackbar /> 
       </v-container>
     </v-content>
-    <quickQuoteCTA  />
+    <quickQuoteContact  />
     <pagePrefooter />
     <pageFooter />
   </v-app>
@@ -19,20 +19,20 @@
 import primaryNav from '~/components/global/primaryNav.vue'
 import pageFooter from '~/components/global/pageFooter.vue'
 import pagePrefooter from '~/components/global/pagePrefooter.vue'
-import quickQuoteCTA from '~/components/global/quickQuoteCTA.vue'
+import quickQuoteContact from '~/components/global/quickQuoteContact.vue'
 import speedDial from '~/components/global/speedDial.vue'
-import developmentDialog from '~/components/global/developmentDialog.vue'
-// import developmentSnackbar from '~/components/global/developmentSnackbar.vue' //this breaks the homeServices component for some reason
+// import developmentDialog from '~/components/global/developmentDialog.vue'
+import developmentSnackbar from '~/components/global/developmentSnackbar.vue' //this breaks the homeServices component for some reason
 
 export default {
   components: {
     primaryNav,
     pageFooter,
     pagePrefooter,
-    quickQuoteCTA,
+    quickQuoteContact,
     speedDial,
-    developmentDialog
-    // developmentSnackbar
+    // developmentDialog
+    developmentSnackbar
   },
   data() {
     return {
@@ -63,7 +63,9 @@ export default {
 <style lang="scss">
 @import '~/assets/style/custom.scss';
 @import '~/assets/sass/main.scss';
-
+.primary-nav {
+  max-width: 100vw !important;
+}
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }

@@ -24,30 +24,40 @@
           data-aos-easing="ease-in-out-back"
           data-aos-duration="600"
         >
+          <h2 class="contact-form-header text-uppercase mb-4 blue--text accent-3 mt-4">Drop us a Line</h2>
           <!-- <contactBasic/> -->
-          <form
-            method="POST"
-            action="/thankYou"
-            data-netlify="true"
-            name="contact-form-noval"
-          >
+          <form method="POST" action="/thankYou" data-netlify="true" name="contact-form-noval">
             <input type="hidden" name="form-name" value="contact-form-noval" />
             <!-- this hidden field is for netifly -->
-            <h2 class="contact-form-header text-uppercase mb-4 blue--text accent-3">Drop us a Line</h2>
-            <v-text-field v-model="name" type="text" name="cf_name" label="Name" required class="md6"></v-text-field>
-            <v-text-field v-model="email"  type="email" name="cf_email" label="E-mail" required class="md6"></v-text-field>
+            <!-- <h2 class="contact-form-header text-uppercase mb-4 blue--text accent-3">Drop us a Line</h2> -->
+            <v-text-field
+              v-model="name"
+              type="text"
+              name="cf_name"
+              label="Name"
+              required
+              class="md6"
+            ></v-text-field>
+            <v-text-field
+              v-model="email"
+              type="email"
+              name="cf_email"
+              label="E-mail"
+              required
+              class="md6"
+            ></v-text-field>
             <v-text-field v-model="phone" type="tel" name="cf_phone" label="Phone" class="md6"></v-text-field>
             <!-- must use 'items' or v-model in script-->
             <v-select
               :items="[
-            'Website',
-            'App',
-            'SEO',
-            'Branding',
-            'Marketing',
-            'Design',
-            'Other'
-          ]"
+                'Website',
+                'App',
+                'SEO',
+                'Branding',
+                'Marketing',
+                'Design',
+                'Other'
+              ]"
               label="Project Type"
               name="[]"
               v-model="project"
@@ -55,7 +65,7 @@
             />
             <v-textarea
               name="cf_message"
-              v-model="message" 
+              v-model="message"
               label="Message"
               required
               hint="Please let us know what we can do to help build your brand."
@@ -82,19 +92,22 @@ export default {
   components: {
     pageHeader,
     pageIntro,
-    contactCard,
+    contactCard
     // contactForm,
     // contactBasic
   },
   data: () => ({
-    name: '',
-    email: '',
-    phone: '',
-    project: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    project: "",
+    message: ""
   })
-}
+};
 </script>
 
-<style>
+<style lang="scss" scoped>
+.contact-form-header {
+  font-size: 1.75em;
+}
 </style>
