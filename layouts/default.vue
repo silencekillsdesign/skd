@@ -5,7 +5,7 @@
       <v-container fluid pa-0>
         <nuxt />
         <speedDial />
-        <!-- <developmentDialog />  -->
+        <developmentDialog /> 
         <!-- <developmentSnackbar />  -->
       </v-container>
     </v-content>
@@ -21,7 +21,7 @@ import pageFooter from '~/components/global/pageFooter.vue'
 import pagePrefooter from '~/components/global/pagePrefooter.vue'
 import quickQuoteCTA from '~/components/global/quickQuoteCTA.vue'
 import speedDial from '~/components/global/speedDial.vue'
-// import developmentDialog from '~/components/global/developmentDialog.vue'
+import developmentDialog from '~/components/global/developmentDialog.vue'
 // import developmentSnackbar from '~/components/global/developmentSnackbar.vue' //this breaks the homeServices component for some reason
 
 export default {
@@ -31,7 +31,7 @@ export default {
     pagePrefooter,
     quickQuoteCTA,
     speedDial,
-    // developmentDialog
+    developmentDialog
     // developmentSnackbar
   },
   data() {
@@ -63,6 +63,7 @@ export default {
 <style lang="scss">
 @import '~/assets/style/custom.scss';
 @import '~/assets/sass/main.scss';
+
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }
