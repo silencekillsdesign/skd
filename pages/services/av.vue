@@ -40,8 +40,6 @@
       </v-layout>
     </v-container>
 
-    <stack class="my-5" />
-
     <v-container my-5>
       <v-layout row align-center justify-center mt-5 py-5>
         <h2
@@ -55,18 +53,29 @@
     </v-container>
 
     <v-container my-5>
-      <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md4 pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/wireframing.svg')"></v-img>
-        </v-flex>
-        <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4 blue--text text--accent-3">UX Planning and Wireframing</h3>
+      <v-row align="center" class="py-5 my-5" cols="12">
+        <v-col xs="12" md="4" order="0" class="pa-5" data-aos="fade-right" data-aos-duration="800">
+          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/av/av1.svg')"></v-img>
+        </v-col>
+        <v-col xs="12" sm="12" lg="8" class="pa-5" data-aos="fade-left" data-aos-duration="1200">
+          <h3 class="mt-4 blue--text text--accent-3">Audio Production Services</h3>
           <v-divider class="my-5" color="blue"></v-divider>
-          <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
-          <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View UX Services</v-btn>
-        </v-flex>
-      </v-layout>
-
+          <p>We create top quality audio productions used by several major record labels. We can do it all from audio logos, jingles, full track productions, and music on hold. Let us know what kind of audio we can make for you.</p>
+          <v-btn class="my-2" to="/services/ux" outlined color="indigo">SilenceKills on Soundcloud</v-btn>
+        </v-col>
+      </v-row>
+      <v-row align="center" class="py-5 my-5" cols="12">
+        <v-col xs="12" md="4" order="0" order-lg="1" class="pa-5" data-aos="fade-right" data-aos-duration="800">
+          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/av/av2.svg')"></v-img>
+        </v-col>
+        <v-col xs="12" sm="12" lg="8" class="pa-5" data-aos="fade-left" data-aos-duration="1200">
+          <h3 class="mt-4 blue--text text--accent-3">Video Production Services</h3>
+          <v-divider class="my-5" color="blue"></v-divider>
+          <p>We offer everything from animated logo stings, post-production, editing, motion graphics, explainer videos and more. 
+          </p>
+          <v-btn class="my-2" to="/services/ux" outlined color="indigo">SilenceKills on Soundcloud</v-btn>
+        </v-col>
+      </v-row>
     </v-container>
 
     <v-container fluid pa-0 v-for="(process, i) in processes" :key="i">

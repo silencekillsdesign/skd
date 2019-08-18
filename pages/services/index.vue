@@ -102,7 +102,7 @@ export default {
         serviceURL: '/services/av'
       },
       {
-        serviceId: '5',
+        serviceId: '7',
         serviceName: 'Screen Printing',
         serviceDesc:
           'Custom logowear and apparel design to show off your brand wherever you go.',
@@ -111,10 +111,10 @@ export default {
         serviceURL: '/services/screenprinting'
       },
       {
-        serviceId: '6',
-        serviceName: 'Consulting',
+        serviceId: '8',
+        serviceName: 'Email Marketing',
         serviceDesc:
-          'Immerse your customers with a brand-centered audio / visual experience.',
+          'Engaging campaigns with high open-rates and conversions.',
         serviceIcon: 'mdi-account-switch',
         serviceButton: 'Learn More',
         serviceURL: '/services/av'
