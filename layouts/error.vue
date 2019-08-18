@@ -1,15 +1,18 @@
 <template>
   <v-app dark class="error-page-wrapper">
-    <v-container>
-      <v-layout row wrap align-center justify-center>
-        <v-flex md12>
-          <h1 class="text-center" v-if="error.statusCode === 404">{{ pageNotFound }}</h1>
+    <v-container fill-height>
+      <v-card max-width="400" class="mx-auto">
+        <v-card-title>
+          <h1 class="text-center blue--text" v-if="error.statusCode === 404">{{ pageNotFound }}</h1>
           <h1 v-else>{{ otherError }}</h1>
-        </v-flex>
-        <v-flex md12>
-          <a class="text-center" href="/">Home page</a>
-        </v-flex>
-      </v-layout>
+        </v-card-title>
+        <v-card-text>Sorry, buddy, either I broke something or the page you are loking for doesn't exist. Please feel free to contact us or continue browsing the site.</v-card-text>
+        <v-card-actions>
+          <v-btn color="pink accent-2" text to="/">Return to Home</v-btn>
+          <v-spacer></v-spacer>
+          <v-btn color="blue accent-3" text to="/contact">Contact Us</v-btn>
+        </v-card-actions>
+      </v-card>
     </v-container>
   </v-app>
 </template>
@@ -43,9 +46,6 @@ export default {
 h1 {
   font-size: 20px;
   color: white;
-}
-a {
-  display: inline-block;
 }
 
 .error-page-wrapper {

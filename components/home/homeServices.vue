@@ -15,10 +15,10 @@
         <p class="headline white--text">{{ servicesIntro }}</p>
       </v-flex>
     </v-layout>
-    <v-container>
+    <v-container grid-list-xs>
       <v-layout align-space-between justify-space-between fill-height row wrap grid-list-md>
         <!-- TODO: create component for individual services, populate this with services fields (icon, title, short desc) in cms -->
-        <v-flex v-for="(service, i) in services" :key="i" xs12 md4 pa-3 class="text-center">
+        <v-flex xs12 md4 pa-3 class="text-center" v-for="(service, i) in services" :key="i">
           <v-card
             lazy
             align-center
@@ -29,7 +29,6 @@
             py-5
             class="service-card"
             :to="service.serviceURL"
-
           >
             <v-icon size="72" class="ma-5 pt-5 service-icon">{{ service.serviceIcon }}</v-icon>
             <v-card-title justify-center class="service-title">
@@ -49,7 +48,7 @@
                 dark
                 color="pink accent-3"
                 :to="service.serviceURL"
-              >{{ service.serviceButton }}</v-btn>
+              >Learn More</v-btn>
             </v-card-actions>
           </v-card>
         </v-flex>
@@ -85,7 +84,7 @@ export default {
             "Fast, well-designed websites that convert, delivered on time & within budget.",
           serviceIcon: "mdi-code-tags",
           serviceButton: "Learn More",
-          serviceURL: "/services/webdevelopment"
+          serviceURL: "/webdevelopment"
         },
         {
           serviceId: "2",
