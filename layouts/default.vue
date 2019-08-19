@@ -6,7 +6,7 @@
         <nuxt />
         <speedDial />
         <!-- <developmentDialog />  -->
-        <developmentSnackbar /> 
+        <!-- <developmentSnackbar />  -->
       </v-container>
     </v-content>
     <quickQuoteContact  />
@@ -22,7 +22,7 @@ import pagePrefooter from '~/components/global/pagePrefooter.vue'
 import quickQuoteContact from '~/components/global/quickQuoteContact.vue'
 import speedDial from '~/components/global/speedDial.vue'
 // import developmentDialog from '~/components/global/developmentDialog.vue'
-import developmentSnackbar from '~/components/global/developmentSnackbar.vue' //this breaks the homeServices component for some reason
+// import developmentSnackbar from '~/components/global/developmentSnackbar.vue' //this breaks the homeServices component for some reason
 
 export default {
   components: {
