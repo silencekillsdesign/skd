@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid pa-0  class="pink accent-3">
+  <v-container fluid pa-0 class="pink accent-3">
     <v-container fluid ma-0 pa-4 class="pink accent-3">
       <v-container grid-list-xl>
         <v-layout row wrap align-center justify-space-between v-bind="binding">
@@ -10,7 +10,14 @@
           </v-flex>
           <v-flex xs12 md4 justify-center>
             <!-- <quickQuoteBtn btnText="Request a Quote" btnColor="blue accent-3" /> -->
-             <v-btn large dark class="mx-0" color="indigo accent-3" link to="/contact/#main">Request a Quote</v-btn>
+            <v-btn
+              large
+              dark
+              class="mx-0"
+              color="indigo accent-3"
+              link
+              to="/contact/#main"
+            >Request a Quote</v-btn>
           </v-flex>
         </v-layout>
       </v-container>
@@ -25,7 +32,15 @@
 // import sparklineSection from '~/components/global/sparklineSection.vue'
 
 export default {
+  computed: {
+    binding() {
+      const binding = {};
 
+      if (this.$vuetify.breakpoint.mdAndDown) binding.column = true;
+
+      return binding;
+    }
+  }
 };
 </script>
 
