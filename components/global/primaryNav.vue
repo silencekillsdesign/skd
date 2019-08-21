@@ -47,7 +47,7 @@
       <!-- <v-app-bar-side-icon @click="drawer = !drawer" class="hidden-md-and-up"/> -->
       <v-app-bar-nav-icon class="hidden-md-and-up" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-app-bar-items class="hidden-sm-and-down" v-for="(item, i) in items" :key="i">
-        <v-btn depressed text :to="item.to" router>{{ item.title }}</v-btn>
+        <v-btn depressed text :to="item.to" router exact>{{ item.title }}</v-btn>
         <!-- remove nuxt, exact -->
       </v-app-bar-items>
     </v-app-bar>
