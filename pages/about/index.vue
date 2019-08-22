@@ -37,6 +37,12 @@ import aboutTestimonials from '~/components/about/aboutTestimonials.vue'
 import aboutClients from '~/components/about/aboutClients.vue'
 
 export default {
+  head: {
+    title: 'About SilenceKillsDesign',
+    meta: [
+      { hid: 'description', name: 'description', content: 'SilenceKillsDesign is a full-service digital agency specializing in multimedia marketing strategies. We offer services in brand management, web development, online marketing, and graphic design, along with many other services to help your local, small, or large business succeed.' }
+    ]
+  },
   components: {
     pageHeader,
     aboutSplit,

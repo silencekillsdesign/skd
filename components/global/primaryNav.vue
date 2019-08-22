@@ -59,6 +59,7 @@ import skdType from "~/components/global/skdType.vue";
 import skdIcon from "~/components/global/skdIcon.vue";
 
 export default {
+  
   data() {
     return {
       // NAV SETTINGS
