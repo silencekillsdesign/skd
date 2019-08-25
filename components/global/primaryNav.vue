@@ -26,7 +26,7 @@
     <v-app-bar app color="blue accent-3 primary-nav" flat dark hide-on-scroll>
       <!-- <v-app-bar-title v-text="title"/> -->
       <!-- TODO: Link to hompeage -->
-      <v-app-bar-title class="app-bar-brand">
+      <v-toolbar-title class="app-bar-brand">
         <v-layout row wrap justify-center align-center>
           <v-flex shrink>
             <v-img
@@ -42,7 +42,7 @@
             </h1>
           </v-flex>
         </v-layout>
-      </v-app-bar-title>
+      </v-toolbar-title>
       <v-spacer></v-spacer>
       <!-- <v-app-bar-side-icon @click="drawer = !drawer" class="hidden-md-and-up"/> -->
       <v-app-bar-nav-icon class="hidden-md-and-up" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>

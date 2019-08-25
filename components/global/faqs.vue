@@ -9,34 +9,35 @@
         >Common Questions</h2>
       </v-layout>
     </v-container>
-
-    <v-layout row wrap justify-center>
-      <v-flex md8 xs12 md ma-3>
-        <v-expansion-panels dark>
-          <v-expansion-panel
-            active-class="faq-open"
-            v-for="(faq, i) in faqs"
-            :key="i"
-            class="blue accent-4 mt-1"
-          >
-            <v-expansion-panel-header ripple class="subtitle-1 font-weight-bold">{{ faq.faqQ}}</v-expansion-panel-header>
-            <v-expansion-panel-content class="pa-3 pr-5">
-              <v-layout row wrap>{{ faq.faqA }}</v-layout>
-              <v-layout row wrap>
-                <v-btn
-                  v-if="faqs.faqButtonLink !== null"
-                  outlined
-                  dark
-                  color="cyan accent-2 "
-                  class="mt-3"
-                  :to="faq.faqButtonLink"
-                >{{ faq.faqButtonText }}</v-btn>
-              </v-layout>
-            </v-expansion-panel-content>
-          </v-expansion-panel>
-        </v-expansion-panels>
-      </v-flex>
-    </v-layout>
+    <v-container>
+      <v-layout row wrap justify-center>
+        <v-flex md8 xs12 md ma-3>
+          <v-expansion-panels dark>
+            <v-expansion-panel
+              active-class="faq-open"
+              v-for="(faq, i) in faqs"
+              :key="i"
+              class="blue accent-4 mt-1"
+            >
+              <v-expansion-panel-header ripple class="subtitle-1 font-weight-bold">{{ faq.faqQ}}</v-expansion-panel-header>
+              <v-expansion-panel-content class="pa-3 pr-5">
+                <v-layout row wrap>{{ faq.faqA }}</v-layout>
+                <v-layout row wrap>
+                  <v-btn
+                    v-if="faqs.faqButtonLink !== null"
+                    outlined
+                    dark
+                    color="cyan accent-2 "
+                    class="mt-3"
+                    :to="faq.faqButtonLink"
+                  >{{ faq.faqButtonText }}</v-btn>
+                </v-layout>
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
+        </v-flex>
+      </v-layout>
+    </v-container>
   </v-container>
 </template>
 

@@ -3,7 +3,7 @@
     <pageHeader pageTitle="Branding" pageSubtitle="Live It. Become It." />
 
     <pageIntro
-      introText="Great branding establishes your company with a memorable presence in the marketplace, apart from your competition. Our brand development process creates a unique story, strategy, and visual identity for your brand. We offer a full range of branding services for companies of all sizes."
+      introText="Great branding establishes your company with a memorable presence in the marketplace, apart from your competition. Our brand development process creates a unique story, strategy, and visual identity for your brand. We offer a full range of branding services - from logo design to full brand packages - for companies of all sizes."
     ></pageIntro>
 
     <!-- TODO: loop from data create reusable services component (service title, icon, short description)-->

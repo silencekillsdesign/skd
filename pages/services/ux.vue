@@ -67,7 +67,7 @@
         <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
           <h3 class="mt-4 blue--text text--accent-3">Research and Planning</h3>
           <v-divider class="my-5" color="blue"></v-divider>
-          <p>Before we design or build anyhting, we need to understand <b>why</b> users  use your site or app. Once we know the why, we dive into the <b>how</b> they will interact with the final product. Here we create deep user personas. We look at possible frustrations and rendundancies and strategize an approach to resolve those issues.</p>
+          <p>Before we design or build anything, we need to understand <b>why</b> users  use your site or app. Once we know the why, we dive into the <b>how</b> they will interact with the final product. Here we create deep user personas. We look at possible frustrations and rendundancies and strategize an approach to resolve those issues.</p>
           <v-btn @click="$vuetify.goTo('#step2')" class="ma-2" to="/services/ux" outlined color="indigo">Next Steps</v-btn>
         </v-flex>
       </v-layout>

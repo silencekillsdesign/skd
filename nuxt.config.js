@@ -99,11 +99,14 @@ module.exports = {
   generate: {
     routes: function () {
       return [
-        '/',
-        'contact',
-        'thankYou',
-        '/about'
-      ]
+        "/",
+        "/contact",
+        "/thankYou",
+        "/about",
+        "/services",
+        "/portfolio",
+        "/blog"
+      ];
     }
   },
   
@@ -120,10 +123,10 @@ module.exports = {
             '/',
             '/contact',
             '/thankYou',
-            // '/about',
-            // 'services',
-            // 'portfolio',
-            // 'blog'
+            '/about',
+            '/services',
+            '/portfolio',
+            '/blog'
           ],
           {
             // options

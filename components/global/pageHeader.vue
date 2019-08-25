@@ -8,7 +8,7 @@
   <!-- <v-img :aspect-ratio="3/1" :src="require('~/assets/img/backgrounds/waveheader.svg')" class="page-header"> -->
   <v-img
     :aspect-ratio="5/1"
-    :src="require('~/assets/img/backgrounds/warpspeed.svg')"
+    :src="require('~/assets/img/backgrounds/polyworm.svg')"
     class="page-header"
   >
     <v-container class="fill-height bottom-gradient">

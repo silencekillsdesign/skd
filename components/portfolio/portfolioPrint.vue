@@ -13,7 +13,7 @@
             >
               <v-expand-transition>
                 <v-row
-                no-gutters
+                  no-gutters
                   v-if="hover"
                   class="d-flex transition-fast-in-fast-out indigo accent-3 v-card--reveal headline white--text"
                   style="height: 100%;"

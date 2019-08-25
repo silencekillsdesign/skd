@@ -1,6 +1,6 @@
 <template>
   <v-container fluid pa-0>
-    <v-container>
+    <v-container class="pa-4">
       <v-layout row wrap my-5 py-5 justify-center>
         <h2
           class="display-3 text-uppercase font-weight-bold indigo--text text--accent-3"

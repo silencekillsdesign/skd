@@ -37,6 +37,8 @@ import aboutTestimonials from '~/components/about/aboutTestimonials.vue'
 import aboutClients from '~/components/about/aboutClients.vue'
 
 export default {
+  data: () => ({
+  }),
   head: {
     title: 'About SilenceKillsDesign',
     meta: [
