@@ -1,60 +1,39 @@
 <template>
-  <v-container
-    id="homeServices"
-    fluid
-    dark
-    ma-0
-    class="indigo accent-3 quantam-bg"
-  >
-    <v-layout justify-center mb-4>
-      <v-flex dark pt-5 xs12 md6 class="text-center">
+  <v-container id="homeServices" fluid dark ma-0 class="indigo accent-3 quantam-bg">
+    <v-row class="mb-4" justify="center">
+      <v-col cols="12" md="6" dark class="text-center pt-5 ">
         <h2
-          class="font-weight-bold text-uppercase yellow--text mb-4"
-          :class="{'pr-0 display-1': $vuetify.breakpoint.smAndDown, 'pr-5 display-3': $vuetify.breakpoint.mdAndUp}"
+          class="font-weight-bold text-uppercase yellow--text mb-4 display-3"
+          :class="{'pr-0': $vuetify.breakpoint.smAndDown, 'pr-5 boxed-in': $vuetify.breakpoint.mdAndUp}"
         >{{ servicesTitle }}</h2>
         <p class="headline white--text">{{ servicesIntro }}</p>
-      </v-flex>
-    </v-layout>
+      </v-col>
+    </v-row>
     <v-container grid-list-xs>
-      <v-layout align-space-between justify-space-between fill-height row wrap grid-list-md>
+      <v-row align-space-between justify-space-between fill-height row wrap grid-list-md>
         <!-- TODO: create component for individual services, populate this with services fields (icon, title, short desc) in cms -->
-        <v-flex xs12 md4 pa-3 class="text-center" v-for="(service, i) in services" :key="i">
-          <v-card
-            lazy
-            align-center
-            justify-center
-            dark
-            color="transparent"
-            px-2
-            py-5
-            class="service-card"
-            :to="service.serviceURL"
-          >
+        <v-col cols="12" md="4" class="text-center pa-3" v-for="(service, i) in services" :key="i">
+          <v-card dark color="transparent" class="service-card px-2 py-5">
             <v-icon size="72" class="ma-5 pt-5 service-icon">{{ service.serviceIcon }}</v-icon>
             <v-card-title justify-center class="service-title">
-              <v-flex>
+              <v-col>
                 <h4
                   class="headline font-weight-bold text-uppercase text-center"
                 >{{ service.serviceName }}</h4>
-              </v-flex>
+              </v-col>
             </v-card-title>
             <v-card-text class="mb-0">
               <p class="subheading text-center">{{ service.serviceDesc }}</p>
             </v-card-text>
 
             <v-card-actions class="justify-center mb-5">
-              <v-btn
-                class="mb-5"
-                dark
-                color="pink accent-3"
-                :to="service.serviceURL"
-              >Learn More</v-btn>
+              <v-btn class="mb-5" dark color="pink accent-3" :to="service.serviceURL">Learn More</v-btn>
             </v-card-actions>
           </v-card>
-        </v-flex>
-      </v-layout>
-      <v-layout my-5 py-5 justify-center align-center>
-        <v-flex grow justify-center align-center class="text-center">
+        </v-col>
+      </v-row>
+      <v-row my-5 py-5 justify-center align-center>
+        <v-col grow justify-center align-center class="text-center">
           <v-btn
             x-large
             depressed
@@ -63,8 +42,8 @@
             color="yellow accent-3"
             to="/services"
           >View All Services</v-btn>
-        </v-flex>
-      </v-layout>
+        </v-col>
+      </v-row>
     </v-container>
   </v-container>
 </template>

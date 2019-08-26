@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="fill-height hero-home">
     <v-container class="fill-height">
-      <transition name="fade" appear mode="out-in">
+      <!-- <transition name="fade" appear mode="out-in"> -->
         <v-row align="center" justify="space-between" class="fill-height">
           <v-col
             cols="12"
@@ -51,7 +51,7 @@
             <img height="470" src="@/assets/branding/silencekillsdesign--icon--white.svg" />
           </v-col>
         </v-row>
-      </transition>
+      <!-- </transition> -->
     </v-container>
   </v-container>
 </template>
