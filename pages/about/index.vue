@@ -2,14 +2,7 @@
   <v-container fluid pa-0>
     <!-- <sparklineHeader pageTitle="About Us" pageSubtitle="Better Brands. Less Bullshit." /> -->
     <pageHeader pageTitle="About Us" pageSubtitle="Better Brands. Less Bullshit." />
-    <aboutSplit 
-      img="~/assets/img/wolves.svg" 
-      imgOrder="0" 
-      heading="Who We Are" 
-      body="SilenceKillsDesign is a full-service digital agency specializing in brand managment, web development, and integrated online marketing strategies. We work with growing B2B clients across the US and Canada, as well as local Montana businesses. We help to create strategies to meet your business goals and your customers expectations. By this, we find ways to reach new leads, turn leads into customers, and customers into loyal brand advocates. We’re passionate about creating unique solutions to the problems today’s small business owners face." 
-      btnText="Connect with Us" 
-      btnURL="contact"
-    />
+    <aboutSplit />
     <aboutSplitLeft />
     <aboutTestimonials
       data-aos="fade-left"
@@ -47,7 +40,7 @@ export default {
   data: () => ({
   }),
   head: {
-    title: 'About SilenceKillsDesign',
+    title: 'About - ',
     meta: [
       { hid: 'description', name: 'description', content: 'SilenceKillsDesign is a full-service digital agency specializing in multimedia marketing strategies. We offer services in brand management, web development, online marketing, and graphic design, along with many other services to help your local, small, or large business succeed.' }
     ]

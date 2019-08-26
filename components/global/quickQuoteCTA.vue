@@ -9,7 +9,8 @@
             >Ready to get started on your new project?</h2>
           </v-flex>
           <v-flex xs12 md4 justify-center>
-            <quickQuoteBtn btnText="Request a Quote" btnColor="blue accent-3" />
+            <!-- <quickQuoteBtn btnText="Request a Quote" btnColor="blue accent-3" /> -->
+            <v-btn large dark class="mx-0" color="blue accent-3" to="/contact">Request a Quote</v-btn>
           </v-flex>
         </v-layout>
       </v-container>
@@ -20,29 +21,29 @@
 
 
 <script>
-import quickQuoteBtn from "~/components/global/quickQuoteBtn.vue";
+// import quickQuoteBtn from "~/components/global/quickQuoteBtn.vue";
 // import sparklineSection from '~/components/global/sparklineSection.vue'
 
 export default {
-  computed: {
-    binding() {
-      const binding = {};
+//   computed: {
+//     binding() {
+//       const binding = {};
 
-      if (this.$vuetify.breakpoint.mdAndDown) binding.column = true;
+//       if (this.$vuetify.breakpoint.mdAndDown) binding.column = true;
 
-      return binding;
-    }
-  },
-  components: {
-    quickQuoteBtn
-    // sparklineSection
-  },
-  data() {
-    return {
-      quickQuote: false
-    };
-  }
-};
+//       return binding;
+//     }
+//   },
+//   components: {
+//     quickQuoteBtn
+//     // sparklineSection
+//   },
+//   data() {
+//     return {
+//       quickQuote: false
+//     };
+//   }
+}
 </script>
 
 <style scoped>

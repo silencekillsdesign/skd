@@ -12,7 +12,7 @@
     class="page-header"
   >
     <v-container class="fill-height bottom-gradient">
-      <transition appear name="bounce">
+      <!-- <transition appear name="bounce"> -->
         <v-layout pa-4 mt-2 justify-center align-center class="white--text">
           <v-flex shrink>
             <h1
@@ -26,7 +26,7 @@
             >{{ pageSubtitle }}</h4>
           </v-flex>
         </v-layout>
-      </transition>
+      <!-- </transition> -->
     </v-container>
   </v-img>
 </template>
@@ -74,7 +74,7 @@ export default {
   opacity: 0;
 }
 
-.bounce-enter-active {
+/* .bounce-enter-active {
   animation: bounce-in 0.5s;
 }
 .bounce-leave-active {
@@ -90,5 +90,5 @@ export default {
   100% {
     transform: scale(1);
   }
-}
+} */
 </style>
