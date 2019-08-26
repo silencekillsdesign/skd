@@ -5,6 +5,7 @@
     <v-col
       cols="12"
       md="6"
+      :order="imgOrder"
       class="blue accent-4"
       data-aos="fade-up"
       data-aos-easing="ease-in-out-back"

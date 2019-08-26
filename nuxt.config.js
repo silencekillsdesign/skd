@@ -95,16 +95,22 @@ module.exports = {
     "@nuxtjs/sitemap"
   ],
   sitemap: {
-    hostname: 'https://example.com',
+    hostname: "https://example.com",
     gzip: true,
     exclude: [],
     routes: [
       "/",
+      "/contact",
+      "/thankYou",
+      "/about",
+      "/services",
+      "/portfolio",
+      "/blog"
     ]
   },
 
   //to prerender thankyou page, hopefully fix netlify redirect miss.
-  
+
   // generate: {
   //   routes: function() {
   //     return [
