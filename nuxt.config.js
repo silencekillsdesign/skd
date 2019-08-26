@@ -19,20 +19,21 @@ module.exports = {
         hid: "description",
         name: "description",
         content: process.env.npm_package_description || ""
-      },{
+      },
+      {
         hid: `og:title`,
-        property: 'og:title',
+        property: "og:title",
         content: `SilenceKillsDesign`
       },
       {
         hid: `og:url`,
-        property: 'og:url',
-        content: 'https://silencekillsdesign.netlify.com'
+        property: "og:url",
+        content: "https://silencekillsdesign.netlify.com"
       },
       {
         hid: `og:image`,
-        property: 'og:image',
-        content: '~/static/silencekillsdesign--opengraph-img.png/'
+        property: "og:image",
+        content: "~/static/silencekillsdesign--opengraph-img.png/"
       }
     ],
     link: [
@@ -67,7 +68,7 @@ module.exports = {
    */
   css: [
     "aos/dist/aos.css",
-    "vue2-animate/dist/vue2-animate.css",
+    "vue2-animate/dist/vue2-animate.css"
     // "vue-image-lightbox/dist/vue-image-lightbox.min.css"
   ],
   /*
@@ -75,7 +76,8 @@ module.exports = {
    */
   plugins: [
     { src: "~/plugins/aos", ssr: false },
-    { src: '~/plugins/Siema.js', ssr: false }
+    { src: "~/plugins/Siema.js", ssr: false },
+    { src: "~plugins/ga.js", ssr: false }
     // { src: "~/plugins/VueOwlSlider", ssr: false },
     // { src: '~/plugins/vue-lightbox-pluign.js', ssr: false }
     // { src: "~plugins/vuew-animate", ssr: false }
@@ -88,7 +90,7 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
-    '@neneos/nuxt-animate.css'
+    "@neneos/nuxt-animate.css"
   ],
   devModules: [
     // Simple usage
@@ -97,7 +99,7 @@ module.exports = {
 
   //to prerender thankyou page, hopefully fix netlify redirect miss.
   generate: {
-    routes: function () {
+    routes: function() {
       return [
         "/",
         "/contact",
@@ -109,33 +111,33 @@ module.exports = {
       ];
     }
   },
-  
+
   // for netlify to capture form data
   configureWebpack: () => {
-    if (process.env.NODE_ENV !== 'production') return;
+    if (process.env.NODE_ENV !== "production") return;
     return {
       plugins: [
         new PrerenderSPAPlugin(
           // Absolute path to compiled SPA
-          path.resolve(__dirname, 'dist'),
+          path.resolve(__dirname, "dist"),
           // List of routes to prerender
           [
-            '/',
-            '/contact',
-            '/thankYou',
-            '/about',
-            '/services',
-            '/portfolio',
-            '/blog'
+            "/",
+            "/contact",
+            "/thankYou",
+            "/about",
+            "/services",
+            "/portfolio",
+            "/blog"
           ],
           {
             // options
           }
-        ),
+        )
       ]
-    }
+    };
   },
-  
+
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
