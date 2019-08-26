@@ -96,6 +96,19 @@ export default {
     // contactForm,
     // contactBasic
   },
+  head() {
+    return {
+      title: "Contact Us",
+      meta: [        
+        {
+          name: "description",
+          content:
+            "SilenceKillsDesign Contact Info. Phone: 406-579-1985. Email: cj@silencekillsdesign.com"
+        },
+        { name: "robots", content: "index, follow" },
+      ]
+    };
+  },
   data: () => ({
     name: "",
     email: "",

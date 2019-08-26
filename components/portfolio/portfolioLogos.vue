@@ -51,17 +51,17 @@ export default {
         {
           image: "logo_swampydonks.svg",
           title: "Swampydonks Team Logo",
-          link: null
+          link: ""
         },
         {
           image: "logo_xtant-medical.svg",
           title: "Xtant Medical Branding",
-          link: "/"
+          link: "https://xtantmedical.com"
         },
         {
           image: "logo_riotgear.svg",
           title: "Riot Gear Branding",
-          link: "/"
+          link: ""
         },
         {
           image: "logo_runneredq.svg",
@@ -76,37 +76,37 @@ export default {
         {
           image: "logo_donks.svg",
           title: "Donks Team Logo",
-          link: "/"
+          link: ""
         },
         {
           image: "logo_bozeman-family-dentistry.svg",
           title: "Bozeman Family Dentistry Branding",
-          link: "https://alumni.runneredq.com"
+          link: "https://www.bozemanfamilydentistry.com/"
         },
         {
           image: "logo_gallatin-insulation.svg",
           title: "Gallatin Insulation Branding",
-          link: "https://alumni.runneredq.com"
+          link: "https://www.truteam.com/branches/mt/gallatin/gallatin-insulation-belgrade/"
         },
         {
           image: "logo_schlubs.svg",
           title: "Schlubs Team Logo",
-          link: "https://alumni.runneredq.com"
+          link: "#"
         },
         {
           image: "logo_surveydig.svg",
           title: "SurveyDIG Branding",
-          link: "https://alumni.runneredq.com"
+          link: "https://surveydig.com"
         },
         {
           image: "logo_short-and-curlies.svg",
           title: "Short and Curlies Team Logo",
-          link: "https://alumni.runneredq.com"
+          link: "#"
         },
         {
           image: "logo_biologos.svg",
           title: "Biologos Logo",
-          link: "https://alumni.runneredq.com"
+          link: "https://biologos.com"
         },
       ]
     };

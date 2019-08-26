@@ -44,6 +44,19 @@ export default {
     pageIntro,
     recentWork
   },
+  head() {
+    return {
+      title: "Services",
+      meta: [
+        {
+          name: "description",
+          content:
+            "Design. Branding. SEO. Web Development / Web Design. UX/UI Design. Email. Marketing. Audio/Visual. Screenprinting. All at affordable rates."
+        },
+        { name: "robots", content: "index, follow" },
+      ]
+    };
+  },
   data: () => ({
     isHovering: false,
     services: [

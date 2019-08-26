@@ -4,16 +4,12 @@
       <homeHero />
       <homeFeature />
       <!-- TODO create custom images for each -->
-      <homeServices />
+      <homeServices data-aos="zoom-in-down" data-aos-easing="ease-in-out-back" data-aos-duration="1400"  />
       <!-- <homeServicesDynamic /> -->
       <!-- TODO add dynamic blogs section -->
-      <aboutClients transition="scroll-y-transition" appear />
+      <aboutClients/>
       <faqs data-aos="zoom-in-down" data-aos-easing="ease-in-out-back" data-aos-duration="1400" />
-      <aboutTestimonials
-        data-aos="fade-down"
-        data-aos-easing="ease-in-out-back"
-        data-aos-duration="1000"
-      />
+      <aboutTestimonials />
     </v-layout>
   </transition>
 </template>
@@ -40,9 +36,43 @@ export default {
     aboutClients,
     aboutTestimonials
   },
+  data () {
+    return {
+      structuredData: {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "SilenceKillsDesign",
+        "brand": "SilenceKillsDesign",
+        "knowsAbout": [
+          "Web Development",
+          "Graphic design",
+          "marketing",
+          "SEO",
+          "audio video"
+        ],
+			"sameAs": [
+				"https://www.facebook.com/silencekillsdesign/",
+				"https://twitter.com/s1lencek1lls",
+        "https://www.linkedin.com/in/cjwilliamsworks/",
+        "https://instagram.com/silencekillsdesign"
+			],
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "221 Virginia Way",
+				"addressLocality": "Bozeman",
+				"addressRegion": "MT",
+				"postalCode": "59718"
+			},
+			"telephone": "406-579-1985",
+			"email": "cj@silencekillsdesign.com", 
+      },
+    }
+  },
   head() {
     return {
       title: "SilenceKillsDesign - Development, Design, and Marketing",
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [{ innerHTML: JSON.stringify(this.structuredData), type: 'application/ld+json' }],
       meta: [
         {
           name: "description",

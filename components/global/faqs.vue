@@ -50,7 +50,7 @@ export default {
         {
           faqQ: "How much does a logo typically cost?",
           faqA:
-            "Logo packages start at $400, and go up to $5,000. The more direction you have, the easier the rocess goes. We'll need a little more info on your brand before we can give an exact estimate.",
+            "Logo packages start at $400, and go up to $5,000. The more direction you have, the quicker the process. We'll need a little more info on your brand before we can give an exact estimate.",
           faqButtonText: "Get a Logo Quote",
           faqButtonLink: "contact",
           faqCategories: ["branding"],
@@ -60,7 +60,7 @@ export default {
         {
           faqQ: "Do you outsource any of your clients' work?",
           faqA:
-            "Currently, we do everything in house. However, we do have a network of developers to call on if the project scope becomes too large.",
+            "Currently, we do mostly everything in house. However, we do have a network of developers to call on if the project scope becomes too large.",
           faqButtonText: "View Portfolio",
           faqButtonLink: "portfolio",
           faqCategories: ["web"],
@@ -80,7 +80,7 @@ export default {
         {
           faqQ: "Do you work with local businesses?",
           faqA:
-            "Our Bozeman roots make us a great fit for working with local Montana businesses. We also work with small- to medium-sized businesses across the US and Canada",
+            "Our Bozeman roots make us a great fit for working with local Montana businesses, as we know the market well. We also work with small- to medium-sized businesses across the US and Canada.",
           faqButtonText: "View Portfolio",
           faqButtonLink: "portfolio",
           faqCategories: ["marketing"],

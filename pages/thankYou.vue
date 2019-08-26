@@ -25,6 +25,19 @@ export default {
     pageHeader,
     pageIntro,
     blogRecentCards
+  },
+  head() {
+    return {
+      title: "Thanks for Contacting Us",
+      meta: [        
+        {
+          name: "description",
+          content:
+            "Thanks for contacting us. We'll be in touch soon."
+        },
+        { name: "robots", content: "index, follow" },
+      ]
+    };
   }
 }
 </script>

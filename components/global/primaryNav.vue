@@ -27,21 +27,21 @@
       <!-- <v-app-bar-title v-text="title"/> -->
       <!-- TODO: Link to hompeage -->
       <v-toolbar-title class="app-bar-brand">
-        <v-layout row wrap justify-center align-center>
-          <v-flex shrink>
+        <v-row no-gutters justify="center" align="center">
+          <v-col shrink class="ma-0">
             <v-img
-              class="ma-0 pa-0"
+              class="ma-0 pa-0 hidden-md-and-up"
               contain
               height="40px"
               :src="require('~/assets/branding/silencekillsdesign--icon--white.svg')"
             ></v-img>
-          </v-flex>
-          <v-flex grow class="hidden-sm-and-down">
-            <h1 class="pl-0 ml-0">
+          </v-col>
+          <v-col align="center" class="hidden-sm-and-down">
+            <h1 class="pl-0 pr-6 ml-0">
               <skdType />
             </h1>
-          </v-flex>
-        </v-layout>
+          </v-col>
+        </v-row>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <!-- <v-app-bar-side-icon @click="drawer = !drawer" class="hidden-md-and-up"/> -->

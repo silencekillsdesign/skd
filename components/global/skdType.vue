@@ -11,6 +11,7 @@ export default {
 .skdType {
   font-family: 'Play', sans-serif;
   font-weight: 400;
+  font-size: .625em !important; 
   b {
     font-size: 1em;
   }

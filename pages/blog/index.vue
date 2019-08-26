@@ -62,6 +62,19 @@ export default {
   components: {
     pageHeader
   },
+  head() {
+    return {
+      title: "Blog",
+      meta: [        
+        {
+          name: "description",
+          content:
+            "Blogging about design, development, and marketing for small to medium-sized businesses."
+        },
+        { name: "robots", content: "index, follow" },
+      ]
+    };
+  },
   data() {
     return {
       articles: [

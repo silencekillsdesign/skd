@@ -124,6 +124,19 @@ export default {
     pageIntro,
     stack
   },
+  head() {
+    return {
+      title: "Web Development & Web Design",
+      meta: [        
+        {
+          name: "description",
+          content:
+            "Well-designed websites are very powerful marketing, delivering your brand's message to your customers' fingertips. Our start-to-finish web development process caters to your existing customers, and new audiences alike."
+        },
+        { name: "robots", content: "index, follow" },
+      ]
+    };
+  },
   data() {
     return {
       i: 1,

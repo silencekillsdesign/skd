@@ -51,6 +51,19 @@ export default {
     portfolioPrint,
     portfolioWeb,
     portfolioAV
+  },
+  head() {
+    return {
+      title: "Portfolio",
+      meta: [        
+        {
+          name: "description",
+          content:
+            "Work by SilenceKillsDesign. Logo Design, branding, web design, development, branding, print design, and audio /visual."
+        },
+        { name: "robots", content: "index, follow" },
+      ]
+    };
   }
 }
 </script>

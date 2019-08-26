@@ -3,7 +3,7 @@
     <pageHeader pageTitle="SEO / SEM" pageSubtitle="Seek It. Find It." />
 
     <pageIntro
-      introText="A well-designed website can be your most powerful marketing segment, delivering your brand's message to your customers' fingertips. Our web design process caters to your existing customers, and new audiences alike."
+      introText="Grow your web presence with a unique search engine optimiation approach focused on your customers.  With thousands of hits delivered to our customers across industries, our technical SEO strategies help you start improving your results immediately."
     ></pageIntro>
 
     <!-- TODO: loop from data create reusable services component (service title, icon, short description)-->

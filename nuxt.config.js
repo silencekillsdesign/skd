@@ -75,7 +75,7 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    { src: "~/plugins/aos", ssr: false },
+    { src: "~/plugins/aos", ssr: false , disable: "mobile"},
     { src: "~/plugins/Siema.js", ssr: false },
     { src: "~plugins/ga.js", ssr: false }
     // { src: "~/plugins/VueOwlSlider", ssr: false },
@@ -95,7 +95,7 @@ module.exports = {
     "@nuxtjs/sitemap"
   ],
   sitemap: {
-    hostname: "https://example.com",
+    hostname: "https://silencekillsdesign.com",
     gzip: true,
     exclude: [],
     routes: [
@@ -127,7 +127,7 @@ module.exports = {
 
   // for netlify to capture form data
   configureWebpack: () => {
-    if (process.env.NODE_ENV !== "production") return;
+    if (process.env.NODE_ENV !== "dev") return;
     return {
       plugins: [
         new PrerenderSPAPlugin(
