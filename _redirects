@@ -1,4 +1,5 @@
 # These rules will change if you change your site’s custom domains or HTTPS settings
 
 # Redirect default Netlify subdomain to primary domain
+http://silencekillsdesign.netlify.com/* http://silencekillsdesign.com/:splat 301!
 https://silencekillsdesign.netlify.com/* https://silencekillsdesign.com/:splat 301!

@@ -90,7 +90,8 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
-    "@neneos/nuxt-animate.css"
+    "@neneos/nuxt-animate.css",
+    ["@nuxtjs/google-analytics", { id: "UA-24456454-1" }]
   ],
   devModules: [
     // Simple usage
