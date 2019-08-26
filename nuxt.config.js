@@ -91,27 +91,33 @@ module.exports = {
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
     "@neneos/nuxt-animate.css",
-    ["@nuxtjs/google-analytics", { id: "UA-24456454-1" }]
+    ["@nuxtjs/google-analytics", { id: "UA-24456454-1" }],
+    "@nuxtjs/sitemap"
   ],
-  devModules: [
-    // Simple usage
-    // '@nuxtjs/vuetify'
-  ],
+  sitemap: {
+    hostname: 'https://example.com',
+    gzip: true,
+    exclude: [],
+    routes: [
+      "/",
+    ]
+  },
 
   //to prerender thankyou page, hopefully fix netlify redirect miss.
-  generate: {
-    routes: function() {
-      return [
-        "/",
-        "/contact",
-        "/thankYou",
-        "/about",
-        "/services",
-        "/portfolio",
-        "/blog"
-      ];
-    }
-  },
+  
+  // generate: {
+  //   routes: function() {
+  //     return [
+  //       "/",
+  //       "/contact",
+  //       "/thankYou",
+  //       "/about",
+  //       "/services",
+  //       "/portfolio",
+  //       "/blog"
+  //     ];
+  //   }
+  // },
 
   // for netlify to capture form data
   configureWebpack: () => {
