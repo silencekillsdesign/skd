@@ -8,7 +8,7 @@
       <!-- <homeServicesDynamic /> -->
       <!-- TODO add dynamic blogs section -->
       <aboutClients/>
-      <faqs data-aos="zoom-in-down" data-aos-easing="ease-in-out-back" data-aos-duration="1400" />
+      <faqs data-aos="fade-in-down" data-aos-easing="ease-in-out-back" data-aos-duration="1400" />
       <aboutTestimonials />
     </v-layout>
   </transition>
