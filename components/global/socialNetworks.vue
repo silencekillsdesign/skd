@@ -4,7 +4,7 @@
       <v-flex v-for="(social, i) in socials" :key="i">
         <v-tooltip top>
           <template v-slot:activator="{ on }">
-            <v-btn icon large :href="social.url" target="_blank">
+            <v-btn rel="noopener" icon large :href="social.url" target="_blank">
               <v-icon color="blue accent-3" dark v-on="on">{{ social.icon }}</v-icon>
             </v-btn>
           </template>

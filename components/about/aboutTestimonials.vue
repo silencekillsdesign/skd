@@ -22,7 +22,7 @@
                 <blockquote
                   :class="{'title': $vuetify.breakpoint.smAndDown, 'headline': $vuetify.breakpoint.mdAndUp}"
                 >{{ review.review }}</blockquote>
-                <v-btn class="mt-5" large outlined color="white" href="https://g.page/silencekillsdesign/review" target="_blank">Leave a Review</v-btn>
+                <v-btn class="mt-5" large outlined color="white" href="https://g.page/silencekillsdesign/review" target="_blank" rel="noopener">Leave a Review</v-btn>
               </v-col>
             </v-row>
           </v-container>

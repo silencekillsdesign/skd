@@ -65,14 +65,12 @@ export default {
 			},
 			"telephone": "406-579-1985",
 			"email": "cj@silencekillsdesign.com", 
-      },
+      }
     }
   },
   head() {
     return {
       title: "SilenceKillsDesign - Development, Design, and Marketing",
-      __dangerouslyDisableSanitizers: ['script'],
-      script: [{ innerHTML: JSON.stringify(this.structuredData), type: 'application/ld+json' }],
       meta: [
         {
           name: "description",
@@ -95,7 +93,9 @@ export default {
             "assets/branding/silencekillsdesign--logo--horizontal--color.svg"
         },
         { name: "twitter:card", content: "SilenceKillsDesign Logo" }
-      ]
+      ],
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [{ innerHTML: JSON.stringify(this.structuredData), type: 'application/ld+json' }]
     };
   }
 };
