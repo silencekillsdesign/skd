@@ -81,7 +81,7 @@ export default {
             "Drive quality traffic to your site with expert digital marketing services.",
           serviceIcon: "mdi-chess-knight",
           serviceButton: "Learn More",
-          serviceURL: "/services/seo-sem"
+          serviceURL: "/services/seo"
         },
         {
           serviceId: "45",
@@ -90,7 +90,7 @@ export default {
             "Well-structured information architecture and logical user interfaces.",
           serviceIcon: "mdi-monitor-cellphone-star",
           serviceButton: "Learn More",
-          serviceURL: "/services/ux-ui"
+          serviceURL: "/services/ux"
         },
         {
           serviceId: "5",
