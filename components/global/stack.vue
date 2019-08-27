@@ -1,14 +1,7 @@
 <template>
-  <v-container
-    fluid
-    my-3
-    data-aos="fade-up"
-    data-aos-easing="ease-in-out-back"
-    data-aos-duration="600"
-    grid-list-lg
-  >
-    <v-layout row wrap align-center justify-center>
-      <v-flex px-3 py-2 class="text-center" v-for="technology in technologies" :key="technology.id">
+  <v-container fluid my-3>
+    <v-row wrap align="center" justify="space-between">
+      <v-col px-3 py-2 class="text-center" v-for="(technology, i) in technologies" :key="i">
         <v-tooltip color="deep-purple" top>
           <template v-slot:activator="{ on }">
             <v-icon
@@ -22,8 +15,8 @@
           </template>
           <span>{{ technology.technology }}</span>
         </v-tooltip>
-      </v-flex>
-    </v-layout>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 

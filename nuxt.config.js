@@ -75,7 +75,7 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    { src: "~/plugins/aos", ssr: false , disable: "mobile"},
+    { src: "~/plugins/aos", ssr: false },
     { src: "~/plugins/Siema.js", ssr: false },
     { src: "~plugins/ga.js", ssr: false }
     // { src: "~/plugins/VueOwlSlider", ssr: false },
@@ -179,6 +179,5 @@ module.exports = {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
-  },
-  vendor: ["aos"]
+  }
 };

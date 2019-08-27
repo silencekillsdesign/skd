@@ -15,7 +15,7 @@
                 <v-row
                   no-gutters
                   v-if="hover"
-                  class="d-flex transition-fast-in-fast-out indigo accent-3 v-card--reveal headline white--text"
+                  class="d-flex transition-fast-in-fast-out indigo accent-3 v-card--reveal subtitle white--text"
                   style="height: 100%;"
                 >
                   <v-col align="center" justify="center">
@@ -70,7 +70,7 @@ export default {
         },
         {
           image: "logo_bozeman-curling-club.svg",
-          title: "Bozeman Cusrling Club Branding",
+          title: "Bozeman Curling Club Branding",
           link: "https://bozemancurlingclub.com"
         },
         {

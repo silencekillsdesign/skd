@@ -1,7 +1,7 @@
 <template>
-  <v-layout row wrap>
-    <v-flex>
-      <form method="POST" action="/thankyou" data-netlify="true" name="contact-form-noval" data-netlify-recaptcha="true">
+  <!-- <v-layout row wrap>
+    <v-flex> -->
+      <v-form method="POST" action="/thankyou" data-netlify="true" name="contact-form-noval" data-netlify-recaptcha="true">
        <input type="hidden" name="contact-form-noval" value="contact-form-noval" /> <!-- this hidden field is for netifly -->
         <h2 class="contact-form-header text-uppercase mb-4 blue--text accent-3">Drop us a Line</h2>
         <v-text-field
@@ -53,9 +53,9 @@
         <v-btn type="submit" class="my-4" outlined large color="green accent-4">
           <v-icon class="mr-2">mdi-near-me</v-icon> Send It
         </v-btn>
-      </form>
-    </v-flex>
-  </v-layout>
+      </v-form>
+    <!-- </v-flex>
+  </v-layout> -->
 </template>
 
 <script>

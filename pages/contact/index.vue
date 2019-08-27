@@ -4,13 +4,13 @@
     <pageIntro
       introText="We are located in Bozeman, MT, and can often be found working from one of Bozeman's local coffee shops. We're happy to meet via web conferance, or in person in the Bozeman area."
     />
-    <v-container>
-      <v-row class="fill-height" align="space-between" id="main">
-        <v-col cols="12" md="4">
+    <v-container id="main">
+      <v-row align="center">
+        <v-col cols="12" md="5" class="fill-height">
           <contactCard />
         </v-col>
-        <v-col cols="12" md="7" offset-md="1">
-          <h2 class="contact-form-header text-uppercase mb-4 blue--text accent-3 mt-4">Drop us a Line</h2>
+        <v-col cols="12" md="7" >
+          <h2 class="contact-form-header text-uppercase mb-4 blue--text accent-3 ">Drop us a Line</h2>
           <!-- <contactBasic/> -->
           <form method="POST" action="/thankYou" data-netlify="true" name="contact-form-noval">
             <input type="hidden" name="form-name" value="contact-form-noval" />
@@ -49,7 +49,6 @@
               v-model="project"
               :menu-props="{ maxHeight: 900, overflowY: true }"
             />
-            <v-input hidden v-model="project"></v-input>
             <v-textarea
               name="cf_message"
               v-model="message"
@@ -72,14 +71,14 @@
 <script>
 import pageHeader from "~/components/global/pageHeader.vue";
 import pageIntro from "~/components/global/pageIntro.vue";
-// import contactCard from "~/components/contact/contactCard.vue";
+import contactCard from "~/components/contact/contactCard.vue";
 // import contactForm from "~/components/contact/contactForm.vue";
 // import contactBasic from "~/components/contact/contactBasic.vue";
 export default {
   components: {
     pageHeader,
     pageIntro,
-    // contactCard
+    contactCard
     // contactForm,
     // contactBasic
   },
