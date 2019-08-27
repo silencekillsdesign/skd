@@ -1,8 +1,8 @@
 const colors = require("vuetify/es5/util/colors").default;
 
 // spa shit for netlify
-const path = require('path')
-const PrerenderSPAPlugin = require('prerender-spa-plugin')
+const path = require("path");
+const PrerenderSPAPlugin = require("prerender-spa-plugin");
 
 module.exports = {
   mode: "universal",
@@ -80,7 +80,6 @@ module.exports = {
    */
   plugins: [
     { src: "~/plugins/aos", ssr: false },
-    { src: "~/plugins/Siema.js", ssr: false },
     { src: "~plugins/ga.js", ssr: false }
     // { src: "~/plugins/VueOwlSlider", ssr: false },
     // { src: '~/plugins/vue-lightbox-pluign.js', ssr: false }
@@ -95,13 +94,7 @@ module.exports = {
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
     "@neneos/nuxt-animate.css",
-    [
-      "@nuxtjs/robots",
-      {
-        UserAgent: "*",
-        allow: "/"
-      }
-    ][("@nuxtjs/google-analytics", { id: "UA-24456454-1" })],
+    ["@nuxtjs/google-analytics", { id: "UA-24456454-1" }],
     "@nuxtjs/sitemap"
   ],
   sitemap: {
@@ -121,19 +114,19 @@ module.exports = {
 
   //to prerender thankyou page, hopefully fix netlify redirect miss.
 
-  // generate: {
-  //   routes: function() {
-  //     return [
-  //       "/",
-  //       "/contact",
-  //       "/thankYou",
-  //       "/about",
-  //       "/services",
-  //       "/portfolio",
-  //       "/blog"
-  //     ];
-  //   }
-  // },
+  generate: {
+    routes: function() {
+      return [
+        "/",
+        "/contact",
+        "/thankYou",
+        "/about",
+        "/services",
+        "/portfolio",
+        "/blog"
+      ];
+    }
+  },
 
   // for netlify to capture form data
   configureWebpack: () => {
