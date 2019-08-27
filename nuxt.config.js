@@ -97,7 +97,7 @@ module.exports = {
     "@nuxtjs/google-analytics",
     "@nuxtjs/robots",
     "@nuxtjs/sitemap",
-    "@bazzite/nuxt-optimized-images"
+    // "@bazzite/nuxt-optimized-images"
   ],
   // "@nuxtjs/google-analytics",
   googleAnalytics: {
@@ -124,9 +124,9 @@ module.exports = {
     ]
   },
   //  "@bazzite/nuxt-optimized-images"
-  optimizedImages: {
-    optimizeImages: true
-  },
+  // optimizedImages: {
+  //   optimizeImages: true
+  // },
 
   //to prerender thankyou page, hopefully fix netlify redirect miss.
 
@@ -140,7 +140,7 @@ module.exports = {
         "/services",
         "/portfolio",
         "/blog"
-      ];
+      ]
     }
   },
 
