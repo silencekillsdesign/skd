@@ -94,9 +94,21 @@ module.exports = {
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
     "@neneos/nuxt-animate.css",
-    ["@nuxtjs/google-analytics", { id: "UA-24456454-1" }],
-    "@nuxtjs/sitemap"
+    "@nuxtjs/google-analytics",
+    "@nuxtjs/robots",
+    "@nuxtjs/sitemap",
+    "@bazzite/nuxt-optimized-images"
   ],
+  // "@nuxtjs/google-analytics",
+  googleAnalytics: {
+    id: "UA-24456454-1"
+  },
+  // "@nuxtjs/robots",
+  robots: {
+    UserAgent: "*",
+    Allow: "/"
+  },
+  // "@nuxtjs/sitemap",
   sitemap: {
     hostname: "https://silencekillsdesign.com",
     gzip: true,
@@ -110,6 +122,10 @@ module.exports = {
       "/portfolio",
       "/blog"
     ]
+  },
+  //  "@bazzite/nuxt-optimized-images"
+  optimizedImages: {
+    optimizeImages: true
   },
 
   //to prerender thankyou page, hopefully fix netlify redirect miss.

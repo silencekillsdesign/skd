@@ -131,7 +131,7 @@
           <v-flex v-for="(social, i) in socials" :key="i">
             <v-tooltip top>
               <template v-slot:activator="{ on }">
-                <v-btn icon large :href="social.url" target="_blank">
+                <v-btn icon large :href="social.url" target="_blank" rel="noopener">
                   <v-icon color="white" dark v-on="on">{{ social.icon }}</v-icon>
                 </v-btn>
               </template>

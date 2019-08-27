@@ -10,7 +10,7 @@
             :class="{'pr-0': $vuetify.breakpoint.smAndDown, 'pr-5': $vuetify.breakpoint.mdAndUp}"
           >
             <v-row align="start" justify="center" class="fill-height hidden-md-and-up">
-              <img height="100px" src="@/assets/branding/silencekillsdesign--icon--white.svg" />
+              <img alt="silencekillsdesgin icon" height="100px" src="@/assets/branding/silencekillsdesign--icon--white.svg" />
             </v-row>
 
             <v-row row wrap>
@@ -48,7 +48,7 @@
           </v-col>
 
           <v-col align="center" justify="center" cols="12" md="6" class="pa-5 hidden-sm-and-down">
-            <img height="470" src="@/assets/branding/silencekillsdesign--icon--white.svg" />
+            <img alt="silencekillsdesgin icon" height="470" src="@/assets/branding/silencekillsdesign--icon--white.svg" />
           </v-col>
         </v-row>
       <!-- </transition> -->
