@@ -67,7 +67,7 @@ module.exports = {
    ** Global CSS
    */
   css: [
-    "aos/dist/aos.css",
+    // "aos/dist/aos.css",
     "vue2-animate/dist/vue2-animate.css"
     // "vue-image-lightbox/dist/vue-image-lightbox.min.css"
   ],
@@ -88,7 +88,7 @@ module.exports = {
   modules: [
     "@nuxtjs/vuetify",
     // Doc: https://axios.nuxtjs.org/usage
-    "@nuxtjs/axios",
+    // "@nuxtjs/axios",
     "@nuxtjs/pwa",
     "@neneos/nuxt-animate.css",
     ["@nuxtjs/google-analytics", { id: "UA-24456454-1" }],
@@ -126,30 +126,31 @@ module.exports = {
   // },
 
   // for netlify to capture form data
-  configureWebpack: () => {
-    if (process.env.NODE_ENV !== "dev") return;
-    return {
-      plugins: [
-        new PrerenderSPAPlugin(
-          // Absolute path to compiled SPA
-          path.resolve(__dirname, "dist"),
-          // List of routes to prerender
-          [
-            "/",
-            "/contact",
-            "/thankYou",
-            "/about",
-            "/services",
-            "/portfolio",
-            "/blog"
-          ],
-          {
-            // options
-          }
-        )
-      ]
-    };
-  },
+  
+  // configureWebpack: () => {
+  //   if (process.env.NODE_ENV !== "dev") return;
+  //   return {
+  //     plugins: [
+  //       new PrerenderSPAPlugin(
+  //         // Absolute path to compiled SPA
+  //         path.resolve(__dirname, "dist"),
+  //         // List of routes to prerender
+  //         [
+  //           "/",
+  //           "/contact",
+  //           "/thankYou",
+  //           "/about",
+  //           "/services",
+  //           "/portfolio",
+  //           "/blog"
+  //         ],
+  //         {
+  //           // options
+  //         }
+  //       )
+  //     ]
+  //   };
+  // },
 
   /*
    ** Axios module configuration
