@@ -11,14 +11,14 @@ module.exports = {
    */
   head: {
     titleTemplate: "%s - " + process.env.npm_package_name,
-    title: process.env.npm_package_name || "",
+    title: process.env.npm_package_name || "SilenceKillsDesign - Web Design, Branding, Marketing, SEO in Bozeman, MT",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: process.env.npm_package_description || ""
+        content: process.env.npm_package_description || "We are a digital agency in Bozmeman, MT offering services in branding, web design and development, SEO, and graphic design for local, small, or large businesses."
       },
       {
         hid: `og:title`,
