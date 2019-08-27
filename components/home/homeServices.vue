@@ -62,7 +62,7 @@ export default {
           serviceDesc:
             "Fast, well-designed websites that convert, delivered on time & within budget.",
           serviceIcon: "mdi-code-tags",
-          serviceButton: "Learn More",
+          serviceButton: "More Web Dev",
           serviceURL: "/services/webdevelopment"
         },
         {
@@ -71,7 +71,7 @@ export default {
           serviceDesc:
             "We create consistent visual identification of your brand, service, or product.",
           serviceIcon: "mdi-fingerprint",
-          serviceButton: "Learn More",
+          serviceButton: "More Branding",
           serviceURL: "/services/branding"
         },
         {
@@ -80,7 +80,7 @@ export default {
           serviceDesc:
             "Drive quality traffic to your site with expert digital marketing services.",
           serviceIcon: "mdi-chess-knight",
-          serviceButton: "Learn More",
+          serviceButton: "More SEO",
           serviceURL: "/services/seo"
         },
         {
@@ -89,7 +89,7 @@ export default {
           serviceDesc:
             "Well-structured information architecture and logical user interfaces.",
           serviceIcon: "mdi-monitor-cellphone-star",
-          serviceButton: "Learn More",
+          serviceButton: "More UX",
           serviceURL: "/services/ux"
         },
         {
@@ -98,7 +98,7 @@ export default {
           serviceDesc:
             "Digital & print design services from award-winning designers.",
           serviceIcon: "mdi-palette",
-          serviceButton: "Learn More",
+          serviceButton: "More Design",
           serviceURL: "/services/design"
         },
         {
@@ -107,7 +107,7 @@ export default {
           serviceDesc:
             "Immerse your customers with a brand-centered audio / visual experience.",
           serviceIcon: "mdi-movie-roll",
-          serviceButton: "Learn More",
+          serviceButton: "More A/V",
           serviceURL: "/services/av"
         }
       ]

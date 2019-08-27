@@ -1,34 +1,44 @@
 <template>
   <v-container fluid class="ma-0 pa-0">
-    <v-parallax
+    <!-- <v-parallax
       class="testimonial-parallax"
       height="550"
       cover
       :src="require('~/assets/img/backgrounds/speech-bubble-background.jpg')"
       dark
-    >
-      <v-carousel continuous scycle show-arrows-on-hover hide-delimiters class="testimonial-card">
+    > -->
+    <v-img aspect-ratio="16/9" :src="require('~/assets/img/backgrounds/lavalamp.svg')">
+      <v-carousel continuous cycle show-arrows-on-hover hide-delimiters class="testimonial-card">
         <v-carousel-item v-for="(review,i) in reviews" :key="i" transition="fade-transition" group>
-          <v-container fluid>
+          <v-container fluid dark>
             <v-row class="xs-text-center fill-height" justify="center" align="center">
               <v-col cols="12" md="6" class="text-center">
                 <v-avatar size="110" color="grey lighten-4" class="mb-4">
                   <img :src="review.avatar" alt="avatar" />
                 </v-avatar>
-                <h4 class="title mb-2">{{ review.name }}</h4>
+                <h4 class="title mb-2 white--text">{{ review.name }}</h4>
                 <h5
                   class="subheading amber--text font-weight-medium font-italic mb-4 hidden-sm-and-down"
                 >{{ review.title }}</h5>
-                <blockquote
+                <blockquote class=" white--text"
                   :class="{'title': $vuetify.breakpoint.smAndDown, 'headline': $vuetify.breakpoint.mdAndUp}"
                 >{{ review.review }}</blockquote>
-                <v-btn class="mt-5" large outlined color="white" href="https://g.page/silencekillsdesign/review" target="_blank" rel="noopener">Leave a Review</v-btn>
+                <v-btn
+                  class="mt-5"
+                  large
+                  outlined
+                  color="white"
+                  href="https://g.page/silencekillsdesign/review"
+                  target="_blank"
+                  rel="noopener"
+                >Leave a Review</v-btn>
               </v-col>
             </v-row>
           </v-container>
         </v-carousel-item>
       </v-carousel>
-    </v-parallax>
+    </v-img>
+    <!-- </v-parallax> -->
   </v-container>
 </template>
 

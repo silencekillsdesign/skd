@@ -89,5 +89,5 @@
   z-index: 11;
 }
 #editor > .inner > .title > a:first-child {
-  margin-left: 0!important;
+  margin-left: 0!important;}
 #editor .lded .viewer { border-radius: 0 }</style></svg>
