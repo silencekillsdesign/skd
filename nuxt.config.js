@@ -113,15 +113,17 @@ module.exports = {
     hostname: "https://silencekillsdesign.com",
     gzip: true,
     exclude: [],
-    routes: [
-      "/",
-      "/contact",
-      "/thankYou",
-      "/about",
-      "/services",
-      "/portfolio",
-      "/blog"
-    ]
+    generate: [],
+    // routes: [
+    //   "/",
+    //   "/contact",
+    //   "/thankYou",
+    //   "/about",
+    //   "/services",
+    //   "/services/",
+    //   "/portfolio",
+    //   "/blog"
+    // ]
   },
   //  "@bazzite/nuxt-optimized-images"
   // optimizedImages: {
@@ -130,19 +132,19 @@ module.exports = {
 
   //to prerender thankyou page, hopefully fix netlify redirect miss.
 
-  generate: {
-    routes: function() {
-      return [
-        "/",
-        "/contact",
-        "/thankYou",
-        "/about",
-        "/services",
-        "/portfolio",
-        "/blog"
-      ]
-    }
-  },
+  // generate: {
+  //   routes: function() {
+  //     return [
+  //       "/",
+  //       "/contact",
+  //       "/thankYou",
+  //       "/about",
+  //       "/services",
+  //       "/portfolio",
+  //       "/blog"
+  //     ]
+  //   }
+  // },
 
   // for netlify to capture form data
   configureWebpack: () => {

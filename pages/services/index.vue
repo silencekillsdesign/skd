@@ -9,7 +9,7 @@
         <!-- <v-flex v-for="service in services" :key="service.title"> -->
         <v-flex xs12 md3 v-for="(service, i) in services" :key="i" justify-center>
           <v-card
-            class="service-tile mx-auto text-center"
+            class="service-tile tile mx-auto text-center"
             dark
             color="blue accent-3"
             min-height="240"
@@ -139,6 +139,7 @@ export default {
 
 <style lang="scss" scoped>
 .service-tile {
+
   p {
     font-size: 1.125em;
     color: #eeeeee;
@@ -160,6 +161,4 @@ export default {
     color: red;
   }
 }
-
-
 </style>

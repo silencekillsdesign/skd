@@ -8,8 +8,8 @@
 
     <!-- TODO: loop from data create reusable services component (service title, icon, short description)-->
     <v-container fluid pa-0>
-      <v-layout align-center id="main">
-        <v-flex md6 offset-md1 pr-5 data-aos="fade-right">
+      <v-row align-center id="main">
+        <v-col md6 offset-md1 pr-5 data-aos="fade-right">
           <v-list transparent shaped v-model="i">
             <v-list-group
               v-for="item in items"
@@ -32,12 +32,12 @@
               </v-list-item>
             </v-list-group>
           </v-list>
-        </v-flex>
+        </v-col>
         <v-flex md5 data-aos="fade-left">
           <!-- <v-img flat :src="require('~/assets/img/webdev.svg')"> </v-img> -->
           <img class="mr-0 pr-0" src="~/assets/img/webdev.svg" alt="avatar" />
         </v-flex>
-      </v-layout>
+      </v-row>
     </v-container>
 
     <stack class="my-5" />
@@ -142,7 +142,7 @@ export default {
           items: [
             {
               description:
-                'Non-profit websites that offer gateways to your community outreach, donation gateways, and volounteer opportunities. Alongside a strong social media outreach, your non-profit website can save you hundreds of hours of volounteer time.'
+                'Brochures, whitepapers, case studies, direct mailers, etc.'
             }
           ]
         },
@@ -152,7 +152,7 @@ export default {
           items: [
             {
               description:
-                "Market your upcoming event, conference, or wedding with a website that offers easy access to itinerary, registration, and directions. With built in SEO, and a location-based SEM campaign, we'll make sure your event is a success."
+                "We write copy specifically for SEO. "
             }
           ]
         },
@@ -162,7 +162,7 @@ export default {
           items: [
             {
               description:
-                'A good B2B web design is key to generating organic traffic that converts into qualified leads. The better your website’s user experience, the more positive, lasting impressions your brand will leave with visitors.  B2B companies rarely expect immediate purchases on their websites. B2B sales often consist of multiple interactions across connected devices. We develop B2B websites to inform, captivate, and persuade customers engaging with your brand.'
+                'Make your brand official with leatterheads, business cards, envelopes, packaging and more.'
             }
           ]
         },
@@ -172,7 +172,7 @@ export default {
           items: [
             {
               description:
-                'Your online store is your one chance to prove your brand value to your customers. Your e-commerce website should make it easy for new customers to find you, and keep existing customers returning. We deeply monitor conversions and optimize to increase them.'
+                'Everything from banner stands and table cloths, to full tradeshow both design.'
             }
           ]
         },
@@ -182,7 +182,7 @@ export default {
           items: [
             {
               description:
-                'Websites that accommodate a lot of content can be a tricky balancing act to pull off. Our approach is to present the user with all the information in an organized manner, without overload. Grow your audience member-by-member with engaging content that is easy to share, and easy to find.'
+                'We\'ll compile all of your brand assets into one convenient spot along with instructions for use and zip files of all assets to share with vendors.'
             }
           ]
         },
@@ -192,7 +192,7 @@ export default {
           items: [
             {
               description:
-                "A good landing page should offer value to each user that visits it. They often offer exclusive resources, such as an e-book or webinar signup, in exchange for their basic contact information. The goal of these pages is to generate leads while you pull prospects further into the buyers' journey."
+                "Professional presentation templates for your sales team to wow prospects."
             }
           ]
         }

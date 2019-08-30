@@ -1,22 +1,26 @@
 <template>
-  <v-dialog v-model="bozeman" full-width>
-    <v-card class="mx-auto" max-width="400">
-      <v-img class="white--text" height="200px" :src="require('~/assets/img/bozeman.jpg')">
-        <v-card-title class="align-end fill-height">Welcome to Bozeman</v-card-title>
-      </v-img>
+  <v-row>
+    <v-col cols="12" md="4">
+      <v-dialog v-model="bozeman">
+        <v-card class="mx-auto">
+          <v-img class="white--text" height="200px" :src="require('~/assets/img/bozeman.jpg')">
+            <v-card-title class="align-end fill-height">Welcome to Bozeman</v-card-title>
+          </v-img>
 
-      <v-card-text>
-        <v-simple-table dense>
-          <tbody>
-            <tr v-for="fact in facts" :key="fact.title">
-              <td>{{ fact.title }}</td>
-              <td>{{ fact.winner }}</td>
-            </tr>
-          </tbody>
-        </v-simple-table>
-      </v-card-text>
-    </v-card>
-  </v-dialog>
+          <v-card-text>
+            <v-simple-table dense>
+              <tbody>
+                <tr v-for="fact in facts" :key="fact.title">
+                  <td>{{ fact.title }}</td>
+                  <td>{{ fact.winner }}</td>
+                </tr>
+              </tbody>
+            </v-simple-table>
+          </v-card-text>
+        </v-card>
+      </v-dialog>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
@@ -80,7 +84,7 @@ export default {
         {
           title: "Best Gold Panning",
           winner: "Psssh, secret X2"
-        },
+        }
       ]
     };
   }
