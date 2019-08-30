@@ -8,8 +8,8 @@
 
     <!-- TODO: loop from data create reusable services component (service title, icon, short description)-->
     <v-container fluid pa-0>
-      <v-layout align-center id="main">
-        <v-flex md6 offset-md1 pr-5 data-aos="fade-right">
+      <v-row align="center" id="main">
+        <v-col md6 offset-md1 pr-5 data-aos="fade-right">
           <v-list transparent shaped v-model="i">
             <v-subheader>The Things We Do:</v-subheader>
             <v-list-group
@@ -33,12 +33,11 @@
               </v-list-item>
             </v-list-group>
           </v-list>
-        </v-flex>
-        <v-flex md5 data-aos="fade-left">
-          <!-- <v-img flat :src="require('~/assets/img/webdev.svg')"> </v-img> -->
-          <img class="mr-0 pr-0" src="~/assets/img/webdev.svg" alt="avatar" />
-        </v-flex>
-      </v-layout>
+        </v-col>
+        <v-col md="5" data-aos="fade-left" class="hidden-sm-and-down">
+          <v-img class="mr-0 pr-0" :src="require('~/assets/img/webdev.svg')" alt="web designers and developers in bozeman, montana"></v-img>>
+        </v-col>
+      </v-row>
     </v-container>
 
     <stack class="my-5" />
@@ -157,8 +156,10 @@ export default {
             "Well-designed websites are very powerful marketing, delivering your brand's message to your customers' fingertips. Our start-to-finish web development process caters to your existing customers, and new audiences alike."
         },
         { name: "robots", content: "index, follow" }
-      ]
-    };
+      ],
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [{ innerHTML: JSON.stringify(this.structuredData), type: 'application/ld+json' }]
+    }
   },
   data() {
     return {
