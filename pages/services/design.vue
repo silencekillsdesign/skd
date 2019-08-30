@@ -3,7 +3,7 @@
     <pageHeader pageTitle="Design" pageSubtitle="Doodle It. Do It." />
 
     <pageIntro
-      introText="A well-designed website can be your most powerful marketing segment, delivering your brand's message to your customers' fingertips. Our web design process caters to your existing customers, and new audiences alike."
+      introText="Take your brand global with our affordable design services. We offer everything from logo design to tradeshow booth design."
     ></pageIntro>
 
     <!-- TODO: loop from data create reusable services component (service title, icon, short description)-->
@@ -24,7 +24,7 @@
               </template>
 
               <v-list-item v-for="subItem in item.items" :key="subItem.title">
-                <v-list-item-content class="pr-5">
+                <v-list-item-content class="pr-5" :aria-labelledbys="item.title + 'tab'">
                   <!-- <v-list-item-subtitle v-text="subItem.description"></v-list-item-subtitle> -->
                   <p class="feature-description">{{ subItem.description }}</p>
                 </v-list-item-content>
@@ -127,7 +127,7 @@ export default {
   },
   head() {
     return {
-      title: "Branding & Logo Design",
+      title: "Logo Design & Graphic Design",
       meta: [
         {
           name: "description",

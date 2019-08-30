@@ -9,8 +9,8 @@
     <!-- TODO: loop from data create reusable services component (service title, icon, short description)-->
     <v-container fluid pa-0>
       <v-row align="center" id="main">
-        <v-col md="6" offset-md="1" pr-5 data-aos="fade-right">
-          <v-list transparent shaped v-model="i">
+        <v-col md="6" offset-md="1" data-aos="fade-right">
+          <v-list color="transparent" rounded v-model="i" class="pr-5">
             <v-subheader>The Things We Do:</v-subheader>
             <v-list-group
               v-for="item in items"
@@ -286,6 +286,9 @@ export default {
 </script>
 
 <style>
+.service-list {
+  border-radius: 2em !important; 
+}
 .feature-description {
   line-height: 1.7em !important;
 }
