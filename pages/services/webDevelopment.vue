@@ -9,7 +9,7 @@
     <!-- TODO: loop from data create reusable services component (service title, icon, short description)-->
     <v-container fluid pa-0>
       <v-layout align-center id="main">
-        <v-flex md6 offset-md1 pr-5 data-aos="fade-right" >
+        <v-flex md6 offset-md1 pr-5 data-aos="fade-right">
           <v-list transparent shaped v-model="i">
             <v-subheader>The Things We Do:</v-subheader>
             <v-list-group
@@ -54,12 +54,16 @@
         >Our Web Development Process</h2>
       </v-layout>
     </v-container>
-<!-- TODO: make order dynamic -->
+    <!-- TODO: make order dynamic -->
     <v-container my-5>
-      
       <v-layout align-center row wrap py-5 my-5>
         <v-flex xs12 md4 order-0 pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/web/web1.svg')"></v-img>
+          <v-img
+            :aspect-ratio="1"
+            contain
+            max-height="250px"
+            :src="require('~/assets/img/services/web/web1.svg')"
+          ></v-img>
         </v-flex>
         <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
           <h3 class="mt-4 blue--text text--accent-3">UX Planning and Wireframing</h3>
@@ -70,8 +74,13 @@
       </v-layout>
 
       <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md4 order-xs0 order-md1  pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/web/web2.svg')"></v-img>
+        <v-flex xs12 md4 order-xs0 order-md1 pa-5 data-aos="fade-right" data-aos-duration="800">
+          <v-img
+            :aspect-ratio="1"
+            contain
+            max-height="250px"
+            :src="require('~/assets/img/services/web/web2.svg')"
+          ></v-img>
         </v-flex>
         <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
           <h3 class="mt-4 blue--text text--accent-3">Development and Design</h3>
@@ -80,22 +89,37 @@
           <v-btn class="ma-2" to="/services/design" outlined color="indigo">View Design Services</v-btn>
         </v-flex>
       </v-layout>
-      
+
       <v-layout align-center row wrap py-5 my-5>
         <v-flex xs12 md4 order-0 pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/web/web3.svg')"></v-img>
+          <v-img
+            :aspect-ratio="1"
+            contain
+            max-height="250px"
+            :src="require('~/assets/img/services/web/web3.svg')"
+          ></v-img>
         </v-flex>
         <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
           <h3 class="mt-4 blue--text text--accent-3">Deployment and Server Setup</h3>
           <v-divider class="my-5" color="blue"></v-divider>
-          <p>Once your website development is complete, it's time to go live! We  will handle the server setup, hosting, and deployment of your new site, wherever you want it hosted.</p>
-          <v-btn class="ma-2" to="/services/webdevelopment" outlined color="indigo">View Web Services</v-btn>
+          <p>Once your website development is complete, it's time to go live! We will handle the server setup, hosting, and deployment of your new site, wherever you want it hosted.</p>
+          <v-btn
+            class="ma-2"
+            to="/services/webdevelopment"
+            outlined
+            color="indigo"
+          >View Web Services</v-btn>
         </v-flex>
       </v-layout>
 
       <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md4 order-xs0 order-md1  pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/web/web4.svg')"></v-img>
+        <v-flex xs12 md4 order-xs0 order-md1 pa-5 data-aos="fade-right" data-aos-duration="800">
+          <v-img
+            :aspect-ratio="1"
+            contain
+            max-height="250px"
+            :src="require('~/assets/img/services/web/web4.svg')"
+          ></v-img>
         </v-flex>
         <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
           <h3 class="mt-4 blue--text text--accent-3">SEO and Performance Optimization</h3>
@@ -104,7 +128,6 @@
           <v-btn class="ma-2" to="/services/seo" outlined color="indigo">View SEO Services</v-btn>
         </v-flex>
       </v-layout>
-
     </v-container>
 
     <v-container fluid pa-0>
@@ -114,9 +137,9 @@
 </template>
 
 <script>
-import pageHeader from '~/components/global/pageHeader.vue'
-import pageIntro from '~/components/global/pageIntro.vue'
-import stack from '~/components/global/stack.vue'
+import pageHeader from "~/components/global/pageHeader.vue";
+import pageIntro from "~/components/global/pageIntro.vue";
+import stack from "~/components/global/stack.vue";
 
 export default {
   components: {
@@ -126,24 +149,68 @@ export default {
   },
   head() {
     return {
-      title: "Web Development & Web Design",
-      meta: [        
+      title: "Web Design & Development",
+      meta: [
         {
           name: "description",
           content:
             "Well-designed websites are very powerful marketing, delivering your brand's message to your customers' fingertips. Our start-to-finish web development process caters to your existing customers, and new audiences alike."
         },
-        { name: "robots", content: "index, follow" },
+        { name: "robots", content: "index, follow" }
       ]
     };
   },
   data() {
     return {
+      structuredData: {
+        "@context": "http://schema.org",
+        "@type": "Service",
+        serviceType: "Web Design & Development",
+        provider: {
+          "@type": "LocalBusiness",
+          name: "SilenceKillsDesign"
+        },
+        location: {
+          "@type": "Place",
+          geo: {
+            "@type": "GeoCircle",
+            geoMidpoint: {
+              "@type": "GeoCoordinates",
+              latitude: "45.6770",
+              longitude: "111.0429"
+            },
+            geoRadius: "100"
+          },
+          brand: "SilenceKillsDesign",
+          knowsAbout: [
+            "Web Development",
+            "Graphic design",
+            "marketing",
+            "SEO",
+            "audio video"
+          ],
+          sameAs: [
+            "https://www.facebook.com/silencekillsdesign/",
+            "https://twitter.com/s1lencek1lls",
+            "https://www.linkedin.com/in/cjwilliamsworks/",
+            "https://instagram.com/silencekillsdesign"
+          ],
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "221 Virginia Way",
+            addressLocality: "Bozeman",
+            addressRegion: "MT",
+            postalCode: "59718"
+          },
+          telephone: "406-579-1985",
+          email: "cj@silencekillsdesign.com"
+        }
+      },
       i: 1,
       items: [
         {
-          icon: 'mdi-store',
-          title: 'Local Business Websites',
+          icon: "mdi-store",
+          title: "Local Business Websites",
           items: [
             {
               description:
@@ -152,18 +219,18 @@ export default {
           ]
         },
         {
-          icon: 'mdi-account-group',
-          title: 'Non-Profit Groups',
+          icon: "mdi-account-group",
+          title: "Non-Profit Groups",
           items: [
             {
               description:
-                'Non-profit websites that offer gateways to your community outreach, donation gateways, and volounteer opportunities. Alongside a strong social media outreach, your non-profit website can save you hundreds of hours of volounteer time.'
+                "Non-profit websites that offer gateways to your community outreach, donation gateways, and volounteer opportunities. Alongside a strong social media outreach, your non-profit website can save you hundreds of hours of volounteer time."
             }
           ]
         },
         {
-          icon: 'mdi-calendar-month-outline',
-          title: 'Events & Weddings',
+          icon: "mdi-calendar-month-outline",
+          title: "Events & Weddings",
           items: [
             {
               description:
@@ -172,38 +239,38 @@ export default {
           ]
         },
         {
-          icon: 'mdi-domain',
-          title: 'B2B and Sales Websites',
+          icon: "mdi-domain",
+          title: "B2B and Sales Websites",
           items: [
             {
               description:
-                'A good B2B web design is key to generating organic traffic that converts into qualified leads. The better your website’s user experience, the more positive, lasting impressions your brand will leave with visitors.  B2B companies rarely expect immediate purchases on their websites. B2B sales often consist of multiple interactions across connected devices. We develop B2B websites to inform, captivate, and persuade customers engaging with your brand.'
+                "A good B2B web design is key to generating organic traffic that converts into qualified leads. The better your website’s user experience, the more positive, lasting impressions your brand will leave with visitors.  B2B companies rarely expect immediate purchases on their websites. B2B sales often consist of multiple interactions across connected devices. We develop B2B websites to inform, captivate, and persuade customers engaging with your brand."
             }
           ]
         },
         {
-          icon: 'mdi-basket',
-          title: 'E-Commerce Websites',
+          icon: "mdi-basket",
+          title: "E-Commerce Websites",
           items: [
             {
               description:
-                'Your online store is your one chance to prove your brand value to your customers. Your e-commerce website should make it easy for new customers to find you, and keep existing customers returning. We deeply monitor conversions and optimize to increase them.'
+                "Your online store is your one chance to prove your brand value to your customers. Your e-commerce website should make it easy for new customers to find you, and keep existing customers returning. We deeply monitor conversions and optimize to increase them."
             }
           ]
         },
         {
-          icon: 'mdi-newspaper',
-          title: 'Blogs, News Sites, and Forums',
+          icon: "mdi-newspaper",
+          title: "Blogs, News Sites, and Forums",
           items: [
             {
               description:
-                'Websites that accommodate a lot of content can be a tricky balancing act to pull off. Our approach is to present the user with all the information in an organized manner, without overload. Grow your audience member-by-member with engaging content that is easy to share, and easy to find.'
+                "Websites that accommodate a lot of content can be a tricky balancing act to pull off. Our approach is to present the user with all the information in an organized manner, without overload. Grow your audience member-by-member with engaging content that is easy to share, and easy to find."
             }
           ]
         },
         {
-          icon: 'mdi-monitor',
-          title: 'Landing Pages & SPAs',
+          icon: "mdi-monitor",
+          title: "Landing Pages & SPAs",
           items: [
             {
               description:
@@ -212,9 +279,9 @@ export default {
           ]
         }
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <style>

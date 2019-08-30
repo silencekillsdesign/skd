@@ -96,9 +96,17 @@ export default {
       ],
       __dangerouslyDisableSanitizers: ['script'],
       script: [{ innerHTML: JSON.stringify(this.structuredData), type: 'application/ld+json' }]
-    };
-  }
-};
+    }
+  },
+  // vm nuxt course
+  // asyncDta(\{ $$axios }) {
+  //   return context.$axios.get('http://localhost:4000/events').then(response => {
+  //     return {
+  //       events: response.data
+  //     }
+  //   })
+  // }
+}
 </script>
 
 <style lang="scss">
