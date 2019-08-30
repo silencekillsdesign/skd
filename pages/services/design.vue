@@ -6,11 +6,11 @@
       introText="Take your brand global with our affordable design services. We offer everything from logo design to tradeshow booth design."
     ></pageIntro>
 
-    <!-- TODO: loop from data create reusable services component (service title, icon, short description)-->
     <v-container fluid pa-0>
       <v-layout align-center id="main">
         <v-flex md6 offset-md1 pr-5 data-aos="fade-right">
           <v-list transparent shaped v-model="i">
+            <v-subheader>Our Design Services:</v-subheader>
             <v-list-group
               v-for="item in items"
               :key="item.title"
@@ -57,53 +57,18 @@
 <!-- TODO: make order dynamic -->
     <v-container my-5>
       
-      <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md4 order-0 pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/design/design1.svg')"></v-img>
-        </v-flex>
-        <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4 blue--text text--accent-3">Drafting Process</h3>
+      <!-- this should come from an api and services pages should be a layout -->
+      <v-row class="py-5 my-5" align="center" v-for="(serviceStep, i) in serviceSteps" :key="i" :id="serviceStep.id">
+        <v-col class="pa-5" cols="12" md="4" order="0" :order-md="serviceStep.imageOrder" data-aos="fade-right" data-aos-duration="800">
+          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/'+serviceStep.image)"></v-img>
+        </v-col>
+        <v-col xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
+          <h3 class="mt-4 blue--text text--accent-3">{{ serviceStep.title }}</h3>
           <v-divider class="my-5" color="blue"></v-divider>
-          <p>Every design, from logo design to tradeshow booth design, starts with a round of drafts to dial in the stylistic approach and make sure we aren't missing anything. Once, we chat a bit more on the design direction, we will move forward to mockups and final draft revisions.</p>
-          <v-btn class="my-2" to="/services/ux" outlined color="indigo">View UX Services</v-btn>
-        </v-flex>
-      </v-layout>
-
-      <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md4 order-xs0 order-md1  pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/design/design2.svg')"></v-img>
-        </v-flex>
-        <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4 blue--text text--accent-3">Routing and Finalization</h3>
-          <v-divider class="my-5" color="blue"></v-divider>
-          <p>We want to ensure everythign is right, so we will use your preferred routing process and make any revisions that need to be made before finalizing the design. We will send all applicable final design files, neatly packaged with our standard naming convention, or yours. You, the client, take over ownership of the design once all contract terms have been met and project has been paid for.</p>
-          <v-btn class="my-2" to="/services/design" outlined color="indigo">View Design Services</v-btn>
-        </v-flex>
-      </v-layout>
-      
-      <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md4 order-0 pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/design/design3.svg')"></v-img>
-        </v-flex>
-        <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4 blue--text text--accent-3">File Delivery and Printing</h3>
-          <v-divider class="my-5" color="blue"></v-divider>
-          <p>When you are ready to print, we will work closely with your preferred printers, or use our network of printing resources. Whether it is a sign company needing a vector format to cut your new signage or a round of brochures, we work seamlessly with any print standards, and cut you out as the middleman.</p>
-          <v-btn class="my-2" to="/services/webdevelopment" outlined color="indigo">View Web Services</v-btn>
-        </v-flex>
-      </v-layout>
-
-      <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md4 order-xs0 order-md1  pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/design/design4.svg')"></v-img>
-        </v-flex>
-        <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4 blue--text text--accent-3">Packaging and More</h3>
-          <v-divider class="my-5" color="blue"></v-divider>
-          <p>We can apply desgins to nearly anyhting these days. If you want to wrap your vehicle, or print a million beer cans, we'll get the files ready and wherever they need to go. We also offer printing and screen printing services if you need shirts. Just let us know what you are looking for and we will get a quote ready.</p>
-          <v-btn class="my-2" to="/services/seo" outlined color="indigo">View SEO Services</v-btn>
-        </v-flex>
-      </v-layout>
+          <p>{{ serviceStep.text }}</p>
+          <v-btn class="my-2" @click="$vuetify.goTo(serviceStep.buttonGoTo)" outlined color="indigo">{{ serviceStep.buttonText}}</v-btn>
+        </v-col>
+      </v-row>
 
     </v-container>
 
@@ -190,8 +155,8 @@ export default {
       i: 1,
       items: [
         {
-          icon: 'mdi-lead-pencil',
-          title: 'Logo Design',
+          icon: "mdi-lead-pencil",
+          title: "Logo Design",
           items: [
             {
               description:
@@ -200,18 +165,18 @@ export default {
           ]
         },
         {
-          icon: 'mdi-file-multiple',
-          title: 'Marketing Materials',
+          icon: "mdi-file-multiple",
+          title: "Marketing Materials",
           items: [
             {
               description:
-                'Brochures. Posters. Billboards. You name it, we can do it for you. '
+                "Brochures. Posters. Billboards. You name it, we can do it for you. "
             }
           ]
         },
         {
-          icon: 'mdi-fountain-pen-tip',
-          title: 'Copy Writing',
+          icon: "mdi-fountain-pen-tip",
+          title: "Copy Writing",
           items: [
             {
               description:
@@ -220,44 +185,82 @@ export default {
           ]
         },
         {
-          icon: 'mdi-account-card-details',
-          title: 'Stationery',
+          icon: "mdi-account-card-details",
+          title: "Stationery",
           items: [
             {
               description:
-                'Put your custom letter head inside your custom envelope, and stuff it inside your custom folder to share with your customers.'
+                "Put your custom letter head inside your custom envelope, and stuff it inside your custom folder to share with your customers."
             }
           ]
         },
         {
-          icon: 'mdi-movie-roll',
-          title: 'Audio / Visual',
+          icon: "mdi-movie-roll",
+          title: "Audio / Visual",
           items: [
             {
               description:
-                'We make branded logo stings, video effects and transitions, explainer videos, jingles and audio logos for your company to go fully multimedia.'
+                "We make branded logo stings, video effects and transitions, explainer videos, jingles and audio logos for your company to go fully multimedia."
             }
           ]
         },
         {
-          icon: 'mdi-newspaper',
-          title: 'Brand Guides',
+          icon: "mdi-newspaper",
+          title: "Brand Guides",
           items: [
             {
               description:
-                'We\'ll compile all of your brand assets into one convenient spot along with instructions for use and zip files of all assets to share with vendors.'
+                "We'll compile all of your brand assets into one convenient spot along with instructions for use and zip files of all assets to share with vendors."
             }
           ]
         },
         {
-          icon: 'mdi-presentation-play',
-          title: 'Presentaion Templates',
+          icon: "mdi-presentation-play",
+          title: "Presentaion Templates",
           items: [
             {
               description:
                 "Professional presentation templates for your sales team to wow prospects."
             }
           ]
+        }
+      ],
+      serviceSteps: [
+        {
+          id: "step1",
+          title: "Drafting Process",
+          text: "Every design, from logo design to tradeshow booth design, starts with a round of drafts to dial in the stylistic approach and make sure we aren't missing anything. Once, we chat a bit more on the design direction, we will move forward to mockups and final draft revisions.",
+          image: "design/design1.svg",
+          imageOrder: "0",
+          buttonText: "Next Steps",
+          buttonGoTo: "#step2",
+        },
+        {
+          id: "step2",
+          title: "Routing and Finalization",
+          text: "We want to ensure everything is right, so we will use your preferred routing process and make any revisions that need to be made before finalizing the design. We will send all applicable final design files, neatly packaged with our standard naming convention, or yours. You, the client, take over ownership of the design once all contract terms have been met and project has been paid for.",
+          image: "design/design2.svg",
+          imageOrder: "1",
+          buttonText: "Next Steps",
+          buttonGoTo: "#step3",
+        },
+        {
+          id: "step3",
+          title: "File Delivery and Printing",
+          text: "When you are ready to print, we will work closely with your preferred printers, or use our network of printing resources. Whether it is a sign company needing a vector format to cut your new signage or a round of brochures, we work seamlessly with any print standards, and cut you out as the middleman.",
+          image: "design/design2.svg",
+          imageOrder: "0",
+          buttonText: "Next Steps",
+          buttonGoTo: "#step4",
+        },
+        {
+          id: "step4",
+          title: "Packaging and More",
+          text: "We can apply desgins to nearly anyhting these days. If you want to wrap your vehicle, or print a million beer cans, we'll get the files ready and wherever they need to go. We also offer printing and screen printing services if you need shirts. Just let us know what you are looking for and we will get a quote ready.",
+          image: "design/design2.svg",
+          imageOrder: "1",
+          buttonText: "View Service Details",
+          buttonGoTo: "#main",
         }
       ]
     }
