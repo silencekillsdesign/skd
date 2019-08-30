@@ -94,15 +94,15 @@ module.exports = {
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
     "@neneos/nuxt-animate.css",
-    "@nuxtjs/google-analytics",
+    // "@nuxtjs/google-analytics",
     "@nuxtjs/robots",
     "@nuxtjs/sitemap",
     // "@bazzite/nuxt-optimized-images"
   ],
   // "@nuxtjs/google-analytics",
-  googleAnalytics: {
-    id: "UA-24456454-1"
-  },
+  // googleAnalytics: {
+  //   id: "UA-24456454-1"
+  // },
   // "@nuxtjs/robots",
   robots: {
     UserAgent: "*",
