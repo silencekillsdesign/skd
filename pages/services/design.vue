@@ -16,11 +16,10 @@
               :key="item.title"
               v-model="item.active"
               :prepend-icon="item.icon"
-              no-action
             >
               <template v-slot:activator>
                 <v-list-item-content>
-                  <v-list-item-title v-text="item.title"></v-list-item-title>
+                  <v-list-item-title :aria-controls="item.title + 'tab'" v-text="item.title"></v-list-item-title>
                 </v-list-item-content>
               </template>
 
@@ -126,8 +125,68 @@ export default {
     pageIntro,
     stack
   },
+  head() {
+    return {
+      title: "Branding & Logo Design",
+      meta: [
+        {
+          name: "description",
+          content:
+            "Brand your local bozeman business like a big time brand. We offer affordable logo design, graphic design, presentations, and web design to suit your small to medium business"
+        },
+        { name: "robots", content: "index, follow" }
+      ],
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [{ innerHTML: JSON.stringify(this.structuredData), type: 'application/ld+json' }],
+    }
+  },
   data() {
     return {
+      structuredData: {
+        "@context": "http://schema.org",
+        "@type": "Service",
+        serviceType: "Graphic Design & Logo Design",
+        provider: {
+          "@type": "LocalBusiness",
+          name: "SilenceKillsDesign"
+        },
+        location: {
+          "@type": "Place",
+          geo: {
+            "@type": "GeoCircle",
+            geoMidpoint: {
+              "@type": "GeoCoordinates",
+              latitude: "45.6770",
+              longitude: "111.0429"
+            },
+            geoRadius: "100"
+          },
+          brand: "SilenceKillsDesign",
+          knowsAbout: [
+            "Web design",
+            "Graphic design",
+            "logo design",
+            "branding",
+            "marketing",
+            "business cards"
+          ],
+          sameAs: [
+            "https://www.facebook.com/silencekillsdesign/",
+            "https://twitter.com/s1lencek1lls",
+            "https://www.linkedin.com/in/cjwilliamsworks/",
+            "https://instagram.com/silencekillsdesign"
+          ],
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "221 Virginia Way",
+            addressLocality: "Bozeman",
+            addressRegion: "MT",
+            postalCode: "59718"
+          },
+          telephone: "406-579-1985",
+          email: "cj@silencekillsdesign.com"
+        }
+      },
       i: 1,
       items: [
         {
@@ -136,7 +195,7 @@ export default {
           items: [
             {
               description:
-                "We build websites for local business that help customers easily find what they're looking for. A local business website doesn't need to be over the top, it needs to be useful. Our development process focuses on local SEO throughout the development process, so you can be easily found and easy to contact."
+                "Brand your small business like a big brand. We offer affordable logo design and branding packages for businesses of all sizes."
             }
           ]
         },
@@ -146,7 +205,7 @@ export default {
           items: [
             {
               description:
-                'Non-profit websites that offer gateways to your community outreach, donation gateways, and volounteer opportunities. Alongside a strong social media outreach, your non-profit website can save you hundreds of hours of volounteer time.'
+                'Brochures. Posters. Billboards. You name it, we can do it for you. '
             }
           ]
         },
@@ -156,7 +215,7 @@ export default {
           items: [
             {
               description:
-                "Market your upcoming event, conference, or wedding with a website that offers easy access to itinerary, registration, and directions. With built in SEO, and a location-based SEM campaign, we'll make sure your event is a success."
+                "We write SEO-friendly copy that is easy to read and to the point. We also offer technical writing services for case studies and white papers."
             }
           ]
         },
@@ -166,7 +225,7 @@ export default {
           items: [
             {
               description:
-                'A good B2B web design is key to generating organic traffic that converts into qualified leads. The better your website’s user experience, the more positive, lasting impressions your brand will leave with visitors.  B2B companies rarely expect immediate purchases on their websites. B2B sales often consist of multiple interactions across connected devices. We develop B2B websites to inform, captivate, and persuade customers engaging with your brand.'
+                'Put your custom letter head inside your custom envelope, and stuff it inside your custom folder to share with your customers.'
             }
           ]
         },
@@ -176,7 +235,7 @@ export default {
           items: [
             {
               description:
-                'Your online store is your one chance to prove your brand value to your customers. Your e-commerce website should make it easy for new customers to find you, and keep existing customers returning. We deeply monitor conversions and optimize to increase them.'
+                'We make branded logo stings, video effects and transitions, explainer videos, jingles and audio logos for your company to go fully multimedia.'
             }
           ]
         },
@@ -186,7 +245,7 @@ export default {
           items: [
             {
               description:
-                'Websites that accommodate a lot of content can be a tricky balancing act to pull off. Our approach is to present the user with all the information in an organized manner, without overload. Grow your audience member-by-member with engaging content that is easy to share, and easy to find.'
+                'We\'ll compile all of your brand assets into one convenient spot along with instructions for use and zip files of all assets to share with vendors.'
             }
           ]
         },
@@ -196,7 +255,7 @@ export default {
           items: [
             {
               description:
-                "A good landing page should offer value to each user that visits it. They often offer exclusive resources, such as an e-book or webinar signup, in exchange for their basic contact information. The goal of these pages is to generate leads while you pull prospects further into the buyers' journey."
+                "Professional presentation templates for your sales team to wow prospects."
             }
           ]
         }

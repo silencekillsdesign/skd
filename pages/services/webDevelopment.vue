@@ -9,7 +9,7 @@
     <!-- TODO: loop from data create reusable services component (service title, icon, short description)-->
     <v-container fluid pa-0>
       <v-row align="center" id="main">
-        <v-col md6 offset-md1 pr-5 data-aos="fade-right">
+        <v-col md="6" offset-md="1" pr-5 data-aos="fade-right">
           <v-list transparent shaped v-model="i">
             <v-subheader>The Things We Do:</v-subheader>
             <v-list-group
@@ -35,7 +35,7 @@
           </v-list>
         </v-col>
         <v-col md="5" data-aos="fade-left" class="hidden-sm-and-down">
-          <v-img class="mr-0 pr-0" :src="require('~/assets/img/webdev.svg')" alt="web designers and developers in bozeman, montana"></v-img>>
+          <v-img class="mr-0 pr-0" :src="require('~/assets/img/webdev.svg')" alt="web designers and developers in bozeman, montana"></v-img>
         </v-col>
       </v-row>
     </v-container>

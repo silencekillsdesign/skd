@@ -6,7 +6,8 @@ export default ({ app }, inject) => {
     disable: [
       'phone',
       'tablet',
-      'mobile'
+      'mobile',
+      'desktop'
     ]
   })
 }

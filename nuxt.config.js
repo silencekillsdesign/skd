@@ -71,16 +71,16 @@ module.exports = {
    ** Global CSS
    */
   css: [
-    "aos/dist/aos.css",
-    "vue2-animate/dist/vue2-animate.css"
+    // "aos/dist/aos.css",
+    // "vue2-animate/dist/vue2-animate.css"
     // "vue-image-lightbox/dist/vue-image-lightbox.min.css"
   ],
   /*
    ** Plugins to load before mounting the App
    */
   plugins: [
-    { src: "~/plugins/aos", ssr: false },
-    { src: "~plugins/ga.js", ssr: false }
+    // { src: "~/plugins/aos", ssr: false },
+    // { src: "~plugins/ga.js", ssr: false }
     // { src: "~/plugins/VueOwlSlider", ssr: false },
     // { src: '~/plugins/vue-lightbox-pluign.js', ssr: false }
     // { src: "~plugins/vuew-animate", ssr: false }
@@ -93,16 +93,16 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
-    "@neneos/nuxt-animate.css",
-    // "@nuxtjs/google-analytics",
+    // "@neneos/nuxt-animate.css",
+    "@nuxtjs/google-analytics",
     "@nuxtjs/robots",
     "@nuxtjs/sitemap",
     // "@bazzite/nuxt-optimized-images"
   ],
   // "@nuxtjs/google-analytics",
-  // googleAnalytics: {
-  //   id: "UA-24456454-1"
-  // },
+  googleAnalytics: {
+    id: "UA-24456454-1"
+  },
   // "@nuxtjs/robots",
   robots: {
     UserAgent: "*",

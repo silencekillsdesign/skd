@@ -45,7 +45,7 @@
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <!-- <v-app-bar-side-icon @click="drawer = !drawer" class="hidden-md-and-up"/> -->
-      <v-app-bar-nav-icon class="hidden-md-and-up" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon title="menu" class="hidden-md-and-up" @click.stop="drawer = !drawer">Menu</v-app-bar-nav-icon>
       <v-app-bar-items class="hidden-sm-and-down" v-for="(item, i) in items" :key="i">
         <v-btn depressed text :to="item.to" router exact>{{ item.title }}</v-btn>
         <!-- remove nuxt, exact -->
