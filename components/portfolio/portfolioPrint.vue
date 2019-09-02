@@ -15,12 +15,12 @@
                 <v-row
                   no-gutters
                   v-if="hover"
-                  class="d-flex transition-fast-in-fast-out indigo accent-3 v-card--reveal headline white--text"
+                  class="d-flex transition-fast-in-fast-out indigo accent-3 v-card--reveal subtitle white--text"
                   style="height: 100%;"
                 >
                   <v-col align="center" justify="center">
                     <h2 class="mb-3">{{ work.title }}</h2>
-                    <v-btn
+                    <!-- <v-btn
                       outlined
                       large
                       color="white"
@@ -29,7 +29,7 @@
                       target="_blank"
                       :title="work.title"
                       :aria-labelledby="work.title"
-                    >View Website</v-btn>
+                    >View Website</v-btn> -->
                   </v-col>
                 </v-row>
               </v-expand-transition>
@@ -48,33 +48,33 @@ export default {
       works: [
         {
           image: "bozspiel-poster.jpg",
-          title: "CLEAN_Student Landing Page",
-          link: "https://student.runneredq.com"
+          title: "Bozespiel 2019 Poster",
+          link: ""
         },
         {
           image: "biologos-banners.jpg",
-          title: "Runner EDQ Website",
-          link: "https:/runneredq.com"
+          title: "Biologos Tradeshow Banners",
+          link: ""
         },
         {
           image: "silencekillsdesign-proposal.jpg",
-          title: "MudPaint E-Commerce Site",
-          link: "https://mudpaint.com"
+          title: "SEO Case Study",
+          link: ""
         },
         {
           image: "xtant-letterhead.jpg",
-          title: "SurveyDig Website",
-          link: "https://surveydig.com"
+          title: "Xtant Medical Letterhead",
+          link: ""
         },
         {
           image: "garden-of-flavor-bottles.jpg",
-          title: "Xtant Medical Website",
-          link: "https://xtantmedical.com"
+          title: "Garden of Flavor Packaging",
+          link: ""
         },
         {
           image: "eat-shit-griz-tee.jpg",
           title: "CLEAN_Alumni Landing Page",
-          link: "https://alumni.runneredq.com"
+          link: ""
         }
       ]
     };

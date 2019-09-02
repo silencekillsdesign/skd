@@ -3,13 +3,13 @@
     <pageHeader pageTitle="Design" pageSubtitle="Doodle It. Do It." />
 
     <pageIntro
-      introText="Take your brand global with our affordable design services. We offer everything from logo design to tradeshow booth design."
+      introText="Let your brand stand out from the competition with our affordable design services. We offer everything from logo design to tradeshow booth design, all with quick turnaround."
     ></pageIntro>
 
     <v-container fluid pa-0>
-      <v-layout align-center id="main">
-        <v-flex md6 offset-md1 pr-5 data-aos="fade-right">
-          <v-list transparent shaped v-model="i">
+      <v-row align="center" id="main">
+        <v-col cols="12" md="6" offset-md="1" class="pr-5" data-aos="fade-right">
+          <v-list color="transparent" rounded v-model="i">
             <v-subheader>Our Design Services:</v-subheader>
             <v-list-group
               v-for="item in items"
@@ -31,12 +31,12 @@
               </v-list-item>
             </v-list-group>
           </v-list>
-        </v-flex>
-        <v-flex md5 data-aos="fade-left">
+        </v-col>
+        <v-col md="5" class="hidden-sm-and-down" data-aos="fade-left">
           <!-- <v-img flat :src="require('~/assets/img/webdev.svg')"> </v-img> -->
           <img class="mr-0 pr-0" src="~/assets/img/webdev.svg" alt="avatar" />
-        </v-flex>
-      </v-layout>
+        </v-col>
+      </v-row>
     </v-container>
 
     <stack class="my-5" />

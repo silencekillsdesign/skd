@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid pa-0 class="pink accent-3">
+  <v-container fluid class="pink accent-3 pa-0 ma-0">
     <v-container fluid ma-0 pa-4 class="pink accent-3">
       <v-container grid-list-xl>
         <v-layout row wrap align-center justify-space-between v-bind="binding">

@@ -20,8 +20,8 @@
                 >
                   <v-col align="center" justify="center">
                     <h2 class="mb-3">{{ work.title }}</h2>
-                    <!-- <v-btn
-                      v-show="work.link =! null"
+                    <v-btn
+                      v-show="work.link !== ''"
                       outlined
                       large
                       color="white"
@@ -30,7 +30,7 @@
                       target="_blank"
                       :title="work.title"
                       :aria-labelledby="work.title"
-                    >{{ work.btnText }}</v-btn> -->
+                    >{{ work.btnText }}</v-btn>
                   </v-col>
                 </v-row>
               </v-expand-transition>
@@ -51,62 +51,74 @@ export default {
         {
           image: "logo_swampydonks.svg",
           title: "Swampydonks Team Logo",
-          link: ""
+          link: "",
+          btnText: ""
         },
         {
           image: "logo_xtant-medical.svg",
           title: "Xtant Medical Branding",
-          link: "https://xtantmedical.com"
+          link: "https://xtantmedical.com",
+          btnText: "View Website"
         },
         {
           image: "logo_riotgear.svg",
           title: "Riot Gear Branding",
-          link: ""
+          link: "",
+          btnText: ""
         },
         {
           image: "logo_runneredq.svg",
           title: "Runner EDQBranding",
-          link: "https://runneredq.com"
+          link: "https://runneredq.com",
+          btnText: "View Website"
         },
         {
           image: "logo_bozeman-curling-club.svg",
           title: "Bozeman Curling Club Branding",
-          link: "https://bozemancurlingclub.com"
+          link: "https://bozemancurlingclub.com",
+          btnText: "View Website"
         },
         {
           image: "logo_donks.svg",
           title: "Donks Team Logo",
-          link: ""
+          link: "",
+          btnText: ""
         },
         {
           image: "logo_bozeman-family-dentistry.svg",
           title: "Bozeman Family Dentistry Branding",
-          link: "https://www.bozemanfamilydentistry.com/"
+          link: "https://www.bozemanfamilydentistry.com/",
+          btnText: "View Website"
         },
         {
           image: "logo_gallatin-insulation.svg",
           title: "Gallatin Insulation Branding",
-          link: "https://www.truteam.com/branches/mt/gallatin/gallatin-insulation-belgrade/"
+          link: "https://www.truteam.com/branches/mt/gallatin/gallatin-insulation-belgrade/",
+          btnText: "View Website"
         },
         {
           image: "logo_schlubs.svg",
           title: "Schlubs Team Logo",
-          link: "#"
+          link: "",
+          btnText: ""
         },
         {
           image: "logo_surveydig.svg",
           title: "SurveyDIG Branding",
-          link: "https://surveydig.com"
+          link: "https://surveydig.com",
+          btnText: "View Website"
         },
         {
           image: "logo_short-and-curlies.svg",
           title: "Short and Curlies Team Logo",
-          link: "#"
+          link: "",
+          btnText: ""
         },
         {
           image: "logo_biologos.svg",
           title: "Biologos Logo",
-          link: "https://biologos.com"
+          link: "https://biologos.com",
+          btnText: "View Website"
         },
       ]
     };
