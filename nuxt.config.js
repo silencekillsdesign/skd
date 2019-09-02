@@ -96,8 +96,8 @@ module.exports = {
     // "@neneos/nuxt-animate.css",
     "@nuxtjs/google-analytics",
     "@nuxtjs/robots",
-    "@nuxtjs/sitemap",
     // "@bazzite/nuxt-optimized-images"
+    "@nuxtjs/sitemap",
   ],
   // "@nuxtjs/google-analytics",
   googleAnalytics: {
@@ -111,16 +111,18 @@ module.exports = {
   // "@nuxtjs/sitemap",
   sitemap: {
     hostname: "https://silencekillsdesign.com",
-    gzip: true,
-    exclude: [],
+    gzip: false,
     generate: [],
+    exclude: [
+      "/contact/spec"
+    ]
     // routes: [
     //   "/",
     //   "/contact",
     //   "/thankYou",
     //   "/about",
     //   "/services",
-    //   "/services/",
+    //   "/services/*",
     //   "/portfolio",
     //   "/blog"
     // ]
