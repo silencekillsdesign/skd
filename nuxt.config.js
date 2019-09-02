@@ -80,7 +80,7 @@ module.exports = {
    */
   plugins: [
     // { src: "~/plugins/aos", ssr: false },
-    // { src: "~plugins/ga.js", ssr: false }
+    { src: "~plugins/ga.js", ssr: false }
     // { src: "~/plugins/VueOwlSlider", ssr: false },
     // { src: '~/plugins/vue-lightbox-pluign.js', ssr: false }
     // { src: "~plugins/vuew-animate", ssr: false }
@@ -161,6 +161,7 @@ module.exports = {
             "/thankYou",
             "/about",
             "/services",
+            "/services/*",
             "/portfolio",
             "/blog"
           ],
