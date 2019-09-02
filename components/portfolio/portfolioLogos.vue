@@ -1,7 +1,7 @@
 <template>
   <v-container fluid grid-list pa-0 ma-0>
-    <v-layout row wrap ma-0>
-      <v-flex xs6 md3 ma-0 pa-0 v-for="(work,i) in works" :key="i">
+    <v-row class="ma-0">
+      <v-col cols="6" md="3" class="ma-0 pa-0" v-for="(work,i) in works" :key="i">
         <v-hover v-slot:default="{ hover }">
           <v-card flat tile :href="work.link" target="_blank">
             <v-img
@@ -37,8 +37,8 @@
             </v-img>
           </v-card>
         </v-hover>
-      </v-flex>
-    </v-layout>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 

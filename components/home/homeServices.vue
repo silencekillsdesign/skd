@@ -27,7 +27,7 @@
             </v-card-text>
 
             <v-card-actions class="justify-center mb-5">
-              <v-btn class="mb-5" dark color="pink accent-3" :to="service.serviceURL">Learn More</v-btn>
+              <v-btn class="mb-5" dark color="pink accent-3" :to="service.serviceURL">{{ service.serviceButton }}</v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
@@ -62,7 +62,7 @@ export default {
           serviceDesc:
             "Fast, well-designed websites that convert, delivered on time & within budget.",
           serviceIcon: "mdi-code-tags",
-          serviceButton: "More Web Dev",
+          serviceButton: "Web Dev Services",
           serviceURL: "/services/webdevelopment"
         },
         {
@@ -71,7 +71,7 @@ export default {
           serviceDesc:
             "We create consistent visual identification of your brand, service, or product.",
           serviceIcon: "mdi-fingerprint",
-          serviceButton: "More Branding",
+          serviceButton: "Branding Services",
           serviceURL: "/services/branding"
         },
         {
@@ -80,7 +80,7 @@ export default {
           serviceDesc:
             "Drive quality traffic to your site with expert digital marketing services.",
           serviceIcon: "mdi-chess-knight",
-          serviceButton: "More SEO",
+          serviceButton: "SEO Services",
           serviceURL: "/services/seo"
         },
         {
@@ -89,7 +89,7 @@ export default {
           serviceDesc:
             "Well-structured information architecture and logical user interfaces.",
           serviceIcon: "mdi-monitor-cellphone-star",
-          serviceButton: "More UX",
+          serviceButton: "UX/UI Services",
           serviceURL: "/services/ux"
         },
         {
@@ -98,7 +98,7 @@ export default {
           serviceDesc:
             "Digital & print design services from award-winning designers.",
           serviceIcon: "mdi-palette",
-          serviceButton: "More Design",
+          serviceButton: "Design Services",
           serviceURL: "/services/design"
         },
         {
@@ -107,7 +107,7 @@ export default {
           serviceDesc:
             "Immerse your customers with a brand-centered audio / visual experience.",
           serviceIcon: "mdi-movie-roll",
-          serviceButton: "More A/V",
+          serviceButton: "A/V Services",
           serviceURL: "/services/av"
         }
       ]
