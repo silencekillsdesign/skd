@@ -12,7 +12,7 @@
       color="indigo"
     >
       <v-list>
-        <v-list-item v-for="item in items" :key="item.title" :to="item.to" router exact link active-class="yellow">
+        <v-list-item v-for="item in items" :key="item.title" :to="item.to" nuxt router exact link active-class="yellow">
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>

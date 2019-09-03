@@ -1,65 +1,111 @@
 [
-  { "serviceId": "0",
-    "serviceTitle": "07/31/2019",
-    "serviceSubtitle": false,
-    "serviceIntro": "post-1-from-the-blog",
+  {
+    "serviceId": "0",
+    "serviceTitle": "Branding",
+    "serviceSubtitle": "Live It. Become It.",
+    "serviceIntro": "Great branding establishes your company with a memorable presence in the marketplace, apart from your competition. Our brand development process creates a unique story, strategy, and visual identity for your brand. We offer a full range of branding services - from logo design to full brand packages - for companies of all sizes.",
     "serviceImagePrimary": "path/to/img",
     "serviceList": [
       {
-        "serviceListItem": "Local Business Websites",
-        "serviceListIcon": "mdi-monitor",
-        "serviceListDetail": "We build websites for local business that help customers easily find what they're looking for. A local business website doesn't need to be over the top, it needs to be useful. Our development process focuses on local SEO throughout the development process, so you can be easily found and easy to contact.",
-        "serviceListCategory": "webDevelopment"
+        "icon": "mdi-lead-pencil",
+        "title": "Logo Design",
+        "items": [
+          {
+            "description": "Our itereative design process is a balance between our branding expertise "
+          }
+        ]
       },
       {
-        "serviceListItem": "Local Business Websites",
-        "serviceListIcon": "mdi-monitor",
-        "serviceListDetail": "We build websites for local business that help customers easily find what they're looking for. A local business website doesn't need to be over the top, it needs to be useful. Our development process focuses on local SEO throughout the development process, so you can be easily found and easy to contact.",
-        "serviceListCategory": "webDevelopment"
+        "icon": "mdi-file-multiple",
+        "title": "Marketing Materials",
+        "items": [
+          {
+            "description": "Brochures, whitepapers, case studies, direct mailers, etc."
+          }
+        ]
       },
       {
-        "serviceListItem": "Local Business Websites",
-        "serviceListIcon": "mdi-monitor",
-        "serviceListDetail": "We build websites for local business that help customers easily find what they're looking for. A local business website doesn't need to be over the top, it needs to be useful. Our development process focuses on local SEO throughout the development process, so you can be easily found and easy to contact.",
-        "serviceListCategory": "webDevelopment"
+        "icon": "mdi-fountain-pen-tip",
+        "title": "Copy Writing",
+        "items": [
+          {
+            "description": "We write copy specifically for SEO. "
+          }
+        ]
+      },
+      {
+        "icon": "mdi-account-card-details",
+        "title": "Stationery",
+        "items": [
+          {
+            "description": "Make your brand official with leatterheads, business cards, envelopes, packaging and more."
+          }
+        ]
+      },
+      {
+        "icon": "mdi-teach",
+        "title": "Tradeshows",
+        "items": [
+          {
+            "description": "Everything from banner stands and table cloths, to full tradeshow both design."
+          }
+        ]
+      },
+      {
+        "icon": "mdi-newspaper",
+        "title": "Brand Guides",
+        "items": [
+          {
+            "description": "We'll compile all of your brand assets into one convenient spot along with instructions for use and zip files of all assets to share with vendors."
+          }
+        ]
+      },
+      {
+        "icon": "mdi-presentation-play",
+        "title": "Presentaion Templates",
+        "items": [
+          {
+            "description": "Professional presentation templates for your sales team to wow prospects."
+          }
+        ]
       }
     ],
     "serviceSteps": [
       {
-        "serviceStep" : 0,
-        "serviceStepTitle" : "UX Planning, Persona Research, & Wireframing",
+        "serviceStep": 0,
+        "serviceStepTitle": "UX Planning, Persona Research, & Wireframing",
         "serviceStepDetail": "We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.",
-        "serviceStepImage" : "~/assets/img/services/wireframing.svg",
-        "serviceStepImageOrder" : 0,
-        "serviceStepButton" : "View UX Services",
-        "serviceStepButtonTo" : "/services/ux"
+        "serviceStepImage": "~/assets/img/services/wireframing.svg",
+        "serviceStepImageOrder": 0,
+        "serviceStepButton": "View UX Services",
+        "serviceStepButtonTo": "/services/ux"
       },
       {
-        "serviceStep" : 1,
-        "serviceStepTitle" : "UX Planning, Persona Research, & Wireframing",
+        "serviceStep": 1,
+        "serviceStepTitle": "UX Planning, Persona Research, & Wireframing",
         "serviceStepDetail": "Our proficiency in design and development makes it easy for your mockups and ideas to come to life. With component based development, new features and design tweaks are easy to make on the fly.",
-        "serviceStepImage" : "path/to/img",
-        "serviceStepImageOrder" : 1,
-        "serviceStepButton" : "View UX Services",
-        "serviceStepButtonTo" : "/services/ux"
+        "serviceStepImage": "path/to/img",
+        "serviceStepImageOrder": 1,
+        "serviceStepButton": "View UX Services",
+        "serviceStepButtonTo": "/services/ux"
       },
       {
-        "serviceStep" : 2,
-        "serviceStepTitle" : "UX Planning, Persona Research, & Wireframing",
+        "serviceStep": 2,
+        "serviceStepTitle": "UX Planning, Persona Research, & Wireframing",
         "serviceStepDetail": "Once your website development is complete, it's time to go live! We  will handle the server setup, hosting, and deployment of your new site, wherever you want it hosted.",
-        "serviceStepImage" : "path/to/img",
-        "serviceStepImageOrder" : 0,
-        "serviceStepButton" : "View UX Services",
-        "serviceStepButtonTo" : "/services/ux"
+        "serviceStepImage": "path/to/img",
+        "serviceStepImageOrder": 0,
+        "serviceStepButton": "View UX Services",
+        "serviceStepButtonTo": "/services/ux"
       },
       {
-        "serviceStep" : 3,
-        "serviceStepTitle" : "UX Planning, Persona Research, & Wireframing",
+        "serviceStep": 3,
+        "serviceStepTitle": "UX Planning, Persona Research, & Wireframing",
         "serviceStepDetail": "SEO is one of our main focuses throughout the development of your site. It's Important. Once we are live, we'll tackle any remaining SEO setup, and begin implementing your unique SEO strategy.",
-        "serviceStepImage" : "path/to/img",
-        "serviceStepImageOrder" : 1,
-        "serviceStepButton" : "View UX Services",
-        "serviceStepButtonTo" : "/services/ux"
+        "serviceStepImage": "path/to/img",
+        "serviceStepImageOrder": 1,
+        "serviceStepButton": "View UX Services",
+        "serviceStepButtonTo": "/services/ux"
       }
     ]
   }

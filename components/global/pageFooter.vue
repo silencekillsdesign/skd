@@ -11,6 +11,7 @@
           :to="footerLink.to"
           router
           exact
+          nuxt
           text
           rounded
           small

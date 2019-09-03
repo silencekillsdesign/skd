@@ -27,7 +27,7 @@
             </v-card-text>
 
             <v-card-actions class="justify-center mb-5">
-              <v-btn class="mb-5" dark color="pink accent-3" :to="service.serviceURL">{{ service.serviceButton }}</v-btn>
+              <v-btn class="mb-5" dark color="pink accent-3" nuxt link exact :to="service.serviceURL">{{ service.serviceButton }}</v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
@@ -81,7 +81,7 @@ export default {
             "Drive quality traffic to your site with expert digital marketing services.",
           serviceIcon: "mdi-chess-knight",
           serviceButton: "SEO Services",
-          serviceURL: "/services/seo"
+          serviceURL: "/services/seo/"
         },
         {
           serviceId: "45",

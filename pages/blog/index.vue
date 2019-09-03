@@ -69,7 +69,7 @@ export default {
         {
           name: "description",
           content:
-            "Blogging about design, development, and marketing for small to medium-sized businesses."
+            "Blogging about web design, web development, graphic design, branding, SEO, and marketing for small to medium-sized businesses."
         },
         { name: "robots", content: "index, follow" },
       ]

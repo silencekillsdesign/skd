@@ -15,6 +15,8 @@
             min-height="240"
             flat
             hover
+            nuxt
+            link
             :to="service.serviceURL"
           >
             <v-icon size="72" class="ma-4 service-icon">{{ service.serviceIcon }}</v-icon>

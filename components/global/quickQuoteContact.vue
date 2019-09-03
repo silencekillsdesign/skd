@@ -16,6 +16,7 @@
               class="mx-0"
               color="indigo accent-3"
               link
+              nuxt
               to="/contact/#main"
             >Request a Quote</v-btn>
           </v-flex>
