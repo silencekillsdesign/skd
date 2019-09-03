@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid grid-list pa-0 ma-0>
+  <v-container fluid class="pa-0 ma-0">
     <v-row class="ma-0">
       <v-col cols="6" md="3" class="ma-0 pa-0" v-for="(work,i) in works" :key="i">
         <v-hover v-slot:default="{ hover }">
@@ -9,7 +9,8 @@
               :aspect-ratio="9/6"
               :alt="work.title"
               :title="work.title"
-              :src=" require('@/assets/img/portfolio/print/'+work.image)"
+              :src="require('@/assets/img/portfolio/print/'+work.image)"
+              :lazy-src="require('@/assets/img/silencekillsdesign-lazyload.jpg')"
             >
               <v-expand-transition>
                 <v-row

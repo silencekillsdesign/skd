@@ -1,11 +1,6 @@
 <template>
   <!-- background generated at https://www.svgbackgrounds.com -->
 
-  <!-- <v-img :aspect-ratio="3/1" :src="require('~/assets/img/backgrounds/lavalamp.svg')" class="page-header"> -->
-  <!-- <v-img :aspect-ratio="3/1" :src="require('~/assets/img/backgrounds/waveheader.svg')" class="page-header"> -->
-  <!-- <v-img :aspect-ratio="3/1" :src="require('~/assets/img/backgrounds/waveheader.svg')" class="page-header"> -->
-  <!-- <v-img :aspect-ratio="3/1" :src="require('~/assets/img/backgrounds/waveheader.svg')" class="page-header"> -->
-  <!-- <v-img :aspect-ratio="3/1" :src="require('~/assets/img/backgrounds/waveheader.svg')" class="page-header"> -->
   <v-img
     :aspect-ratio="5/1"
     :src="require('~/assets/img/backgrounds/polyworm.svg')"
@@ -43,29 +38,14 @@ export default {
 
 <style scoped>
 .page-header {
-  font-family: "Overpass" !important;
   background-color: #06103A;
-  /* background-image: url(~@/assets/img/backgrounds/wavy-bg.svg); */
-  /* background-size: 25%;
-  background-repeat: repeat; */
-  animation: waterfall 30s linear infinite;
 }
 .page-title {
   font-family: "Overpass" !important;
   border: 0.125em solid;
+  padding: .75em .25em .125em;
   line-height: 1;
 }
-
-@keyframes waterfall {
-  0% {
-    background-position: -100% -100%;
-  }
-
-  100% {
-    background-position: 100% 100%;
-  }
-}
-
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;
@@ -73,22 +53,4 @@ export default {
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
-
-/* .bounce-enter-active {
-  animation: bounce-in 0.5s;
-}
-.bounce-leave-active {
-  animation: bounce-in 0.5s reverse;
-}
-@keyframes bounce-in {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-} */
 </style>

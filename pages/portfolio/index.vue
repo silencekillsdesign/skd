@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid pa-0 mb-5>
+  <v-container fluid class="pa-0 ma-0">
     <pageHeader pageTitle="Portfolio" pageSubtitle="We Do Things." />
 
     <v-tabs fixed-tabs background-color="blue accent-3" dark slider-color="yellow">

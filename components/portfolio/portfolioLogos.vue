@@ -10,6 +10,7 @@
               :alt="work.title"
               :title="work.title"
               :src=" require('@/assets/img/portfolio/logos/'+work.image)"
+              :lazy-src="require('@/assets/img/silencekillsdesign-lazyload.jpg')"
             >
               <v-expand-transition>
                 <v-row

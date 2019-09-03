@@ -103,7 +103,7 @@ export default {
 }
 .hero-home {
   height: 100vh;
-  background-color: transparent;
+  background-color: #1A237E;
   background-image: url(~@/assets/img/backgrounds/waver.svg);
   background-size: cover !important;
 }
