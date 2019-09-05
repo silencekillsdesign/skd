@@ -5,9 +5,7 @@ export default ({ app }, inject) => {
   app.AOS = new AOS.init({
     disable: [
       'phone',
-      'tablet',
-      'mobile',
-      'desktop'
+      'mobile'
     ]
   })
 }

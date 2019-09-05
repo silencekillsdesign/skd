@@ -12,7 +12,16 @@
       color="indigo"
     >
       <v-list>
-        <v-list-item v-for="item in items" :key="item.title" :to="item.to" nuxt router exact link active-class="yellow">
+        <v-list-item
+          v-for="(nav,i) in MainNavigation"
+          :key="i"
+          :to="item.to"
+          nuxt
+          router
+          exact
+          link
+          active-class="yellow"
+        >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
@@ -47,7 +56,29 @@
       <!-- <v-app-bar-side-icon @click="drawer = !drawer" class="hidden-md-and-up"/> -->
       <v-app-bar-nav-icon title="menu" class="hidden-md-and-up" @click.stop="drawer = !drawer">Menu</v-app-bar-nav-icon>
       <v-app-bar-items class="hidden-sm-and-down" v-for="(item, i) in items" :key="i">
-        <v-btn depressed text :to="item.to" router exact>{{ item.title }}</v-btn>
+        <v-btn v-if="!nav.submenu" depressed text :to="item.to" router exact>{{ item.title }}</v-btn>
+        <v-btn
+          v-if="nav.submenu"
+          :key="index"
+          depressed
+          text
+          :to="item.to"
+          router
+          exact
+        >{{ item.title }}</v-btn>
+
+        <v-menu v-if="nav.submenu" :key="index" open-on-hover nudge-bottom="10" bottom>
+          <template v-slot:activator="{ on }">
+            <v-btn color="primary" dark v-on="on">{{ item.title }}</v-btn>
+          </template>
+
+          <v-list>
+            <v-list-item v-for="(item, index) in items" :key="index">
+              <v-list-item-title>{{ item.title }}</v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+
         <!-- remove nuxt, exact -->
       </v-app-bar-items>
     </v-app-bar>
@@ -57,9 +88,8 @@
 <script>
 import skdType from "~/components/global/skdType.vue";
 import skdIcon from "~/components/global/skdIcon.vue";
-import MainNavigation from "~/data/navigation.json"
+import MainNavigation from "~/data/navigation.json";
 export default {
-  
   data() {
     return {
       MainNavigation,

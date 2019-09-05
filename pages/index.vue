@@ -43,12 +43,20 @@ export default {
         "@type": "Organization",
         "name": "SilenceKillsDesign",
         "brand": "SilenceKillsDesign",
+        "legalName" : "SilenceKillsDesign",
+        "url": "https://silencekillsdesign.com",
+        "logo": "https://silencekillsdesign.com/silencekillsdesign--opengraph-img.png",
+        "foundingDate": "2009",
         "knowsAbout": [
           "Web Development",
+          "Web Design",
+          "copywriting",
+          "logo design",
           "Graphic design",
           "marketing",
           "SEO",
-          "audio video"
+          "audio",
+          "video"
         ],
 			"sameAs": [
 				"https://www.facebook.com/silencekillsdesign/",

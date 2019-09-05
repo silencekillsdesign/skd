@@ -13,10 +13,7 @@
       <v-row align-space-between justify-space-between fill-height row wrap grid-list-md>
         <!-- TODO: create component for individual services, populate this with services fields (icon, title, short desc) in cms -->
         <v-col cols="12" md="4" class="text-center pa-3" v-for="(service, i) in services" :key="i" itemscope itemtype="http://schema.org/Service" >
-          <v-card dark color="transparent" class="service-card px-2 py-5" itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
-          <meta itemprop="serviceType" :content="service.serviceName" />
-          <meta itemprop="provider" itemscope itemtype="http://schema.org/LocalBusiness" content="SilenceKillsDesign" />
-          <meta itemprop="areaServed" itemscope itemtype="http://schema.org/State" content="Montana" />
+          <v-card dark color="transparent" class="service-card px-2 py-5" >
           
             <v-icon size="72" class="ma-5 pt-5 service-icon">{{ service.serviceIcon }}</v-icon>
             <v-card-title justify-center class="service-title">

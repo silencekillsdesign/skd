@@ -1,21 +1,21 @@
 [
-  { "title" : "Home", "uri": "/", "submenu": null },
-  { "title" : "About", "uri": "/about", "submenu": null },
-  { "title" : "Services", "uri": "/services", "submenu": null },
-  { "title" : "Portfolio", "uri": "/portfolio", "submenu":
+  { "title" : "Home", "to": "/", "submenu": null },
+  { "title" : "About", "to": "/about", "submenu": null },
+  { "title" : "Services", "to": "/services", "submenu": null },
+  { "title" : "Portfolio", "to": "/portfolio", "submenu":
     [
-      { "title": "Branding", "uri": "/portfolio/#branding" },
-      { "title": "Web", "uri": "/portfolio/#web" },
-      { "title": "Design", "uri": "/portfolio/#design" },
-      { "title": "A/V", "uri": "/portfolio/#av" }
+      { "title": "Branding", "to": "/portfolio/#branding" },
+      { "title": "Web", "to": "/portfolio/#web" },
+      { "title": "Design", "to": "/portfolio/#design" },
+      { "title": "A/V", "to": "/portfolio/#av" }
     ]
   },
-  { "title" : "Blogs", "uri": "/blogs", "submenu": [
-    { "title": "Sign in", "uri": "/signin" },
-    { "title": "Sign up", "uri": "/signup" },
-    { "title": "Recover password", "uri": "/recover-password" },
-    { "title": "Maintenance", "uri": "/maintenance" }
+  { "title" : "Blogs", "to": "/blogs", "submenu": [
+    { "title": "Sign in", "to": "/signin" },
+    { "title": "Sign up", "to": "/signup" },
+    { "title": "Recover password", "to": "/recover-password" },
+    { "title": "Maintenance", "to": "/maintenance" }
   ]
 },  
-  { "title" : "Contact", "uri": "/contact", "submenu": null }
+  { "title" : "Contact", "to": "/contact", "submenu": null }
 ]
