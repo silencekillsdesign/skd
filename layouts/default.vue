@@ -4,9 +4,7 @@
     <!-- <dropdownNav /> -->
     <v-content>
       <v-container fluid pa-0>
-        <transition name="fade">
           <nuxt />
-        </transition>
         <speedDial />
         <!-- <developmentDialog /> -->
       </v-container>
