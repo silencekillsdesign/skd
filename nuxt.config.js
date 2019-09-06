@@ -79,7 +79,7 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    { src: "~/plugins/vuetify"},
+    // { src: "~/plugins/vuetify"},
     // { src: "~/plugins/aos", ssr: false },
     { src: "~plugins/ga.js", ssr: false }
     // { src: "~/plugins/VueOwlSlider", ssr: false },
@@ -186,6 +186,7 @@ module.exports = {
    ** https://github.com/nuxt-community/vuetify-module
    */
   vuetify: {
+    themeCache,
     theme: {
       primary: colors.blue.darken2,
       accent: colors.grey.darken3,
