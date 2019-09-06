@@ -79,6 +79,7 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
+    { src: "~/plugins/vuetify"},
     // { src: "~/plugins/aos", ssr: false },
     { src: "~plugins/ga.js", ssr: false }
     // { src: "~/plugins/VueOwlSlider", ssr: false },
