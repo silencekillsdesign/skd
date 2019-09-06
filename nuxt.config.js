@@ -193,14 +193,6 @@ module.exports = {
       warning: colors.amber.base,
       error: colors.deepOrange.accent4,
       success: colors.green.accent3,
-      options: {
-        minifyTheme: function (css) {
-          return process.env.NODE_ENV === 'production'
-            ? css.replace(/[\r\n|\r|\n]/g, '')
-            : css,
-            themeCache
-        }
-      }
     }
   },
   /*
