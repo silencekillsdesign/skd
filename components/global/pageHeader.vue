@@ -14,10 +14,10 @@
               class="page-title white--text text-uppercase font-weight-bold"
               :class="{
           'mx-1 pt-2 pa-1 display-2': $vuetify.breakpoint.smAndDown, 
-          'px-4 pt-4 pa-1 display-4': $vuetify.breakpoint.mdAndUp}"
+          'px-4 pt-4 pa-1 display-4 animated bounce ': $vuetify.breakpoint.mdAndUp}"
             >{{ pageTitle }}</h1>
             <h4
-              class="mt-2 text-xs-right headline text-uppercase hidden-sm-and-down"
+              class="mt-2 text-xs-right headline text-uppercase hidden-sm-and-down animated slideInDown delay-0.5s"
             >{{ pageSubtitle }}</h4>
           </v-flex>
         </v-layout>
