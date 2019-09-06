@@ -1,5 +1,11 @@
 const colors = require("vuetify/es5/util/colors").default;
 
+// Vuetify Stuff
+const themeCache = new LRU({
+  max: 10,
+  maxAge: 1000 * 60 * 60 // 1 hour
+});
+
 // spa shit for netlify
 const path = require("path");
 const PrerenderSPAPlugin = require("prerender-spa-plugin");
@@ -186,7 +192,9 @@ module.exports = {
    ** https://github.com/nuxt-community/vuetify-module
    */
   vuetify: {
-    themeCache,
+    options: {
+      themeCache,
+    },
     theme: {
       primary: colors.blue.darken2,
       accent: colors.grey.darken3,
