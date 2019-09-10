@@ -3,7 +3,7 @@
     <pageHeader pageTitle="SEO / SEM" pageSubtitle="Seek It. Find It." />
 
     <pageIntro
-      introText="Grow your web presence with a unique search engine optimiation approach focused on your customers.  With thousands of hits delivered to our customers across industries, our technical SEO strategies help you start improving your results immediately."
+      introText="Grow your web presence with a unique search engine optimiation approach focused on your customers. With thousands of hits delivered to our customers across industries, our technical SEO strategies help you start improving your results immediately."
     ></pageIntro>
 
     <!-- TODO: loop from data create reusable services component (service title, icon, short description)-->
@@ -121,6 +121,25 @@ export default {
     pageHeader,
     pageIntro,
     stackSEO
+  },
+  head() {
+    return {
+      title: "SEO for Bozeman Business",
+      meta: [
+        {
+          name: "description",
+          content:
+            "Grow your web presence with a unique search engine optimiation approach focused on your customers. Offering local SEO unique to Bozeman businesses."
+        },
+        {
+          name: "keywords",
+          content:
+            "local seo bozeman, ppc bozeman, technical seo, e-commerce SEO, seo expert in bozeman"
+        },
+      ],
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [{ innerHTML: JSON.stringify(this.structuredData), type: 'application/ld+json' }],
+    }
   },
   data() {
     return {

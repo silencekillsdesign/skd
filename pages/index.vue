@@ -85,6 +85,11 @@ export default {
           content:
             "SilenceKillsDesign - Web Development, Marketing, and Graphic Design in Bozeman, MT."
         },
+        {
+          name: "keywords",
+          content:
+            "Web Design Bozeman, Logo Design, Web Design, SEO Bozeman, Marketing Bozeman, fast websites, nuxt websites"
+        },
         { name: "robots", content: "index, follow" },
         {
           name: "twitter:title",

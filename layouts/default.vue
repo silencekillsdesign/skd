@@ -117,8 +117,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~/assets/style/custom.scss";
-@import "~/assets/sass/main.scss";
+// @import "~/assets/style/custom.scss";
+// @import "~/assets/sass/main.scss";
 .primary-nav {
   max-width: 100vw !important;
 }

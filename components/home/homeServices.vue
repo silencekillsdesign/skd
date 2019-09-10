@@ -12,7 +12,7 @@
     <v-container grid-list-xs >
       <v-row align-space-between justify-space-between fill-height row wrap grid-list-md>
         <!-- TODO: create component for individual services, populate this with services fields (icon, title, short desc) in cms -->
-        <v-col cols="12" md="4" class="text-center pa-3" v-for="(service, i) in services" :key="i" itemscope itemtype="http://schema.org/Service" >
+        <v-col cols="12" sm="6" md="4" class="text-center pa-3" v-for="(service, i) in services" :key="i" itemscope itemtype="http://schema.org/Service" >
           <v-card dark color="transparent" class="service-card px-2 py-5" >
           
             <v-icon size="72" class="ma-5 pt-5 service-icon">{{ service.serviceIcon }}</v-icon>

@@ -26,7 +26,7 @@
     <v-app-bar app color="blue accent-3 primary-nav" flat dark hide-on-scroll>
       <!-- <v-app-bar-title v-text="title"/> -->
       <!-- TODO: Link to hompeage -->
-      <v-toolbar-title class="app-bar-brand">
+      <v-toolbar-title class="app-bar-brand ml-0 pl-0">
         <v-row no-gutters justify="center" align="center">
           <v-col shrink class="ma-0">
             <v-img
@@ -37,7 +37,7 @@
             ></v-img>
           </v-col>
           <v-col align="center" class="hidden-sm-and-down">
-            <h1 class="pl-0 pr-6 ml-0">
+            <h1 class="pb-3">
               <skdType />
             </h1>
           </v-col>
@@ -45,7 +45,7 @@
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <!-- <v-app-bar-side-icon @click="drawer = !drawer" class="hidden-md-and-up"/> -->
-      <v-app-bar-nav-icon title="menu" class="hidden-md-and-up" @click.stop="drawer = !drawer">Menu</v-app-bar-nav-icon>
+      <v-app-bar-nav-icon title="menu" class="hidden-md-and-up" @click.stop="drawer = !drawer" aria-labelledby="menu button"></v-app-bar-nav-icon>
       <v-app-bar-items class="hidden-sm-and-down" v-for="(item, i) in items" :key="i">
         <v-btn depressed text :to="item.to" router exact>{{ item.title }}</v-btn>
         <!-- remove nuxt, exact -->

@@ -55,7 +55,11 @@ export default {
           content:
             "Design. Branding. SEO. Web Development / Web Design. UX/UI Design. Email. Marketing. Audio/Visual. Screenprinting. All at affordable rates."
         },
-        { name: "robots", content: "index, follow" },
+        {
+          name: "keywords",
+          content:
+            "SilenceKillsDesign services, branding, design, web design, web development, email, seo, ux, bozeman montana"
+        },
       ]
     };
   },

@@ -144,7 +144,11 @@ export default {
           content:
             "Brand your local bozeman business like a big time brand. We offer affordable logo design, graphic design, presentations, and web design to suit your small to medium business"
         },
-        { name: "robots", content: "index, follow" }
+        {
+          name: "keywords",
+          content:
+            "bozeman logo designers, business cards, logo design, branding, marketing agency in bozeman"
+        },
       ],
       __dangerouslyDisableSanitizers: ['script'],
       script: [{ innerHTML: JSON.stringify(this.structuredData), type: 'application/ld+json' }],

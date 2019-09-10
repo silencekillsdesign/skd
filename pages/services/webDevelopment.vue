@@ -42,8 +42,8 @@
 
     <stack class="my-5" />
 
-    <v-container my-5>
-      <v-layout row align-center justify-center mt-5 py-5>
+    <v-container class="my-5">
+      <v-row align="center" justify="center" class="mt-5 py-5">
         <h2
           class="text-center display-3 indigo--text"
           data-aos="fade-up"
@@ -51,82 +51,23 @@
           data-aos-duration="800"
           data-aos-delay="100"
         >Our Web Development Process</h2>
-      </v-layout>
+      </v-row>
     </v-container>
     <!-- TODO: make order dynamic -->
+
+    <!-- this should come from an api and services pages should be a layout -->
     <v-container my-5>
-      <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md4 order-0 pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img
-            :aspect-ratio="1"
-            contain
-            max-height="250px"
-            :src="require('~/assets/img/services/web/web1.svg')"
-          ></v-img>
-        </v-flex>
-        <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4 blue--text text--accent-3">UX Planning and Wireframing</h3>
+      <v-row class="py-5 my-5" align="center" v-for="(serviceStep, i) in serviceSteps" :key="i" :id="serviceStep.id">
+        <v-col class="pa-5" cols="12" md="4" order="0" :order-md="serviceStep.imageOrder" data-aos="fade-right" data-aos-duration="800">
+          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/'+serviceStep.image)"></v-img>
+        </v-col>
+        <v-col xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
+          <h3 class="mt-4 blue--text text--accent-3">{{ serviceStep.title }}</h3>
           <v-divider class="my-5" color="blue"></v-divider>
-          <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
-          <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View UX Services</v-btn>
-        </v-flex>
-      </v-layout>
-
-      <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md4 order-xs0 order-md1 pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img
-            :aspect-ratio="1"
-            contain
-            max-height="250px"
-            :src="require('~/assets/img/services/web/web2.svg')"
-          ></v-img>
-        </v-flex>
-        <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4 blue--text text--accent-3">Development and Design</h3>
-          <v-divider class="my-5" color="blue"></v-divider>
-          <p>We are proficient in design and development, making it easy for your mockups and ideas to come to life. With component based development, new features are easy to add on the fly.</p>
-          <v-btn class="ma-2" to="/services/design" outlined color="indigo">View Design Services</v-btn>
-        </v-flex>
-      </v-layout>
-
-      <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md4 order-0 pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img
-            :aspect-ratio="1"
-            contain
-            max-height="250px"
-            :src="require('~/assets/img/services/web/web3.svg')"
-          ></v-img>
-        </v-flex>
-        <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4 blue--text text--accent-3">Deployment and Server Setup</h3>
-          <v-divider class="my-5" color="blue"></v-divider>
-          <p>Once your website development is complete, it's time to go live! We will handle the server setup, hosting, and deployment of your new site, wherever you want it hosted.</p>
-          <v-btn
-            class="ma-2"
-            to="/services/webdevelopment"
-            outlined
-            color="indigo"
-          >View Web Services</v-btn>
-        </v-flex>
-      </v-layout>
-
-      <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md4 order-xs0 order-md1 pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img
-            :aspect-ratio="1"
-            contain
-            max-height="250px"
-            :src="require('~/assets/img/services/web/web4.svg')"
-          ></v-img>
-        </v-flex>
-        <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4 blue--text text--accent-3">SEO and Performance Optimization</h3>
-          <v-divider class="my-5" color="blue"></v-divider>
-          <p>SEO is one of our main focuses throughout the development of your site. Once we are live, we'll tackle any remaining SEO setup, and begin implementing your unique SEO strategy.</p>
-          <v-btn class="ma-2" to="/services/seo" outlined color="indigo">View SEO Services</v-btn>
-        </v-flex>
-      </v-layout>
+          <p>{{ serviceStep.text }}</p>
+          <v-btn class="my-2" @click="$vuetify.goTo(serviceStep.buttonGoTo)" outlined color="indigo">{{ serviceStep.buttonText}}</v-btn>
+        </v-col>
+      </v-row>
     </v-container>
 
     <v-container fluid pa-0>
@@ -154,6 +95,11 @@ export default {
           name: "description",
           content:
             "Well-designed websites are very powerful marketing, delivering your brand's message to your customers' fingertips. Our start-to-finish web development process caters to your existing customers, and new audiences alike."
+        },
+        {
+          name: "keywords",
+          content:
+            "local business websites in bozeman, bozeman seo, local seo, event websites, web designer in bozeman, best web design bozeman"
         },
         { name: "robots", content: "index, follow" }
       ],
@@ -278,6 +224,44 @@ export default {
                 "A good landing page should offer value to each user that visits it. They often offer exclusive resources, such as an e-book or webinar signup, in exchange for their basic contact information. The goal of these pages is to generate leads while you pull prospects further into the buyers' journey."
             }
           ]
+        }
+      ],
+      serviceSteps: [
+        {
+          id: "step1",
+          title: "UX Planning and Wireframing",
+          text: "We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.",
+          image: "web/web1.svg",
+          imageOrder: "0",
+          buttonText: "Next Steps",
+          buttonGoTo: "#step2",
+        },
+        {
+          id: "step2",
+          title: "Development and Design",
+          text: "We are proficient in design and development, making it easy for your mockups and ideas to come to life. With component based development, new features are easy to add on the fly.",
+          image: "web/web2.svg",
+          imageOrder: "1",
+          buttonText: "Next Steps",
+          buttonGoTo: "#step3",
+        },
+        {
+          id: "step3",
+          title: "Deployment and Server Setup",
+          text: "Once your website development is complete, it's time to go live! We will handle the server setup, hosting, and deployment of your new site, wherever you want it hosted.",
+          image: "web/web3.svg",
+          imageOrder: "0",
+          buttonText: "Next Steps",
+          buttonGoTo: "#step4",
+        },
+        {
+          id: "step4",
+          title: "SEO and Performance Optimization",
+          text: "SEO is one of our main focuses throughout the development of your site. Once we are live, we'll tackle any remaining SEO setup, and begin implementing your unique SEO strategy. We also optimize your website, focusing on performance and making your website fast.",
+          image: "web/web4.svg",
+          imageOrder: "1",
+          buttonText: "View SEO Details",
+          buttonGoTo: "services/seo",
         }
       ]
     };

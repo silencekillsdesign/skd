@@ -14,7 +14,7 @@
             <v-row class="xs-text-center fill-height" justify="center" align="center">
               <v-col cols="12" md="6" class="text-center">
                 <v-avatar size="110" color="grey lighten-4" class="mb-4">
-                  <img :src="review.avatar" alt="avatar" />
+                  <v-img :src="require('~/assets/img/testimonials/'+review.avatar)" alt="avatar"></v-img>
                 </v-avatar>
                 <h4 class="title mb-2 white--text">{{ review.name }}</h4>
                 <h5
@@ -50,7 +50,7 @@ export default {
       reviews: [
         {
           avatar:
-            "https://media.licdn.com/dms/image/C4D03AQFnwAiLiTr6DA/profile-displayphoto-shrink_100_100/0?e=1567641600&v=beta&t=MVl9k4SyqcnbukBoexeBgiSoc3pzl9XfGnZFStg_UvY",
+            "molly.jpg",
           name: "Molly",
           title:
             "Vice President Business Development & Contract Administration at Xtant Medical",
@@ -60,7 +60,7 @@ export default {
         },
         {
           avatar:
-            "https://media.licdn.com/dms/image/C5603AQEUed4K218ZJQ/profile-displayphoto-shrink_800_800/0?e=1567641600&v=beta&t=IMeyyxYQYhCK1EQa6_Gvq1rBtVgzp_hyu76Eky_29Ro",
+            "zeb.jpg",
           name: "Zeb",
           title: "VP of R&D at Blackmore Sensors and Analytics, Inc.",
           review:
@@ -69,7 +69,7 @@ export default {
         },
         {
           avatar:
-            "https://media.licdn.com/dms/image/C4E03AQETFDsYEI6jMQ/profile-displayphoto-shrink_100_100/0?e=1567641600&v=beta&t=kdCKJb6Nsi003CTmM2J5KWvDGeBhhLnbW_Yhczw0Dpg",
+            "jenna.jpg",
           name: "Jenna",
           title: "Licensed Clinical Professional Counselor",
           review:
@@ -78,7 +78,7 @@ export default {
         },
         {
           avatar:
-            "https://media.licdn.com/dms/image/C5603AQEp1o89o51-NQ/profile-displayphoto-shrink_800_800/0?e=1567641600&v=beta&t=RIcdLHmmaompYeAhWFlnY6zFNwyhVOP-gtPjpLyV34I",
+            "brett.jpg",
           name: "Brett",
           title: "Frontend Engineer at Theorem & Technical Expert at Thinkful",
           review:
