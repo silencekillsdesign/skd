@@ -32,14 +32,14 @@
                 <v-btn
                   large
                   dark
-                  class="ml-0 mr-3"
+                  class="ml-0 mr-3 mb-2"
                   color="blue accent-3"
                   @click="$vuetify.goTo('#homeServices')"
                 >View Services</v-btn>
                 <v-btn
                   large
                   dark
-                  class="ml-0 mr-3"
+                  class="ml-0 mr-3  mb-2"
                   color="pink accent-2"
                   to="/contact/#main"
                 >Quick Quote</v-btn>
