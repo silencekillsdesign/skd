@@ -121,8 +121,8 @@ module.exports = {
    */
   plugins: [
     // { src: "~/plugins/vuetify"},
-    { src: "~/plugins/aos", ssr: false },
-    { src: "~plugins/ga.js", ssr: false }
+    { src: "~/plugins/aos", ssr: false }
+    // { src: "~plugins/ga.js", ssr: false }
     // { src: "~/plugins/VueOwlSlider", ssr: false },
     // { src: '~/plugins/vue-lightbox-pluign.js', ssr: false }
     // { src: "~plugins/vuew-animate", ssr: false }
@@ -136,7 +136,12 @@ module.exports = {
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
     // "@neneos/nuxt-animate.css",
-    "@nuxtjs/google-analytics",
+    [
+      "@nuxtjs/google-analytics",
+      {
+        id: "UA-24456454-1"
+      }
+    ],
     "@nuxtjs/robots",
     // "@bazzite/nuxt-optimized-images"
     "@nuxtjs/sitemap",
@@ -144,9 +149,9 @@ module.exports = {
   ],
   redirect: [{ from: "^/myoldurl", to: "/mynewurl", statusCode: 301 }],
   // "@nuxtjs/google-analytics",
-  googleAnalytics: {
-    id: "UA-24456454-1"
-  },
+  // googleAnalytics: {
+  //   id: "UA-24456454-1"
+  // },
   // "@nuxtjs/robots",
   robots: {
     UserAgent: "*",
@@ -166,19 +171,11 @@ module.exports = {
 
   //to prerender thankyou page, hopefully fix netlify redirect miss.
 
-  // generate: {
-  //   routes: function() {
-  //     return [
-  //       "/",
-  //       "/contact",
-  //       "/thankYou",
-  //       "/about",
-  //       "/services",
-  //       "/portfolio",
-  //       "/blog"
-  //     ]
-  //   }
-  // },
+  generate: {
+    routes: function() {
+      return ["/thankYou"];
+    }
+  },
 
   // for netlify to capture form data
   configureWebpack: () => {
