@@ -3,12 +3,13 @@
     <pageHeader pageTitle="Web Dev" pageSubtitle="Design It. Build It." />
 
     <pageIntro
-      introText="A well-designed website can be your most powerful marketing segment, delivering your brand's message to your customers' fingertips. Our start-to-finish web development process caters to your existing customers, and new audiences alike."
+      introText="Good website design can be your most powerful marketing segment, delivering your brand's message to your customers' fingertips. Our web development process prioitizes UX and SEO, to help small businesses stand out in Bozeman."
     ></pageIntro>
 
     <!-- TODO: loop from data create reusable services component (service title, icon, short description)-->
     <v-container fluid pa-0>
       <v-row align="center" id="main">
+        <!-- start list -->
         <v-col md="6" offset-md="1" data-aos="fade-right">
           <v-list color="transparent" rounded v-model="i" class="pr-5">
             <v-subheader>The Things We Do:</v-subheader>
@@ -34,11 +35,13 @@
             </v-list-group>
           </v-list>
         </v-col>
+        <!-- end list -->
         <v-col md="5" data-aos="fade-left" class="hidden-sm-and-down">
           <v-img class="mr-0 pr-0" :src="require('~/assets/img/webdev.svg')" alt="web designers and developers in bozeman, montana"></v-img>
         </v-col>
       </v-row>
     </v-container>
+    
 
     <stack class="my-5" />
 
@@ -131,8 +134,10 @@ export default {
           brand: "SilenceKillsDesign",
           knowsAbout: [
             "Web Development",
+            "Web Design",
+            "Logo design",
             "Graphic design",
-            "marketing",
+            "Marketing",
             "SEO",
             "audio video"
           ],
@@ -161,7 +166,7 @@ export default {
           items: [
             {
               description:
-                "We build websites for local business that help customers easily find what they're looking for. A local business website doesn't need to be over the top, it needs to be useful. Our development process focuses on local SEO throughout the development process, so you can be easily found and easy to contact."
+                "We build websites for Bozeman business that help customers easily find what they're looking for. A local business website doesn't need to be over the top, it needs to be useful. Our development process focuses on local SEO throughout the development process, so you can be easily found and easy to contact."
             }
           ]
         },
@@ -171,7 +176,7 @@ export default {
           items: [
             {
               description:
-                "Non-profit websites that offer gateways to your community outreach, donation gateways, and volounteer opportunities. Alongside a strong social media outreach, your non-profit website can save you hundreds of hours of volounteer time."
+                "Non-profit website designs that offer gateways to your community outreach, donation gateways, and volounteer opportunities. Alongside a strong social media outreach, your non-profit website can save you hundreds of hours of volounteer time."
             }
           ]
         },
@@ -261,7 +266,7 @@ export default {
           image: "web/web4.svg",
           imageOrder: "1",
           buttonText: "View SEO Details",
-          buttonGoTo: "services/seo",
+          buttonGoTo: "@/services/seo",
         }
       ]
     };

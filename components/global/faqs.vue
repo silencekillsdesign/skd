@@ -78,9 +78,9 @@ export default {
           faqIcon: "mdi-help"
         },
         {
-          faqQ: "Do you work with local businesses?",
+          faqQ: "Do you work with local Montana businesses?",
           faqA:
-            "Our Bozeman roots make us a great fit for working with local Montana businesses, as we know the market well. We also work with small- to medium-sized businesses across the US and Canada.",
+            "Our Bozeman roots make us a great fit for creating websites local Montana businesses. Our understanding of the market makes for great Bozeman SEO. We also work with small- to medium-sized businesses across the US and Canada.",
           faqButtonText: "View Portfolio",
           faqButtonLink: "portfolio",
           faqCategories: ["marketing"],

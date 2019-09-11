@@ -9,7 +9,7 @@
         <p class="headline white--text">{{ servicesIntro }}</p>
       </v-col>
     </v-row>
-    <v-container grid-list-xs >
+    <v-container>
       <v-row align-space-between justify-space-between fill-height row wrap grid-list-md>
         <!-- TODO: create component for individual services, populate this with services fields (icon, title, short desc) in cms -->
         <v-col cols="12" sm="6" md="4" class="text-center pa-3" v-for="(service, i) in services" :key="i" itemscope itemtype="http://schema.org/Service" >
@@ -56,7 +56,7 @@ export default {
     return {
       servicesTitle: "Services",
       servicesIntro:
-        "Save time and resources dealing with multiple contacts creating your brand assets. We offer a single point-of-contact to manage all of your digital and tangible assets.",
+        "Save time and resources dealing with multiple contacts creating your brand assets. We offer a single point-of-contact to manage web design, branding, and marketing for a seamless workflow.",
       services: [
         {
           serviceId: "1",

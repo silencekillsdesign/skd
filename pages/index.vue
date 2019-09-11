@@ -78,7 +78,7 @@ export default {
   },
   head() {
     return {
-      title: "SilenceKillsDesign - Development, Design, and Marketing",
+      title: "Bozeman's Web Development, SEO, Design, and Marketing",
       meta: [
         {
           name: "description",

@@ -12,79 +12,29 @@
 
     <v-img :src="require('~/assets/img/backgrounds/bubbleup.svg')">
       <v-container fluid class="fill-height bottom-gradient">
-        <v-row pa-0 my-2 justify-space-around align-center class="white--text">
-          <v-col cols="6" sm="6" md="4" class="text-center px-3 py-2" href="https://bozemancurlingclub.com" target="_blank">
-            <v-tooltip color="deep-purple" top>
-              <template v-slot:activator="{ on }">
-                <v-img
-                  v-on="on"
-                  :src=" require('@/assets/img/clients/bozeman-curling-club--logo-silencekillsdesign.svg')"
-                ></v-img>
-              </template>
-              <span>Bozeman Curling Club</span>
-            </v-tooltip>
-          </v-col>
-
-          <v-col cols="6" sm="6" md="4" class="text-center px-3 py-2" href="https://bozemancurlingclub.com" target="_blank">
-            <v-tooltip color="deep-purple" top>
-              <template v-slot:activator="{ on }">
-                <v-img
-                  v-on="on"
-                  :src=" require('@/assets/img/clients/mudpaint--logo-silencekillsdesign.svg')"
-                ></v-img>
-              </template>
-              <span>MudPaint</span>
-            </v-tooltip>
-          </v-col>
-
-          <v-col cols="6" sm="6" md="4" class="text-center px-3 py-2" href="https://bozemancurlingclub.com" target="_blank">
-            <v-tooltip color="deep-purple" top>
-              <template v-slot:activator="{ on }">
-                <v-img
-                  v-on="on"
-                  :src=" require('@/assets/img/clients/xtant-medical--logo-silencekillsdesign.svg')"
-                ></v-img>
-              </template>
-              <span>Xtant Medical</span>
-            </v-tooltip>
-          </v-col>
-
-          <v-col cols="6" sm="6" md="4" class="text-center px-3 py-2" href="https://bozemancurlingclub.com" target="_blank">
-            <v-tooltip color="deep-purple" top>
-              <template v-slot:activator="{ on }">
-                <v-img
-                  v-on="on"
-                  :src=" require('@/assets/img/clients/riotgear--logo-silencekillsdesign.svg')"
-                ></v-img>
-              </template>
-              <span>Riot Gear Clothing</span>
-            </v-tooltip>
-          </v-col>
-
-          <v-col cols="6" sm="6" md="4" class="text-center px-3 py-2" href="https://bozemancurlingclub.com" target="_blank">
-            <v-tooltip color="deep-purple" top>
-              <template v-slot:activator="{ on }">
-                <v-img
-                  v-on="on"
-                  :src=" require('@/assets/img/clients/gallatin-insulation--logo-silencekillsdesign.svg')"
-                ></v-img>
-              </template>
-              <span>Gallatin Insulation</span>
-            </v-tooltip>
-          </v-col>
-
-          <v-col cols="6" sm="6" md="4" class="text-center px-3 py-2" href="https://bozemancurlingclub.com" target="_blank">
-            <v-tooltip color="deep-purple" top>
-              <template v-slot:activator="{ on }">
-                <v-img
-                  v-on="on"
-                  :src=" require('@/assets/img/clients/runneredq--logo-silencekillsdesign.svg')"
-                ></v-img>
-              </template>
-              <span>Runner EDQ</span>
-            </v-tooltip>
-          </v-col>
-        </v-row>
+        <v-container>
+          <v-row pa-0 my-2 justify-space-around align-center class="white--text">
+            <v-col
+              v-for="(client, i) in clients"
+              :key="i"
+              cols="6"
+              md="4"
+              class="text-center px-3 py-2 client-logo"
+            >
+              <v-tooltip color="deep-purple" top>
+                <template v-slot:activator="{ on }">
+                  <v-img
+                    v-on="on"
+                    :href="client.url"
+                    target="_blank"
+                    :src=" require('@/assets/img/clients/'+client.logo)"
+                  ></v-img>
+                </template>
+                <span>{{client.client}}</span>
+              </v-tooltip>
+            </v-col>
+          </v-row>
+        </v-container>
       </v-container>
     </v-img>
   </v-container>
@@ -96,9 +46,35 @@ export default {
     return {
       clients: [
         {
+          client: "Bozeman Curling Club",
+          logo: "bozeman-curling-club--logo-silencekillsdesign.svg",
+          url: "https://bozemancurlingclub.com"
+        },
+        {
+          client: "MudPaint",
+          logo: "mudpaint--logo-silencekillsdesign.svg",
+          url: "https://mudpaint.com"
+        },
+        {
+          client: "Xtant Medical",
+          logo: "xtant-medical--logo-silencekillsdesign.svg",
+          url: "https://xtantmedical.com"
+        },
+        {
+          client: "Riot Gear Clothing",
+          logo: "riotgear--logo-silencekillsdesign.svg",
+          url: "https://runneredq.com"
+        },
+        {
+          client: "Gallatin Insulation",
+          logo: "gallatin-insulation--logo-silencekillsdesign.svg",
+          url:
+            "https://www.truteam.com/branches/mt/gallatin/gallatin-insulation-belgrade/"
+        },
+        {
           client: "RunnerEDQ",
-          logo: "require('~/assets/img/backgrounds/wavebar.svg')",
-          url: ""
+          logo: "runneredq--logo-silencekillsdesign.svg",
+          url: "https://runneredq.com"
         }
       ]
     };
@@ -109,5 +85,8 @@ export default {
 <style lang="scss" scoped>
 .client-bg {
   background-size: 70%;
+}
+.client-logo {
+  cursor: pointer;
 }
 </style>

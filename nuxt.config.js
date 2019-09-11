@@ -12,7 +12,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    titleTemplate: "%s - " + process.env.npm_package_name,
+    titleTemplate: process.env.npm_package_name + " | %s",
     title:
       process.env.npm_package_name ||
       "SilenceKillsDesign - Web Design, Branding, Marketing, SEO in Bozeman, MT",
@@ -26,20 +26,59 @@ module.exports = {
           process.env.npm_package_description ||
           "We are a digital agency in Bozmeman, MT offering services in branding, web design and development, SEO, and graphic design for local, small, or large businesses."
       },
+      // open graph
+      {
+        hid: `og:locale`,
+        property: "og:title",
+        content: `en_US`
+      },
+      {
+        hid: `og:type`,
+        property: "og:image",
+        content: "website"
+      },
       {
         hid: `og:title`,
         property: "og:title",
-        content: `SilenceKillsDesign`
+        content: `SilenceKillsDesign - Bozeman's best Web Design, SEO, Marketing, and Design`
       },
       {
         hid: `og:url`,
         property: "og:url",
-        content: "https://silencekillsdesign.netlify.com"
+        content: "https://silencekillsdesign.com"
       },
       {
         hid: `og:image`,
         property: "og:image",
-        content: "~/static/silencekillsdesign--opengraph-img.png/"
+        content: "~/silencekillsdesign--opengraph-img.png/"
+      },
+      // twitter
+      {
+        hid: `twitter:card`,
+        name: "twitter:card",
+        content: "summary"
+      },
+      {
+        hid: `twitter:creator`,
+        name: "twitter:creator",
+        content: "@s1lencek1lls"
+      },
+      {
+        hid: `twitter:title`,
+        name: "twitter:title",
+        content:
+          "SilenceKillsDesign - Bozeman's best Web Design, SEO, Marketing, and Design"
+      },
+      {
+        hid: `twitter:description`,
+        name: "twitter:description",
+        content:
+          "SilenceKillsDesign offers loacal web design and marketing in Bozeman, MT. Check Bozeman's best web design, SEO, design, branding, and more company."
+      },
+      {
+        hid: `twitter:image`,
+        name: "twitter:image",
+        content: "~/staticsilencekillsdesign--twitter-card.jpg"
       }
     ],
     link: [
@@ -73,7 +112,7 @@ module.exports = {
    ** Global CSS
    */
   css: [
-    // "aos/dist/aos.css",
+    "aos/dist/aos.css"
     // "vue2-animate/dist/vue2-animate.css"
     // "vue-image-lightbox/dist/vue-image-lightbox.min.css"
   ],
@@ -82,7 +121,7 @@ module.exports = {
    */
   plugins: [
     // { src: "~/plugins/vuetify"},
-    // { src: "~/plugins/aos", ssr: false },
+    { src: "~/plugins/aos", ssr: false },
     { src: "~plugins/ga.js", ssr: false }
     // { src: "~/plugins/VueOwlSlider", ssr: false },
     // { src: '~/plugins/vue-lightbox-pluign.js', ssr: false }
@@ -101,7 +140,9 @@ module.exports = {
     "@nuxtjs/robots",
     // "@bazzite/nuxt-optimized-images"
     "@nuxtjs/sitemap",
+    "@nuxtjs/redirect-module"
   ],
+  redirect: [{ from: "^/myoldurl", to: "/mynewurl", statusCode: 301 }],
   // "@nuxtjs/google-analytics",
   googleAnalytics: {
     id: "UA-24456454-1"
@@ -116,19 +157,7 @@ module.exports = {
     hostname: "https://silencekillsdesign.com",
     gzip: false,
     generate: [],
-    exclude: [
-      "/contact/spec"
-    ]
-    // routes: [
-    //   "/",
-    //   "/contact",
-    //   "/thankYou",
-    //   "/about",
-    //   "/services",
-    //   "/services/*",
-    //   "/portfolio",
-    //   "/blog"
-    // ]
+    exclude: ["/contact/spec"]
   },
   //  "@bazzite/nuxt-optimized-images"
   // optimizedImages: {
@@ -195,7 +224,7 @@ module.exports = {
       info: colors.teal.lighten1,
       warning: colors.amber.base,
       error: colors.deepOrange.accent4,
-      success: colors.green.accent3,
+      success: colors.green.accent3
     }
   },
   /*
@@ -207,4 +236,4 @@ module.exports = {
      */
     extend(config, ctx) {}
   }
-}
+};
