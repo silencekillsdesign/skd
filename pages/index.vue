@@ -4,10 +4,14 @@
       <homeHero />
       <homeFeature />
       <!-- TODO create custom images for each -->
-      <homeServices data-aos="zoom-in-down" data-aos-easing="ease-in-out-back" data-aos-duration="1400"  />
+      <homeServices
+        data-aos="zoom-in-down"
+        data-aos-easing="ease-in-out-back"
+        data-aos-duration="1400"
+      />
       <!-- <homeServicesDynamic /> -->
       <!-- TODO add dynamic blogs section -->
-      <aboutClients/>
+      <aboutClients />
       <faqs data-aos="fade-in-down" data-aos-easing="ease-in-out-back" data-aos-duration="1400" />
       <aboutTestimonials />
     </v-layout>
@@ -36,18 +40,19 @@ export default {
     aboutClients,
     aboutTestimonials
   },
-  data () {
+  data() {
     return {
       structuredData: {
         "@context": "http://schema.org",
         "@type": "Organization",
-        "name": "SilenceKillsDesign",
-        "brand": "SilenceKillsDesign",
-        "legalName" : "SilenceKillsDesign",
-        "url": "https://silencekillsdesign.com",
-        "logo": "https://silencekillsdesign.com/silencekillsdesign--opengraph-img.png",
-        "foundingDate": "2009",
-        "knowsAbout": [
+        name: "SilenceKillsDesign",
+        brand: "SilenceKillsDesign",
+        legalName: "SilenceKillsDesign",
+        url: "https://silencekillsdesign.com",
+        logo:
+          "https://silencekillsdesign.com/silencekillsdesign--opengraph-img.png",
+        foundingDate: "2009",
+        knowsAbout: [
           "Web Development",
           "Web Design",
           "copywriting",
@@ -58,59 +63,101 @@ export default {
           "audio",
           "video"
         ],
-			"sameAs": [
-				"https://www.facebook.com/silencekillsdesign/",
-				"https://twitter.com/s1lencek1lls",
-        "https://www.linkedin.com/in/cjwilliamsworks/",
-        "https://instagram.com/silencekillsdesign"
-			],
-			"address": {
-				"@type": "PostalAddress",
-				"streetAddress": "221 Virginia Way",
-				"addressLocality": "Bozeman",
-				"addressRegion": "MT",
-				"postalCode": "59718"
-			},
-			"telephone": "406-579-1985",
-			"email": "cj@silencekillsdesign.com", 
+        sameAs: [
+          "https://www.facebook.com/silencekillsdesign/",
+          "https://twitter.com/s1lencek1lls",
+          "https://www.linkedin.com/in/cjwilliamsworks/",
+          "https://instagram.com/silencekillsdesign"
+        ],
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "221 Virginia Way",
+          addressLocality: "Bozeman",
+          addressRegion: "MT",
+          postalCode: "59718"
+        },
+        telephone: "406-579-1985",
+        email: "cj@silencekillsdesign.com"
       }
-    }
+    };
   },
   head() {
     return {
       title: "Bozeman's Web Development, SEO, Design, and Marketing",
       meta: [
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
+          hid: "description",
           name: "description",
           content:
-            "SilenceKillsDesign - Web Development, Marketing, and Graphic Design in Bozeman, MT."
+            process.env.npm_package_description ||
+            "We are a digital agency in Bozmeman, MT offering services in branding, web design and development, SEO, and graphic design for local, small, or large businesses."
+        },
+        // open graph
+        {
+          hid: `og:locale`,
+          property: "og:title",
+          content: `en_US`
         },
         {
-          name: "keywords",
-          content:
-            "Web Design Bozeman, Logo Design, Web Design, SEO Bozeman, Marketing Bozeman, fast websites, nuxt websites"
+          hid: `og:type`,
+          property: "og:image",
+          content: "website"
         },
-        { name: "robots", content: "index, follow" },
         {
+          hid: `og:title`,
+          property: "og:title",
+          content: `SilenceKillsDesign - Bozeman's best Web Design, SEO, Marketing, and Design`
+        },
+        {
+          hid: `og:url`,
+          property: "og:url",
+          content: "https://silencekillsdesign.com"
+        },
+        {
+          hid: `og:image`,
+          property: "og:image",
+          content: "~/silencekillsdesign--opengraph-img.png/"
+        },
+        // twitter
+        {
+          hid: `twitter:card`,
+          name: "twitter:card",
+          content: "summary"
+        },
+        {
+          hid: `twitter:creator`,
+          name: "twitter:creator",
+          content: "@s1lencek1lls"
+        },
+        {
+          hid: `twitter:title`,
           name: "twitter:title",
           content:
-            "SilenceKillsDesign - Web Development, Marketing, and Design."
+            "SilenceKillsDesign - Bozeman's best Web Design, SEO, Marketing, and Design"
         },
         {
+          hid: `twitter:description`,
           name: "twitter:description",
-          content: "Better Brands. Less Bullshit."
+          content:
+            "SilenceKillsDesign offers loacal web design and marketing in Bozeman, MT. Check Bozeman's best web design, SEO, design, branding, and more company."
         },
         {
+          hid: `twitter:image`,
           name: "twitter:image",
-          content:
-            "assets/branding/silencekillsdesign--logo--horizontal--color.svg"
-        },
-        { name: "twitter:card", content: "SilenceKillsDesign Logo" }
+          content: "~/staticsilencekillsdesign--twitter-card.jpg"
+        }
       ],
-      __dangerouslyDisableSanitizers: ['script'],
-      script: [{ innerHTML: JSON.stringify(this.structuredData), type: 'application/ld+json' }]
-    }
-  },
+      __dangerouslyDisableSanitizers: ["script"],
+      script: [
+        {
+          innerHTML: JSON.stringify(this.structuredData),
+          type: "application/ld+json"
+        }
+      ]
+    };
+  }
   // vm nuxt course
   // asyncDta(\{ $$axios }) {
   //   return context.$axios.get('http://localhost:4000/events').then(response => {
@@ -119,7 +166,7 @@ export default {
   //     }
   //   })
   // }
-}
+};
 </script>
 
 <style lang="scss">
