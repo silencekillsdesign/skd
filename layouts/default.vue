@@ -3,11 +3,13 @@
     <primaryNav />
     <!-- <dropdownNav /> -->
     <v-content>
+      <transition name="fade" class="fade">
       <v-container fluid pa-0>
           <nuxt />
         <speedDial />
         <!-- <developmentDialog /> -->
       </v-container>
+      </transition>
     </v-content>
     <quickQuoteContact />
     <pagePrefooter />

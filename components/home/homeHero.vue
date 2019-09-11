@@ -16,7 +16,7 @@
             <v-row row wrap>
               <v-col xs12>
                 <skdType class="skdType mb-2" />
-                <h3 class="display-1 white--text">Be Loud. Get Heard.</h3>
+                <h1 class="subheader white--text">Development. Design. SEO. Marketing.</h1>
                 <v-divider color="white" class="px-0 my-5 mx-0"></v-divider>
               <p
                 class="title white--text"
@@ -96,9 +96,9 @@ export default {
 }
 .skdType {
   color: white !important;
-  font-size: 2.25em !important;
+  font-size: 2.75em !important;
   b {
-    font-size: 2.25em !important;
+    font-size: 2.75em !important;
   }
 }
 .hero-home {
