@@ -166,7 +166,7 @@ export default {
           items: [
             {
               description:
-                "We build websites for Bozeman business that help customers easily find what they're looking for. A local business website doesn't need to be over the top, it needs to be useful. Our development process focuses on local SEO throughout the development process, so you can be easily found and easy to contact."
+                "We build websites for local Bozeman businesses that help customers easily find what they're looking for. A local business website doesn't need to be over the top, it needs to be useful. Our development process focuses on local SEO throughout the development process, so you can be easily found and easy to contact."
             }
           ]
         },
