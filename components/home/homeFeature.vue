@@ -41,7 +41,7 @@
           <v-row class="mt-0">
             <v-card-text class="mt-0">
               <p class="subheading">We work in sprints for task-based completion</p>
-              <p class="subheading">Your project will be finish ahead of deadline</p>
+              <p class="subheading">Your project will be finished by deadline</p>
               <p class="subheading">We accept rush projects with short lead times</p>
             </v-card-text>
           </v-row>
