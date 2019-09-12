@@ -7,24 +7,27 @@
     <v-container id="main">
       <v-layout row wrap align-center justify-center>
         <v-flex>
-          <h1 class="display-1 text-center">Our Recent Posts</h1>
+          <h1 class="display-1 text-center">Check Out our Other Services</h1>
         </v-flex>
       </v-layout>
     </v-container>
-    <blogRecentCards />
+    <homeServices />
+    <!-- <blogRecentCards /> -->
   </v-container>
 </template>
 
 <script>
 import pageHeader from '~/components/global/pageHeader.vue'
 import pageIntro from '~/components/global/pageIntro.vue'
-import blogRecentCards from '~/components/blog/blogRecentCards.vue'
+import homeServices from '~/components/home/homeServices.vue'
+// import blogRecentCards from '~/components/blog/blogRecentCards.vue'
 
 export default {
   components: {
     pageHeader,
     pageIntro,
-    blogRecentCards
+    homeServices
+    // blogRecentCards
   },
   head() {
     return {
