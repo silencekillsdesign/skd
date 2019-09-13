@@ -143,7 +143,14 @@ module.exports = {
     "@nuxtjs/sitemap",
     "@nuxtjs/redirect-module"
   ],
-  redirect: [{ from: "^/myoldurl", to: "/mynewurl", statusCode: 301 }],
+  redirect: [
+    {
+      from:
+        "^/silenceKillsDesign-Work/treehouse-ping-pong-scoring-app-concept/",
+      to: "/portfolio",
+      statusCode: 301
+    }
+  ],
   // "@nuxtjs/google-analytics",
   googleAnalytics: {
     id: "UA-24456454-1"

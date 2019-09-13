@@ -43,7 +43,7 @@
     </v-container>
     
 
-    <stack class="my-5" />
+    <stack class="my-5" data-aos="fade-up" />
 
     <v-container class="my-5">
       <v-row align="center" justify="center" class="mt-5 py-5">
@@ -58,13 +58,13 @@
     </v-container>
     <!-- TODO: make order dynamic -->
 
-    <!-- this should come from an api and services pages should be a layout -->
+    <!-- this should come from an api and services pages should be a layout 'withHeader' -->
     <v-container my-5>
-      <v-row class="py-5 my-5" align="center" v-for="(serviceStep, i) in serviceSteps" :key="i" :id="serviceStep.id">
+      <v-row class="py-5 my-5" align="center" justify="center" v-for="(serviceStep, i) in serviceSteps" :key="i" :id="serviceStep.id">
         <v-col class="pa-5" cols="12" md="4" order="0" :order-md="serviceStep.imageOrder" data-aos="fade-right" data-aos-duration="800">
           <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/'+serviceStep.image)"></v-img>
         </v-col>
-        <v-col xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
+        <v-col cols="10" md="8" class="pa-5" data-aos="fade-left" data-aos-duration="1200">
           <h3 class="mt-4 blue--text text--accent-3">{{ serviceStep.title }}</h3>
           <v-divider class="my-5" color="blue"></v-divider>
           <p>{{ serviceStep.text }}</p>
@@ -266,7 +266,7 @@ export default {
           image: "web/web4.svg",
           imageOrder: "1",
           buttonText: "View SEO Details",
-          buttonGoTo: "@/services/seo",
+          buttonGoTo: "#",
         }
       ]
     };

@@ -80,13 +80,13 @@
       </v-layout>
 
       <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md4 pa-5  data-aos="fade-right" data-aos-duration="800">
+        <v-flex xs12 md4 pa-5 data-aos="fade-right" data-aos-duration="800">
           <v-img :aspect-ratio="1" :src="require('~/assets/img/services/seo/seo3.svg')"></v-img>
         </v-flex>
         <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
           <h3 class="mt-4 blue--text text--accent-3">Strategy Implementation</h3>
           <v-divider class="my-5"></v-divider>
-          <p>Once we have the pieces in place, we will begin implementing your campaign strategy. Rome wasn't built in a day, but our content and campaign strategies should begin producing results fairly quickly. </p>
+          <p>Once we have the pieces in place, we will begin implementing your campaign strategy. Rome wasn't built in a day, but our content and campaign strategies should begin producing results fairly quickly.</p>
           <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View SEO Services</v-btn>
         </v-flex>
       </v-layout>
@@ -98,11 +98,10 @@
           <p>Throughout your campaign strategy, we deliver regular reporting to show exactly where marketing dollars are going and what is converting customers. We determine where to ramp up and where to tone down to optimize your marketing budget. In this step we often make technical improvements to help page rank, as well</p>
           <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View Hosting Services</v-btn>
         </v-flex>
-        <v-flex xs12 md4 pa-5  data-aos="fade-right" data-aos-duration="800">
+        <v-flex xs12 md4 pa-5 data-aos="fade-right" data-aos-duration="800">
           <v-img :aspect-ratio="1" :src="require('~/assets/img/services/seo/seo4.svg')"></v-img>
         </v-flex>
       </v-layout>
-
     </v-container>
 
     <v-container fluid pa-0>
@@ -112,9 +111,9 @@
 </template>
 
 <script>
-import pageHeader from '~/components/global/pageHeader.vue'
-import pageIntro from '~/components/global/pageIntro.vue'
-import stackSEO from '~/components/global/stackSEO.vue'
+import pageHeader from "~/components/global/pageHeader.vue";
+import pageIntro from "~/components/global/pageIntro.vue";
+import stackSEO from "~/components/global/stackSEO.vue";
 
 export default {
   components: {
@@ -134,58 +133,63 @@ export default {
         {
           name: "keywords",
           content:
-            "local seo bozeman, ppc bozeman, technical seo, e-commerce SEO, seo expert in bozeman"
-        },
+            "local seo bozeman, ppc bozeman, technical seo, e-commerce SEO, seo expert in bozeman, best seo bozeman"
+        }
       ],
-      __dangerouslyDisableSanitizers: ['script'],
-      script: [{ innerHTML: JSON.stringify(this.structuredData), type: 'application/ld+json' }],
-    }
+      __dangerouslyDisableSanitizers: ["script"],
+      script: [
+        {
+          innerHTML: JSON.stringify(this.structuredData),
+          type: "application/ld+json"
+        }
+      ]
+    };
   },
   data() {
     return {
       technologies: [
         {
           id: 0,
-          technology: 'html5',
-          icon: 'mdi-language-html5',
-          url: 'link-to-w3-html5'
+          technology: "html5",
+          icon: "mdi-language-html5",
+          url: "link-to-w3-html5"
         },
         {
           id: 1,
-          technology: 'css3',
-          icon: 'mdi-language-css3',
-          url: 'link-to-w3-html5'
+          technology: "css3",
+          icon: "mdi-language-css3",
+          url: "link-to-w3-html5"
         },
         {
           id: 2,
-          technology: 'Sass',
-          icon: 'mdi-sass',
-          url: 'link-to-w3-html5'
+          technology: "Sass",
+          icon: "mdi-sass",
+          url: "link-to-w3-html5"
         },
         {
           id: 3,
-          technology: 'VueJS',
-          icon: 'mdi-vuejs',
-          url: 'link-to-w3-html5'
+          technology: "VueJS",
+          icon: "mdi-vuejs",
+          url: "link-to-w3-html5"
         },
         {
           id: 4,
-          technology: 'Vuetify',
-          icon: 'mdi-vuetify',
-          url: 'link-to-w3-html5'
+          technology: "Vuetify",
+          icon: "mdi-vuetify",
+          url: "link-to-w3-html5"
         },
         {
           id: 5,
-          technology: 'WordPress',
-          icon: 'mdi-wordpress',
-          url: 'link-to-w3-html5'
+          technology: "WordPress",
+          icon: "mdi-wordpress",
+          url: "link-to-w3-html5"
         }
       ],
       i: 1,
       items: [
         {
-          icon: 'mdi-store',
-          title: 'Google AdWords',
+          icon: "mdi-store",
+          title: "Google AdWords",
           items: [
             {
               description:
@@ -194,18 +198,18 @@ export default {
           ]
         },
         {
-          icon: 'mdi-account-group',
-          title: 'Google Analytics',
+          icon: "mdi-account-group",
+          title: "Google Analytics",
           items: [
             {
               description:
-                'Google Analytics a free digital analytics tool, used to measure your site traffic and performance. It offers us the valuable insights to any revisions needed on the site tom improve conversions. We offer training and included monthly reports for all our SEO clients. '
+                "Google Analytics a free digital analytics tool, used to measure your site traffic and performance. It offers us the valuable insights to any revisions needed on the site tom improve conversions. We offer training and included monthly reports for all our SEO clients. "
             }
           ]
         },
         {
-          icon: 'mdi-calendar-month-outline',
-          title: 'Google Search Console',
+          icon: "mdi-calendar-month-outline",
+          title: "Google Search Console",
           items: [
             {
               description:
@@ -214,44 +218,82 @@ export default {
           ]
         },
         {
-          icon: 'mdi-domain',
-          title: 'Schema.org Markup',
+          icon: "mdi-domain",
+          title: "Schema.org Markup",
           items: [
             {
               description:
-                'Schema is a semantic vocabulary of tags (or microdata) that you can add to your site to improve the way search engines read and represent your page. This is often much more technical to implement, but can add tremendous value to your SERP (search engine ranking position).'
+                "Schema is a semantic vocabulary of tags (or microdata) that you can add to your site to improve the way search engines read and represent your page. This is often much more technical to implement, but can add tremendous value to your SERP (search engine ranking position)."
             }
           ]
         },
         {
-          icon: 'mdi-basket',
-          title: 'E-Commerce Websites',
+          icon: "mdi-basket",
+          title: "E-Commerce Websites",
           items: [
             {
               description:
-                'Your online store is your one chance to prove your brand value to your customers. Your e-commerce website should make it easy for new customers to find you, and keep existing customers returning. We deeply monitor conversions and optimize to increase them.'
+                "Your online store is your one chance to prove your brand value to your customers. Your e-commerce website should make it easy for new customers to find you, and keep existing customers returning. We deeply monitor conversions and optimize to increase them."
             }
           ]
         },
         {
-          icon: 'mdi-newspaper',
-          title: 'Blogs, News Sites, and Forums',
+          icon: "mdi-newspaper",
+          title: "Blogs, News Sites, and Forums",
           items: [
             {
               description:
-                'Websites that accommodate a lot of content can be a tricky balancing act to pull off. Our approach is to present the user with all the information in an organized manner, without overload. Grow your audience member-by-member with engaging content that is easy to share, and easy to find.'
+                "Websites that accommodate a lot of content can be a tricky balancing act to pull off. Our approach is to present the user with all the information in an organized manner, without overload. Grow your audience member-by-member with engaging content that is easy to share, and easy to find."
             }
           ]
         },
         {
-          icon: 'mdi-monitor',
-          title: 'Landing Pages & SPAs',
+          icon: "mdi-monitor",
+          title: "Auidt and Analyisis",
           items: [
             {
               description:
                 "A good landing page should offer value to each user that visits it. They often offer exclusive resources, such as an e-book or webinar signup, in exchange for their basic contact information. The goal of these pages is to generate leads while you pull prospects further into the buyers' journey."
             }
           ]
+        }
+      ],
+      serviceSteps: [
+        {
+          id: "step1",
+          title: "UX Planning and Wireframing",
+          text: "Before we get started with anything else, we will run a full SEO audit, and share our results with you. We will address any glaring issues and develop a strategy to make your SEO efforts a success.",
+          image: "seo/seo1.svg",
+          imageOrder: "0",
+          buttonText: "Next Steps",
+          buttonGoTo: "#step2",
+        },
+        {
+          id: "step2",
+          title: "Development and Design",
+          text: "We are proficient in design and development, making it easy for your mockups and ideas to come to life. With component based development, new features are easy to add on the fly.",
+          image: "web/web2.svg",
+          imageOrder: "1",
+          buttonText: "Next Steps",
+          buttonGoTo: "#step3",
+        },
+        {
+          id: "step3",
+          title: "Deployment and Server Setup",
+          text: "Once your website development is complete, it's time to go live! We will handle the server setup, hosting, and deployment of your new site, wherever you want it hosted.",
+          image: "web/web3.svg",
+          imageOrder: "0",
+          buttonText: "Next Steps",
+          buttonGoTo: "#step4",
+        },
+        {
+          id: "step4",
+          title: "SEO and Performance Optimization",
+          text: "SEO is one of our main focuses throughout the development of your site. Once we are live, we'll tackle any remaining SEO setup, and begin implementing your unique SEO strategy. We also optimize your website, focusing on performance and making your website fast.",
+          image: "web/web4.svg",
+          imageOrder: "1",
+          buttonText: "View SEO Details",
+          buttonGoTo: "#",
         }
       ]
     }

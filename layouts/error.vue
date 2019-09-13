@@ -1,7 +1,7 @@
 <template>
   <v-app dark class="error-page-wrapper">
     <v-container fill-height>
-      <v-card max-width="400" class="mx-auto">
+      <v-card max-width="400" class="mx-auto error-card" dark>
         <v-card-title>
           <h1 class="text-center blue--text" v-if="error.statusCode === 404">{{ pageNotFound }}</h1>
           <h1 v-else>{{ otherError }}</h1>
@@ -52,5 +52,8 @@ h1 {
   background-color: #06103a !important;
   background-image: url(~@/assets/img/backgrounds/static.svg) !important;
   background-repeat: repeat;
+}
+.error-card {
+  background: rgba(0,0,.1) !important;
 }
 </style>
