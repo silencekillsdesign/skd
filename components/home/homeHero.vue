@@ -10,12 +10,12 @@
             :class="{'pr-0': $vuetify.breakpoint.smAndDown, 'pr-5': $vuetify.breakpoint.mdAndUp}"
           >
             <v-row align="start" justify="center" class="fill-height hidden-md-and-up">
-              <img alt="silencekillsdesgin icon" height="100px" src="@/assets/branding/silencekillsdesign--icon--white.svg" />
+              <v-img alt="silencekillsdesgin icon" max-height="140px" contain :src="require('~/assets/branding/silencekillsdesign--icon--white.svg')"></v-img>
             </v-row>
 
             <v-row row wrap>
               <v-col xs12>
-                <skdType class="skdType mb-2" />
+                <skdType class="mb-2" />
                 <h1 class="subheader white--text">Development. Design. SEO. Marketing.</h1>
                 <v-divider color="white" class="px-0 my-5 mx-0"></v-divider>
               <p
@@ -96,9 +96,9 @@ export default {
 }
 .skdType {
   color: white !important;
-  font-size: 2.75em !important;
+  font-size: 2.25em !important;
   b {
-    font-size: 2.75em !important;
+    font-size: 2.25em !important;
   }
 }
 .hero-home {

@@ -138,6 +138,7 @@ module.exports = {
     // "@neneos/nuxt-animate.css",
     "@nuxtjs/google-analytics",
     "@nuxtjs/google-gtag",
+    ["@nuxtjs/google-tag-manager", { id: "GTM-4701120624" }],
     "@nuxtjs/robots",
     // "@bazzite/nuxt-optimized-images"
     "@nuxtjs/sitemap",

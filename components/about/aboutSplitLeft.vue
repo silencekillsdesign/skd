@@ -35,7 +35,7 @@
         <p
           class="text-center pa-4 mt-3 mx-4 subheading"
           :class="{'ma-1 pa-1': $vuetify.breakpoint.smAndDown, 'mx-4 ma-3 px-4 pa-3': $vuetify.breakpoint.mdAndUp}"
-        >CJ Williams is a 2nd-generation Bozeman native of 33 years. From the days of the Bungalow downtown, he has seen the valley grow to what it is today. This, along with a very strong marketing background, gives us a unique advantage in creating unique marketing strategies that help local businesses succeed.</p>
+        >CJ Williams is a 2nd-generation Bozeman native of 33 years. From the days of the Bungalow downtown, he has seen the valley grow to what it is today. Having worked across many industries in the valley, we understand the market very well. This background, along with a very strong marketing background, gives us a unique advantage in creating unique marketing strategies that help local businesses succeed. We can create a local SEO strategy that will make you highly visible in the Bozeman market.</p>
         <p class="text-center"><bozemanModal v-model="aboutBozeman" /></p>
         <v-btn outlined large color="indigo" @click.stop="aboutBozeman=true">Fun Facts About Bozeman</v-btn>
         

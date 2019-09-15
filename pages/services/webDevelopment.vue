@@ -269,9 +269,9 @@ export default {
           buttonGoTo: "#",
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style>

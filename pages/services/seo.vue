@@ -8,9 +8,11 @@
 
     <!-- TODO: loop from data create reusable services component (service title, icon, short description)-->
     <v-container fluid pa-0>
-      <v-layout align-center id="main">
-        <v-flex md6 offset-md1 pr-5 data-aos="fade-right">
-          <v-list transparent shaped v-model="i">
+      <v-row align="center" id="main">
+        <!-- start list -->
+        <v-col md="6" offset-md="1" data-aos="fade-right">
+          <v-list color="transparent" rounded v-model="i" class="pr-5">
+            <v-subheader>The Things We Do:</v-subheader>
             <v-list-group
               v-for="item in items"
               :key="item.title"
@@ -32,15 +34,15 @@
               </v-list-item>
             </v-list-group>
           </v-list>
-        </v-flex>
-        <v-flex md5 data-aos="fade-left">
+        </v-col>
+        <v-col md5 data-aos="fade-left">
           <!-- <v-img flat :src="require('~/assets/img/webdev.svg')"> </v-img> -->
           <img class="mr-0 pr-0" src="~/assets/img/seo.svg" alt="avatar" />
-        </v-flex>
-      </v-layout>
+        </v-col>
+      </v-row>
     </v-container>
 
-    <stackSEO class="my-5" />
+    <stackSEO class="my-5" data-aos="fade-up"/>
 
     <v-container my-5>
       <v-layout row align-center justify-center mt-5 py-5>
@@ -55,53 +57,17 @@
     </v-container>
 
     <v-container my-5>
-      <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md4 pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/seo/seo1.svg')"></v-img>
-        </v-flex>
-        <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4 blue--text text--accent-3">Auidt and Analyisis</h3>
+      <v-row class="py-5 my-5" align="center" justify="center" v-for="(serviceStep, i) in serviceSteps" :key="i" :id="serviceStep.id">
+        <v-col class="pa-5" cols="12" md="4" order="0" :order-md="serviceStep.imageOrder" data-aos="fade-right" data-aos-duration="800">
+          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/'+serviceStep.image)"></v-img>
+        </v-col>
+        <v-col cols="10" md="8" class="pa-5" data-aos="fade-left" data-aos-duration="1200">
+          <h3 class="mt-4 blue--text text--accent-3">{{ serviceStep.title }}</h3>
           <v-divider class="my-5" color="blue"></v-divider>
-          <p>Before we get started with anything else, we will run a full SEO audit, and share our results with you. We will address any glaring issues and develop a strategy to make your SEO efforts a success.</p>
-          <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View UX Services</v-btn>
-        </v-flex>
-      </v-layout>
-
-      <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md8 pa-5 data-aos="fade-right" data-aos-duration="1200">
-          <h3 class="mt-4 blue--text text--accent-3">Technical Setup</h3>
-          <v-divider class="my-5"></v-divider>
-          <p>In this phase we make sure that the internet knows who you are by setting up Google Search Console, Google My Business, Analytics,AdWords, and address any other marketing tools that need to be configured. If you have an existing site, we see where technical improvements can be made. If we're building your site, no need to worry, the SEO goodies are baked in</p>
-          <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View Design Services</v-btn>
-        </v-flex>
-        <v-flex xs12 md4 pa-5 data-aos="fade-left" data-aos-duration="800">
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/seo/seo2.svg')"></v-img>
-        </v-flex>
-      </v-layout>
-
-      <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md4 pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/seo/seo3.svg')"></v-img>
-        </v-flex>
-        <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4 blue--text text--accent-3">Strategy Implementation</h3>
-          <v-divider class="my-5"></v-divider>
-          <p>Once we have the pieces in place, we will begin implementing your campaign strategy. Rome wasn't built in a day, but our content and campaign strategies should begin producing results fairly quickly.</p>
-          <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View SEO Services</v-btn>
-        </v-flex>
-      </v-layout>
-
-      <v-layout align-center row wrap py-5 my-5>
-        <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4 blue--text text--accent-3">Reporting and Optimization</h3>
-          <v-divider class="my-5"></v-divider>
-          <p>Throughout your campaign strategy, we deliver regular reporting to show exactly where marketing dollars are going and what is converting customers. We determine where to ramp up and where to tone down to optimize your marketing budget. In this step we often make technical improvements to help page rank, as well</p>
-          <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View Hosting Services</v-btn>
-        </v-flex>
-        <v-flex xs12 md4 pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img :aspect-ratio="1" :src="require('~/assets/img/services/seo/seo4.svg')"></v-img>
-        </v-flex>
-      </v-layout>
+          <p>{{ serviceStep.text }}</p>
+          <v-btn class="my-2" @click="$vuetify.goTo(serviceStep.buttonGoTo)" outlined color="indigo">{{ serviceStep.buttonText}}</v-btn>
+        </v-col>
+      </v-row>
     </v-container>
 
     <v-container fluid pa-0>
@@ -135,15 +101,8 @@ export default {
           content:
             "local seo bozeman, ppc bozeman, technical seo, e-commerce SEO, seo expert in bozeman, best seo bozeman"
         }
-      ],
-      __dangerouslyDisableSanitizers: ["script"],
-      script: [
-        {
-          innerHTML: JSON.stringify(this.structuredData),
-          type: "application/ld+json"
-        }
       ]
-    };
+    }
   },
   data() {
     return {
@@ -229,21 +188,11 @@ export default {
         },
         {
           icon: "mdi-basket",
-          title: "E-Commerce Websites",
+          title: "E-Commerce Analytics",
           items: [
             {
               description:
-                "Your online store is your one chance to prove your brand value to your customers. Your e-commerce website should make it easy for new customers to find you, and keep existing customers returning. We deeply monitor conversions and optimize to increase them."
-            }
-          ]
-        },
-        {
-          icon: "mdi-newspaper",
-          title: "Blogs, News Sites, and Forums",
-          items: [
-            {
-              description:
-                "Websites that accommodate a lot of content can be a tricky balancing act to pull off. Our approach is to present the user with all the information in an organized manner, without overload. Grow your audience member-by-member with engaging content that is easy to share, and easy to find."
+                "As a small-to-medium online retailer, we understand your limited resources. Without knowing which marketing campaigns are converting, you could be wasting both time and money.  Google Analytics is a powerful tool for e-commerce sites because Google allows you to track all your online sales data. Once this integration is set up, all your sales will be tied to actual sessions, allowing you to connect sales to specific marketing channels. "
             }
           ]
         },
@@ -253,7 +202,7 @@ export default {
           items: [
             {
               description:
-                "A good landing page should offer value to each user that visits it. They often offer exclusive resources, such as an e-book or webinar signup, in exchange for their basic contact information. The goal of these pages is to generate leads while you pull prospects further into the buyers' journey."
+                "We monitor and optimize your site's performance and conversions throughout its entire lifecycle. This can mean making improvements to existing technologies on the site, or rewording content for maximum SEO value."
             }
           ]
         }
@@ -261,7 +210,7 @@ export default {
       serviceSteps: [
         {
           id: "step1",
-          title: "UX Planning and Wireframing",
+          title: "Audit and Analyisis",
           text: "Before we get started with anything else, we will run a full SEO audit, and share our results with you. We will address any glaring issues and develop a strategy to make your SEO efforts a success.",
           image: "seo/seo1.svg",
           imageOrder: "0",
@@ -270,27 +219,27 @@ export default {
         },
         {
           id: "step2",
-          title: "Development and Design",
-          text: "We are proficient in design and development, making it easy for your mockups and ideas to come to life. With component based development, new features are easy to add on the fly.",
-          image: "web/web2.svg",
+          title: "Technical SEO Setup",
+          text: "In this phase, we make sure that the internet knows who you are by setting up Google Search Console, Google My Business, Analytics, AdWords, and address any other marketing tools that need to be configured. If you have an existing site, we see where technical improvements can be made. If we're building your site, no need to worry, the SEO goodies are baked in",
+          image: "seo/seo2.svg",
           imageOrder: "1",
           buttonText: "Next Steps",
           buttonGoTo: "#step3",
         },
         {
           id: "step3",
-          title: "Deployment and Server Setup",
-          text: "Once your website development is complete, it's time to go live! We will handle the server setup, hosting, and deployment of your new site, wherever you want it hosted.",
-          image: "web/web3.svg",
+          title: "Strategy Implementation",
+          text: "Once we have the pieces in place, we will begin implementing your campaign strategy. Search ranking position doesn't jump up to number one overnight. With good content planning, and technical SEO, you should begin seeing results fairly quickly.",
+          image: "seo/seo3.svg",
           imageOrder: "0",
           buttonText: "Next Steps",
           buttonGoTo: "#step4",
         },
         {
           id: "step4",
-          title: "SEO and Performance Optimization",
-          text: "SEO is one of our main focuses throughout the development of your site. Once we are live, we'll tackle any remaining SEO setup, and begin implementing your unique SEO strategy. We also optimize your website, focusing on performance and making your website fast.",
-          image: "web/web4.svg",
+          title: "Reporting and Optimization",
+          text: "Throughout your campaigns, we deliver regular reporting to show exactly where marketing dollars are going and what is converting customers. We determine where to ramp up and where to tone down to optimize your marketing budget. In this step, we often make technical improvements to help page rank, as well.",
+          image: "seo/seo4.svg",
           imageOrder: "1",
           buttonText: "View SEO Details",
           buttonGoTo: "#",
