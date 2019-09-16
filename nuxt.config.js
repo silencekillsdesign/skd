@@ -166,7 +166,12 @@ module.exports = {
     hostname: "https://silencekillsdesign.com",
     gzip: false,
     generate: [],
-    exclude: ["/contact/spec"]
+    exclude: [
+      "/contact/spec",
+      "/services/email",
+      "/services/screenprinting",
+      "/news",
+    ]
   },
   //  "@bazzite/nuxt-optimized-images"
   // optimizedImages: {
