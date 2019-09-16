@@ -164,7 +164,7 @@ module.exports = {
   // "@nuxtjs/sitemap",
   sitemap: {
     hostname: "https://silencekillsdesign.com",
-    gzip: false,
+    gzip: true,
     generate: [],
     exclude: [
       "/contact/spec",

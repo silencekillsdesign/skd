@@ -9,25 +9,25 @@
       <v-tab href="#av">A/V</v-tab>
       <v-tabs-slider style="border-width: 5px;" color="yellow"></v-tabs-slider>
 
-      <v-tab-item :value="'logos'">
+      <v-tab-item eager :value="'logos'">
         <v-card flat>
           <portfolioLogos />
         </v-card>
       </v-tab-item>
 
-      <v-tab-item :value="'print'" id="print">
+      <v-tab-item eager :value="'print'" id="print">
         <v-card flat>
           <portfolioPrint />
         </v-card>
       </v-tab-item>
 
-      <v-tab-item :value="'web'">
+      <v-tab-item eager :value="'web'">
         <v-card flat>
           <portfolioWeb />
         </v-card>
       </v-tab-item>
 
-      <v-tab-item :value="'av'">
+      <v-tab-item eager :value="'av'">
         <v-card flat>
             <portfolioAV />
         </v-card>

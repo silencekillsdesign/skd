@@ -16,6 +16,7 @@
               :key="item.title"
               v-model="item.active"
               :prepend-icon="item.icon"
+              eager
             >
               <template v-slot:activator>
                 <v-list-item-content>

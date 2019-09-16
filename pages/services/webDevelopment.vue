@@ -19,6 +19,7 @@
               v-model="item.active"
               :prepend-icon="item.icon"
               no-action
+              eager
             >
               <template v-slot:activator>
                 <v-list-item-content>
