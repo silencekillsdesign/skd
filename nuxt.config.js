@@ -159,7 +159,7 @@ module.exports = {
   // "@nuxtjs/robots",
   robots: {
     UserAgent: "*",
-    Allow: "/"
+    Disallow: ""
   },
   // "@nuxtjs/sitemap",
   sitemap: {
