@@ -60,7 +60,7 @@
     <!-- TODO: make order dynamic -->
 
     <!-- this should come from an api and services pages should be a layout 'withHeader' -->
-    <v-container my-5>
+    <v-container class="my-5">
       <v-row class="py-5 my-5" align="center" justify="center" v-for="(serviceStep, i) in serviceSteps" :key="i" :id="serviceStep.id">
         <v-col class="pa-5" cols="12" md="4" order="0" :order-md="serviceStep.imageOrder" data-aos="fade-right" data-aos-duration="800">
           <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/'+serviceStep.image)"></v-img>

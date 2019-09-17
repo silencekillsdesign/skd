@@ -8,9 +8,11 @@
 
     <!-- TODO: loop from data create reusable services component (service title, icon, short description)-->
     <v-container fluid pa-0>
-      <v-layout align-center id="main">
-        <v-flex md6 offset-md1 pr-5 data-aos="fade-right">
-          <v-list transparent shaped v-model="i">
+      <v-row align="center" id="main">
+        <!-- start list -->
+        <v-col md="6" offset-md="1" data-aos="fade-right">
+          <v-list color="transparent" rounded v-model="i" class="pr-5">
+            <v-subheader>The Things We Do:</v-subheader>
             <v-list-group
               v-for="item in items"
               :key="item.title"
@@ -33,12 +35,12 @@
               </v-list-item>
             </v-list-group>
           </v-list>
-        </v-flex>
-        <v-flex md5 data-aos="fade-left">
+        </v-col>
+        <v-col md5 data-aos="fade-left">
           <!-- <v-img flat :src="require('~/assets/img/webdev.svg')"> </v-img> -->
           <img class="mr-0 pr-0" src="~/assets/img/av.svg" alt="avatar" />
-        </v-flex>
-      </v-layout>
+        </v-col>
+      </v-row>
     </v-container>
 
     <v-container my-5>
@@ -98,80 +100,70 @@ export default {
   },
   data() {
     return {
-      processes: [
-        {
-          processTitle: "",
-          processDesc: "",
-          processImg: "",
-          processImgOrder: "",
-          processBtnText: "",
-          processBtnLink: "s"
-        }
-      ],
       items: [
         {
-          icon: 'mdi-video-vintage',
-          title: 'Commercial Production',
+          icon: "mdi-video-vintage",
+          title: "Commercial Production",
           items: [
             {
               description:
-                "We build websites for local business that help customers easily find what they're looking for. A local business website doesn't need to be over the top, it needs to be useful. Our development process focuses on local SEO throughout the development process, so you can be easily found and easy to contact."
+                "Video production from filming to post production. We make professional quality commercials for a fraction of the cost."
             }
           ]
         },
         {
-          icon: 'mdi-account-group',
-          title: 'Expaliner Videos',
+          icon: "mdi-account-group",
+          title: "Expaliner Videos",
           items: [
             {
               description:
-                'Non-profit websites that offer gateways to your community outreach, donation gateways, and volounteer opportunities. Alongside a strong social media outreach, your non-profit website can save you hundreds of hours of volounteer time.'
+                "People want to know how to use your product. What better way than explainer or demo video? We screen capture and animate as needed to make sure your product resonates with your customers."
             }
           ]
         },
         {
-          icon: 'mdi-brightness-auto',
-          title: 'Logo Stingers',
+          icon: "mdi-brightness-auto",
+          title: "Logo Stingers",
           items: [
             {
               description:
-                "Market your upcoming event, conference, or wedding with a website that offers easy access to itinerary, registration, and directions. With built in SEO, and a location-based SEM campaign, we'll make sure your event is a success."
+                "What is cooler than your logo? Your logo, animated! We'll create a reusable logo reveal for you to use across all of your social media channels, tradeshow videos, and more. "
             }
           ]
         },
         {
-          icon: 'mdi-movie-roll',
-          title: 'Trailers & Promotional Videos',
+          icon: "mdi-movie-roll",
+          title: "Trailers & Promotional Videos",
           items: [
             {
               description:
-                'A good B2B web design is key to generating organic traffic that converts into qualified leads. The better your website’s user experience, the more positive, lasting impressions your brand will leave with visitors.  B2B companies rarely expect immediate purchases on their websites. B2B sales often consist of multiple interactions across connected devices. We develop B2B websites to inform, captivate, and persuade customers engaging with your brand.'
+                "Promote your upcoming film or product with a detailed trailer or product teaser."
             }
           ]
         },
         {
-          icon: 'mdi-phone-in-talk',
-          title: 'Call Waiting & On-Hold',
+          icon: "mdi-phone-in-talk",
+          title: "Call Waiting & On-Hold",
           items: [
             {
               description:
-                'Your online store is your one chance to prove your brand value to your customers. Your e-commerce website should make it easy for new customers to find you, and keep existing customers returning. We deeply monitor conversions and optimize to increase them.'
+                "We work closely with D-Tel Technologies to create custom call-waiting music and messaging for your customers. No need to worry about copyright infringment or royalty fees."
             }
           ]
         },
         {
-          icon: 'mdi-music',
-          title: 'Music Production & Jingles',
+          icon: "mdi-music",
+          title: "Music Production & Jingles",
           items: [
             {
               description:
-                'Websites that accommodate a lot of content can be a tricky balancing act to pull off. Our approach is to present the user with all the information in an organized manner, without overload. Grow your audience member-by-member with engaging content that is easy to share, and easy to find.'
+                "Looking for a perfect track to use in the background of a video? Trying to make a unique jingle for an upcoming promotion? We do that too. Let's kick some ideas around and We'll get to writing"
             }
           ]
         },
         {
-          icon: 'mdi-filmstrip-off',
-          title: 'Photography & Video Shoots',
+          icon: "mdi-filmstrip-off",
+          title: "Photography & Video Shoots",
           items: [
             {
               description:
