@@ -8,9 +8,11 @@
 
     <!-- TODO: loop from data create reusable services component (service title, icon, short description)-->
     <v-container fluid pa-0>
-      <v-layout align-center id="main">
-        <v-flex md6 offset-md1 pr-5 data-aos="fade-right" >
-          <v-list transparent shaped v-model="i">
+      <v-row align="center" id="main">
+        <!-- start list -->
+        <v-col md="6" offset-md="1" data-aos="fade-right">
+          <v-list color="transparent" rounded v-model="i" class="pr-5">
+            <v-subheader>The Things We Do:</v-subheader>
             <v-list-group
               v-for="item in items"
               :key="item.title"
@@ -33,12 +35,12 @@
               </v-list-item>
             </v-list-group>
           </v-list>
-        </v-flex>
-        <v-flex md5 data-aos="fade-left">
+        </v-col>
+        <v-col md5 data-aos="fade-left">
           <!-- <v-img flat :src="require('~/assets/img/webdev.svg')"> </v-img> -->
           <img class="mr-0 pr-0" src="~/assets/img/ux.svg" alt="avatar" />
-        </v-flex>
-      </v-layout>
+        </v-col>
+      </v-row>
     </v-container>
 
     <v-container my-5>
@@ -60,55 +62,18 @@
     <!-- 5. iterate id# for clck for next (i++)-->
     <!-- final step link to suplimental service -->
 
-    <v-container my-5>
-      <v-layout align-center row wrap py-5 my-5  id="step1">
-        <v-flex xs12 md4 pa-5 data-aos="fade-right" data-aos-duration="800">
-          <v-img class="ma-5" :aspect-ratio="1" contain max-height="250px"  :src="require('~/assets/img/services/ux/ux1.svg')"></v-img>
-        </v-flex>
-        <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4 blue--text text--accent-3">Research and Planning</h3>
+    <v-container class="my-5">
+      <v-row class="py-5 my-5" align="center" justify="center" v-for="(serviceStep, i) in serviceSteps" :key="i" :id="serviceStep.id">
+        <v-col class="pa-5" cols="12" md="4" order="0" :order-md="serviceStep.imageOrder" data-aos="fade-right" data-aos-duration="800">
+          <v-img :aspect-ratio="1" contain max-height="250px" :src="require('~/assets/img/services/'+serviceStep.image)"></v-img>
+        </v-col>
+        <v-col cols="10" md="8" class="pa-5" data-aos="fade-left" data-aos-duration="1200">
+          <h3 class="mt-4 blue--text text--accent-3">{{ serviceStep.title }}</h3>
           <v-divider class="my-5" color="blue"></v-divider>
-          <p>Before we design or build anything, we need to understand <b>why</b> users  use your site or app. Once we know the why, we dive into the <b>how</b> they will interact with the final product. Here we create deep user personas. We look at possible frustrations and rendundancies and strategize an approach to resolve those issues.</p>
-          <v-btn @click="$vuetify.goTo('#step2')" class="ma-2" to="/services/ux" outlined color="indigo">Next Steps</v-btn>
-        </v-flex>
-      </v-layout>
-
-      <v-layout align-center row wrap py-5 my-5 id="step2">
-        <v-flex xs12 md8 pa-5 data-aos="fade-right" data-aos-duration="1200">
-          <h3 class="mt-4">Sketching and Wireframing</h3>
-          <v-divider class="my-5"></v-divider>
-          <p>There is no reason that great UI and UX can't simply come from a napkin sketch. Avoiding overthinking in the early stages ofter leads to a much more conscise design and overall better user experience.</p>
-          <v-btn  @click="$vuetify.goTo('#step3')" class="ma-2" to="/services/ux" outlined color="indigo">Next Steps</v-btn>
-        </v-flex>
-        <v-flex class="order-md0" xs12 md4 pa-5 data-aos="fade-left" data-aos-duration="800">
-          <v-img class="ma-5" :aspect-ratio="1" contain max-height="250px"  :src="require('~/assets/img/services/ux/ux2.svg')"></v-img>
-        </v-flex>
-      </v-layout>
-
-      <v-layout align-center row wrap py-5 my-5 id="step3">
-        <v-flex xs12 md4 pa-5  data-aos="fade-right" data-aos-duration="800">
-          <v-img class="ma-5" :aspect-ratio="1" contain max-height="250px"  :src="require('~/assets/img/services/ux/ux3.svg')"></v-img>
-        </v-flex>
-        <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4">Intereaction Prototyping</h3>
-          <v-divider class="my-5"></v-divider>
-          <p>At this stage, key usibilty features are ready for user testing, and internal decision making. We test the key demographics laid out in the </p>
-          <v-btn  @click="$vuetify.goTo('#step4')" class="ma-2" to="/services/ux" outlined color="indigo">Next Steps</v-btn>
-        </v-flex>
-      </v-layout>
-
-      <v-layout align-center row wrap py-5 my-5 id="step4">
-        <v-flex xs12 md8 pa-5 data-aos="fade-left" data-aos-duration="1200">
-          <h3 class="mt-4">Testing and Decision</h3>
-          <v-divider class="my-5"></v-divider>
-          <p>We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.</p>
-          <v-btn class="ma-2"  to="/services/webdevelopment" outlined color="indigo">View Web Dev Services</v-btn>
-        </v-flex>
-        <v-flex xs12 md4 pa-5  data-aos="fade-right" data-aos-duration="800">
-          <v-img class="ma-5" :aspect-ratio="1" contain max-height="250px"  :src="require('~/assets/img/services/ux/ux4.svg')"></v-img>
-        </v-flex>
-      </v-layout>
-
+          <p>{{ serviceStep.text }}</p>
+          <v-btn class="my-2" @click="$vuetify.goTo(serviceStep.buttonGoTo)" outlined color="indigo">{{ serviceStep.buttonText}}</v-btn>
+        </v-col>
+      </v-row>
     </v-container>
 
     <v-container fluid pa-0>
@@ -128,6 +93,52 @@ export default {
   },
   data() {
     return {
+      structuredData: {
+        "@context": "http://schema.org",
+        "@type": "Service",
+        serviceType: "UX Design",
+        provider: {
+          "@type": "LocalBusiness",
+          name: "SilenceKillsDesign"
+        },
+        location: {
+          "@type": "Place",
+          geo: {
+            "@type": "GeoCircle",
+            geoMidpoint: {
+              "@type": "GeoCoordinates",
+              latitude: "45.6770",
+              longitude: "111.0429"
+            },
+            geoRadius: "100"
+          },
+          brand: "SilenceKillsDesign",
+          knowsAbout: [
+            "Web Development",
+            "Web Design",
+            items.title,
+            "Graphic design",
+            "Marketing",
+            "SEO",
+            "audio video"
+          ],
+          sameAs: [
+            "https://www.facebook.com/silencekillsdesign/",
+            "https://twitter.com/s1lencek1lls",
+            "https://www.linkedin.com/in/cjwilliamsworks/",
+            "https://instagram.com/silencekillsdesign"
+          ],
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "221 Virginia Way",
+            addressLocality: "Bozeman",
+            addressRegion: "MT",
+            postalCode: "59718"
+          },
+          telephone: "406-579-1985",
+          email: "cj@silencekillsdesign.com"
+        }
+      },
       i: 1,
       items: [
         {
@@ -199,6 +210,44 @@ export default {
                 "A good landing page should offer value to each user that visits it. They often offer exclusive resources, such as an e-book or webinar signup, in exchange for their basic contact information. The goal of these pages is to generate leads while you pull prospects further into the buyers' journey."
             }
           ]
+        }
+      ],
+      serviceSteps: [
+        {
+          id: "step1",
+          title: "Research and Planning",
+          text: "Before we design or build anything, we need to understand why users  use your site or app. Once we know the why, we dive into the how they will interact with the final product. Here we create deep user personas. We look at possible frustrations and rendundancies and strategize an approach to resolve those issues.",
+          image: "ux/ux1.svg",
+          imageOrder: "0",
+          buttonText: "Next Steps",
+          buttonGoTo: "#step2",
+        },
+        {
+          id: "step2",
+          title: "Sketching and Wireframing",
+          text: "There is no reason that great UI and UX can't simply come from a napkin sketch. Avoiding overthinking in the early stages ofter leads to a much more conscise design and overall better user experience.",
+          image: "ux/ux2.svg",
+          imageOrder: "1",
+          buttonText: "Next Steps",
+          buttonGoTo: "#step3",
+        },
+        {
+          id: "step3",
+          title: "Intereaction Prototyping",
+          text: "At this stage, key usibilty features are ready for user testing, and internal decision making. We test the key demographics laid out in the persona definition process.",
+          image: "ux/ux3.svg",
+          imageOrder: "0",
+          buttonText: "Next Steps",
+          buttonGoTo: "#step4",
+        },
+        {
+          id: "step4",
+          title: "Testing and Decision",
+          text: "We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.",
+          image: "ux/ux4.svg",
+          imageOrder: "1",
+          buttonText: "View SEO Details",
+          buttonGoTo: "#",
         }
       ]
     }
