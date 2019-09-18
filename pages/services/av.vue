@@ -147,7 +147,7 @@ export default {
           items: [
             {
               description:
-                "We work closely with D-Tel Technologies to create custom call-waiting music and messaging for your customers. No need to worry about copyright infringment or royalty fees."
+                "We work closely with D-Tel Technologies to program custom call-waiting music and messaging for your customers. No need to worry about copyright infringment or royalty fees."
             }
           ]
         },

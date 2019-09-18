@@ -15,19 +15,19 @@
         <v-list-item
           v-for="(nav,i) in MainNavigation"
           :key="i"
-          :to="item.to"
+          :to="nav.to"
           nuxt
           router
           exact
           link
           active-class="yellow"
-        >
+          >
           <v-list-item-icon>
-            <v-icon>{{ item.icon }}</v-icon>
+            <v-icon>{{ nav.icon }}</v-icon>
           </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
+            <v-list-item-title>{{ nav.title }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -55,26 +55,19 @@
       <v-spacer></v-spacer>
       <!-- <v-app-bar-side-icon @click="drawer = !drawer" class="hidden-md-and-up"/> -->
       <v-app-bar-nav-icon title="menu" class="hidden-md-and-up" @click.stop="drawer = !drawer">Menu</v-app-bar-nav-icon>
-      <v-app-bar-items class="hidden-sm-and-down" v-for="(item, i) in items" :key="i">
-        <v-btn v-if="!nav.submenu" depressed text :to="item.to" router exact>{{ item.title }}</v-btn>
-        <v-btn
-          v-if="nav.submenu"
-          :key="index"
-          depressed
-          text
-          :to="item.to"
-          router
-          exact
-        >{{ item.title }}</v-btn>
-
-        <v-menu v-if="nav.submenu" :key="index" open-on-hover nudge-bottom="10" bottom>
+      <v-app-bar-items class="hidden-sm-and-down" v-for="(nav, i) in navs" :key="i">
+        <!-- regular nav button -->
+        <v-btn v-if="!nav.submenu" depressed text :to="nav.to" router exact>{{ nav.title }}</v-btn>
+        
+        <!-- dropdown button -->
+        <v-menu open-on-hover v-if="nav.submenu" offset-y bottom>
           <template v-slot:activator="{ on }">
-            <v-btn color="primary" dark v-on="on">{{ item.title }}</v-btn>
+            <v-btn :key="index" depressed text :to="nav.to" router exact>{{ nav.title }}</v-btn>
           </template>
 
           <v-list>
-            <v-list-item v-for="(item, index) in items" :key="index">
-              <v-list-item-title>{{ item.title }}</v-list-item-title>
+            <v-list-item v-for="(nav, i) in navs" :key="i" :to="nav.to">
+              <v-list-item-title :key="`sub-item-${index}`" active-class="is-active" class="navbar-item" link :to="sub.to" exact>{{ sub.title }}</v-list-item-title>
             </v-list-item>
           </v-list>
         </v-menu>
@@ -88,34 +81,45 @@
 <script>
 import skdType from "~/components/global/skdType.vue";
 import skdIcon from "~/components/global/skdIcon.vue";
-import MainNavigation from "~/data/navigation.json";
+// import MainNavigation from "~/data/navigation.json";
 export default {
   data() {
     return {
-      MainNavigation,
+      // MainNavigation,
       // NAV SETTINGS
       drawer: false,
       title: "SilenceKillsDesign",
-      items: [
+      navs: [
         {
           icon: "apps",
           title: "Home",
-          to: "/"
+          to: "/",
+          submenu: null
         },
         {
           icon: "bubble_chart",
           title: "About",
-          to: "/about"
+          to: "/about",
+          submenu: null
         },
         {
           icon: "laptop",
           title: "Services",
-          to: "/services"
+          to: "/services",
+          submenu: [
+            { title: "Web Design", to: "/webdevelopment" },
+            { title: "SEO", to: "/seo" },
+            { title: "Branding", to: "/branding" },
+            { title: "Design", to: "/design" },
+            { title: "UX / UI", to: "/ux" },
+            { title: "Audio Visual", to: "/av" }
+          ]
         },
         {
           icon: "image",
           title: "Portfolio",
-          to: "/portfolio"
+          to: "/portfolio",
+          submenu: null
         },
         {
           icon: "mdi-format-align-left",

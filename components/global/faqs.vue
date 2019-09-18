@@ -20,7 +20,7 @@
               class="blue accent-4 mt-1"
             >
               <v-expansion-panel-header ripple class="subtitle-1 font-weight-bold">{{ faq.faqQ}}</v-expansion-panel-header>
-              <v-expansion-panel-content class="pa-3 pr-5">
+              <v-expansion-panel-content eager class="pa-3 pr-5">
                 <v-layout row wrap>{{ faq.faqA }}</v-layout>
                 <v-layout row wrap>
                   <v-btn

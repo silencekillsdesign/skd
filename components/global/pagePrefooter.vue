@@ -77,7 +77,7 @@
         <v-row align="start" justify="start" class="white--text">
           <v-col>
             <v-list two-line subheader color="transparent" dark>
-              <v-list-item v-for="post in posts" :key="post.title">
+              <v-list-item v-for="post in posts" :key="post.title" :to="post.to">
                 <v-list-item-avatar>
                   <v-icon :class="[post.iconClass]" v-text="post.icon"></v-icon>
                 </v-list-item-avatar>
@@ -176,19 +176,8 @@ export default {
         icon: "mdi-magnify",
         iconClass: "purple accent-2 white--text",
         title: "10 Local SEO Tips to Help You Run Your City in 2019",
-        subtitle: "February 14, 2019"
-      },
-      {
-        icon: "mdi-monitor",
-        iconClass: "pink acceent-3 white--text",
-        title: "Should I Use A UI Component Library On My Next Website Project",
-        subtitle: "February 29, 2019"
-      },
-      {
-        icon: "mdi-lead-pencil",
-        iconClass: "blue accent-3 white--text",
-        title: "15 Time-Saving Tips For Adobe Illustrator Workflow",
-        subtitle: "March 17, 2019"
+        subtitle: "February 14, 2019",
+        to: "/blog/blogging-soon"
       }
     ],
     socials: [

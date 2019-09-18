@@ -19,7 +19,7 @@
 
 <script>
 import primaryNav from "~/components/global/primaryNav.vue";
-// import dropdownNav from "~/components/global/dropdownNav.vue"; //porting from the source theme
+import dropdownNav from "~/components/global/dropdownNav.vue"; //porting from the source theme
 import pageFooter from "~/components/global/pageFooter.vue";
 import pagePrefooter from "~/components/global/pagePrefooter.vue";
 import quickQuoteContact from "~/components/global/quickQuoteContact.vue";
@@ -29,7 +29,7 @@ import speedDial from "~/components/global/speedDial.vue";
 export default {
   components: {
     primaryNav,
-    // dropdownNav,
+    dropdownNav,
     pageFooter,
     pagePrefooter,
     quickQuoteContact,
