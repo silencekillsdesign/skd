@@ -18,10 +18,12 @@
             nuxt
             link
             :to="service.serviceURL"
+            itemscope 
+            itemtype="http://schema.org/Service"
           >
             <v-icon size="72" class="ma-4 service-icon">{{ service.serviceIcon }}</v-icon>
             <v-card-text>
-              <h2 class="mb-3">{{ service.serviceName }}</h2>
+              <h2 class="mb-3" itemprop="serviceType" :content="service.serviceName" >{{ service.serviceName }}</h2>
               <p class="mb-0">{{ service.serviceDesc }}</p>
             </v-card-text>
           </v-card>

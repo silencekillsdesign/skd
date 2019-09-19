@@ -11,7 +11,7 @@
       <v-row align="center" id="main">
         <!-- start list -->
         <v-col md="6" offset-md="1" data-aos="fade-right">
-          <v-list color="transparent" rounded v-model="i" class="pr-5">
+          <v-list color="transparent" rounded v-model="i" class="pr-5" itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">
             <v-subheader>The Things We Do:</v-subheader>
             <v-list-group
               v-for="item in items"
@@ -20,10 +20,11 @@
               :prepend-icon="item.icon"
               no-action
               eager
+              itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer"
             >
               <template v-slot:activator>
-                <v-list-item-content>
-                  <v-list-item-title v-text="item.title"></v-list-item-title>
+                <v-list-item-content itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
+                  <v-list-item-title v-text="item.title" itemprop="name"></v-list-item-title>
                 </v-list-item-content>
               </template>
 

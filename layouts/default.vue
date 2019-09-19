@@ -40,6 +40,8 @@ export default {
     return {
       title: "SilenceKillsDesign - Development, Design, and Marketing",
       meta: [
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
           name: "description",
           content:
@@ -49,7 +51,7 @@ export default {
         {
           name: "keywords",
           content:
-            "bozeman website, web designer, bozeman web design, bozeman seo, local seo, event websites, best web design montana"
+            "bozeman website, web designer, bozeman web design, bozeman seo, local seo"
         },
         {
           name: "twitter:title",

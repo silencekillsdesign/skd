@@ -12,12 +12,15 @@
             <!-- <transition appear name="bounce"> -->
             <v-layout pa-4 mt-2 justify-center align-center class="white--text">
               <v-flex shrink>
-                <h1
+                <h1 class="page-title white--text text-uppercase font-weight-bold" :class="{
+                    'mx-1 pt-2 px-1 display-2': $vuetify.breakpoint.smAndDown, 
+                    'px-4 pt-4 pb-1 display-4': $vuetify.breakpoint.mdAndUp}">{{$store.state.pageTitle}}&nbsp;</h1>
+                <!-- <h1
                   class="page-title white--text text-uppercase font-weight-bold"
                   :class="{
                     'mx-1 pt-2 px-1 display-2': $vuetify.breakpoint.smAndDown, 
                     'px-4 pt-4 pb-1 display-4': $vuetify.breakpoint.mdAndUp}"
-                >{{ pageTitle }}</h1>
+                >{{ pageTitle }}</h1> -->
                 <h4
                   class="mt-2 text-xs-right headline text-uppercase hidden-sm-and-down"
                 >{{ pageSubtitle }}</h4>
@@ -53,6 +56,9 @@ export default {
     quickQuoteContact,
     speedDial
     // developmentDialog
+  },
+  props: {
+    title: { default: "", type: String }
   },
   data() {
     return {
