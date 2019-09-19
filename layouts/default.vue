@@ -42,32 +42,71 @@ export default {
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { name: "robots", content: "index, follow" },
         {
           name: "description",
           content:
             "SilenceKillsDesign - Web Design &Development, Marketing, and Graphic Design in Bozeman, MT."
         },
-        { name: "robots", content: "index, follow" },
         {
           name: "keywords",
           content:
-            "bozeman website, web designer, bozeman web design, bozeman seo, local seo"
+            "bozeman web design, bozeman seo, branding, logo design"
+        },
+        // open graph
+        {
+          hid: `og:locale`,
+          property: "og:title",
+          content: `en_US`
         },
         {
+          hid: `og:type`,
+          property: "og:image",
+          content: "website"
+        },
+        {
+          hid: `og:title`,
+          property: "og:title",
+          content: `SilenceKillsDesign - Web Design, SEO, and Branding Experts`
+        },
+        {
+          hid: `og:url`,
+          property: "og:url",
+          content: "https://silencekillsdesign.com"
+        },
+        {
+          hid: `og:image`,
+          property: "og:image",
+          content: "~/silencekillsdesign--opengraph-img.png/"
+        },
+        // twitter
+        {
+          hid: `twitter:card`,
+          name: "twitter:card",
+          content: "summary"
+        },
+        {
+          hid: `twitter:creator`,
+          name: "twitter:creator",
+          content: "@s1lencek1lls"
+        },
+        {
+          hid: `twitter:title`,
           name: "twitter:title",
           content:
-            "SilenceKillsDesign - Web Development, Marketing, and Design."
+            "SilenceKillsDesign - Web Design, SEO, and Branding Experts"
         },
         {
+          hid: `twitter:description`,
           name: "twitter:description",
-          content: "Better Brands. Less Bullshit."
+          content:
+            "SilenceKillsDesign offers loacal web design and marketing in Bozeman, MT. Check Bozeman's best web design, SEO, design, branding, and more company."
         },
         {
+          hid: `twitter:image`,
           name: "twitter:image",
-          content:
-            "assets/branding/silencekillsdesign--logo--horizontal--color.svg"
-        },
-        { name: "twitter:card", content: "SilenceKillsDesign Logo" }
+          content: "~/staticsilencekillsdesign--twitter-card.jpg"
+        }
       ]
     };
   },

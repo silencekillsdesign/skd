@@ -40,9 +40,14 @@ export default {
   data: () => ({
   }),
   head: {
-    title: 'About - ',
+    title: 'About Us',
     meta: [
-      { hid: 'description', name: 'description', content: 'SilenceKillsDesign is a full-service digital agency specializing in multimedia marketing strategies. We offer services in brand management, web development, online marketing, and graphic design, along with many other services to help your local, small, or large business succeed.' }
+      { hid: 'description', name: 'description', content: 'SilenceKillsDesign is a full-service digital agency specializing in multimedia marketing strategies. We offer services in brand management, web development, online marketing, and graphic design, along with many other services to help your local, small, or large business succeed.' },
+      {
+          name: "keywords",
+          content:
+            "silencekillsdesign, cj williams, local seo bozeman, web designer bozeman"
+        },
     ]
   },
   components: {
