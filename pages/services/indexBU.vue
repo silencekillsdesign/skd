@@ -39,7 +39,6 @@
 import pageHeader from '~/components/global/pageHeader.vue'
 import pageIntro from '~/components/global/pageIntro.vue'
 import recentWork from '~/components/global/recentWork.vue'
-import axios from 'axios';
 //data import
 // import sourceData from '@/data/data'
 

@@ -171,6 +171,7 @@ module.exports = {
       "/services/email",
       "/services/screenprinting",
       "/news",
+      "/indexBU",
     ]
   },
   //  "@bazzite/nuxt-optimized-images"
