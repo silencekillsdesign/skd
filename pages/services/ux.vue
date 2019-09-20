@@ -11,7 +11,7 @@
       <v-row align="center" id="main">
         <!-- start list -->
         <v-col md="6" offset-md="1" data-aos="fade-right">
-          <v-list color="transparent" rounded v-model="i" class="pr-5">
+          <v-list color="transparent" rounded v-model="i" class="pr-5" itemprop="itemListElement" itemscope itemtype="http://schema.org/OfferCatalog">
             <v-subheader>The Things We Do:</v-subheader>
             <v-list-group
               v-for="item in items"
@@ -20,10 +20,11 @@
               :prepend-icon="item.icon"
               no-action
               eager
+              itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer"
             >
               <template v-slot:activator>
-                <v-list-item-content>
-                  <v-list-item-title v-text="item.title"></v-list-item-title>
+                <v-list-item-content itemprop="itemOffered" itemscope itemtype="http://schema.org/Service">
+                  <v-list-item-title v-text="item.title" itemprop="name"></v-list-item-title>
                 </v-list-item-content>
               </template>
 
@@ -36,6 +37,7 @@
             </v-list-group>
           </v-list>
         </v-col>
+        <!-- end list -->
         <v-col md5 data-aos="fade-left">
           <!-- <v-img flat :src="require('~/assets/img/webdev.svg')"> </v-img> -->
           <img class="mr-0 pr-0" src="~/assets/img/ux.svg" alt="avatar" />
@@ -96,7 +98,7 @@ export default {
       structuredData: {
         "@context": "http://schema.org",
         "@type": "Service",
-        serviceType: "UX Design",
+        serviceType: "UX and UI Design",
         provider: {
           "@type": "LocalBusiness",
           name: "SilenceKillsDesign"
@@ -116,7 +118,7 @@ export default {
           knowsAbout: [
             "Web Development",
             "Web Design",
-            items.title,
+            "Logo design",
             "Graphic design",
             "Marketing",
             "SEO",
@@ -139,7 +141,6 @@ export default {
           email: "cj@silencekillsdesign.com"
         }
       },
-      i: 1,
       items: [
         {
           icon: "mdi-store",

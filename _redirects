@@ -3,3 +3,4 @@
 # Redirect default Netlify subdomain to primary domain
 http://silencekillsdesign.netlify.com/* http://silencekillsdesign.com/:splat 301!
 https://silencekillsdesign.netlify.com/* https://silencekillsdesign.com/:splat 301!
+http://silencekillsdesign.com/* https://silencekillsdesign.com/:splat 301!

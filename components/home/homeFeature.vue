@@ -18,8 +18,8 @@
           <v-row class="mt-0">
             <v-card-text class="mt-0">
               <p class="subheading">Average Hourly Rate is $40</p>
-              <p class="subheading">Branding Packages starting at $400</p>
-              <p class="subheading">Website Packages starting at $1200</p>
+              <p class="subheading">Logo Design Packages starting at $400</p>
+              <p class="subheading">Web Design Packages starting at $1200</p>
             </v-card-text>
           </v-row>
         </v-card>
@@ -41,7 +41,7 @@
           <v-row class="mt-0">
             <v-card-text class="mt-0">
               <p class="subheading">We work in sprints for task-based completion</p>
-              <p class="subheading">Your project will be finished by deadline</p>
+              <p class="subheading">Your design will be finished by deadline</p>
               <p class="subheading">We accept rush projects with short lead times</p>
             </v-card-text>
           </v-row>

@@ -8,7 +8,7 @@
       md="6"
       order-md="1"
       class="yellow pa-4"
-      data-aos="fade-left"
+      data-aos="fade-down"
       data-aos-easing="ease-in-out-back"
       data-aos-duration="600"
     >
@@ -58,8 +58,9 @@ export default {
     bozemanModal
   },
   props: {
-    imgOrder: String,
+    imgOrder: Number, //0=left 1=right
     imgURL: String,
+    imgBG: String,
     heading: String,
     body: String,
     btnText: String,

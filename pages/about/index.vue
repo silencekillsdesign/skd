@@ -5,7 +5,7 @@
     <aboutSplit />
     <aboutSplitLeft />
     <aboutTestimonials
-      data-aos="fade-left"
+      data-aos="fade-up"
       data-aos-duration="1200"
       data-aos-delay="200"
       data-aos-once="true"

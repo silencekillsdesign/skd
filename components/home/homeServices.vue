@@ -60,12 +60,12 @@ export default {
       services: [
         {
           serviceId: "1",
-          serviceName: "Web Development",
+          serviceName: "Web Design",
           serviceDesc:
             "Fast, well-designed websites that convert, delivered on time & within budget.",
           serviceIcon: "mdi-code-tags",
           serviceButton: "Web Dev Services",
-          serviceURL: "/services/webdevelopment"
+          serviceURL: "/services/webdesign"
         },
         {
           serviceId: "2",

@@ -1,0 +1,54 @@
+[
+  {
+    "services": [
+      {
+        "serviceId": "0",
+        "serviceName": "Web Development",
+        "ServiceIcon": "mdi-code-tags",
+        "serviceDesc": "Fast, well-designed websites that convert, delivered on time & within budget.",
+        "serviceButton": "Learn More",
+        "serviceUrl": "/services/webdevelopment/"
+      },
+      {
+        "serviceId": "1",
+        "serviceName": "Branding",
+        "ServiceIcon": "mdi-fingerprint",
+        "serviceDesc": "We create consistent visual identification of your brand, service, or product.",
+        "serviceButton": "Learn More",
+        "serviceUrl": "/services/branding/"
+      },
+      {
+        "serviceId": "2",
+        "serviceName": "SEO / SEM",
+        "ServiceIcon": "mdi-chess-knight",
+        "serviceDesc": "Drive quality traffic to your site with expert digital marketing services.",
+        "serviceButton": "Learn More",
+        "serviceUrl": "/services/seo/"
+      },
+      {
+        "serviceId": "3",
+        "serviceName": "UI/UX Design",
+        "serviceIcon": "mdi-monitor-cellphone-star",
+        "serviceDesc": "Well-structured information architecture and logical user interfaces.",
+        "serviceButton": "Learn More",
+        "serviceUrl": "/services/ux/"
+      },
+      {
+        "serviceId": "4",
+        "serviceName": "Desgin Services",
+        "ServiceIcon": "mdi-palette",
+        "serviceDesc": "Digital & print design services from award-winning designers.",
+        "serviceButton": "Learn More",
+        "serviceUrl": "services/design/"
+      },
+      {
+        "serviceId": "5",
+        "serviceName": "Audio / Visual",
+        "ServiceIcon": "mdi-movie-roll",
+        "serviceDesc": "Fast, well-designed websites that convert, delivered on time & within budget.",
+        "serviceButton": "Learn More",
+        "serviceUrl": "services/av/"
+      }
+    ]
+  }
+]

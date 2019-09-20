@@ -75,7 +75,7 @@ export default {
           'Fast, well-designed websites that convert, delivered on time & within budget.',
         serviceIcon: 'mdi-code-tags',
         serviceButton: 'Learn More',
-        serviceURL: '/services/webdevelopment'
+        serviceURL: '/services/webdesign'
       },
       {
         serviceId: '2',

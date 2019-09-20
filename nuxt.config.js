@@ -150,6 +150,12 @@ module.exports = {
         "^/silenceKillsDesign-Work/treehouse-ping-pong-scoring-app-concept/",
       to: "/portfolio",
       statusCode: 301
+    },
+    {
+      from:
+        "/services/email",
+      to: "/contact",
+      statusCode: 301
     }
   ],
   // "@nuxtjs/google-analytics",

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <pageHeader pageTitle="Web Dev" pageSubtitle="Design It. Build It." />
+    <pageHeader pageTitle="Web Design" pageSubtitle="Design It. Build It." />
 
     <pageIntro
       introText="Good website design can be your most powerful marketing segment, delivering your brand's message to your customers' fingertips. Our web development process prioitizes UX and SEO, to help small businesses stand out in Bozeman."
@@ -75,6 +75,16 @@
       </v-row>
     </v-container>
 
+    <v-container class="my-5">
+      <v-row class="mx-auto" align="center" justify="center">
+        <v-col cols="12" md="8" align="center" justify="center">
+          <h3 class="text8-center display-3 indigo--text my-5">What sets Us Apart?</h3>
+          <p class="subtitle-1">SilenceKillsDesign offers more than just copy-and-paste WordPress sites. We build fast JAMStack websites, custom HTML sites, and WordPress sites that focus heavily on SEO ranking factors, such as site performance, best practices and accessibility. Our all-in-one desgin, development and SEO offers you a single point of contact, making communication and integration seamless. Request a quote for your new web design project.</p>
+          <v-btn large to="/contact">Contact Us</v-btn>
+          </v-col>
+      </v-row>
+    </v-container>
+
     <v-container fluid pa-0>
       <quoteCTA />
     </v-container>
@@ -99,12 +109,12 @@ export default {
         {
           name: "description",
           content:
-            "Well-designed websites are very powerful marketing, delivering your brand's message to your customers' fingertips. Our start-to-finish web development process caters to your existing customers, and new audiences alike."
+            "We design websites that are fast and relevant - delivering your brand's message to your customers' fingertips. Our start-to-finish web development process bakes in SEO and helps grow your customer base"
         },
         {
           name: "keywords",
           content:
-            "local business websites in bozeman, bozeman seo, local seo, event websites, web designer in bozeman, best web design bozeman"
+            "local business websites in bozeman, bozeman seo, website designers, web design, web designer in bozeman, b2b websites"
         },
         { name: "robots", content: "index, follow" }
       ],

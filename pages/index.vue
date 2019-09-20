@@ -2,10 +2,14 @@
   <transition name="fade">
     <v-layout column justify-center align-center>
       <homeHero />
-      <homeFeature />
+      <homeFeature
+        data-aos="fade-in-down"
+        data-aos-easing="ease-in-out-back"
+        data-aos-duration="1400"
+      />
       <!-- TODO create custom images for each -->
       <homeServices
-        data-aos="zoom-in-down"
+        data-aos="fade-in-down"
         data-aos-easing="ease-in-out-back"
         data-aos-duration="1400"
       />
@@ -14,6 +18,16 @@
       <aboutClients />
       <faqs data-aos="fade-in-down" data-aos-easing="ease-in-out-back" data-aos-duration="1400" />
       <aboutTestimonials />
+      <v-container>
+      <v-row class="ma-4">
+        <v-col cols="12" md="4" class="hidden-sm-and-down">
+          <v-img alt="silencekillsdesgin icon" contain height="410" :src="require('@/assets/branding/silencekillsdesign--icon--color.svg')"></v-img>
+        </v-col>
+        <v-col cols="12" md="8">
+          <blogAuthor />
+        </v-col>
+      </v-row>
+      </v-container>
     </v-layout>
   </transition>
 </template>
@@ -27,6 +41,7 @@ import homeFeature from "~/components/home/homeFeature.vue";
 // other page components -- should probably be global
 import aboutTestimonials from "~/components/about/aboutTestimonials.vue";
 import aboutClients from "~/components/about/aboutClients.vue";
+import blogAuthor from "~/components/blog/blogAuthor.vue";
 // global components
 import faqs from "~/components/global/faqs.vue";
 
@@ -38,7 +53,8 @@ export default {
     // homeServicesDynamic,
     faqs,
     aboutClients,
-    aboutTestimonials
+    aboutTestimonials,
+    blogAuthor
   },
   data() {
     return {
@@ -94,8 +110,7 @@ export default {
         },
         {
           name: "keywords",
-          content:
-            "branding, bozeman web design, seo, bozeman creative"
+          content: "branding, bozeman web design, seo, bozeman creative"
         }
       ],
       __dangerouslyDisableSanitizers: ["script"],
