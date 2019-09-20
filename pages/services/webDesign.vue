@@ -79,7 +79,7 @@
       <v-row class="mx-auto" align="center" justify="center">
         <v-col cols="12" md="8" align="center" justify="center">
           <h3 class="text8-center display-3 indigo--text my-5">What sets Us Apart?</h3>
-          <p class="subtitle-1">SilenceKillsDesign offers more than just copy-and-paste WordPress sites. We build fast JAMStack websites, custom HTML sites, and WordPress sites that focus heavily on SEO ranking factors, such as site performance, best practices and accessibility. Our all-in-one desgin, development and SEO offers you a single point of contact, making communication and integration seamless. Request a quote for your new web design project.</p>
+          <p class="subtitle-1">SilenceKillsDesign offers more than just copy-and-paste WordPress sites. We build fast JAMStack websites, custom HTML sites, and WordPress sites that focus heavily on SEO ranking factors, such as site performance, best practices and accessibility. Our all-in-one desgin, development and SEO offers you a single point of contact, making communication and integration seamless. Request a quote for your new web design project. With basic website pricing starting at $1200, we are a great fit for small businesses.</p>
           <v-btn large to="/contact">Contact Us</v-btn>
           </v-col>
       </v-row>
