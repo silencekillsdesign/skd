@@ -1,5 +1,5 @@
-<template>
-  <span class="skdType">Silence<b class="font-weight-bold">Kills</b>Design</span>
+<template vocab="http://schema.org/" typeof="LocalBusiness">
+  <span class="skdType" property="name">Silence<b class="font-weight-bold">Kills</b>Design</span>
 </template>
 
 <script>

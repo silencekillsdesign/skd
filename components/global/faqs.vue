@@ -18,10 +18,11 @@
               v-for="(faq, i) in faqs"
               :key="i"
               class="blue accent-4 mt-1"
+              itemscope itemtype="http://schema.org/Question"
             >
-              <v-expansion-panel-header ripple class="subtitle-1 font-weight-bold">{{ faq.faqQ}}</v-expansion-panel-header>
-              <v-expansion-panel-content eager class="pa-3 pr-5">
-                <v-layout row wrap>{{ faq.faqA }}</v-layout>
+              <v-expansion-panel-header ripple class="subtitle-1 font-weight-bold" itemprop="name">{{ faq.faqQ}}</v-expansion-panel-header>
+              <v-expansion-panel-content eager class="pa-3 pr-5" itemprop="suggestedAnswer acceptedAnswer">
+                <v-layout row wrap itemprop="text">{{ faq.faqA }}</v-layout>
                 <v-layout row wrap>
                   <v-btn
                     v-if="faqs.faqButtonLink !== null"

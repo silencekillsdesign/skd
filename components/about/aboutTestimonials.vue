@@ -9,18 +9,19 @@
     > -->
     <v-img aspect-ratio="16/9" :src="require('~/assets/img/backgrounds/lavalamp.svg')">
       <v-carousel continuous cycle show-arrows-on-hover hide-delimiters class="testimonial-card">
-        <v-carousel-item v-for="(review,i) in reviews" :key="i" transition="fade-transition" group>
+        <v-carousel-item v-for="(review,i) in reviews" :key="i" transition="fade-transition" group itemprop="review" itemscope itemtype="http://schema.org/Review">
           <v-container fluid dark>
             <v-row class="xs-text-center fill-height" justify="center" align="center">
               <v-col cols="12" md="6" class="text-center">
                 <v-avatar size="110" color="grey lighten-4" class="mb-4">
                   <v-img :src="require('~/assets/img/testimonials/'+review.avatar)" alt="avatar"></v-img>
                 </v-avatar>
-                <h4 class="title mb-2 white--text">{{ review.name }}</h4>
-                <h5
+                <h4 class="title mb-2 white--text" itemprop="author">{{ review.name }}</h4>
+                <h5 itemprop="name"
                   class="subheading amber--text font-weight-medium font-italic mb-4 hidden-sm-and-down"
                 >{{ review.title }}</h5>
                 <blockquote class=" white--text"
+                  itemprop="description"
                   :class="{'title': $vuetify.breakpoint.smAndDown, 'headline': $vuetify.breakpoint.mdAndUp}"
                 >{{ review.review }}</blockquote>
                 <v-btn
@@ -31,6 +32,7 @@
                   href="https://g.page/silencekillsdesign/review"
                   target="_blank"
                   rel="noopener"
+                  title="Review on Google"
                 >Leave a Review</v-btn>
               </v-col>
             </v-row>

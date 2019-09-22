@@ -1,8 +1,8 @@
 <template>
   <v-footer dark padless align-center>
     <v-card flat tile shrink class="flex indigo lighten-1 white--text text-center">
-      <v-card-title class="indigo darken-4 footer-text">
-        <p>&copy; Copyright {{ new Date().getFullYear() }} — SilenceKillsDesign</p>
+      <v-card-title class="indigo darken-4 footer-text" itemscope itemtype="http://schema.org/LocalBusiness">
+        <p>&copy; Copyright <span itemprop="datePublished">{{ new Date().getFullYear() }}</span> — <span itemprop="provider">SilenceKillsDesign</span></p>
         <v-spacer></v-spacer>
         <v-btn
           class="hidden-sm-and-down mx-1"

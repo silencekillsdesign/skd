@@ -77,14 +77,14 @@
         <v-row align="start" justify="start" class="white--text">
           <v-col>
             <v-list two-line subheader color="transparent" dark>
-              <v-list-item v-for="post in posts" :key="post.title" :to="post.to">
+              <v-list-item v-for="post in posts" :key="post.title" :to="post.to" itemscope itemtype="http://schema.org/Article">
                 <v-list-item-avatar>
                   <v-icon :class="[post.iconClass]" v-text="post.icon"></v-icon>
                 </v-list-item-avatar>
 
                 <v-list-item-content>
-                  <v-list-item-title v-text="post.title"></v-list-item-title>
-                  <v-list-item-subtitle v-text="post.subtitle"></v-list-item-subtitle>
+                  <v-list-item-title itemprop="name" v-text="post.title"></v-list-item-title>
+                  <v-list-item-subtitle itemprop="datePublished" v-text="post.subtitle"></v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
             </v-list>
@@ -94,7 +94,7 @@
 
       <!-- TODO: CHange to list transparent -->
       <!-- contact info -->
-      <v-col cols="12" sm="6" md="3" class="prefooter-contact px-5">
+      <v-col cols="12" sm="6" md="3" class="prefooter-contact px-5" itemprop="provider" itemscope itemtype="http://schema.org/LocalBusiness">
         <v-row align="start" justify="start" class="white--text mb-4">
           <v-col>
             <h4 class="pt-3 title" itemprop="name">SilenceKillsDesign</h4>
@@ -175,8 +175,8 @@ export default {
       {
         icon: "mdi-magnify",
         iconClass: "purple accent-2 white--text",
-        title: "10 Local SEO Tips to Help You Run Your City in 2019",
-        subtitle: "February 14, 2019",
+        title: "Blogs Coming Soon",
+        subtitle: "August 14, 2019",
         to: "/blog/blogging-soon"
       }
     ],
