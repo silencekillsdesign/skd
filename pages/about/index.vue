@@ -21,7 +21,7 @@
   </v-container>
 </template>
 
-<script>
+<script async>
 import pageHeader from "~/components/global/pageHeader.vue";
 import faqs from "~/components/global/faqs.vue";
 import recentWork from "~/components/global/recentWork.vue";

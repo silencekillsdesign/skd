@@ -92,14 +92,14 @@ export default {
           addressRegion: "MT",
           postalCode: "59718"
         },
-        telephone: "406-579-1985",
+        telephone: "+1-406-579-1985",
         email: "cj@silencekillsdesign.com"
       }
     };
   },
   head() {
     return {
-      title: "Bozeman's Web Development, SEO, Design, and Marketing",
+      title: "Bozeman's Web Design, SEO, Branding Expert",
       meta: [
         {
           hid: "description",

@@ -117,6 +117,7 @@ export default {
         "@type": "Organization",
         name: "SilenceKillsDesign",
         brand: "SilenceKillsDesign",
+        image: "~/silencekillsdesign--opengraph-img.png/",
         knowsAbout: [
           "Web Development",
           "Graphic design",

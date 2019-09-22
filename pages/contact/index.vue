@@ -68,7 +68,7 @@
   </v-container>
 </template>
 
-<script>
+<script async>
 import pageHeader from "~/components/global/pageHeader.vue";
 import pageIntro from "~/components/global/pageIntro.vue";
 import contactCard from "~/components/contact/contactCard.vue";

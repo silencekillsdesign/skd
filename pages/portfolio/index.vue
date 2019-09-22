@@ -37,7 +37,7 @@
   </v-container>
 </template>
 
-<script>
+<script async>
 import pageHeader from '~/components/global/pageHeader.vue'
 import portfolioLogos from '~/components/portfolio/portfolioLogos.vue'
 import portfolioPrint from '~/components/portfolio/portfolioPrint.vue'
