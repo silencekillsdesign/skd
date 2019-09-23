@@ -85,9 +85,6 @@
       </v-row>
     </v-container>
 
-    <v-container fluid pa-0>
-      <quoteCTA />
-    </v-container>
   </div>
 </template>
 

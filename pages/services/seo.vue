@@ -71,9 +71,16 @@
       </v-row>
     </v-container>
 
-    <v-container fluid pa-0>
-      <quoteCTA />
+    <v-container class="my-5" data-aos="fade-up" data-aos-duration="1300">
+      <v-row class="mx-auto" align="center" justify="center">
+        <v-col cols="12" md="8" align="center" justify="center">
+          <h3 class="text8-center display-3 indigo--text my-5">What sets Us Apart?</h3>
+          <p class="subtitle-1">There are many SEO 'experts' in Bozeman. We understand the aspects of technical SEO beyond WordPress plugins. Never be afraid to ask your SEO what exactly they are doing with your SEO strategy. There are many factors that allow search engines to discover and understand your site's content.   We offer technical SEO services that dive deeper into your content and code.  We touch on them all with White-Hat best practices. Structured data,  image tagging, content revision and performance optimizations, we dot it all. Let us help you define your SEO strategy.</p>
+          <v-btn class="mt-3" large to="/contact">Contact Us</v-btn>
+          </v-col>
+      </v-row>
     </v-container>
+
   </div>
 </template>
 

@@ -35,7 +35,11 @@
         </v-col>
         <v-col md="5" class="hidden-sm-and-down">
           <!-- <v-img flat :src="require('~/assets/img/webdev.svg')"> </v-img> -->
-          <v-img class="mr-0 pr-0" :src="require('~/assets/img/webdev.svg')" alt="web designers and developers in bozeman, montana"></v-img>
+          <v-img
+            class="mr-0 pr-0"
+            :src="require('~/assets/img/webdev.svg')"
+            alt="web designers and developers in bozeman, montana"
+          ></v-img>
         </v-col>
       </v-row>
     </v-container>
@@ -44,9 +48,7 @@
 
     <v-container my-5>
       <v-layout row align-center justify-center mt-5 py-5>
-        <h2
-          class="text-center display-3 indigo--text"
-        >Our Branding Process</h2>
+        <h2 class="text-center display-3 indigo--text">Our Branding Process</h2>
       </v-layout>
     </v-container>
 
@@ -60,15 +62,15 @@
             :src="require('~/assets/img/services/branding/branding1.svg')"
           ></v-img>
         </v-col>
-        <v-col cols="12" md="8" class="pa-5" >
+        <v-col cols="12" md="8" class="pa-5">
           <h3 class="mt-4 blue--text text--accent-3">Brand Audit</h3>
           <v-divider class="my-5" color="blue"></v-divider>
-          <p>We will take an in depth look at al of your existing brand assets. Next we draft a plan to improve on the weak segments, and capitalize on your strengths. </p>
+          <p>We will take an in depth look at al of your existing brand assets. Next we draft a plan to improve on the weak segments, and capitalize on your strengths.</p>
           <v-btn class="ma-2" @click="$vuetify.goTo('#step2')" outlined color="indigo">Next Steps</v-btn>
         </v-col>
       </v-row>
 
-    <!-- <v-container my-5>
+      <!-- <v-container my-5>
       <v-layout align-center row wrap py-5 my-5>
         <v-flex xs12 md4 pa-5 data-aos="fade-right" data-aos-duration="800">
           <v-img :aspect-ratio="1" :src="require('~/assets/img/services/branding/branding1.svg')"></v-img>
@@ -79,7 +81,7 @@
           <p>We will take an in depth look at al of your existing brand assets. Next we draft a plan to improve on the weak segments, and capitalize on your strengths. </p>
           <v-btn class="ma-2" to="/services/ux" outlined color="indigo">View UX Services</v-btn>
         </v-flex>
-      </v-layout> -->
+      </v-layout>-->
 
       <v-layout align-center row wrap py-5 my-5 id="step2">
         <v-flex xs12 md8 pa-5>
@@ -116,19 +118,26 @@
           <v-img :aspect-ratio="1" :src="require('~/assets/img/services/branding/branding4.svg')"></v-img>
         </v-flex>
       </v-layout>
-
     </v-container>
 
-    <v-container fluid pa-0>
-      <quoteCTA />
+    <v-container class="my-5" data-aos="fade-up" data-aos-duration="1300">
+      <v-row class="mx-auto" align="center" justify="center">
+        <v-col cols="12" md="8" align="center" justify="center">
+          <h3 class="text8-center display-3 indigo--text my-5">What sets Us Apart?</h3>
+          <p  class="subtitle-1">
+            We realize your logo design is a key part of your brand identity. We're much more than logo designers. We offer a full brand management experience, including logo design, digital asset management, and more. From campaign planning to execution and reporting, our expert advice makes managing your brand easy.
+          </p>
+          <v-btn class="mt-3" large to="/contact">Contact Us</v-btn>
+        </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>
 
 <script>
-import pageHeader from '~/components/global/pageHeader.vue'
-import pageIntro from '~/components/global/pageIntro.vue'
-import stack from '~/components/global/stack.vue'
+import pageHeader from "~/components/global/pageHeader.vue";
+import pageIntro from "~/components/global/pageIntro.vue";
+import stack from "~/components/global/stack.vue";
 
 export default {
   components: {
@@ -149,11 +158,16 @@ export default {
           name: "keywords",
           content:
             "bozeman logo designers, business cards, logo design, branding, marketing agency in bozeman"
-        },
+        }
       ],
-      __dangerouslyDisableSanitizers: ['script'],
-      script: [{ innerHTML: JSON.stringify(this.structuredData), type: 'application/ld+json' }],
-    }
+      __dangerouslyDisableSanitizers: ["script"],
+      script: [
+        {
+          innerHTML: JSON.stringify(this.structuredData),
+          type: "application/ld+json"
+        }
+      ]
+    };
   },
   data() {
     return {
@@ -205,8 +219,8 @@ export default {
       i: 1,
       items: [
         {
-          icon: 'mdi-lead-pencil',
-          title: 'Logo Design',
+          icon: "mdi-lead-pencil",
+          title: "Logo Design",
           items: [
             {
               description:
@@ -215,58 +229,57 @@ export default {
           ]
         },
         {
-          icon: 'mdi-file-multiple',
-          title: 'Marketing Materials',
+          icon: "mdi-file-multiple",
+          title: "Marketing Materials",
           items: [
             {
               description:
-                'Brochures, whitepapers, case studies, direct mailers, etc.'
+                "Brochures, whitepapers, case studies, direct mailers, etc."
             }
           ]
         },
         {
-          icon: 'mdi-fountain-pen-tip',
-          title: 'Copy Writing',
+          icon: "mdi-fountain-pen-tip",
+          title: "Copy Writing",
           items: [
             {
-              description:
-                "We write copy specifically for SEO. "
+              description: "We write copy specifically for SEO. "
             }
           ]
         },
         {
-          icon: 'mdi-account-card-details',
-          title: 'Stationery',
+          icon: "mdi-account-card-details",
+          title: "Stationery",
           items: [
             {
               description:
-                'Make your brand official with leatterheads, business cards, envelopes, packaging and more.'
+                "Make your brand official with leatterheads, business cards, envelopes, packaging and more."
             }
           ]
         },
         {
-          icon: 'mdi-teach',
-          title: 'Tradeshows',
+          icon: "mdi-teach",
+          title: "Tradeshows",
           items: [
             {
               description:
-                'Everything from banner stands and table cloths, to full tradeshow both design.'
+                "Everything from banner stands and table cloths, to full tradeshow both design."
             }
           ]
         },
         {
-          icon: 'mdi-newspaper',
-          title: 'Brand Guides',
+          icon: "mdi-newspaper",
+          title: "Brand Guides",
           items: [
             {
               description:
-                'We\'ll compile all of your brand assets into one convenient spot along with instructions for use and zip files of all assets to share with vendors.'
+                "We'll compile all of your brand assets into one convenient spot along with instructions for use and zip files of all assets to share with vendors."
             }
           ]
         },
         {
-          icon: 'mdi-presentation-play',
-          title: 'Presentaion Templates',
+          icon: "mdi-presentation-play",
+          title: "Presentaion Templates",
           items: [
             {
               description:
@@ -275,9 +288,9 @@ export default {
           ]
         }
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <style>

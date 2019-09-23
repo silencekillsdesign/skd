@@ -1,5 +1,5 @@
 <template>
-  <v-container justify-center mb-5>
+  <v-container justify-center mb-5 itemscope itemtype="http://schema.org/QAPage">
     <!-- section header -->
     <v-container>
       <v-layout row wrap mb-5 py-5 justify-center>
