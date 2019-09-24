@@ -18,12 +18,16 @@
             nuxt
             link
             :to="service.serviceURL"
-            itemscope 
+            itemscope
             itemtype="http://schema.org/Service"
           >
             <v-icon size="72" class="ma-4 service-icon">{{ service.serviceIcon }}</v-icon>
             <v-card-text>
-              <h2 class="mb-3" itemprop="serviceType" :content="service.serviceName" >{{ service.serviceName }}</h2>
+              <h2
+                class="mb-3"
+                itemprop="serviceType"
+                :content="service.serviceName"
+              >{{ service.serviceName }}</h2>
               <p class="mb-0">{{ service.serviceDesc }}</p>
             </v-card-text>
           </v-card>
@@ -68,8 +72,8 @@ export default {
   },
   data: () => ({
     isHovering: false,
-    services: [],
-    posts: [],
+    // services: [],
+    // posts: [],
     // services: [
     //   {
     //     serviceId: '1',
@@ -145,18 +149,23 @@ export default {
     //   }
     // ]
   }),
-  mounted () {
-    axios.get('http://localhost:4000/services') //works with db.json in root
+  asyncData () {
+    return axios.get('http://localhost:4000/services') //works with db.json in root
     .then(response => {
-      this.services = response.data
+      return {services: response.data}
     })
   }
+  // mounted () {
+  //   axios.get('http://localhost:4000/services') //works with db.json in root
+  //   .then(response => {
+  //     this.services = response.data
+  //   })
+  // }
 }
 </script>
 
 <style lang="scss" scoped>
 .service-tile {
-
   p {
     font-size: 1.125em;
     color: #eeeeee;
