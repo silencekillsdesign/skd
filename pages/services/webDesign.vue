@@ -1,6 +1,6 @@
 <template>
   <div>
-    <pageHeader pageTitle="Web Design" pageSubtitle="Design It. Build It." />
+    <pageHeader schemaType="Service" schemaItem="web design" pageTitle="Web Design" pageSubtitle="Design It. Build It." />
 
     <pageIntro
       introText="Good website design can be your most powerful marketing segment, delivering your brand's message to your customers' fingertips. Our web development process prioitizes UX and SEO, to help small businesses stand out in Bozeman."

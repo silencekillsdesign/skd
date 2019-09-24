@@ -7,6 +7,11 @@ const path = require("path");
 const PrerenderSPAPlugin = require("prerender-spa-plugin");
 
 module.exports = {
+  // testing local json
+  env: {
+    baseURL: process.env.NODE_ENV === "production" ? "https://silencekillsdesign.com" : "http://localhost:4000"
+  },
+
   mode: "universal",
   /*
    ** Headers of the page
@@ -122,7 +127,8 @@ module.exports = {
   plugins: [
     // { src: "~/plugins/vuetify"},
     { src: "~/plugins/aos", ssr: false },
-    { src: "~plugins/ga.js", ssr: false }
+    { src: "~plugins/ga.js", ssr: false },
+    { src: "~plugins/silentbox.js", ssr: false }
     // { src: "~/plugins/VueOwlSlider", ssr: false },
     // { src: '~/plugins/vue-lightbox-pluign.js', ssr: false }
     // { src: "~plugins/vuew-animate", ssr: false }
@@ -152,8 +158,7 @@ module.exports = {
       statusCode: 301
     },
     {
-      from:
-        "/services/email",
+      from: "/services/email",
       to: "/contact",
       statusCode: 301
     }
@@ -177,7 +182,7 @@ module.exports = {
       "/services/email",
       "/services/screenprinting",
       "/news",
-      "/indexBU",
+      "/indexBU"
     ]
   },
   //  "@bazzite/nuxt-optimized-images"
@@ -224,7 +229,9 @@ module.exports = {
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {},
+  axios: {
+    baseURL: "localhost:4000"
+  },
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module

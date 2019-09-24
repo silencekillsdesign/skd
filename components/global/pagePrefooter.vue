@@ -34,12 +34,14 @@
         <v-container fluid grid-list-lg pa-0>
           <v-row>
             <v-col cols="6">
+              <silentbox-single :src="require('~/assets/img/portfolio/logos/logo_riotgear.svg')" autoplay="true" description="">
               <v-img
                 href="/portfolio"
                 flat
                 :aspect-ratio="9/6"
                 :src="require('~/assets/img/portfolio/logos/logo_riotgear.svg')"
               ></v-img>
+              </silentbox-single>
             </v-col>
             <v-col cols="6">
               <v-img

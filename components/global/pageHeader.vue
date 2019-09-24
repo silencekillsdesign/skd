@@ -8,19 +8,23 @@
   >
     <v-container class="fill-height bottom-gradient">
       <!-- <transition appear name="bounce"> -->
-        <v-layout pa-4 mt-2 justify-center align-center class="white--text">
-          <v-flex shrink>
-            <h1
-              class="page-title white--text text-uppercase font-weight-bold"
-              :class="{
+      <v-row class="pa-4 mt-2 white--text" justify="center" align="center"
+        itemscope
+        :itemtype="schemaType"
+      >
+        <v-flex shrink>
+          <h1
+            :itemprop="schemaItem"
+            class="page-title white--text text-uppercase font-weight-bold"
+            :class="{
           'mx-1 pt-2 pa-1 display-2': $vuetify.breakpoint.smAndDown, 
           'px-4 pt-4 pa-1 display-4 animated bounce ': $vuetify.breakpoint.mdAndUp}"
-            >{{ pageTitle }}</h1>
-            <h4
-              class="mt-2 text-xs-right headline text-uppercase hidden-sm-and-down animated slideInDown delay-0.5s"
-            >{{ pageSubtitle }}</h4>
-          </v-flex>
-        </v-layout>
+          >{{ pageTitle }}</h1>
+          <h4
+            class="mt-2 text-xs-right headline text-uppercase hidden-sm-and-down animated slideInDown delay-0.5s"
+          >{{ pageSubtitle }}</h4>
+        </v-flex>
+      </v-row>
       <!-- </transition> -->
     </v-container>
   </v-img>
@@ -31,19 +35,21 @@ export default {
   props: {
     pageTitle: String,
     pageSubtitle: String,
-    titleColor: String
+    titleColor: String,
+    schemaType: String,
+    schemaItem: String
   }
 };
 </script>
 
 <style scoped>
 .page-header {
-  background-color: #06103A;
+  background-color: #06103a;
 }
 .page-title {
   font-family: "Overpass" !important;
   border: 0.125em solid;
-  padding: .75em .25em .125em;
+  padding: 0.75em 0.25em 0.125em;
   line-height: 1;
 }
 .fade-enter-active,
