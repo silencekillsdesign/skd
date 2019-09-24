@@ -206,7 +206,7 @@ module.exports = {
 
   // for netlify to capture form data
   configureWebpack: () => {
-    if (process.env.NODE_ENV !== "dev") return;
+    if (process.env.NODE_ENV !== "dev") return {};
     return {
       plugins: [
         new PrerenderSPAPlugin(
@@ -256,10 +256,15 @@ module.exports = {
   /*
    ** Build configuration
    */
+  // TODO: add purgecss
   build: {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    // extend(config, ctx) {
+    extend(config, ctx) {
+      
+     },
+    
   }
 };
