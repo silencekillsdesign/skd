@@ -72,8 +72,8 @@ export default {
   },
   data: () => ({
     isHovering: false,
-    // services: [],
-    // posts: [],
+    services: [],
+    posts: [],
     // services: [
     //   {
     //     serviceId: '1',
