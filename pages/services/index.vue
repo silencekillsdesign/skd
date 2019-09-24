@@ -146,11 +146,9 @@ export default {
     // ]
   }),
   mounted () {
-    fetch ('http://localhost:4000/services')
+    axios.get('http://localhost:4000/services') //works with db.json in root
     .then(response => {
-      response.json().then(services => {
-        this.services = services
-      })
+      this.services = response.data
     })
   }
 }

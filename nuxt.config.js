@@ -31,6 +31,12 @@ module.exports = {
           process.env.npm_package_description ||
           "We are a digital agency in Bozmeman, MT offering services in branding, web design and development, SEO, and graphic design for local, small, or large businesses."
       },
+      {
+        hid: "keywords",
+        name: "keywords",
+        content:
+          "web design, web designer, seo , logo design, marketing, bozeman, montana"
+      },
       // open graph
       {
         hid: `og:locale`,

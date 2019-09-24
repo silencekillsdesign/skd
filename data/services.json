@@ -2,8 +2,8 @@
   {
     "serviceId": "0",
     "serviceTitle": "Branding",
-    "serviceSubtitle": "Live It. Become It.",
     "serviceDescription": "We create consistent visual identification of your brand, service, or product.",
+    "serviceSubtitle": "Live It. Become It.",
     "serviceIntro": "Great branding establishes your company with a memorable presence in the marketplace, apart from your competition. Our brand development process creates a unique story, strategy, and visual identity for your brand. We offer a full range of branding services - from logo design to full brand packages - for companies of all sizes.",
     "serviceImagePrimary": "path/to/img",
     "serviceList": [
