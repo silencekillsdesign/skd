@@ -9,7 +9,7 @@ const PrerenderSPAPlugin = require("prerender-spa-plugin");
 module.exports = {
   // testing local json
   env: {
-    baseURL: process.env.NODE_ENV === "production" ? "https://silencekillsdesign.com" : "http://localhost:4000"
+    baseURL: process.env.NODE_ENV === "production" ? "https://silencekillsdesign.com" : "http://localhost:3000/data/"
   },
 
   mode: "universal",
