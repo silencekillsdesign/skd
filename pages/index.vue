@@ -60,14 +60,17 @@ export default {
     return {
       structuredData: {
         "@context": "http://schema.org",
-        "@type": "Organization",
+        "@type": "LocalBusiness",
         name: "SilenceKillsDesign",
         brand: "SilenceKillsDesign",
+        about: "We are a digital agency in Bozmeman, MT offering services in branding, web design and development, SEO, and graphic design for local, small, or large businesses.",
         legalName: "SilenceKillsDesign",
         url: "https://silencekillsdesign.com",
         logo:
           "https://silencekillsdesign.com/silencekillsdesign--opengraph-img.png",
+          image: "https://silencekillsdesign.com/silencekillsdesign--opengraph-img.png",
         foundingDate: "2009",
+        priceRange: "$",
         knowsAbout: [
           "Web Development",
           "Web Design",

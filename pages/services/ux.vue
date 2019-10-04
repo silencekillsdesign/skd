@@ -1,6 +1,6 @@
 <template>
   <div>
-    <pageHeader id="header" pageTitle="UX / UI Design" pageSubtitle="Experience It. Feel It." />
+    <pageHeader id="header" schemaType="Service" schemaItem="ux design" pageTitle="UX / UI Design" pageSubtitle="Experience It. Feel It." />
 
     <pageIntro
       introText="A well-designed website can be your most powerful marketing segment, delivering your brand's message to your customers' fingertips. Our web design process caters to your existing customers, and new audiences alike."
@@ -247,8 +247,8 @@ export default {
           text: "We wireframe early in each project to clarify layout of key pages and to map the user experience process. This workflow assures confidence moving forward. Wireframes will also save considerable time and money in the testing and amends phase later in the project. This segment typically takes about a week or two.",
           image: "ux/ux4.svg",
           imageOrder: "1",
-          buttonText: "View SEO Details",
-          buttonGoTo: "#",
+          buttonText: "View UX Details",
+          buttonGoTo: "#header",
         }
       ]
     }

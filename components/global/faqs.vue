@@ -51,7 +51,7 @@ export default {
         {
           faqQ: "How much does a logo typically cost?",
           faqA:
-            "Logo packages start at $400, and go up to $5,000. The more direction you have, the quicker the process. We'll need a little more info on your brand before we can give an exact estimate.",
+            "A logo design can cost anywhere from $0 to tens of thousands of dollars. A small business or startup should expect to pay between   $400-$1200  a good logo design. Budget factors would include exposure, where the logo will appear, and creative direction. We'll need a little more info on your brand before we can give an exact estimate.",
           faqButtonText: "Get a Logo Quote",
           faqButtonLink: "contact",
           faqCategories: ["branding"],

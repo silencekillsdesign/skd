@@ -51,7 +51,7 @@
               nuxt
               to="/blog/blogging-soon"
             >Read It</v-btn>
-            <v-btn large outlined color="blue accent-4">Share It</v-btn>
+            <!-- <v-btn large outlined color="blue accent-4">Share It</v-btn> -->
           </v-row>
         </v-col>
       </v-row>

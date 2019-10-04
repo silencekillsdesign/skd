@@ -34,7 +34,7 @@
         <v-container fluid grid-list-lg pa-0>
           <v-row>
             <v-col cols="6">
-              <silentbox-single :src="require('~/assets/img/portfolio/logos/logo_riotgear.svg')" autoplay="true" description="">
+              <silentbox-single :src="require('~/assets/img/portfolio/logos/logo_riotgear.svg')" autoplay="true" description="This is a description">
               <v-img
                 href="/portfolio"
                 flat
@@ -44,28 +44,33 @@
               </silentbox-single>
             </v-col>
             <v-col cols="6">
+              <silentbox-single :src="require('~/assets/img/portfolio/logos/logo_schlubs.svg')" autoplay="true" description="This is a description">
               <v-img
                 href="/portfolio"
                 flat
                 :aspect-ratio="9/6"
                 :src="require('~/assets/img/portfolio/logos/logo_schlubs.svg')"
               ></v-img>
+              </silentbox-single>
             </v-col>
             <v-col cols="6">
+              <nuxt-link to="/portfolio/#web">
               <v-img
-                href="/portfolio"
                 flat
                 :aspect-ratio="9/6"
                 :src="require('~/assets/img/portfolio/web/web_clean-student.svg')"
               ></v-img>
+              </nuxt-link>
             </v-col>
             <v-col cols="6">
+            <silentbox-single :src="require('~/assets/img/portfolio/logos/logo_donks.svg')" autoplay="true" description="This is a description">
               <v-img
                 href="/portfolio"
                 flat
                 :aspect-ratio="9/6"
                 :src="require('~/assets/img/portfolio/logos/logo_donks.svg')"
               ></v-img>
+            </silentbox-single>
             </v-col>
           </v-row>
         </v-container>

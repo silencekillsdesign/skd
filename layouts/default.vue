@@ -3,7 +3,7 @@
     <primaryNav />
     <!-- <dropdownNav /> -->
     <v-content>
-      <transition name="fade" class="fade">
+      <transition name="slideInUp" class="fade">
       <v-container fluid pa-0>
           <nuxt />
         <speedDial />

@@ -3,13 +3,15 @@
     <v-row class="ma-0">
       <v-col cols="6" md="3" class="ma-0 pa-0" v-for="(work,i) in works" :key="i">
         <v-hover v-slot:default="{ hover }">
-          <v-card flat tile :href="work.link" target="_blank">
+          <!-- <v-card flat tile :href="work.link" target="_blank"> -->
+          <v-card flat tile target="_blank">
+            <silentbox-single class="sb_img" :src="require('@/assets/img/portfolio/logos/'+work.image)" autoplay="true" :description="work.title">
             <v-img
               flat
               :aspect-ratio="9/6"
               :alt="work.title"
               :title="work.title"
-              :src=" require('@/assets/img/portfolio/logos/'+work.image)"
+              :src="require('@/assets/img/portfolio/logos/'+work.image)"
               :lazy-src="require('@/assets/img/silencekillsdesign-lazyload.jpg')"
             >
               <v-expand-transition>
@@ -36,6 +38,7 @@
                 </v-row>
               </v-expand-transition>
             </v-img>
+            </silentbox-single>
           </v-card>
         </v-hover>
       </v-col>
@@ -128,6 +131,10 @@ export default {
 </script>
 
 <style>
+
+#silentbox-overlay__embed img, #silentbox-overlay__embed iframe {
+  background-color: white !important;
+}
 .v-card--reveal {
   align-items: center;
   bottom: 0;
