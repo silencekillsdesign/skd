@@ -236,7 +236,7 @@ module.exports = {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {
-    baseURL: "localhost:4000"
+    baseURL: "https://silencekillsdesign.com"
   },
   /*
    ** vuetify module configuration
