@@ -93,7 +93,7 @@ export default {
           faqA:
             "Yes, we work with WordPress sites, but that is not all we do. WordPress is very flexible, but often ends up very bloated - affecting load times. We make technology recommendations based on a project's scope and scale.",
           faqButtonText: "View Web Services",
-          faqButtonLink: "services/webdevelopment",
+          faqButtonLink: "services/webdesign",
           faqCategories: ["web"],
           faqId: 5,
           faqIcon: "mdi-help"
@@ -102,6 +102,16 @@ export default {
           faqQ: "Can I do my own SEO?",
           faqA:
             "You sure can. We are even happy to help train you on best practices. However, technical SEO can be very tedious and time consuming. We can build custom SEO packages to suit your needs and budget, saving you the hassle.",
+          faqCategoriesegories: ["marketing"],
+          faqButtonText: "View SEO Services",
+          faqButtonLink: "services/seo",
+          faqId: 6,
+          faqIcon: "mdi-help"
+        },
+        {
+          faqQ: "What is Bozeman SEO?",
+          faqA:
+            "Bozeman SEO is custom tailored to find your business the best ranking possible in the Bozeman market. We are from Bozeman and understand all of the technical SEO that will help you get ranked.",
           faqCategoriesegories: ["marketing"],
           faqButtonText: "View SEO Services",
           faqButtonLink: "services/seo",

@@ -172,7 +172,7 @@ module.exports = {
       statusCode: 301
     },
     {
-      from: "/services/webdevelopment",
+      from: "https://silencekillsdesign.com/services/webdevelopment",
       to: "/services/webdesign",
       statusCode: 301
     },
