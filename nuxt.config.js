@@ -173,7 +173,7 @@ module.exports = {
     },
     {
       from: "/services/webdevelopment",
-      to: "/webdesign",
+      to: "/services/webdesign",
       statusCode: 301
     },
     {
@@ -190,7 +190,7 @@ module.exports = {
   robots: {
     UserAgent: "*",
     Disallow: "",
-    Sitemap: "/sitemap"
+    // Sitemap: "/sitemap.xml"
   },
   // "@nuxtjs/sitemap",
   sitemap: {

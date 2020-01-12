@@ -107,7 +107,7 @@ export default {
           title: "Services",
           to: "/services",
           submenu: [
-            { title: "Web Design", to: "/webdevelopment" },
+            { title: "Web Design", to: "/webdesign" },
             { title: "SEO", to: "/seo" },
             { title: "Branding", to: "/branding" },
             { title: "Design", to: "/design" },

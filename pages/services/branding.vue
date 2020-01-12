@@ -157,7 +157,7 @@ export default {
         {
           name: "keywords",
           content:
-            "bozeman logo designers, business cards, logo design, branding, marketing agency in bozeman"
+            "bozeman logo designers, bozeman business cards, bozeman logo design, logo design bozeman, bozeman branding, marketing agency in bozeman, digital marketing bozeman"
         }
       ],
       __dangerouslyDisableSanitizers: ["script"],
