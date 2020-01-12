@@ -186,15 +186,7 @@ module.exports = {
   sitemap: {
     hostname: "https://silencekillsdesign.com",
     gzip: true,
-    generate: [],
-    exclude: [
-      "/contact/spec",
-      "/services/email",
-      "/services/screenprinting",
-      "/services/webdevelopment",
-      "/news",
-      "/indexBU"
-    ]
+
   },
   //  "@bazzite/nuxt-optimized-images"
   // optimizedImages: {
