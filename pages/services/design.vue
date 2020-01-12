@@ -98,7 +98,7 @@ export default {
         {
           name: "description",
           content:
-            "Brand your local bozeman business like a big time brand. We offer affordable logo design, graphic design, presentations, and web design to suit your small to medium business"
+            "Brand your local Bozeman business like a big time brand. We offer affordable logo design, graphic design, presentations, and web design to suit your small to medium business"
         },
         { name: "robots", content: "index, follow" }
       ],
@@ -134,6 +134,7 @@ export default {
             "logo design",
             "branding",
             "marketing",
+            "SEO",
             "business cards"
           ],
           sameAs: [

@@ -86,7 +86,7 @@ export default {
         },
         {
           image: "eat-shit-griz-tee.jpg",
-          title: "CLEAN_Alumni Landing Page",
+          title: "EAT SHIT GRIZ Tee",
           link: ""
         }
       ]

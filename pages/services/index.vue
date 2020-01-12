@@ -65,7 +65,7 @@ export default {
         {
           name: "keywords",
           content:
-            "SilenceKillsDesign services, branding, design, web design, web development, email, seo, ux, bozeman montana"
+            "SilenceKillsDesign services, bozeman branding, bozeman design, bozeman web design, bozeman web development, email, bozeman seo, ux, bozeman, montana"
         },
       ]
     };

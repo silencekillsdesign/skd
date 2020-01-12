@@ -38,7 +38,7 @@ module.exports = {
         hid: "keywords",
         name: "keywords",
         content:
-          "web design bozeman, web designer bozeman, bozeman seo, seo bozeman, logo design bozeman, marketing, bozeman, montana"
+          "web design bozeman, web designer bozeman, bozeman seo, seo bozeman, logo design bozeman, marketing bozeman, digital marketing bozeman, bozeman, montana"
       },
       // open graph
       {
@@ -54,7 +54,7 @@ module.exports = {
       {
         hid: `og:title`,
         property: "og:title",
-        content: `SilenceKillsDesign - Bozeman's best Web Design, SEO, Marketing, and Design`
+        content: `SilenceKillsDesign - Bozeman Web Design, SEO, Marketing, and Design`
       },
       {
         hid: `og:url`,
@@ -81,7 +81,7 @@ module.exports = {
         hid: `twitter:title`,
         name: "twitter:title",
         content:
-          "SilenceKillsDesign - Bozeman's best Web Design, SEO, Marketing, and Design"
+          "SilenceKillsDesign - Bozeman Web Design, SEO, Marketing, and Design"
       },
       {
         hid: `twitter:description`,
@@ -186,15 +186,15 @@ module.exports = {
   sitemap: {
     hostname: "https://silencekillsdesign.com",
     gzip: true,
-    generate: []
-    // exclude: [
-    //   "/contact/spec",
-    //   "/services/email",
-    //   "/services/screenprinting",
-    //   "/services/webdevelopment",
-    //   "/news",
-    //   "/indexBU"
-    // ]
+    generate: [],
+    exclude: [
+      "/contact/spec",
+      "/services/email",
+      "/services/screenprinting",
+      "/services/webdevelopment",
+      "/news",
+      "/indexBU"
+    ]
   },
   //  "@bazzite/nuxt-optimized-images"
   // optimizedImages: {
