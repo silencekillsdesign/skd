@@ -59,7 +59,7 @@ export default {
         {
           name: "description",
           content:
-            "Work by SilenceKillsDesign. Logo Design, branding, web design, development, branding, print design, and audio /visual."
+            "Work by SilenceKillsDesign. Logo Design, branding, web design, development, branding, print design, SEO, and audio /visual."
         },
         { name: "robots", content: "index, follow" },
       ]

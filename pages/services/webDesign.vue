@@ -55,7 +55,7 @@
           data-aos-easing="ease-in-out-back"
           data-aos-duration="800"
           data-aos-delay="100"
-        >Our Web Development Process</h2>
+        >Our Web Design Process</h2>
       </v-row>
     </v-container>
     <!-- TODO: make order dynamic -->
@@ -111,7 +111,7 @@ export default {
         {
           name: "keywords",
           content:
-            "local business websites in bozeman, bozeman seo, website designers, web design, web designer in bozeman, b2b websites"
+            "local business websites in bozeman, bozeman web design, website designers bozeman, web design, web designer in bozeman, b2b website design, web developer bozeman, wordpress bozeman"
         },
         { name: "robots", content: "index, follow" }
       ],
@@ -175,7 +175,7 @@ export default {
           items: [
             {
               description:
-                "We build websites for local Bozeman businesses that help customers easily find what they're looking for. A local business website doesn't need to be over the top, it needs to be useful. Our development process focuses on local SEO throughout the development process, so you can be easily found and easy to contact."
+                "We build websites for local Bozeman businesses (and other cities) that help customers easily find what they're looking for. A local business website doesn't need to be over the top, it needs to be useful. Our development process focuses on local SEO throughout the development process, so you can be easily found and easy to contact."
             }
           ]
         },

@@ -107,7 +107,7 @@ export default {
         {
           name: "keywords",
           content:
-            "local seo bozeman, ppc bozeman, technical seo, e-commerce SEO, seo expert in bozeman, best seo bozeman"
+            "local seo bozeman, ppc bozeman, technical seo, e-commerce SEO, seo expert in bozeman, best seo bozeman, bozeman seo"
         }
       ]
     }

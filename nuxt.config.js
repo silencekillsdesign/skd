@@ -9,7 +9,10 @@ const PrerenderSPAPlugin = require("prerender-spa-plugin");
 module.exports = {
   // testing local json
   env: {
-    baseURL: process.env.NODE_ENV === "production" ? "https://silencekillsdesign.com" : "http://localhost:3000/data/"
+    baseURL:
+      process.env.NODE_ENV === "production"
+        ? "https://silencekillsdesign.com"
+        : "http://localhost:3000/data/"
   },
 
   mode: "universal",
@@ -176,7 +179,8 @@ module.exports = {
   // "@nuxtjs/robots",
   robots: {
     UserAgent: "*",
-    Disallow: ""
+    Disallow: "",
+    Sitemap: "/sitemap.xml"
   },
   // "@nuxtjs/sitemap",
   sitemap: {
@@ -187,6 +191,7 @@ module.exports = {
       "/contact/spec",
       "/services/email",
       "/services/screenprinting",
+      "/services/webdevelopment",
       "/news",
       "/indexBU"
     ]
@@ -262,9 +267,6 @@ module.exports = {
      ** You can extend webpack config here
      */
     // extend(config, ctx) {
-    extend(config, ctx) {
-      
-     },
-    
+    extend(config, ctx) {}
   }
 };

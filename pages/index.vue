@@ -79,6 +79,8 @@ export default {
           "Graphic design",
           "marketing",
           "SEO",
+          "techincal seo",
+          "branding",
           "audio",
           "video"
         ],

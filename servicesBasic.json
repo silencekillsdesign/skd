@@ -5,9 +5,9 @@
         "serviceId": "0",
         "serviceName": "Web Development",
         "ServiceIcon": "mdi-code-tags",
-        "serviceDesc": "Fast, well-designed websites that convert, delivered on time & within budget.",
+        "serviceDesc": "Fast, beautiful website design that convert, delivered on time & within budget.",
         "serviceButton": "Learn More",
-        "serviceUrl": "/services/webdevelopment/"
+        "serviceUrl": "/services/webdesign/"
       },
       {
         "serviceId": "1",
