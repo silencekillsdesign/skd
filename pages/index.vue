@@ -104,7 +104,7 @@ export default {
   },
   head() {
     return {
-      title: "Bozeman's Web Design, SEO, Branding Expert",
+      title: "Bozeman SEO, Web Design, Branding, & Digital Marketing",
       meta: [
         {
           hid: "description",
@@ -115,7 +115,7 @@ export default {
         },
         {
           name: "keywords",
-          content: "branding, bozeman web design, seo, bozeman creative"
+          content: "bozeman branding, bozeman web design, bozeman seo, bozeman creative, bozeman website design, bozeman web development, seo bozeman, web design bozeman mt, website design bozeman, bozeman mt seo services, bozeman mt seo expert, website design bozeman mt, bozeman marketing agency, bozeman creative agency, design agency bozeman, seo service bozeman, bozeman design agency"
         }
       ],
       __dangerouslyDisableSanitizers: ["script"],

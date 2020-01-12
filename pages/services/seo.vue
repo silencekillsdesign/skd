@@ -3,7 +3,7 @@
     <pageHeader pageTitle="SEO / SEM" pageSubtitle="Seek It. Find It." />
 
     <pageIntro
-      introText="Grow your web presence with a unique search engine optimiation approach focused on your customers. With thousands of hits delivered to our customers across industries, our technical SEO strategies help you start improving your results immediately."
+      introText="Bozeman SEO needs to understand two things, Bozeman, and technical SEO. CJ Williams, digital marketing specialist, is a Bozeman native and certified SEO Expert. We work within your budget to grow your customer base, starting today."
     ></pageIntro>
 
     <!-- TODO: loop from data create reusable services component (service title, icon, short description)-->
@@ -75,7 +75,7 @@
       <v-row class="mx-auto" align="center" justify="center">
         <v-col cols="12" md="8" align="center" justify="center">
           <h3 class="text8-center display-3 indigo--text my-5">What sets Us Apart?</h3>
-          <p class="subtitle-1">There are many SEO 'experts' in Bozeman. We understand the aspects of technical SEO beyond WordPress plugins. Never be afraid to ask your SEO what exactly they are doing with your SEO strategy. There are many factors that allow search engines to discover and understand your site's content.   We offer technical SEO services that dive deeper into your content and code.  We touch on them all with White-Hat best practices. Structured data,  image tagging, content revision and performance optimizations, we dot it all. Let us help you define your SEO strategy.</p>
+          <p class="subtitle-1">We are Bozeman's SEO experts. A Bozeman native of 34 years, CJ Williams truly understands your market and it's customers. We specialize in technical SEO, link building, content marketing and more. Bozeman SEO can be difficult, but we are here to help navigate the beautiful landscape. We understand the aspects of technical SEO beyond WordPress plugins. Never be afraid to ask your SEO what exactly they are doing with your SEO strategy. There are many factors that allow search engines to discover and understand your site's content.   We offer technical SEO services that dive deeper into your content and code.  We touch on them all with White-Hat best practices. Structured data,  image tagging, content revision and performance optimizations, we dot it all. Let us help you define your SEO strategy.</p>
           <v-btn class="mt-3" large to="/contact">Contact Us</v-btn>
           </v-col>
       </v-row>
@@ -107,7 +107,7 @@ export default {
         {
           name: "keywords",
           content:
-            "local seo bozeman, ppc bozeman, technical seo, e-commerce SEO, seo expert in bozeman, best seo bozeman, bozeman seo"
+            "local seo bozeman, ppc bozeman, technical seo, e-commerce SEO, seo expert in bozeman, best seo bozeman, bozeman seo,"
         }
       ]
     }
@@ -155,12 +155,42 @@ export default {
       i: 1,
       items: [
         {
-          icon: "mdi-store",
-          title: "Google AdWords",
+          icon: "mdi-domain",
+          title: "Local SEO",
           items: [
             {
               description:
-                "Pay-per-click (PPC) ads are paid online advertisements which appear next to searches on the web. We create powerful AdWords campaigns that expand reach for location-based and keyword-based targeting."
+                "Looking to dominate your industry and competitors? It’s time to start implementing local SEO services. Our Bozeman SEO company will steer your digital strategies to success.  Dominate local search engine ranking position (SERP) with custom SEO strategies specific to Bozeman."
+            }
+          ]
+        },
+        {
+          icon: "mdi-magnify-scan",
+          title: "Technical SEO",
+          items: [
+            {
+              description:
+                "Technical SEO is the process of optimizing your website for crawling and indexing. With technical SEO, you can better help search engines interpret and index your website. "
+            }
+          ]
+        },
+        {
+          icon: "mdi-link-variant",
+          title: "Link Building",
+          items: [
+            {
+              description:
+                "We analyze competitor keywords and define a strategy to outrank them. Additionally, we clean up toxic backlinks, while earning new high quality links."
+            }
+          ]
+        },
+        {
+          icon: "mdi-store",
+          title: "Pay-per-Click",
+          items: [
+            {
+              description:
+                "Pay-per-click (PPC) ads are paid online advertisements which appear next to searches on the web. We create powerful Google Ads campaigns that expand reach for location-based and keyword-based targeting."
             }
           ]
         },
@@ -186,7 +216,7 @@ export default {
         },
         {
           icon: "mdi-domain",
-          title: "Schema.org Markup",
+          title: "Structured Data Markup",
           items: [
             {
               description:
