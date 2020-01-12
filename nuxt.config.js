@@ -23,7 +23,7 @@ module.exports = {
     titleTemplate: process.env.npm_package_name + " | %s",
     title:
       process.env.npm_package_name ||
-      "SilenceKillsDesign - Web Design, Branding, Marketing, SEO in Bozeman, MT",
+      "SilenceKillsDesign - Web Design, Branding, Digital Marketing, SEO in Bozeman, MT",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -38,7 +38,7 @@ module.exports = {
         hid: "keywords",
         name: "keywords",
         content:
-          "web design, web designer, seo , logo design, marketing, bozeman, montana"
+          "web design bozeman, web designer bozeman, bozeman seo, seo bozeman, logo design bozeman, marketing, bozeman, montana"
       },
       // open graph
       {
@@ -186,7 +186,15 @@ module.exports = {
   sitemap: {
     hostname: "https://silencekillsdesign.com",
     gzip: true,
-
+    generate: []
+    // exclude: [
+    //   "/contact/spec",
+    //   "/services/email",
+    //   "/services/screenprinting",
+    //   "/services/webdevelopment",
+    //   "/news",
+    //   "/indexBU"
+    // ]
   },
   //  "@bazzite/nuxt-optimized-images"
   // optimizedImages: {
