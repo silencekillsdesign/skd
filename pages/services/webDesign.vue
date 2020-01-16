@@ -111,7 +111,7 @@ export default {
         {
           name: "keywords",
           content:
-            "local business websites in bozeman, bozeman web design, website designers bozeman, web design, web designer in bozeman, b2b website design, web developer bozeman, wordpress bozeman"
+            "local business websites in bozeman, bozeman web design, website designers bozeman, web design, web designer in bozeman, b2b website design, web developer bozeman, wordpress bozeman, web site development, seo design, web site development"
         },
         { name: "robots", content: "index, follow" }
       ],

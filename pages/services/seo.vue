@@ -12,7 +12,7 @@
         <!-- start list -->
         <v-col md="6" offset-md="1" data-aos="fade-right">
           <v-list color="transparent" rounded v-model="i" class="pr-5">
-            <v-subheader>The Things We Do:</v-subheader>
+            <v-subheader>SEO Work We Do:</v-subheader>
             <v-list-group
               v-for="item in items"
               :key="item.title"
@@ -75,7 +75,7 @@
       <v-row class="mx-auto" align="center" justify="center">
         <v-col cols="12" md="8" align="center" justify="center">
           <h3 class="text8-center display-3 indigo--text my-5">What sets Us Apart?</h3>
-          <p class="subtitle-1">We are Bozeman's SEO experts. A Bozeman native of 34 years, CJ Williams truly understands your market and it's customers. We specialize in technical SEO, link building, content marketing and more. Bozeman SEO can be difficult, but we are here to help navigate the beautiful landscape. We understand the aspects of technical SEO beyond WordPress plugins. Never be afraid to ask your SEO what exactly they are doing with your SEO strategy. There are many factors that allow search engines to discover and understand your site's content.   We offer technical SEO services that dive deeper into your content and code.  We touch on them all with White-Hat best practices. Structured data,  image tagging, content revision and performance optimizations, we dot it all. Let us help you define your SEO strategy.</p>
+          <p class="subtitle-1">We are Bozeman's SEO experts. A Bozeman native of 34 years, CJ Williams truly understands your Bozeman market and it's customers. We specialize in technical SEO, link building, content marketing and more. Bozeman SEO can be difficult, but we are here to help navigate the beautiful landscape. We understand the aspects of technical SEO beyond WordPress plugins. Never be afraid to ask your SEO what exactly they are doing with your SEO strategy. There are many factors that allow search engines to discover and understand your site's content. We offer technical SEO services that dive deeper into your content and code.  We touch on them all with White-Hat best practices. Structured data, image tagging, content revision and performance optimizations, we dot it all. LWe are the Bozeman SEO Consultant you are looking for.</p>
           <v-btn class="mt-3" large to="/contact">Contact Us</v-btn>
           </v-col>
       </v-row>
@@ -107,7 +107,7 @@ export default {
         {
           name: "keywords",
           content:
-            "local seo bozeman, ppc bozeman, technical seo, e-commerce SEO, seo expert in bozeman, best seo bozeman, bozeman seo,"
+            "local seo bozeman, ppc bozeman, technical seo bozeman, e-commerce SEO, seo expert in bozeman, best seo bozeman, bozeman seo, seo agency, seo agency bozeman, seo agency montana, bozeman mt seo services, bozeman mt seo expert, bozeman seo consultant, seo design"
         }
       ]
     }
@@ -160,7 +160,7 @@ export default {
           items: [
             {
               description:
-                "Looking to dominate your industry and competitors? It’s time to start implementing local SEO services. Our Bozeman SEO company will steer your digital strategies to success.  Dominate local search engine ranking position (SERP) with custom SEO strategies specific to Bozeman."
+                "Looking to dominate your industry and competitors? It’s time to start implementing local SEO services. Our Bozeman SEO company will steer your digital strategies to success. Dominate local search engine ranking position (SERP) with custom SEO strategies specific to Bozeman."
             }
           ]
         },
@@ -200,7 +200,7 @@ export default {
           items: [
             {
               description:
-                "Google Analytics a free digital analytics tool, used to measure your site traffic and performance. It offers us the valuable insights to any revisions needed on the site tom improve conversions. We offer training and included monthly reports for all our SEO clients. "
+                "Google Analytics is a free digital analytics tool used to measure your website traffic and performance. It offers us the valuable insights to any revisions needed on the site to improve conversions. We offer training and included monthly reports for all our SEO clients. "
             }
           ]
         },
@@ -210,7 +210,7 @@ export default {
           items: [
             {
               description:
-                "Google Search Console is a free tool that helps businesses optimize their sites for search.  It also tells you about any issues with your site, things like crawl errors (i.e. Google can’t access a page on your site) and even if your site is mobile-friendly or not. "
+                "Google Search Console is a free tool that helps businesses optimize their sites for search.  It also tells us about any issues with your site, things like crawl errors (i.e. Google can’t access a page on your site) and even if your site is mobile-friendly or not. "
             }
           ]
         },
@@ -220,7 +220,7 @@ export default {
           items: [
             {
               description:
-                "Schema is a semantic vocabulary of tags (or microdata) that you can add to your site to improve the way search engines read and represent your page. This is often much more technical to implement, but can add tremendous value to your SERP (search engine ranking position)."
+                "Schema is a semantic vocabulary of tags (or microdata) that we can add to your site to improve the way search engines read and represent your page. This is often much more technical to implement, but can add tremendous value to your SERP (search engine ranking position)."
             }
           ]
         },

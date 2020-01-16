@@ -100,6 +100,11 @@ export default {
           content:
             "Brand your local Bozeman business like a big time brand. We offer affordable logo design, graphic design, presentations, and web design to suit your small to medium business"
         },
+        {
+          name: "keywords",
+          content:
+            "local business design bozeman, graphic design bozeman, bozeman web design, website designers bozeman, web design, logo bozeman, wordpress bozeman, seo design, design digital, design digital, creative website designer"
+        },
         { name: "robots", content: "index, follow" }
       ],
       __dangerouslyDisableSanitizers: ['script'],
