@@ -125,7 +125,7 @@
         <v-col cols="12" md="8" align="center" justify="center">
           <h3 class="text8-center display-3 indigo--text my-5">What sets Us Apart?</h3>
           <p  class="subtitle-1">
-            We realize your logo design is a key part of your brand identity. We're much more than logo designers. We offer a full brand management experience, including logo design, digital asset management, and more. From campaign planning to execution and reporting, our expert advice makes managing your brand easy.
+            We realize your logo design is a key part of your brand identity. We're much more than logo designers. We offer a full brand management experience, including logo design, marketing materials, digital asset management, and more. From campaign planning to execution and reporting, our expert advice makes managing your brand easy.
           </p>
           <v-btn class="mt-3" large to="/contact">Contact Us</v-btn>
         </v-col>

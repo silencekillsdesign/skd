@@ -89,7 +89,7 @@ export default {
     }
   }),
   head: {
-    title: "About Us",
+    title: "About SilenceKillsDesign | SEO, Marketing, and Design",
     meta: [
       {
         hid: "description",
@@ -100,7 +100,7 @@ export default {
       {
         name: "keywords",
         content:
-          "silencekillsdesign, cj williams, local seo bozeman, web designer bozeman"
+          "silencekillsdesign, cj williams, local seo bozeman, web designer bozeman, seo bozeman, bozeman seo, bozeman marketing, boeman designer, bozeman design agency, bozeman creative"
       }
     ]
   },

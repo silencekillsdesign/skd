@@ -111,7 +111,7 @@ export default {
         {
           name: "keywords",
           content:
-            "local business websites in bozeman, bozeman web design, website designers bozeman, web design, web designer in bozeman, b2b website design, web developer bozeman, wordpress bozeman, web site development, seo design, web site development"
+            "local business websites in bozeman, bozeman web design, website designers bozeman, web design, web designer in bozeman, b2b website design, web developer bozeman, wordpress bozeman, web site development, seo design, web site development, bozeman website design, bozeman web development, seo bozeman, web design bozeman mt, website design bozeman, website design bozeman mt, bozeman web design, bozeman web designer, bozeman web designers, bozeman website development, seo design, bozeman custom web design, web design bozeman, best web design montana"
         },
         { name: "robots", content: "index, follow" }
       ],

@@ -98,6 +98,30 @@ export default {
     pageIntro,
     stack
   },
+  head() {
+    return {
+      title: "Branding & Logo Design",
+      meta: [
+        {
+          name: "description",
+          content:
+            "Brand your local bozeman business like a big time brand. We offer affordable logo design, graphic design, presentations, and web design to suit your small to medium business"
+        },
+        {
+          name: "keywords",
+          content:
+            "bozeman a/v production, bozeman commercials, bozeman commercial production, bozeman producer, bozeman audio production, bozeman video production, motion graphics bozeman, video infographics bozeman"
+        }
+      ],
+      __dangerouslyDisableSanitizers: ["script"],
+      script: [
+        {
+          innerHTML: JSON.stringify(this.structuredData),
+          type: "application/ld+json"
+        }
+      ]
+    };
+  },
   data() {
     return {
       items: [

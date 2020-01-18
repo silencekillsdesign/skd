@@ -3,7 +3,7 @@
     <pageHeader pageTitle="SEO / SEM" pageSubtitle="Seek It. Find It." />
 
     <pageIntro
-      introText="Bozeman SEO needs to understand two things, Bozeman, and technical SEO. CJ Williams, digital marketing specialist, is a Bozeman native and certified SEO Expert. We work within your budget to grow your customer base, starting today."
+      introText="Bozeman SEO requires two things, knowledge of Bozeman, and knowledge of technical SEO. CJ Williams, digital marketing specialist, is a Bozeman native and certified SEO Expert. We work within your budget to grow your customer base, starting today."
     ></pageIntro>
 
     <!-- TODO: loop from data create reusable services component (service title, icon, short description)-->
@@ -23,7 +23,9 @@
             >
               <template v-slot:activator>
                 <v-list-item-content>
-                  <v-list-item-title v-text="item.title"></v-list-item-title>
+                  <v-list-item-title >
+                    <h4 v-text="item.title"></h4>
+                  </v-list-item-title>
                 </v-list-item-content>
               </template>
 
@@ -102,12 +104,12 @@ export default {
         {
           name: "description",
           content:
-            "Grow your web presence with a unique search engine optimiation approach focused on your customers. Offering local SEO unique to Bozeman businesses."
+            "Grow your web presence with a unique search engine optimiation approach focused on your customers. Offering local SEO unique to Bozeman businesses. "
         },
         {
           name: "keywords",
           content:
-            "local seo bozeman, ppc bozeman, technical seo bozeman, e-commerce SEO, seo expert in bozeman, best seo bozeman, bozeman seo, seo agency, seo agency bozeman, seo agency montana, bozeman mt seo services, bozeman mt seo expert, bozeman seo consultant, seo design"
+            "SEO, SEM, local seo bozeman, ppc bozeman, technical seo bozeman, e-commerce SEO, seo expert in bozeman, best seo bozeman, bozeman seo, seo agency, seo agency bozeman, seo agency montana, bozeman mt seo services, bozeman mt seo expert, bozeman seo consultant, seo design, seo service bozeman, bozeman montana seo"
         }
       ]
     }
@@ -156,7 +158,7 @@ export default {
       items: [
         {
           icon: "mdi-domain",
-          title: "Local SEO",
+          title: "Bozeeman SEO",
           items: [
             {
               description:
